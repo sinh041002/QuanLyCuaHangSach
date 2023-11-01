@@ -7,3 +7,12 @@ D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.dll
 D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.pdb
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\bin\Debug\DAL.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\bin\Debug\DAL.pdb
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\bin\Debug\DTO.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\bin\Debug\DTO.pdb
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.pdb
