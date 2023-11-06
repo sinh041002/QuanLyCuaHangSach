@@ -9,6 +9,7 @@ D:\Projectdau\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\Projectdau\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Projectdau\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
 D:\Projectdau\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb
+<<<<<<< HEAD
 D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\bin\Debug\BLL.dll
 D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\bin\Debug\BLL.pdb
 D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\bin\Debug\DAL.dll
@@ -20,3 +21,16 @@ D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.ca
 D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
 D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb
+=======
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\bin\Debug\BLL.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\bin\Debug\BLL.pdb
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\bin\Debug\DAL.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\bin\Debug\DTO.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\bin\Debug\DAL.pdb
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\bin\Debug\DTO.pdb
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb
+>>>>>>> e71b03fc4e43e861259d96ccfe5f07e9f986c490

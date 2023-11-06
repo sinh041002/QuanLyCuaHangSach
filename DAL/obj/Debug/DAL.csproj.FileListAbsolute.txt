@@ -7,6 +7,7 @@ D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.dll
 D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.pdb
+<<<<<<< HEAD
 D:\QLCuaHangSach\QuanLyCuaHangSach\DAL\bin\Debug\DAL.dll
 D:\QLCuaHangSach\QuanLyCuaHangSach\DAL\bin\Debug\DAL.pdb
 D:\QLCuaHangSach\QuanLyCuaHangSach\DAL\bin\Debug\DTO.dll
@@ -16,3 +17,14 @@ D:\QLCuaHangSach\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.ca
 D:\QLCuaHangSach\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\QLCuaHangSach\QuanLyCuaHangSach\DAL\obj\Debug\DAL.dll
 D:\QLCuaHangSach\QuanLyCuaHangSach\DAL\obj\Debug\DAL.pdb
+=======
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\bin\Debug\DAL.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\bin\Debug\DAL.pdb
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\bin\Debug\DTO.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\bin\Debug\DTO.pdb
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.pdb
+>>>>>>> e71b03fc4e43e861259d96ccfe5f07e9f986c490

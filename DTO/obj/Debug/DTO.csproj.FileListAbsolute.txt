@@ -4,9 +4,18 @@ D:\Projectdau\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
 D:\Projectdau\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Projectdau\QuanLyCuaHangSach\DTO\obj\Debug\DTO.dll
 D:\Projectdau\QuanLyCuaHangSach\DTO\obj\Debug\DTO.pdb
+<<<<<<< HEAD
 D:\QLCuaHangSach\QuanLyCuaHangSach\DTO\bin\Debug\DTO.dll
 D:\QLCuaHangSach\QuanLyCuaHangSach\DTO\bin\Debug\DTO.pdb
 D:\QLCuaHangSach\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
 D:\QLCuaHangSach\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\QLCuaHangSach\QuanLyCuaHangSach\DTO\obj\Debug\DTO.dll
 D:\QLCuaHangSach\QuanLyCuaHangSach\DTO\obj\Debug\DTO.pdb
+=======
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DTO\bin\Debug\DTO.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DTO\bin\Debug\DTO.pdb
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DTO\obj\Debug\DTO.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DTO\obj\Debug\DTO.pdb
+>>>>>>> e71b03fc4e43e861259d96ccfe5f07e9f986c490
