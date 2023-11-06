@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyCuaHangSach
+namespace QuanLyCuaHangSach.view
 {
     public partial class FormThongKeDoanhThu : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace QuanLyCuaHangSach
+﻿namespace QuanLyCuaHangSach.view
 {
     partial class FormThongKeDoanhThu
     {
