@@ -8,5 +8,6 @@ namespace DTO
 {
     internal class Sach
     {
+        public string abc;
     }
 }
