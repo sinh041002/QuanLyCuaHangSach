@@ -9,3 +9,14 @@ D:\Projectdau\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\Projectdau\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Projectdau\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
 D:\Projectdau\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb
+D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\bin\Debug\BLL.dll
+D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\bin\Debug\BLL.pdb
+D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\bin\Debug\DAL.dll
+D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\bin\Debug\DTO.dll
+D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\bin\Debug\DAL.pdb
+D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\bin\Debug\DTO.pdb
+D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
+D:\QLCuaHangSach\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb

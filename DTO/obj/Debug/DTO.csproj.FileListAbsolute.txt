@@ -4,3 +4,9 @@ D:\Projectdau\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
 D:\Projectdau\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Projectdau\QuanLyCuaHangSach\DTO\obj\Debug\DTO.dll
 D:\Projectdau\QuanLyCuaHangSach\DTO\obj\Debug\DTO.pdb
+D:\QLCuaHangSach\QuanLyCuaHangSach\DTO\bin\Debug\DTO.dll
+D:\QLCuaHangSach\QuanLyCuaHangSach\DTO\bin\Debug\DTO.pdb
+D:\QLCuaHangSach\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\QLCuaHangSach\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\QLCuaHangSach\QuanLyCuaHangSach\DTO\obj\Debug\DTO.dll
+D:\QLCuaHangSach\QuanLyCuaHangSach\DTO\obj\Debug\DTO.pdb
