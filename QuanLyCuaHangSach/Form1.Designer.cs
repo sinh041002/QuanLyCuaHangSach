@@ -61,7 +61,7 @@
             this.QLCuaHangSach.Name = "QLCuaHangSach";
             this.QLCuaHangSach.Padding = new System.Drawing.Point(10, 5);
             this.QLCuaHangSach.SelectedIndex = 0;
-            this.QLCuaHangSach.Size = new System.Drawing.Size(1272, 573);
+            this.QLCuaHangSach.Size = new System.Drawing.Size(1652, 900);
             this.QLCuaHangSach.TabIndex = 0;
             // 
             // BanHang
@@ -72,7 +72,7 @@
             this.BanHang.Margin = new System.Windows.Forms.Padding(4);
             this.BanHang.Name = "BanHang";
             this.BanHang.Padding = new System.Windows.Forms.Padding(4);
-            this.BanHang.Size = new System.Drawing.Size(1264, 525);
+            this.BanHang.Size = new System.Drawing.Size(1600, 862);
             this.BanHang.TabIndex = 0;
             this.BanHang.Text = "Bán Hàng";
             this.BanHang.UseVisualStyleBackColor = true;
@@ -95,7 +95,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1253, 437);
+            this.dataGridView1.Size = new System.Drawing.Size(1432, 437);
             this.dataGridView1.TabIndex = 0;
             // 
             // QLKhachHang
@@ -104,17 +104,18 @@
             this.QLKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.QLKhachHang.Name = "QLKhachHang";
             this.QLKhachHang.Padding = new System.Windows.Forms.Padding(4);
-            this.QLKhachHang.Size = new System.Drawing.Size(1264, 525);
+            this.QLKhachHang.Size = new System.Drawing.Size(1644, 852);
             this.QLKhachHang.TabIndex = 1;
             this.QLKhachHang.Text = "Khách Hàng";
             this.QLKhachHang.UseVisualStyleBackColor = true;
+            this.QLKhachHang.Click += new System.EventHandler(this.QLKhachHang_Click);
             // 
             // QLHoaDon
             // 
             this.QLHoaDon.Location = new System.Drawing.Point(4, 44);
             this.QLHoaDon.Name = "QLHoaDon";
             this.QLHoaDon.Padding = new System.Windows.Forms.Padding(3);
-            this.QLHoaDon.Size = new System.Drawing.Size(1264, 525);
+            this.QLHoaDon.Size = new System.Drawing.Size(1600, 862);
             this.QLHoaDon.TabIndex = 2;
             this.QLHoaDon.Text = "Hóa Đơn";
             this.QLHoaDon.UseVisualStyleBackColor = true;
@@ -124,7 +125,7 @@
             this.QLNhapHang.Location = new System.Drawing.Point(4, 44);
             this.QLNhapHang.Name = "QLNhapHang";
             this.QLNhapHang.Padding = new System.Windows.Forms.Padding(3);
-            this.QLNhapHang.Size = new System.Drawing.Size(1264, 525);
+            this.QLNhapHang.Size = new System.Drawing.Size(1600, 862);
             this.QLNhapHang.TabIndex = 3;
             this.QLNhapHang.Text = "Nhập Hàng";
             this.QLNhapHang.UseVisualStyleBackColor = true;
@@ -134,7 +135,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 44);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1264, 525);
+            this.tabPage5.Size = new System.Drawing.Size(1600, 862);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Sách";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -173,11 +174,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1269, 570);
+            this.ClientSize = new System.Drawing.Size(1682, 903);
             this.Controls.Add(this.QLCuaHangSach);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "QLCuaHangSach";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.QLCuaHangSach.ResumeLayout(false);

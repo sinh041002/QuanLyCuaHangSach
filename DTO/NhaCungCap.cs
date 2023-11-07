@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class Class1
+    internal class NhaCungCap
     {
     }
 }

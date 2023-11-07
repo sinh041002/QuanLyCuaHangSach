@@ -46,5 +46,10 @@ namespace QuanLyCuaHangSach
 
             }
         }
+
+        private void QLKhachHang_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
