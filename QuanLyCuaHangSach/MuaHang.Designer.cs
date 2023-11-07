@@ -115,7 +115,7 @@ namespace QuanLyCuaHangSach
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox1.Location = new System.Drawing.Point(31, 72);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(535, 269);
+            this.groupBox1.Size = new System.Drawing.Size(756, 421);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Sản Phẩm";
@@ -124,10 +124,10 @@ namespace QuanLyCuaHangSach
             // 
             this.txtMaSanPham.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtMaSanPham.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtMaSanPham.Location = new System.Drawing.Point(300, 28);
+            this.txtMaSanPham.Location = new System.Drawing.Point(375, 28);
             this.txtMaSanPham.Name = "txtMaSanPham";
             this.txtMaSanPham.ReadOnly = true;
-            this.txtMaSanPham.Size = new System.Drawing.Size(226, 25);
+            this.txtMaSanPham.Size = new System.Drawing.Size(361, 25);
             this.txtMaSanPham.TabIndex = 14;
             // 
             // label15
@@ -135,7 +135,7 @@ namespace QuanLyCuaHangSach
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label15.Location = new System.Drawing.Point(174, 28);
+            this.label15.Location = new System.Drawing.Point(243, 28);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(94, 19);
             this.label15.TabIndex = 13;
@@ -145,10 +145,10 @@ namespace QuanLyCuaHangSach
             // 
             this.txtMoTa.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtMoTa.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtMoTa.Location = new System.Drawing.Point(162, 196);
+            this.txtMoTa.Location = new System.Drawing.Point(178, 223);
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.ReadOnly = true;
-            this.txtMoTa.Size = new System.Drawing.Size(367, 67);
+            this.txtMoTa.Size = new System.Drawing.Size(558, 166);
             this.txtMoTa.TabIndex = 10;
             this.txtMoTa.Text = "";
             // 
@@ -156,7 +156,7 @@ namespace QuanLyCuaHangSach
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label5.Location = new System.Drawing.Point(62, 214);
+            this.label5.Location = new System.Drawing.Point(64, 297);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 19);
             this.label5.TabIndex = 9;
@@ -166,10 +166,10 @@ namespace QuanLyCuaHangSach
             // 
             this.txtTenHang.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtTenHang.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTenHang.Location = new System.Drawing.Point(300, 152);
+            this.txtTenHang.Location = new System.Drawing.Point(375, 152);
             this.txtTenHang.Name = "txtTenHang";
             this.txtTenHang.ReadOnly = true;
-            this.txtTenHang.Size = new System.Drawing.Size(226, 25);
+            this.txtTenHang.Size = new System.Drawing.Size(361, 25);
             this.txtTenHang.TabIndex = 8;
             // 
             // label4
@@ -177,7 +177,7 @@ namespace QuanLyCuaHangSach
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label4.Location = new System.Drawing.Point(173, 155);
+            this.label4.Location = new System.Drawing.Point(242, 155);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 19);
             this.label4.TabIndex = 7;
@@ -187,10 +187,10 @@ namespace QuanLyCuaHangSach
             // 
             this.txtSoLuongConLai.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtSoLuongConLai.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtSoLuongConLai.Location = new System.Drawing.Point(300, 121);
+            this.txtSoLuongConLai.Location = new System.Drawing.Point(375, 121);
             this.txtSoLuongConLai.Name = "txtSoLuongConLai";
             this.txtSoLuongConLai.ReadOnly = true;
-            this.txtSoLuongConLai.Size = new System.Drawing.Size(226, 25);
+            this.txtSoLuongConLai.Size = new System.Drawing.Size(361, 25);
             this.txtSoLuongConLai.TabIndex = 6;
             // 
             // label3
@@ -198,7 +198,7 @@ namespace QuanLyCuaHangSach
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label3.Location = new System.Drawing.Point(173, 124);
+            this.label3.Location = new System.Drawing.Point(242, 124);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(117, 19);
             this.label3.TabIndex = 5;
@@ -208,10 +208,10 @@ namespace QuanLyCuaHangSach
             // 
             this.txtDonGia.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtDonGia.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtDonGia.Location = new System.Drawing.Point(300, 90);
+            this.txtDonGia.Location = new System.Drawing.Point(375, 90);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.ReadOnly = true;
-            this.txtDonGia.Size = new System.Drawing.Size(226, 25);
+            this.txtDonGia.Size = new System.Drawing.Size(361, 25);
             this.txtDonGia.TabIndex = 4;
             // 
             // label2
@@ -219,7 +219,7 @@ namespace QuanLyCuaHangSach
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label2.Location = new System.Drawing.Point(173, 96);
+            this.label2.Location = new System.Drawing.Point(242, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 19);
             this.label2.TabIndex = 3;
@@ -229,10 +229,10 @@ namespace QuanLyCuaHangSach
             // 
             this.txtTenSanPham.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtTenSanPham.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTenSanPham.Location = new System.Drawing.Point(300, 59);
+            this.txtTenSanPham.Location = new System.Drawing.Point(375, 59);
             this.txtTenSanPham.Name = "txtTenSanPham";
             this.txtTenSanPham.ReadOnly = true;
-            this.txtTenSanPham.Size = new System.Drawing.Size(226, 25);
+            this.txtTenSanPham.Size = new System.Drawing.Size(361, 25);
             this.txtTenSanPham.TabIndex = 2;
             // 
             // label1
@@ -240,7 +240,7 @@ namespace QuanLyCuaHangSach
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label1.Location = new System.Drawing.Point(173, 65);
+            this.label1.Location = new System.Drawing.Point(242, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 19);
             this.label1.TabIndex = 1;
@@ -250,7 +250,7 @@ namespace QuanLyCuaHangSach
             // 
             this.pbSanPham.Location = new System.Drawing.Point(17, 19);
             this.pbSanPham.Name = "pbSanPham";
-            this.pbSanPham.Size = new System.Drawing.Size(150, 150);
+            this.pbSanPham.Size = new System.Drawing.Size(180, 180);
             this.pbSanPham.TabIndex = 0;
             this.pbSanPham.TabStop = false;
             // 
@@ -258,7 +258,7 @@ namespace QuanLyCuaHangSach
             // 
             this.txtSoLuong.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtSoLuong.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtSoLuong.Location = new System.Drawing.Point(337, 347);
+            this.txtSoLuong.Location = new System.Drawing.Point(358, 522);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(232, 25);
             this.txtSoLuong.TabIndex = 12;
@@ -268,7 +268,7 @@ namespace QuanLyCuaHangSach
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(178, 350);
+            this.label14.Location = new System.Drawing.Point(189, 525);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(143, 19);
             this.label14.TabIndex = 11;
@@ -299,9 +299,9 @@ namespace QuanLyCuaHangSach
             this.groupBox2.Controls.Add(this.txtMaNhanVien);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupBox2.Location = new System.Drawing.Point(575, 72);
+            this.groupBox2.Location = new System.Drawing.Point(793, 72);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(403, 516);
+            this.groupBox2.Size = new System.Drawing.Size(685, 703);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin Giao Hàng";
@@ -310,10 +310,10 @@ namespace QuanLyCuaHangSach
             // 
             this.txtTongTienKM.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtTongTienKM.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTongTienKM.Location = new System.Drawing.Point(217, 427);
+            this.txtTongTienKM.Location = new System.Drawing.Point(173, 494);
             this.txtTongTienKM.Name = "txtTongTienKM";
             this.txtTongTienKM.ReadOnly = true;
-            this.txtTongTienKM.Size = new System.Drawing.Size(150, 25);
+            this.txtTongTienKM.Size = new System.Drawing.Size(442, 25);
             this.txtTongTienKM.TabIndex = 34;
             // 
             // label16
@@ -321,7 +321,7 @@ namespace QuanLyCuaHangSach
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label16.Location = new System.Drawing.Point(1, 430);
+            this.label16.Location = new System.Drawing.Point(6, 497);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(161, 19);
             this.label16.TabIndex = 33;
@@ -350,7 +350,7 @@ namespace QuanLyCuaHangSach
             // btnKhuyenMai
             // 
             this.btnKhuyenMai.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnKhuyenMai.Location = new System.Drawing.Point(372, 145);
+            this.btnKhuyenMai.Location = new System.Drawing.Point(639, 145);
             this.btnKhuyenMai.Name = "btnKhuyenMai";
             this.btnKhuyenMai.Size = new System.Drawing.Size(26, 25);
             this.btnKhuyenMai.TabIndex = 30;
@@ -360,7 +360,7 @@ namespace QuanLyCuaHangSach
             // btnKhachHang
             // 
             this.btnKhachHang.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnKhachHang.Location = new System.Drawing.Point(371, 83);
+            this.btnKhachHang.Location = new System.Drawing.Point(638, 83);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Size = new System.Drawing.Size(26, 25);
             this.btnKhachHang.TabIndex = 29;
@@ -370,7 +370,7 @@ namespace QuanLyCuaHangSach
             // btnNhanVien
             // 
             this.btnNhanVien.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnNhanVien.Location = new System.Drawing.Point(372, 21);
+            this.btnNhanVien.Location = new System.Drawing.Point(639, 21);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(26, 25);
             this.btnNhanVien.TabIndex = 28;
@@ -381,10 +381,10 @@ namespace QuanLyCuaHangSach
             // 
             this.txtTongTien.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtTongTien.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTongTien.Location = new System.Drawing.Point(217, 396);
+            this.txtTongTien.Location = new System.Drawing.Point(173, 463);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.ReadOnly = true;
-            this.txtTongTien.Size = new System.Drawing.Size(150, 25);
+            this.txtTongTien.Size = new System.Drawing.Size(442, 25);
             this.txtTongTien.TabIndex = 27;
             // 
             // zzzz
@@ -392,7 +392,7 @@ namespace QuanLyCuaHangSach
             this.zzzz.AutoSize = true;
             this.zzzz.BackColor = System.Drawing.Color.Transparent;
             this.zzzz.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.zzzz.Location = new System.Drawing.Point(2, 396);
+            this.zzzz.Location = new System.Drawing.Point(7, 463);
             this.zzzz.Name = "zzzz";
             this.zzzz.Size = new System.Drawing.Size(114, 19);
             this.zzzz.TabIndex = 26;
@@ -402,7 +402,7 @@ namespace QuanLyCuaHangSach
             // 
             this.btnMuaHang.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnMuaHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMuaHang.Location = new System.Drawing.Point(278, 470);
+            this.btnMuaHang.Location = new System.Drawing.Point(463, 593);
             this.btnMuaHang.Name = "btnMuaHang";
             this.btnMuaHang.Size = new System.Drawing.Size(89, 25);
             this.btnMuaHang.TabIndex = 25;
@@ -414,7 +414,7 @@ namespace QuanLyCuaHangSach
             // 
             this.btnXoaGioHang.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnXoaGioHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaGioHang.Location = new System.Drawing.Point(72, 470);
+            this.btnXoaGioHang.Location = new System.Drawing.Point(173, 593);
             this.btnXoaGioHang.Name = "btnXoaGioHang";
             this.btnXoaGioHang.Size = new System.Drawing.Size(57, 25);
             this.btnXoaGioHang.TabIndex = 24;
@@ -433,7 +433,7 @@ namespace QuanLyCuaHangSach
             this.dgvGio.RowHeadersWidth = 51;
             this.dgvGio.RowTemplate.Height = 25;
             this.dgvGio.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvGio.Size = new System.Drawing.Size(393, 154);
+            this.dgvGio.Size = new System.Drawing.Size(675, 198);
             this.dgvGio.TabIndex = 23;
             // 
             // txtKhuyenMai
@@ -443,7 +443,7 @@ namespace QuanLyCuaHangSach
             this.txtKhuyenMai.Location = new System.Drawing.Point(161, 146);
             this.txtKhuyenMai.Name = "txtKhuyenMai";
             this.txtKhuyenMai.ReadOnly = true;
-            this.txtKhuyenMai.Size = new System.Drawing.Size(188, 25);
+            this.txtKhuyenMai.Size = new System.Drawing.Size(454, 25);
             this.txtKhuyenMai.TabIndex = 20;
             // 
             // label10
@@ -464,7 +464,7 @@ namespace QuanLyCuaHangSach
             this.txtKhachHang.Location = new System.Drawing.Point(161, 115);
             this.txtKhachHang.Name = "txtKhachHang";
             this.txtKhachHang.ReadOnly = true;
-            this.txtKhachHang.Size = new System.Drawing.Size(188, 25);
+            this.txtKhachHang.Size = new System.Drawing.Size(454, 25);
             this.txtKhachHang.TabIndex = 18;
             // 
             // label9
@@ -485,7 +485,7 @@ namespace QuanLyCuaHangSach
             this.txtMaKhachHang.Location = new System.Drawing.Point(161, 84);
             this.txtMaKhachHang.Name = "txtMaKhachHang";
             this.txtMaKhachHang.ReadOnly = true;
-            this.txtMaKhachHang.Size = new System.Drawing.Size(188, 25);
+            this.txtMaKhachHang.Size = new System.Drawing.Size(454, 25);
             this.txtMaKhachHang.TabIndex = 16;
             // 
             // label8
@@ -506,7 +506,7 @@ namespace QuanLyCuaHangSach
             this.txtNhanVien.Location = new System.Drawing.Point(161, 53);
             this.txtNhanVien.Name = "txtNhanVien";
             this.txtNhanVien.ReadOnly = true;
-            this.txtNhanVien.Size = new System.Drawing.Size(188, 25);
+            this.txtNhanVien.Size = new System.Drawing.Size(454, 25);
             this.txtNhanVien.TabIndex = 14;
             // 
             // label7
@@ -527,7 +527,7 @@ namespace QuanLyCuaHangSach
             this.txtMaNhanVien.Location = new System.Drawing.Point(161, 22);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
             this.txtMaNhanVien.ReadOnly = true;
-            this.txtMaNhanVien.Size = new System.Drawing.Size(188, 25);
+            this.txtMaNhanVien.Size = new System.Drawing.Size(454, 25);
             this.txtMaNhanVien.TabIndex = 12;
             // 
             // label6
@@ -545,9 +545,9 @@ namespace QuanLyCuaHangSach
             // 
             this.groupBox3.Controls.Add(this.dgvSanPham);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.groupBox3.Location = new System.Drawing.Point(31, 417);
+            this.groupBox3.Location = new System.Drawing.Point(22, 595);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(538, 140);
+            this.groupBox3.Size = new System.Drawing.Size(765, 140);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh Sách Sản Phẩm";
@@ -574,7 +574,7 @@ namespace QuanLyCuaHangSach
             this.dgvSanPham.RowHeadersWidth = 51;
             this.dgvSanPham.RowTemplate.Height = 25;
             this.dgvSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSanPham.Size = new System.Drawing.Size(532, 118);
+            this.dgvSanPham.Size = new System.Drawing.Size(759, 118);
             this.dgvSanPham.TabIndex = 0;
             // 
             // id
@@ -663,7 +663,7 @@ namespace QuanLyCuaHangSach
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label11.Location = new System.Drawing.Point(43, 389);
+            this.label11.Location = new System.Drawing.Point(124, 568);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(30, 19);
             this.label11.TabIndex = 31;
@@ -672,7 +672,7 @@ namespace QuanLyCuaHangSach
             // txtNameSearch
             // 
             this.txtNameSearch.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtNameSearch.Location = new System.Drawing.Point(341, 386);
+            this.txtNameSearch.Location = new System.Drawing.Point(497, 565);
             this.txtNameSearch.Name = "txtNameSearch";
             this.txtNameSearch.Size = new System.Drawing.Size(148, 25);
             this.txtNameSearch.TabIndex = 34;
@@ -682,7 +682,7 @@ namespace QuanLyCuaHangSach
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label12.Location = new System.Drawing.Point(276, 389);
+            this.label12.Location = new System.Drawing.Point(432, 569);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(59, 19);
             this.label12.TabIndex = 33;
@@ -696,7 +696,7 @@ namespace QuanLyCuaHangSach
             "Tất Cả",
             "Tên Sản Phẩm",
             "Danh Mục"});
-            this.cbbLoc.Location = new System.Drawing.Point(97, 387);
+            this.cbbLoc.Location = new System.Drawing.Point(160, 566);
             this.cbbLoc.Name = "cbbLoc";
             this.cbbLoc.Size = new System.Drawing.Size(152, 25);
             this.cbbLoc.TabIndex = 35;
@@ -705,7 +705,7 @@ namespace QuanLyCuaHangSach
             // 
             this.btnLoc.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnLoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLoc.Location = new System.Drawing.Point(514, 386);
+            this.btnLoc.Location = new System.Drawing.Point(669, 564);
             this.btnLoc.Name = "btnLoc";
             this.btnLoc.Size = new System.Drawing.Size(55, 25);
             this.btnLoc.TabIndex = 36;
@@ -717,7 +717,7 @@ namespace QuanLyCuaHangSach
             // 
             this.btnThemVaoGio.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnThemVaoGio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemVaoGio.Location = new System.Drawing.Point(157, 563);
+            this.btnThemVaoGio.Location = new System.Drawing.Point(282, 750);
             this.btnThemVaoGio.Name = "btnThemVaoGio";
             this.btnThemVaoGio.Size = new System.Drawing.Size(209, 25);
             this.btnThemVaoGio.TabIndex = 37;
@@ -745,7 +745,7 @@ namespace QuanLyCuaHangSach
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Verdana", 24.75F, System.Drawing.FontStyle.Bold);
             this.label17.ForeColor = System.Drawing.Color.Blue;
-            this.label17.Location = new System.Drawing.Point(415, 9);
+            this.label17.Location = new System.Drawing.Point(647, 9);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(195, 40);
             this.label17.TabIndex = 38;
@@ -755,7 +755,7 @@ namespace QuanLyCuaHangSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.ClientSize = new System.Drawing.Size(1600, 900);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.btnThemVaoGio);
             this.Controls.Add(this.txtSoLuong);
