@@ -54,3 +54,8 @@ C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLy
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.pdb
 >>>>>>> e71b03fc4e43e861259d96ccfe5f07e9f986c490
 D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.MuaHang.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLMaKhuyenMai.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormThongKeDoanhThu.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormThongKeSPBanChay.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLNhanVien.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.QLCuaHangSach.resources
