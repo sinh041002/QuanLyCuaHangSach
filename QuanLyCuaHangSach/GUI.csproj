@@ -66,6 +66,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLCuaHangSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLCuaHangSach.Designer.cs">
+      <DependentUpon>QLCuaHangSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\QLNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\QLNhanVien.Designer.cs">
+      <DependentUpon>QLNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FormQLMaKhuyenMai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,13 +96,6 @@
     <Compile Include="view\FormThongKeSPBanChay.designer.cs">
       <DependentUpon>FormThongKeSPBanChay.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\QLKhachHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\QLKhachHang.Designer.cs">
-      <DependentUpon>QLKhachHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="view\KhachHang.cs" />
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +114,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QLCuaHangSach.resx">
+      <DependentUpon>QLCuaHangSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\FormQLMaKhuyenMai.resx">
       <DependentUpon>FormQLMaKhuyenMai.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,8 +126,8 @@
     <EmbeddedResource Include="view\FormThongKeSPBanChay.resx">
       <DependentUpon>FormThongKeSPBanChay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\QLKhachHang.resx">
-      <DependentUpon>QLKhachHang.cs</DependentUpon>
+    <EmbeddedResource Include="view\QLNhanVien.resx">
+      <DependentUpon>QLNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
