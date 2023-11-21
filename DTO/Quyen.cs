@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class Quyen
+    public class Quyen
     {
         public int MaQuyen { get; set; }
         public string  TenQuyen { get; set; }

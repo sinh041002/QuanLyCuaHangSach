@@ -6,7 +6,37 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class NhanVien
+    public class NhanVien
     {
+
+        public string MaNhanVien { get; set; }
+        public string HoTen { get; set; }
+        public DateTime NgaySinh { get; set; }
+        public string Gioitinh { get; set; }
+        public string SoDienThoai { get; set; }
+        public string DiaChi { get; set; }
+        public DateTime NgayLamViec { get; set; }
+        public string MatKhau { get; set; }
+        public int TrangThai { get; set; }
+        public int ChucVu { get; set; }
+
+        public NhanVien(string maNhanVien, string hoTen, DateTime ngaySinh, string gioitinh, string soDienThoai, string diaChi, DateTime ngayLamViec, int chucVu, string matKhau,  int trangThai)
+        {
+           
+            MaNhanVien = maNhanVien;
+            HoTen = hoTen;
+            NgaySinh = ngaySinh;
+            Gioitinh = gioitinh;
+            SoDienThoai = soDienThoai;
+            DiaChi = diaChi;
+            NgayLamViec=ngayLamViec;
+            MatKhau = matKhau;
+            ChucVu = chucVu;
+            TrangThai = trangThai;
+        }
+
+        
+
+        public NhanVien() { }
     }
 }

@@ -61,5 +61,10 @@ namespace QuanLyCuaHangSach
                 currentFormChild.Close();
             }
         }
+
+        private void panel3_body_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

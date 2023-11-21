@@ -220,6 +220,7 @@
             this.panel3_body.Name = "panel3_body";
             this.panel3_body.Size = new System.Drawing.Size(1632, 853);
             this.panel3_body.TabIndex = 2;
+            this.panel3_body.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_body_Paint);
             // 
             // QLCuaHangSach
             // 

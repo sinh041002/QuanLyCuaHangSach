@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
 
 namespace QuanLyCuaHangSach
 {
     public partial class dangnhap : Form
     {
+        TaiKhoan taiKhoan=new TaiKhoan();
         public dangnhap()
         {
             InitializeComponent();
@@ -19,6 +21,8 @@ namespace QuanLyCuaHangSach
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+            string tenTK = TxtTaiKhoan.Text;
+            string MatKhau = TxtMatKhau.Text;
             this.Hide();
             Form1 form = new Form1();
             

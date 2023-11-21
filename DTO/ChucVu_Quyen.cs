@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class ChucVu_Quyen
+    public class ChucVu_Quyen
     {
     }
 }
