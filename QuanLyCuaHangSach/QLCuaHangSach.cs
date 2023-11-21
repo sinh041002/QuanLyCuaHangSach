@@ -61,5 +61,20 @@ namespace QuanLyCuaHangSach
                 currentFormChild.Close();
             }
         }
+
+        private void btnQLMaKhuyenMai_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormQLMaKhuyenMai());
+        }
+
+        private void btnThongKeDoanhThu_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormThongKeDoanhThu());
+        }
+
+        private void btnThongKeBanChay_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormThongKeSPBanChay());
+        }
     }
 }

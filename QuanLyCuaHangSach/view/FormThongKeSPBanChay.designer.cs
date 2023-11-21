@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdoTrongNgay = new System.Windows.Forms.RadioButton();
+            this.rdo15NgayTruoc = new System.Windows.Forms.RadioButton();
+            this.rdoThangTruoc = new System.Windows.Forms.RadioButton();
+            this.rdoThangNay = new System.Windows.Forms.RadioButton();
             this.btnBatDau = new System.Windows.Forms.Button();
             this.dtDenNgay = new System.Windows.Forms.DateTimePicker();
             this.dtTuNgay = new System.Windows.Forms.DateTimePicker();
@@ -36,10 +42,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.gridData = new System.Windows.Forms.DataGridView();
-            this.rdoThangNay = new System.Windows.Forms.RadioButton();
-            this.rdo15NgayTruoc = new System.Windows.Forms.RadioButton();
-            this.rdoTrongNgay = new System.Windows.Forms.RadioButton();
-            this.rdoThangTruoc = new System.Windows.Forms.RadioButton();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,6 +52,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.rdoTrongNgay);
             this.groupBox1.Controls.Add(this.rdo15NgayTruoc);
             this.groupBox1.Controls.Add(this.rdoThangTruoc);
@@ -61,12 +65,61 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1021, 125);
+            this.groupBox1.Size = new System.Drawing.Size(1021, 154);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
+            // rdoTrongNgay
+            // 
+            this.rdoTrongNgay.AutoSize = true;
+            this.rdoTrongNgay.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.rdoTrongNgay.Location = new System.Drawing.Point(854, 102);
+            this.rdoTrongNgay.Name = "rdoTrongNgay";
+            this.rdoTrongNgay.Size = new System.Drawing.Size(140, 30);
+            this.rdoTrongNgay.TabIndex = 5;
+            this.rdoTrongNgay.TabStop = true;
+            this.rdoTrongNgay.Text = "Trong ngày";
+            this.rdoTrongNgay.UseVisualStyleBackColor = true;
+            // 
+            // rdo15NgayTruoc
+            // 
+            this.rdo15NgayTruoc.AutoSize = true;
+            this.rdo15NgayTruoc.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.rdo15NgayTruoc.Location = new System.Drawing.Point(656, 102);
+            this.rdo15NgayTruoc.Name = "rdo15NgayTruoc";
+            this.rdo15NgayTruoc.Size = new System.Drawing.Size(159, 30);
+            this.rdo15NgayTruoc.TabIndex = 5;
+            this.rdo15NgayTruoc.TabStop = true;
+            this.rdo15NgayTruoc.Text = "15 ngày trước";
+            this.rdo15NgayTruoc.UseVisualStyleBackColor = true;
+            // 
+            // rdoThangTruoc
+            // 
+            this.rdoThangTruoc.AutoSize = true;
+            this.rdoThangTruoc.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.rdoThangTruoc.Location = new System.Drawing.Point(322, 102);
+            this.rdoThangTruoc.Name = "rdoThangTruoc";
+            this.rdoThangTruoc.Size = new System.Drawing.Size(146, 30);
+            this.rdoThangTruoc.TabIndex = 5;
+            this.rdoThangTruoc.TabStop = true;
+            this.rdoThangTruoc.Text = "Tháng trước";
+            this.rdoThangTruoc.UseVisualStyleBackColor = true;
+            // 
+            // rdoThangNay
+            // 
+            this.rdoThangNay.AutoSize = true;
+            this.rdoThangNay.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.rdoThangNay.Location = new System.Drawing.Point(489, 102);
+            this.rdoThangNay.Name = "rdoThangNay";
+            this.rdoThangNay.Size = new System.Drawing.Size(131, 30);
+            this.rdoThangNay.TabIndex = 5;
+            this.rdoThangNay.TabStop = true;
+            this.rdoThangNay.Text = "Tháng này";
+            this.rdoThangNay.UseVisualStyleBackColor = true;
+            // 
             // btnBatDau
             // 
+            this.btnBatDau.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.btnBatDau.Location = new System.Drawing.Point(885, 21);
             this.btnBatDau.Name = "btnBatDau";
             this.btnBatDau.Size = new System.Drawing.Size(109, 47);
@@ -77,106 +130,85 @@
             // dtDenNgay
             // 
             this.dtDenNgay.CustomFormat = "dd/MM/yyyy";
+            this.dtDenNgay.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.dtDenNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDenNgay.Location = new System.Drawing.Point(572, 31);
+            this.dtDenNgay.Location = new System.Drawing.Point(571, 31);
             this.dtDenNgay.Name = "dtDenNgay";
-            this.dtDenNgay.Size = new System.Drawing.Size(284, 22);
+            this.dtDenNgay.Size = new System.Drawing.Size(284, 34);
             this.dtDenNgay.TabIndex = 2;
             // 
             // dtTuNgay
             // 
             this.dtTuNgay.CustomFormat = "dd/MM/yyyy";
+            this.dtTuNgay.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.dtTuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtTuNgay.Location = new System.Drawing.Point(137, 31);
             this.dtTuNgay.Name = "dtTuNgay";
-            this.dtTuNgay.Size = new System.Drawing.Size(285, 22);
+            this.dtTuNgay.Size = new System.Drawing.Size(285, 34);
             this.dtTuNgay.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.label4.Location = new System.Drawing.Point(464, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 16);
+            this.label4.Size = new System.Drawing.Size(101, 26);
             this.label4.TabIndex = 1;
             this.label4.Text = "Đến ngày";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.label3.Location = new System.Drawing.Point(24, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 16);
+            this.label3.Size = new System.Drawing.Size(88, 26);
             this.label3.TabIndex = 1;
             this.label3.Text = "Từ ngày";
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.gridData);
-            this.groupBox2.Location = new System.Drawing.Point(12, 143);
+            this.groupBox2.Location = new System.Drawing.Point(12, 187);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1021, 504);
+            this.groupBox2.Size = new System.Drawing.Size(1021, 460);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             // 
             // gridData
             // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.gridData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridData.DefaultCellStyle = dataGridViewCellStyle4;
             this.gridData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridData.Location = new System.Drawing.Point(3, 18);
             this.gridData.Name = "gridData";
             this.gridData.RowHeadersWidth = 51;
             this.gridData.RowTemplate.Height = 24;
-            this.gridData.Size = new System.Drawing.Size(1015, 483);
+            this.gridData.Size = new System.Drawing.Size(1015, 439);
             this.gridData.TabIndex = 0;
-            // 
-            // rdoThangNay
-            // 
-            this.rdoThangNay.AutoSize = true;
-            this.rdoThangNay.Location = new System.Drawing.Point(466, 78);
-            this.rdoThangNay.Name = "rdoThangNay";
-            this.rdoThangNay.Size = new System.Drawing.Size(92, 20);
-            this.rdoThangNay.TabIndex = 5;
-            this.rdoThangNay.TabStop = true;
-            this.rdoThangNay.Text = "Tháng này";
-            this.rdoThangNay.UseVisualStyleBackColor = true;
-            // 
-            // rdo15NgayTruoc
-            // 
-            this.rdo15NgayTruoc.AutoSize = true;
-            this.rdo15NgayTruoc.Location = new System.Drawing.Point(601, 78);
-            this.rdo15NgayTruoc.Name = "rdo15NgayTruoc";
-            this.rdo15NgayTruoc.Size = new System.Drawing.Size(107, 20);
-            this.rdo15NgayTruoc.TabIndex = 5;
-            this.rdo15NgayTruoc.TabStop = true;
-            this.rdo15NgayTruoc.Text = "15 ngày trước";
-            this.rdo15NgayTruoc.UseVisualStyleBackColor = true;
-            // 
-            // rdoTrongNgay
-            // 
-            this.rdoTrongNgay.AutoSize = true;
-            this.rdoTrongNgay.Location = new System.Drawing.Point(750, 78);
-            this.rdoTrongNgay.Name = "rdoTrongNgay";
-            this.rdoTrongNgay.Size = new System.Drawing.Size(97, 20);
-            this.rdoTrongNgay.TabIndex = 5;
-            this.rdoTrongNgay.TabStop = true;
-            this.rdoTrongNgay.Text = "Trong ngày";
-            this.rdoTrongNgay.UseVisualStyleBackColor = true;
-            // 
-            // rdoThangTruoc
-            // 
-            this.rdoThangTruoc.AutoSize = true;
-            this.rdoThangTruoc.Location = new System.Drawing.Point(344, 78);
-            this.rdoThangTruoc.Name = "rdoThangTruoc";
-            this.rdoThangTruoc.Size = new System.Drawing.Size(99, 20);
-            this.rdoThangTruoc.TabIndex = 5;
-            this.rdoThangTruoc.TabStop = true;
-            this.rdoThangTruoc.Text = "Tháng trước";
-            this.rdoThangTruoc.UseVisualStyleBackColor = true;
             // 
             // Column1
             // 
