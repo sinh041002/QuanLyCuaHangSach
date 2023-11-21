@@ -35,9 +35,15 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+=======
+            this.btnThongKeBanChay = new System.Windows.Forms.Button();
+            this.btnThongKeDoanhThu = new System.Windows.Forms.Button();
+            this.btnQLMaKhuyenMai = new System.Windows.Forms.Button();
+>>>>>>> ce32c3c8d905df26e920a5c9e4fc5b6c3909f60b
             this.BtnQLNhanVien = new System.Windows.Forms.Button();
             this.btnBanHang = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -57,9 +63,15 @@
             this.panel1_left.Controls.Add(this.button8);
             this.panel1_left.Controls.Add(this.button7);
             this.panel1_left.Controls.Add(this.button6);
+<<<<<<< HEAD
             this.panel1_left.Controls.Add(this.button5);
             this.panel1_left.Controls.Add(this.button4);
             this.panel1_left.Controls.Add(this.button3);
+=======
+            this.panel1_left.Controls.Add(this.btnThongKeBanChay);
+            this.panel1_left.Controls.Add(this.btnThongKeDoanhThu);
+            this.panel1_left.Controls.Add(this.btnQLMaKhuyenMai);
+>>>>>>> ce32c3c8d905df26e920a5c9e4fc5b6c3909f60b
             this.panel1_left.Controls.Add(this.BtnQLNhanVien);
             this.panel1_left.Controls.Add(this.btnBanHang);
             this.panel1_left.Controls.Add(this.pictureBox1);
@@ -121,6 +133,7 @@
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
             // button5
             // 
             this.button5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -150,6 +163,40 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
+=======
+            // btnThongKeBanChay
+            // 
+            this.btnThongKeBanChay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThongKeBanChay.Location = new System.Drawing.Point(0, 399);
+            this.btnThongKeBanChay.Name = "btnThongKeBanChay";
+            this.btnThongKeBanChay.Size = new System.Drawing.Size(200, 59);
+            this.btnThongKeBanChay.TabIndex = 6;
+            this.btnThongKeBanChay.Text = "Thống Kê Bán Chạy";
+            this.btnThongKeBanChay.UseVisualStyleBackColor = true;
+            this.btnThongKeBanChay.Click += new System.EventHandler(this.btnThongKeBanChay_Click);
+            // 
+            // btnThongKeDoanhThu
+            // 
+            this.btnThongKeDoanhThu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThongKeDoanhThu.Location = new System.Drawing.Point(0, 340);
+            this.btnThongKeDoanhThu.Name = "btnThongKeDoanhThu";
+            this.btnThongKeDoanhThu.Size = new System.Drawing.Size(200, 59);
+            this.btnThongKeDoanhThu.TabIndex = 5;
+            this.btnThongKeDoanhThu.Text = "Thống Kê Doanh Thu";
+            this.btnThongKeDoanhThu.UseVisualStyleBackColor = true;
+            this.btnThongKeDoanhThu.Click += new System.EventHandler(this.btnThongKeDoanhThu_Click);
+            // 
+            // btnQLMaKhuyenMai
+            // 
+            this.btnQLMaKhuyenMai.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQLMaKhuyenMai.Location = new System.Drawing.Point(0, 281);
+            this.btnQLMaKhuyenMai.Name = "btnQLMaKhuyenMai";
+            this.btnQLMaKhuyenMai.Size = new System.Drawing.Size(200, 59);
+            this.btnQLMaKhuyenMai.TabIndex = 4;
+            this.btnQLMaKhuyenMai.Text = "Khuyến Mãi";
+            this.btnQLMaKhuyenMai.UseVisualStyleBackColor = true;
+            this.btnQLMaKhuyenMai.Click += new System.EventHandler(this.btnQLMaKhuyenMai_Click);
+>>>>>>> ce32c3c8d905df26e920a5c9e4fc5b6c3909f60b
             // 
             // BtnQLNhanVien
             // 
@@ -220,7 +267,10 @@
             this.panel3_body.Name = "panel3_body";
             this.panel3_body.Size = new System.Drawing.Size(1632, 853);
             this.panel3_body.TabIndex = 2;
+<<<<<<< HEAD
             this.panel3_body.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_body_Paint);
+=======
+>>>>>>> ce32c3c8d905df26e920a5c9e4fc5b6c3909f60b
             // 
             // QLCuaHangSach
             // 
@@ -254,9 +304,15 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
+<<<<<<< HEAD
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+=======
+        private System.Windows.Forms.Button btnThongKeBanChay;
+        private System.Windows.Forms.Button btnThongKeDoanhThu;
+        private System.Windows.Forms.Button btnQLMaKhuyenMai;
+>>>>>>> ce32c3c8d905df26e920a5c9e4fc5b6c3909f60b
         private System.Windows.Forms.Button BtnQLNhanVien;
         private System.Windows.Forms.Button btnBanHang;
     }
