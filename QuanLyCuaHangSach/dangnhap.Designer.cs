@@ -38,7 +38,7 @@
             // 
             // BtnLogin
             // 
-            this.BtnLogin.Location = new System.Drawing.Point(119, 267);
+            this.BtnLogin.Location = new System.Drawing.Point(117, 267);
             this.BtnLogin.Margin = new System.Windows.Forms.Padding(5);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(150, 50);

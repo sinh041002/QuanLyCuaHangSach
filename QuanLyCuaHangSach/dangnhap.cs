@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
+using BLL;
 
 namespace QuanLyCuaHangSach
 {
     public partial class dangnhap : Form
     {
-        TaiKhoan taiKhoan=new TaiKhoan();
+        public static NhanVien NhanVien = null;
         public dangnhap()
         {
             InitializeComponent();
@@ -23,10 +24,29 @@ namespace QuanLyCuaHangSach
         {
             string tenTK = TxtTaiKhoan.Text;
             string MatKhau = TxtMatKhau.Text;
-            this.Hide();
-            Form1 form = new Form1();
-            
-            form.ShowDialog();
+
+            if (tenTK.Trim() == "") { MessageBox.Show("Vui lòng nhập tên tài khoản "); }
+            else if (MatKhau.Trim() == "") { MessageBox.Show("Vui lòng nhập Mật Khẩu "); }
+
+            else
+            {
+                DangNhapBLL dangNhapBLL = new DangNhapBLL();
+                NhanVien = dangNhapBLL.getLogin(tenTK, MatKhau);
+                if (NhanVien == null)
+                {
+                    MessageBox.Show("Nhập sai tên tài khoản hoặc mật khẩu");
+
+                }
+                else
+                {
+                    MessageBox.Show("đăng nhập thành công");
+                    this.Hide();
+                    QLCuaHangSach form = new QLCuaHangSach();
+
+                    form.ShowDialog();
+                }
+            }
+          
            
         }
 

@@ -62,11 +62,10 @@ namespace QuanLyCuaHangSach
             }
         }
 
-<<<<<<< HEAD
+
         private void panel3_body_Paint(object sender, PaintEventArgs e)
         {
-
-=======
+        }
         private void btnQLMaKhuyenMai_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormQLMaKhuyenMai());
@@ -80,7 +79,7 @@ namespace QuanLyCuaHangSach
         private void btnThongKeBanChay_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormThongKeSPBanChay());
->>>>>>> ce32c3c8d905df26e920a5c9e4fc5b6c3909f60b
+
         }
     }
 }

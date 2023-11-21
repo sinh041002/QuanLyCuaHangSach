@@ -88,3 +88,5 @@ C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI
 C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.exe
 C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.pdb
 >>>>>>> ce32c3c8d905df26e920a5c9e4fc5b6c3909f60b
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DAL.dll
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DAL.pdb
