@@ -16,5 +16,7 @@ namespace QuanLyCuaHangSach.view
         {
             InitializeComponent();
         }
+
+       
     }
 }

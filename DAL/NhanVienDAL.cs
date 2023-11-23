@@ -15,8 +15,9 @@ namespace DAL
 
         SqlCommand sqlCommand;
         SqlDataReader dataReader;
-        public List<NhanVien> NhanViens(string query)
+        public List<NhanVien> getListNhanViens()
         {
+            string query = "Select *from dbo.tbl_nhanvien";
 
             List<NhanVien> nhanViens = new List<NhanVien>();
             using (SqlConnection sqlConnection = SqlConnectionData.Connect())
@@ -34,6 +35,70 @@ namespace DAL
             }
 
                 return nhanViens;
+        }
+
+        public Boolean themNhanVien(NhanVien nhanvien)
+        {
+            Boolean ktra=false;
+            string query = "INSERT INTO dbo.tbl_nhanvien (MaNhanVien, HoTen, NgaySinh, Gioitinh,SoDienThoai,DiaChi,NgayLamViec,ChucVu" +
+                ",MatKhau,TrangThai)\r\nVALUES ('"+nhanvien.MaNhanVien+"','"+nhanvien.HoTen+"','"+nhanvien.NgaySinh+"', '"+nhanvien.Gioitinh+"'" +
+                ",'"+nhanvien.SoDienThoai+"','"+nhanvien.DiaChi+"','"+nhanvien.NgayLamViec+"','"+nhanvien.ChucVu+"','"+nhanvien.MatKhau+"','"+nhanvien.TrangThai+"');\r\n\r\n";
+            using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+            {
+
+                sqlConnection.Open();
+                sqlCommand = new SqlCommand(query, sqlConnection);
+                dataReader = sqlCommand.ExecuteReader();
+               
+                ktra=true;
+                sqlConnection.Close();
+               
+            }
+
+            return ktra;
+        }
+
+        public Boolean suaNhanVien(NhanVien nhanvien)
+        {
+            Boolean ktra = false;
+            string query = "UPDATE dbo.tbl_nhanvien\r\n" +
+                "SET HoTen = '" + nhanvien.HoTen + "',NgaySinh = '" + nhanvien.NgaySinh + "',Gioitinh = '" + nhanvien.Gioitinh + "',SoDienThoai = '" + nhanvien.SoDienThoai + "'," +
+                "DiaChi = '" + nhanvien.DiaChi + "',NgayLamViec = '" + nhanvien.NgayLamViec + "',ChucVu = '" + nhanvien.ChucVu + "',MatKhau = '" + nhanvien.MatKhau + "'," +
+                "TrangThai = '" + nhanvien.TrangThai + "' " +
+                "\r\nWHERE MaNhanVien = '" + nhanvien.MaNhanVien + "';";
+        
+        
+            using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+            {
+
+                sqlConnection.Open();
+                sqlCommand = new SqlCommand(query, sqlConnection);
+                dataReader = sqlCommand.ExecuteReader();
+
+                ktra = true;
+                sqlConnection.Close();
+
+            }
+
+            return ktra;
+        }
+
+        public Boolean xoaNhanVien(string manhanVien)
+        {
+            Boolean ktra = false;
+            string query = "DELETE FROM dbo.tbl_nhanvien WHERE MaNhanVien = '" + manhanVien + "' ;";
+            using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+            {
+
+                sqlConnection.Open();
+                sqlCommand = new SqlCommand(query, sqlConnection);
+                dataReader = sqlCommand.ExecuteReader();
+
+                ktra = true;
+                sqlConnection.Close();
+
+            }
+            return ktra;
         }
         public static string CheckLogin(NhanVien nhanVien)
         {
