@@ -14,7 +14,7 @@ namespace DAL
         SqlDataReader dataReader;
         public NhanVien getTaiKhoan(string tenTK,string MatKhau )
         {
-           NhanVien nhanVien = new NhanVien();
+           NhanVien nhanVien =null;
             string query = "Select *from dbo.tbl_nhanvien where MaNhanVien='" + tenTK + "'and MatKhau='"+ MatKhau + "' ";
             using (SqlConnection sqlConnection = SqlConnectionData.Connect())
             {

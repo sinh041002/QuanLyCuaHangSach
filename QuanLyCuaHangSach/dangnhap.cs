@@ -41,9 +41,12 @@ namespace QuanLyCuaHangSach
                 {
                     MessageBox.Show("đăng nhập thành công");
                     this.Hide();
-                    QLCuaHangSach form = new QLCuaHangSach();
-
-                    form.ShowDialog();
+                    QLCuaHangSach form1 = new QLCuaHangSach();
+                    form1.phanquyen(NhanVien);
+                    form1.StartPosition = FormStartPosition.CenterScreen;
+                    form1.ShowDialog();
+                    
+                    this.Close();
                 }
             }
           
@@ -56,7 +59,7 @@ namespace QuanLyCuaHangSach
         }
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
+       {
 
         }
 

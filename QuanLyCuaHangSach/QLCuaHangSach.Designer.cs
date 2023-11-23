@@ -253,6 +253,8 @@
             this.Controls.Add(this.panel3_top);
             this.Controls.Add(this.panel1_left);
             this.Name = "QLCuaHangSach";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QLCuaHangSach";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;

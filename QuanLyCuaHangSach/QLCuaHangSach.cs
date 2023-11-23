@@ -1,4 +1,5 @@
-﻿using QuanLyCuaHangSach.view;
+﻿using DTO;
+using QuanLyCuaHangSach.view;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,13 @@ namespace QuanLyCuaHangSach
             InitializeComponent();
         }
 
+        public void phanquyen(NhanVien nhanVien)
+        {
+            if (nhanVien.ChucVu!=1)
+            {
+                BtnQLNhanVien.Hide();
+            }
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 

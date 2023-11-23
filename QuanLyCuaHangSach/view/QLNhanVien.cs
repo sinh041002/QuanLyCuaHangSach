@@ -230,6 +230,14 @@ namespace QuanLyCuaHangSach.view
 
            
             radioTrangThai.Checked = false;
+            Load1();
+        }
+        //Tìm Kiếm
+        private void btnTimkiem_Click(object sender, EventArgs e)
+        {
+            string stringtimkiem=txtTimKiem.Text;
+            NhanVienBLL nhanVienBLL = new NhanVienBLL();
+            dataGridView1.DataSource = nhanVienBLL.getListTimKiem(stringtimkiem);
         }
     }
 }
