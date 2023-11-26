@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
-            this.cboType = new System.Windows.Forms.ComboBox();
             this.dtNgayKT = new System.Windows.Forms.DateTimePicker();
             this.dtNgayBD = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,7 +53,6 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -68,12 +67,10 @@
             this.groupBox1.Controls.Add(this.btnSua);
             this.groupBox1.Controls.Add(this.btnThem);
             this.groupBox1.Controls.Add(this.btnLamMoi);
-            this.groupBox1.Controls.Add(this.cboType);
             this.groupBox1.Controls.Add(this.dtNgayKT);
             this.groupBox1.Controls.Add(this.dtNgayBD);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label1);
@@ -95,6 +92,7 @@
             this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -105,6 +103,7 @@
             this.btnSua.TabIndex = 4;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -115,6 +114,7 @@
             this.btnThem.TabIndex = 4;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnLamMoi
             // 
@@ -125,18 +125,7 @@
             this.btnLamMoi.TabIndex = 4;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
-            // 
-            // cboType
-            // 
-            this.cboType.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.cboType.FormattingEnabled = true;
-            this.cboType.Items.AddRange(new object[] {
-            "Tỷ lệ %",
-            "Tiền Mặt"});
-            this.cboType.Location = new System.Drawing.Point(236, 200);
-            this.cboType.Name = "cboType";
-            this.cboType.Size = new System.Drawing.Size(285, 34);
-            this.cboType.TabIndex = 3;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // dtNgayKT
             // 
@@ -178,16 +167,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Ngày bắt đầu";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.label5.Location = new System.Drawing.Point(35, 208);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 26);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Khuyến mãi theo";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -202,7 +181,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.label6.Location = new System.Drawing.Point(606, 203);
+            this.label6.Location = new System.Drawing.Point(78, 215);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(119, 26);
             this.label6.TabIndex = 1;
@@ -229,7 +208,7 @@
             // tbValue
             // 
             this.tbValue.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.tbValue.Location = new System.Drawing.Point(763, 195);
+            this.tbValue.Location = new System.Drawing.Point(235, 207);
             this.tbValue.Name = "tbValue";
             this.tbValue.Size = new System.Drawing.Size(285, 34);
             this.tbValue.TabIndex = 0;
@@ -256,21 +235,20 @@
             // 
             // gridData
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
-            this.Column5,
             this.Column6});
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
@@ -287,9 +265,11 @@
             this.gridData.RowTemplate.Height = 24;
             this.gridData.Size = new System.Drawing.Size(1107, 274);
             this.gridData.TabIndex = 0;
+            this.gridData.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridData_CellEnter);
             // 
             // Column1
             // 
+            this.Column1.DataPropertyName = "Id";
             this.Column1.HeaderText = "Mã KM";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
@@ -297,6 +277,7 @@
             // 
             // Column2
             // 
+            this.Column2.DataPropertyName = "NameSale";
             this.Column2.HeaderText = "Mô tả";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
@@ -304,6 +285,9 @@
             // 
             // Column3
             // 
+            this.Column3.DataPropertyName = "TimeStart";
+            dataGridViewCellStyle2.Format = "dd/MM/yyyy HH:mm:ss";
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column3.HeaderText = "Ngày bắt đầu";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
@@ -311,20 +295,17 @@
             // 
             // Column4
             // 
+            this.Column4.DataPropertyName = "TimeEnd";
+            dataGridViewCellStyle3.Format = "dd/MM/yyyy HH:mm:ss";
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column4.HeaderText = "Ngày kết thúc";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.Width = 200;
             // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Loại";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
-            // 
             // Column6
             // 
+            this.Column6.DataPropertyName = "SaleOff";
             this.Column6.HeaderText = "Giá trị";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
@@ -339,6 +320,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormQLMaKhuyenMai";
             this.Text = "QUẢN LÝ MÃ KHUYẾN MÃI";
+            this.Load += new System.EventHandler(this.FormQLMaKhuyenMai_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -359,12 +341,10 @@
         private System.Windows.Forms.TextBox tbMoTa;
         private System.Windows.Forms.TextBox tbMaKM;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnLamMoi;
-        private System.Windows.Forms.ComboBox cboType;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbValue;
         private System.Windows.Forms.DataGridView gridData;
@@ -372,7 +352,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }
