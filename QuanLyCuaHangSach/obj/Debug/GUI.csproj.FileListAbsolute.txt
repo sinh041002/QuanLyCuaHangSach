@@ -15,6 +15,7 @@ D:\Projectdau\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CoreCompi
 D:\Projectdau\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CopyComplete
 D:\Projectdau\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.exe
 D:\Projectdau\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.pdb
+<<<<<<< HEAD
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.exe.config
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.exe
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.pdb
@@ -38,3 +39,80 @@ D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormTimKiemHoaDon.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DAL.dll
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DAL.pdb
+=======
+<<<<<<< HEAD
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.exe.config
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.exe
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.pdb
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\BLL.dll
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DTO.dll
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\BLL.pdb
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DTO.pdb
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.dangnhap.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.Form1.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.Properties.Resources.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLKhachHang.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CopyComplete
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.exe
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.pdb
+=======
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.exe.config
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.exe
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.pdb
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\BLL.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DTO.dll
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\BLL.pdb
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DTO.pdb
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.dangnhap.resources
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.Form1.resources
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.Properties.Resources.resources
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLKhachHang.resources
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.exe
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.pdb
+>>>>>>> e71b03fc4e43e861259d96ccfe5f07e9f986c490
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.MuaHang.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLMaKhuyenMai.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormThongKeDoanhThu.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormThongKeSPBanChay.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLNhanVien.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.QLCuaHangSach.resources
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.MuaHang.resources
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.QLCuaHangSach.resources
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLMaKhuyenMai.resources
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormThongKeDoanhThu.resources
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormThongKeSPBanChay.resources
+C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLNhanVien.resources
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.exe.config
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.exe
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.pdb
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\BLL.dll
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DTO.dll
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\BLL.pdb
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DTO.pdb
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.dangnhap.resources
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.Form1.resources
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.MuaHang.resources
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.Properties.Resources.resources
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.QLCuaHangSach.resources
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLMaKhuyenMai.resources
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormThongKeDoanhThu.resources
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormThongKeSPBanChay.resources
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLNhanVien.resources
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.exe
+C:\Users\dell\Downloads\GitHub\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.pdb
+>>>>>>> ce32c3c8d905df26e920a5c9e4fc5b6c3909f60b
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DAL.dll
+D:\QLCuaHangSach\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DAL.pdb
+>>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c

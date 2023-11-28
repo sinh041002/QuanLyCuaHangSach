@@ -41,10 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="DataProvider.cs" />
     <Compile Include="GenericDAO.cs" />
     <Compile Include="HoaDonDAO.cs" />
     <Compile Include="NhapHangDAO.cs" />
+=======
+    <Compile Include="ConnecDataBase.cs" />
+    <Compile Include="DangNhapDAL.cs" />
+    <Compile Include="NhanVienDAL.cs" />
+>>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -41,7 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="HoaDonBLL.cs" />
+=======
+    <Compile Include="DangNhapBLL.cs" />
+    <Compile Include="NhanVienBLL.cs" />
+>>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

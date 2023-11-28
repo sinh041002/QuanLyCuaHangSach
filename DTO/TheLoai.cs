@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLyCuaHangSach.view
+namespace DTO
 {
-    internal class KhachHang
+    public class TheLoai
     {
     }
 }

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="ChiTietHoaDonDTO.cs" />
     <Compile Include="HoaDonDTO.cs" />
     <Compile Include="KhachHangDTO.cs" />
@@ -51,7 +52,25 @@
     <Compile Include="Quyen.cs" />
     <Compile Include="SachDTO.cs" />
     <Compile Include="SachDTOSoLuong.cs" />
+=======
+    <Compile Include="ChiTietHoaDon.cs" />
+    <Compile Include="ChiTietPhieuNhap.cs" />
+    <Compile Include="ChucVu_Quyen.cs" />
+    <Compile Include="ChuVu.cs" />
+    <Compile Include="NhaCungCap.cs" />
+    <Compile Include="HoaDon.cs" />
+    <Compile Include="KhachHang.cs" />
+    <Compile Include="NhanVien.cs" />
+    <Compile Include="NhaXuatBan.cs" />
+    <Compile Include="PhieuNhap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quyen.cs" />
+    <Compile Include="Sach.cs" />
+    <Compile Include="Sale.cs" />
+    <Compile Include="TacGia.cs" />
+>>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
     <Compile Include="TaiKhoan.cs" />
+    <Compile Include="TheLoai.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
