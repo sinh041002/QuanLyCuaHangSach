@@ -1,9 +1,3 @@
-D:\Projectdau\QuanLyCuaHangSach\DTO\bin\Debug\DTO.dll
-D:\Projectdau\QuanLyCuaHangSach\DTO\bin\Debug\DTO.pdb
-D:\Projectdau\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
-D:\Projectdau\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-D:\Projectdau\QuanLyCuaHangSach\DTO\obj\Debug\DTO.dll
-D:\Projectdau\QuanLyCuaHangSach\DTO\obj\Debug\DTO.pdb
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DTO\bin\Debug\DTO.dll
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DTO\bin\Debug\DTO.pdb
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache

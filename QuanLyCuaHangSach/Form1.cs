@@ -47,19 +47,18 @@ namespace QuanLyCuaHangSach
             }
         }
 
-<<<<<<< HEAD
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-=======
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
         private void QLKhachHang_Click(object sender, EventArgs e)
         {
 
         }
-<<<<<<< HEAD
+
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -68,7 +67,6 @@ namespace QuanLyCuaHangSach
                 e.Cancel = true;
             }
         }
-=======
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
     }
 }

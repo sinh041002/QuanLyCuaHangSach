@@ -16,11 +16,11 @@ namespace QuanLyCuaHangSach
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
+
             Application.Run(new FormHoaDon());
-=======
+
             Application.Run(new QLCuaHangSach());
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
         }
     }
 }

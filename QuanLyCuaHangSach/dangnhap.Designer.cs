@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.BtnLogin = new System.Windows.Forms.Button();
-<<<<<<< HEAD
+
             this.lblUsername = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDangNhap = new System.Windows.Forms.TextBox();
             this.txtMatkhau = new System.Windows.Forms.TextBox();
-=======
+
             this.TxtTaiKhoan = new System.Windows.Forms.TextBox();
             this.TxtMatKhau = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
             this.SuspendLayout();
             // 
             // BtnLogin
             // 
-<<<<<<< HEAD
+
             this.BtnLogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogin.Location = new System.Drawing.Point(524, 354);
             this.BtnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -66,7 +66,7 @@
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Tên đăng nhập";
             this.lblUsername.Click += new System.EventHandler(this.label1_Click);
-=======
+
             this.BtnLogin.Location = new System.Drawing.Point(117, 267);
             this.BtnLogin.Margin = new System.Windows.Forms.Padding(5);
             this.BtnLogin.Name = "BtnLogin";
@@ -105,12 +105,12 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Tên Đăng Nhập";
             this.label1.Click += new System.EventHandler(this.label1_Click);
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-<<<<<<< HEAD
+
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(376, 287);
             this.label2.Name = "label2";
@@ -145,7 +145,7 @@
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.BtnLogin);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-=======
+
             this.label2.Location = new System.Drawing.Point(96, 176);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 25);
@@ -177,7 +177,7 @@
             this.Controls.Add(this.BtnLogin);
             this.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
             this.Name = "dangnhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
@@ -189,17 +189,17 @@
         #endregion
 
         private System.Windows.Forms.Button BtnLogin;
-<<<<<<< HEAD
+
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDangNhap;
         private System.Windows.Forms.TextBox txtMatkhau;
-=======
+
         private System.Windows.Forms.TextBox TxtTaiKhoan;
         private System.Windows.Forms.TextBox TxtMatKhau;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        //private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnThoat;
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
     }
 }

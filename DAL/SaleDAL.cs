@@ -13,7 +13,7 @@ namespace DAL
     {
         public SaleDAL()
         {
-                
+
         }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace DAL
                             , reader.GetString(1)
                             , reader.GetDateTime(2)
                             , reader.GetDateTime(3)
-                            , reader.GetInt32(4) 
+                            , reader.GetInt32(4)
                         )
                      );
                 }
@@ -98,7 +98,7 @@ namespace DAL
                     sale.TimeEnd.ToString("yyyy/MM/dd HH:mm:ss"),
                     sale.SaleOff
                 );
-            
+
             using (SqlConnection sqlConn = SqlConnectionData.Connect())
             {
 
@@ -194,7 +194,7 @@ namespace DAL
                 sqlConn.Open();
                 SqlCommand cmd = new SqlCommand(query, sqlConn);
                 SqlDataReader reader = cmd.ExecuteReader();
-                
+
                 if (reader.Read())
                 {
                     return new Sale
