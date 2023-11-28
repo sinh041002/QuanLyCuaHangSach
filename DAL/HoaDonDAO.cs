@@ -32,21 +32,17 @@ namespace DAL
 
         public DataTable executeQuery(string query)
         {
+            //   getConnection().Open();
 
-            using (SqlConnection sqlConnection = SqlConnectionData.Connect())
-            {
-                sqlConnection.Open();
-                DataTable dataTable = new DataTable();
-                command = new SqlCommand(query, getConnection());
-                adapter = new SqlDataAdapter(command);
-              //  adapter.Fill(dataTable);
+            DataTable dataTable = new DataTable();
+            command = new SqlCommand(query, getConnection());
+            adapter = new SqlDataAdapter(command);
+            //    adapter.Fill(dataTable);
 
-                sqlConnection.Close();
+            //    getConnection().Close();
 
-                return dataTable;
-            }
+            return dataTable;
         }
-           
 
         public KhachHangDTO getKhachHangDTO(string MaKhachHang)
         {
@@ -121,9 +117,9 @@ namespace DAL
 
             getConnection().Open();
 
-            using(SqlDataReader oReader = command.ExecuteReader())
+            using (SqlDataReader oReader = command.ExecuteReader())
             {
-                while(oReader.Read())
+                while (oReader.Read())
                 {
                     chiTietHoaDon.MaHoaDon = oReader.GetString(0);
                     chiTietHoaDon.MaSach = oReader.GetString(1);
@@ -262,10 +258,10 @@ namespace DAL
         }
 
         public int SaveChiTietHoaDon(ChiTietHoaDonDTO chiTietHoaDonDTO)
-        {   
+        {
             string MaHoaDon = chiTietHoaDonDTO.MaHoaDon;
             string MaSach = chiTietHoaDonDTO.MaSach;
-            double SoLuong = chiTietHoaDonDTO .SoLuong;
+            double SoLuong = chiTietHoaDonDTO.SoLuong;
             double DonGia = chiTietHoaDonDTO.DonGia;
             double ThanhTien = chiTietHoaDonDTO.ThanhTien;
             int result = -1;
@@ -296,7 +292,7 @@ namespace DAL
             SqlCommand command = new SqlCommand(query, getConnection());
             command.Parameters.AddWithValue("@TongTien", TongTien);
             command.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
-            
+
             getConnection().Open();
             result = command.ExecuteNonQuery();
             getConnection().Close();
@@ -312,9 +308,9 @@ namespace DAL
 
             getConnection().Open();
 
-            using(SqlDataReader reader = command.ExecuteReader())
+            using (SqlDataReader reader = command.ExecuteReader())
             {
-                while(reader.Read())
+                while (reader.Read())
                 {
                     MaHoaDonList.Add(reader.GetString(0));
                 }
@@ -332,7 +328,7 @@ namespace DAL
             //lấy số lượng từ chi tiết hóa đơn cũ 
             ChiTietHoaDonDTO hoaDonCu = LayChiTietHoaDon(chiTietHoaDonDTO.MaHoaDon, chiTietHoaDonDTO.MaSach);
             //add vô lại số lượng sách
-            CapNhatSoLuongSach(chiTietHoaDonDTO.MaSach, hoaDonCu.SoLuong,"cong");
+            CapNhatSoLuongSach(chiTietHoaDonDTO.MaSach, hoaDonCu.SoLuong, "cong");
 
             string query = "UPDATE tbl_chitiethoadon SET SoLuong = @SoLuong, ThanhTien = @ThanhTien " +
                 "WHERE MaHoaDon = @MaHoaDon AND MaSach = @MaSach";
@@ -372,9 +368,9 @@ namespace DAL
             return result;
         }
 
-       
 
-       
+
+
         public SachDTOSoLuong LayThongTinSoLuongSach(string MaSach)
         {
             string query = "SELECT SoLuong FROM tbl_sach WHERE MaSach = @MaSach";
@@ -382,15 +378,15 @@ namespace DAL
             command.Parameters.AddWithValue("@MaSach", MaSach);
             getConnection().Open();
             SachDTOSoLuong sachDTOSoLuong = new SachDTOSoLuong();
-            using(SqlDataReader reader = command.ExecuteReader())
+            using (SqlDataReader reader = command.ExecuteReader())
             {
-                while(reader.Read())
+                while (reader.Read())
                 {
-                  sachDTOSoLuong.SoLuong = reader.GetDouble(0);
+                    sachDTOSoLuong.SoLuong = reader.GetDouble(0);
                 }
                 getConnection().Close();
             }
-           
+
             return sachDTOSoLuong;
         }
 
@@ -398,10 +394,11 @@ namespace DAL
         public void CapNhatSoLuongSach(string MaSach, double SoLuongMua, string thaotac = "tru")
         {
             string query = "UPDATE  tbl_sach SET SoLuong ";
-            if(thaotac.Equals("tru"))
+            if (thaotac.Equals("tru"))
             {
                 query += "-= ";
-            } else
+            }
+            else
             {
                 query += "+= ";
             }
@@ -415,7 +412,7 @@ namespace DAL
         }
 
     }
-        
 
-  
+
+
 }

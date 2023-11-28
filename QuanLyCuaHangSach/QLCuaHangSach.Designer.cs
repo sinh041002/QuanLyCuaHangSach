@@ -36,7 +36,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnHoaDon = new System.Windows.Forms.Button();
             this.btnThongKeBanChay = new System.Windows.Forms.Button();
             this.btnThongKeDoanhThu = new System.Windows.Forms.Button();
             this.btnQLMaKhuyenMai = new System.Windows.Forms.Button();
@@ -59,7 +59,7 @@
             this.panel1_left.Controls.Add(this.button6);
             this.panel1_left.Controls.Add(this.button5);
             this.panel1_left.Controls.Add(this.button4);
-            this.panel1_left.Controls.Add(this.button3);
+            this.panel1_left.Controls.Add(this.btnHoaDon);
             this.panel1_left.Controls.Add(this.btnThongKeBanChay);
             this.panel1_left.Controls.Add(this.btnThongKeDoanhThu);
             this.panel1_left.Controls.Add(this.btnQLMaKhuyenMai);
@@ -142,15 +142,16 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnHoaDon
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.Location = new System.Drawing.Point(0, 236);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 59);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHoaDon.Location = new System.Drawing.Point(0, 236);
+            this.btnHoaDon.Name = "btnHoaDon";
+            this.btnHoaDon.Size = new System.Drawing.Size(200, 59);
+            this.btnHoaDon.TabIndex = 4;
+            this.btnHoaDon.Text = "Quản Lý Hóa Đơn";
+            this.btnHoaDon.UseVisualStyleBackColor = true;
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
             // btnThongKeBanChay
             // 
@@ -280,7 +281,7 @@
 
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnHoaDon;
 
         private System.Windows.Forms.Button btnThongKeBanChay;
         private System.Windows.Forms.Button btnThongKeDoanhThu;

@@ -89,5 +89,10 @@ namespace QuanLyCuaHangSach
             OpenChildForm(new FormThongKeSPBanChay());
 
         }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormHoaDon());
+        }
     }
 }
