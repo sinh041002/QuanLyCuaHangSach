@@ -9,3 +9,14 @@ D:\Projectdau\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\Projectdau\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Projectdau\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
 D:\Projectdau\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\BLL.dll
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\BLL.pdb
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\DAL.dll
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\DTO.dll
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\DAL.pdb
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\DTO.pdb
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb

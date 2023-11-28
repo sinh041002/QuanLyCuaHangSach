@@ -20,10 +20,20 @@ namespace QuanLyCuaHangSach
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 form = new Form1();
-            
+            FormHoaDon form =  new FormHoaDon();
             form.ShowDialog();
+            this.Show();
            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

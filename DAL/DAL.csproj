@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConnecDataBase.cs" />
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="GenericDAO.cs" />
+    <Compile Include="HoaDonDAO.cs" />
+    <Compile Include="NhapHangDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
