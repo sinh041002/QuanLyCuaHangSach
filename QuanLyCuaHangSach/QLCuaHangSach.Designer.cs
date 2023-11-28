@@ -230,18 +230,18 @@
             this.panel3_top.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3_top.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel3_top.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel3_top.Location = new System.Drawing.Point(200, 0);
+            this.panel3_top.Location = new System.Drawing.Point(201, 0);
             this.panel3_top.Name = "panel3_top";
-            this.panel3_top.Size = new System.Drawing.Size(1606, 100);
+            this.panel3_top.Size = new System.Drawing.Size(1583, 100);
             this.panel3_top.TabIndex = 1;
             // 
             // panel3_body
             // 
             this.panel3_body.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3_body.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel3_body.Location = new System.Drawing.Point(200, 100);
+            this.panel3_body.Location = new System.Drawing.Point(201, 100);
             this.panel3_body.Name = "panel3_body";
-            this.panel3_body.Size = new System.Drawing.Size(1606, 853);
+            this.panel3_body.Size = new System.Drawing.Size(1583, 853);
             this.panel3_body.TabIndex = 0;
             this.panel3_body.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_body_Paint);
             // 
@@ -249,7 +249,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1832, 953);
+            this.ClientSize = new System.Drawing.Size(1782, 953);
             this.Controls.Add(this.panel3_body);
             this.Controls.Add(this.panel3_top);
             this.Controls.Add(this.panel1_left);

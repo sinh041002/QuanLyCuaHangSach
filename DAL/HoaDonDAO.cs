@@ -32,14 +32,14 @@ namespace DAL
 
         public DataTable executeQuery(string query)
         {
-            //   getConnection().Open();
+            getConnection().Open();
 
             DataTable dataTable = new DataTable();
             command = new SqlCommand(query, getConnection());
             adapter = new SqlDataAdapter(command);
-            //    adapter.Fill(dataTable);
+            adapter.Fill(dataTable);
 
-            //    getConnection().Close();
+            getConnection().Close();
 
             return dataTable;
         }
