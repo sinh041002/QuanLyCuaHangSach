@@ -9,3 +9,14 @@ D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.Co
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\bin\Debug\BLL.dll
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\bin\Debug\BLL.pdb
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\bin\Debug\DAL.dll
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\bin\Debug\DTO.dll
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\bin\Debug\DAL.pdb
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\bin\Debug\DTO.pdb
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb

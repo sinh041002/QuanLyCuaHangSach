@@ -7,3 +7,12 @@ D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.Co
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\DAL\obj\Debug\DAL.dll
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\DAL\obj\Debug\DAL.pdb
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\bin\Debug\DAL.dll
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\bin\Debug\DAL.pdb
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\bin\Debug\DTO.dll
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\bin\Debug\DTO.pdb
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.dll
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.pdb

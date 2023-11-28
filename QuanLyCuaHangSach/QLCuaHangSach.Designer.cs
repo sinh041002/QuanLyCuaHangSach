@@ -66,7 +66,7 @@
             this.panel1_left.Controls.Add(this.panel2);
             this.panel1_left.Controls.Add(this.panel1);
             this.panel1_left.Location = new System.Drawing.Point(0, 136);
-            this.panel1_left.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1_left.Margin = new System.Windows.Forms.Padding(2);
             this.panel1_left.Name = "panel1_left";
             this.panel1_left.Size = new System.Drawing.Size(230, 720);
             this.panel1_left.TabIndex = 0;
@@ -75,7 +75,7 @@
             // 
             this.button10.Dock = System.Windows.Forms.DockStyle.Top;
             this.button10.Location = new System.Drawing.Point(0, 660);
-            this.button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button10.Margin = new System.Windows.Forms.Padding(2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(230, 60);
             this.button10.TabIndex = 11;
@@ -86,7 +86,7 @@
             // 
             this.button9.Dock = System.Windows.Forms.DockStyle.Top;
             this.button9.Location = new System.Drawing.Point(0, 600);
-            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(230, 60);
             this.button9.TabIndex = 10;
@@ -97,7 +97,7 @@
             // 
             this.button8.Dock = System.Windows.Forms.DockStyle.Top;
             this.button8.Location = new System.Drawing.Point(0, 540);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(230, 60);
             this.button8.TabIndex = 9;
@@ -108,7 +108,7 @@
             // 
             this.button7.Dock = System.Windows.Forms.DockStyle.Top;
             this.button7.Location = new System.Drawing.Point(0, 480);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(230, 60);
             this.button7.TabIndex = 8;
@@ -119,7 +119,7 @@
             // 
             this.btnBanHang.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBanHang.Location = new System.Drawing.Point(0, 420);
-            this.btnBanHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBanHang.Margin = new System.Windows.Forms.Padding(2);
             this.btnBanHang.Name = "btnBanHang";
             this.btnBanHang.Size = new System.Drawing.Size(230, 60);
             this.btnBanHang.TabIndex = 7;
@@ -131,7 +131,7 @@
             // 
             this.btnQLKhachHAng.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnQLKhachHAng.Location = new System.Drawing.Point(0, 360);
-            this.btnQLKhachHAng.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLKhachHAng.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLKhachHAng.Name = "btnQLKhachHAng";
             this.btnQLKhachHAng.Size = new System.Drawing.Size(230, 60);
             this.btnQLKhachHAng.TabIndex = 6;
@@ -143,7 +143,7 @@
             // 
             this.btnQLSach.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnQLSach.Location = new System.Drawing.Point(0, 300);
-            this.btnQLSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLSach.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLSach.Name = "btnQLSach";
             this.btnQLSach.Size = new System.Drawing.Size(230, 60);
             this.btnQLSach.TabIndex = 5;
@@ -155,7 +155,7 @@
             // 
             this.btnHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHoaDon.Location = new System.Drawing.Point(0, 240);
-            this.btnHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.btnHoaDon.Name = "btnHoaDon";
             this.btnHoaDon.Size = new System.Drawing.Size(230, 60);
             this.btnHoaDon.TabIndex = 4;
@@ -167,7 +167,7 @@
             // 
             this.btnThongKeBanChay.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnThongKeBanChay.Location = new System.Drawing.Point(0, 180);
-            this.btnThongKeBanChay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThongKeBanChay.Margin = new System.Windows.Forms.Padding(2);
             this.btnThongKeBanChay.Name = "btnThongKeBanChay";
             this.btnThongKeBanChay.Size = new System.Drawing.Size(230, 60);
             this.btnThongKeBanChay.TabIndex = 6;
@@ -179,7 +179,7 @@
             // 
             this.btnThongKeDoanhThu.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnThongKeDoanhThu.Location = new System.Drawing.Point(0, 120);
-            this.btnThongKeDoanhThu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThongKeDoanhThu.Margin = new System.Windows.Forms.Padding(2);
             this.btnThongKeDoanhThu.Name = "btnThongKeDoanhThu";
             this.btnThongKeDoanhThu.Size = new System.Drawing.Size(230, 60);
             this.btnThongKeDoanhThu.TabIndex = 5;
@@ -191,7 +191,7 @@
             // 
             this.btnQLMaKhuyenMai.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnQLMaKhuyenMai.Location = new System.Drawing.Point(0, 60);
-            this.btnQLMaKhuyenMai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLMaKhuyenMai.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLMaKhuyenMai.Name = "btnQLMaKhuyenMai";
             this.btnQLMaKhuyenMai.Size = new System.Drawing.Size(230, 60);
             this.btnQLMaKhuyenMai.TabIndex = 4;
@@ -204,7 +204,7 @@
             this.BtnQLNhanVien.BackColor = System.Drawing.Color.Red;
             this.BtnQLNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnQLNhanVien.Location = new System.Drawing.Point(0, 0);
-            this.BtnQLNhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnQLNhanVien.Margin = new System.Windows.Forms.Padding(2);
             this.BtnQLNhanVien.Name = "BtnQLNhanVien";
             this.BtnQLNhanVien.Size = new System.Drawing.Size(230, 60);
             this.BtnQLNhanVien.TabIndex = 3;
@@ -215,7 +215,7 @@
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(154, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(150, 81);
             this.panel2.TabIndex = 1;
@@ -223,7 +223,7 @@
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(154, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1200, 81);
             this.panel1.TabIndex = 1;
@@ -235,7 +235,7 @@
             this.panel3_top.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel3_top.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel3_top.Location = new System.Drawing.Point(236, 0);
-            this.panel3_top.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3_top.Margin = new System.Windows.Forms.Padding(2);
             this.panel3_top.Name = "panel3_top";
             this.panel3_top.Size = new System.Drawing.Size(2069, 83);
             this.panel3_top.TabIndex = 1;
@@ -245,7 +245,7 @@
             this.panel3_body.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3_body.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel3_body.Location = new System.Drawing.Point(234, 87);
-            this.panel3_body.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3_body.Margin = new System.Windows.Forms.Padding(2);
             this.panel3_body.Name = "panel3_body";
             this.panel3_body.Size = new System.Drawing.Size(1550, 769);
             this.panel3_body.TabIndex = 0;
@@ -259,7 +259,7 @@
             this.Controls.Add(this.panel3_body);
             this.Controls.Add(this.panel3_top);
             this.Controls.Add(this.panel1_left);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "QLCuaHangSach";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.RightToLeftLayout = true;

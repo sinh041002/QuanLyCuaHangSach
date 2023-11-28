@@ -133,6 +133,24 @@
     <Compile Include="view\FormThongKeSPBanChay.designer.cs">
       <DependentUpon>FormThongKeSPBanChay.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\_DialogKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_DialogKhachHang.Designer.cs">
+      <DependentUpon>_DialogKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_DialogKhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_DialogKhuyenMai.Designer.cs">
+      <DependentUpon>_DialogKhuyenMai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_DialogNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_DialogNhanVien.Designer.cs">
+      <DependentUpon>_DialogNhanVien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +194,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\QLNhanVien.resx">
       <DependentUpon>QLNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_DialogKhachHang.resx">
+      <DependentUpon>_DialogKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_DialogKhuyenMai.resx">
+      <DependentUpon>_DialogKhuyenMai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_DialogNhanVien.resx">
+      <DependentUpon>_DialogNhanVien.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

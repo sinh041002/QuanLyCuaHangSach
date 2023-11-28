@@ -45,6 +45,7 @@
     <Compile Include="DangNhapBLL.cs" />
     <Compile Include="NhanVienBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SachBLL.cs" />
     <Compile Include="SaleBLL.cs" />
   </ItemGroup>
   <ItemGroup>
