@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyCuaHangSach.view
 {
-    public partial class FormQLSach : Form
+    public partial class QLKhachHang : Form
     {
-        public FormQLSach()
+        public QLKhachHang()
         {
             InitializeComponent();
         }

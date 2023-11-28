@@ -14,7 +14,7 @@ namespace BLL
 
         public SaleBLL()
         {
-            
+
         }
 
         public List<Sale> GetSales()
@@ -42,7 +42,8 @@ namespace BLL
             return _dal.Xoa(Id);
         }
 
-        public List<Sale> TimKiem(string w) {
+        public List<Sale> TimKiem(string w)
+        {
             return _dal.TimKiem(w);
         }
 

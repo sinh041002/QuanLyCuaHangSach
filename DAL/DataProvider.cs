@@ -10,7 +10,7 @@ namespace DAL
 {
     public class DataProvider
     {
-        private string ConnectionString = "Data Source=LAPTOP-0HLAONAD\\\\DUCTAM;Initial Catalog=CuaHangSach;Integrated Security=True";
+        private string ConnectionString = "Data Source=DESKTOP-MT4HM91\\SQLEXPRESS;Initial Catalog=cuahangsach;Integrated Security=True";
 
         private static DataProvider instance;
 

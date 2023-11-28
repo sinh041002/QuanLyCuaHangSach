@@ -1,12 +1,3 @@
-D:\Projectdau\QuanLyCuaHangSach\DAL\bin\Debug\DAL.dll
-D:\Projectdau\QuanLyCuaHangSach\DAL\bin\Debug\DAL.pdb
-D:\Projectdau\QuanLyCuaHangSach\DAL\bin\Debug\DTO.dll
-D:\Projectdau\QuanLyCuaHangSach\DAL\bin\Debug\DTO.pdb
-D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
-D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.dll
-D:\Projectdau\QuanLyCuaHangSach\DAL\obj\Debug\DAL.pdb
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DAL\bin\Debug\DAL.dll
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DAL\bin\Debug\DAL.pdb
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DAL\bin\Debug\DTO.dll
@@ -16,3 +7,12 @@ D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csp
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DAL\obj\Debug\DAL.dll
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DAL\obj\Debug\DAL.pdb
+D:\QLCuaHangSach\DAL\bin\Debug\DAL.dll
+D:\QLCuaHangSach\DAL\bin\Debug\DAL.pdb
+D:\QLCuaHangSach\DAL\bin\Debug\DTO.dll
+D:\QLCuaHangSach\DAL\bin\Debug\DTO.pdb
+D:\QLCuaHangSach\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\QLCuaHangSach\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\QLCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\QLCuaHangSach\DAL\obj\Debug\DAL.dll
+D:\QLCuaHangSach\DAL\obj\Debug\DAL.pdb

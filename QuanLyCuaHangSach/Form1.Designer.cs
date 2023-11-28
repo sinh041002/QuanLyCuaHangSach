@@ -60,11 +60,11 @@
             this.QLCuaHangSach.Name = "QLCuaHangSach";
             this.QLCuaHangSach.Padding = new System.Drawing.Point(10, 5);
             this.QLCuaHangSach.SelectedIndex = 0;
-<<<<<<< HEAD
+
             this.QLCuaHangSach.Size = new System.Drawing.Size(954, 466);
-=======
+
             this.QLCuaHangSach.Size = new System.Drawing.Size(1652, 900);
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
             this.QLCuaHangSach.TabIndex = 0;
             // 
             // BanHang
@@ -73,13 +73,13 @@
             this.BanHang.Controls.Add(this.dataGridView1);
             this.BanHang.Location = new System.Drawing.Point(4, 44);
             this.BanHang.Name = "BanHang";
-<<<<<<< HEAD
+
             this.BanHang.Padding = new System.Windows.Forms.Padding(3);
             this.BanHang.Size = new System.Drawing.Size(946, 418);
-=======
+
             this.BanHang.Padding = new System.Windows.Forms.Padding(4);
             this.BanHang.Size = new System.Drawing.Size(1600, 862);
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
             this.BanHang.TabIndex = 0;
             this.BanHang.Text = "Bán Hàng";
             this.BanHang.UseVisualStyleBackColor = true;
@@ -104,24 +104,24 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-<<<<<<< HEAD
+
             this.dataGridView1.Size = new System.Drawing.Size(940, 355);
-=======
+
             this.dataGridView1.Size = new System.Drawing.Size(1432, 437);
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
             this.dataGridView1.TabIndex = 0;
             // 
             // QLKhachHang
             // 
             this.QLKhachHang.Location = new System.Drawing.Point(4, 44);
             this.QLKhachHang.Name = "QLKhachHang";
-<<<<<<< HEAD
+
             this.QLKhachHang.Padding = new System.Windows.Forms.Padding(3);
             this.QLKhachHang.Size = new System.Drawing.Size(946, 418);
-=======
+
             this.QLKhachHang.Padding = new System.Windows.Forms.Padding(4);
             this.QLKhachHang.Size = new System.Drawing.Size(1644, 852);
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
             this.QLKhachHang.TabIndex = 1;
             this.QLKhachHang.Text = "Khách Hàng";
             this.QLKhachHang.UseVisualStyleBackColor = true;
@@ -132,13 +132,13 @@
             this.QLHoaDon.Location = new System.Drawing.Point(4, 44);
             this.QLHoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.QLHoaDon.Name = "QLHoaDon";
-<<<<<<< HEAD
+
             this.QLHoaDon.Padding = new System.Windows.Forms.Padding(2);
             this.QLHoaDon.Size = new System.Drawing.Size(946, 418);
-=======
+
             this.QLHoaDon.Padding = new System.Windows.Forms.Padding(3);
             this.QLHoaDon.Size = new System.Drawing.Size(1600, 862);
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
             this.QLHoaDon.TabIndex = 2;
             this.QLHoaDon.Text = "Hóa Đơn";
             this.QLHoaDon.UseVisualStyleBackColor = true;
@@ -148,13 +148,13 @@
             this.QLNhapHang.Location = new System.Drawing.Point(4, 44);
             this.QLNhapHang.Margin = new System.Windows.Forms.Padding(2);
             this.QLNhapHang.Name = "QLNhapHang";
-<<<<<<< HEAD
+
             this.QLNhapHang.Padding = new System.Windows.Forms.Padding(2);
             this.QLNhapHang.Size = new System.Drawing.Size(946, 418);
-=======
+
             this.QLNhapHang.Padding = new System.Windows.Forms.Padding(3);
             this.QLNhapHang.Size = new System.Drawing.Size(1600, 862);
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
             this.QLNhapHang.TabIndex = 3;
             this.QLNhapHang.Text = "Nhập Hàng";
             this.QLNhapHang.UseVisualStyleBackColor = true;
@@ -164,13 +164,13 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 44);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
-<<<<<<< HEAD
+
             this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage5.Size = new System.Drawing.Size(946, 418);
-=======
+
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(1600, 862);
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Sách";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -211,21 +211,20 @@
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
+
             this.ClientSize = new System.Drawing.Size(952, 463);
-=======
+
             this.ClientSize = new System.Drawing.Size(1682, 903);
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
             this.Controls.Add(this.QLCuaHangSach);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-<<<<<<< HEAD
+
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-=======
+
             this.Text = "QLCuaHangSach";
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.QLCuaHangSach.ResumeLayout(false);

@@ -63,15 +63,19 @@ namespace QuanLyCuaHangSach.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-<<<<<<< HEAD
-        internal static System.Drawing.Bitmap Plus {
-            get {
-                object obj = ResourceManager.GetObject("Plus", resourceCulture);
-=======
         internal static System.Drawing.Bitmap KSTADV {
             get {
                 object obj = ResourceManager.GetObject("KSTADV", resourceCulture);
->>>>>>> c27d100f22b820e2a23d8b7b0b65e7f276c2f06c
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plus {
+            get {
+                object obj = ResourceManager.GetObject("Plus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

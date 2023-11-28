@@ -32,17 +32,21 @@ namespace DAL
 
         public DataTable executeQuery(string query)
         {
-            getConnection().Open();
 
-            DataTable dataTable = new DataTable();
-            command = new SqlCommand(query, getConnection());
-            adapter = new SqlDataAdapter(command);
-            adapter.Fill(dataTable);
+            using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+            {
+                sqlConnection.Open();
+                DataTable dataTable = new DataTable();
+                command = new SqlCommand(query, getConnection());
+                adapter = new SqlDataAdapter(command);
+              //  adapter.Fill(dataTable);
 
-            getConnection().Close();
+                sqlConnection.Close();
 
-            return dataTable;
+                return dataTable;
+            }
         }
+           
 
         public KhachHangDTO getKhachHangDTO(string MaKhachHang)
         {
