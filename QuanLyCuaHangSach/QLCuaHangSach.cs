@@ -52,10 +52,7 @@ namespace QuanLyCuaHangSach
             ChildForm.Show();
         }
 
-        private void btnBanHang_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new MuaHang());
-        }
+    
 
         private void BtnQLNhanVien_Click(object sender, EventArgs e)
         {
@@ -93,6 +90,22 @@ namespace QuanLyCuaHangSach
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormHoaDon());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormQLSach());
+        }
+
+        private void btnQLKhachHAng_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormQLKhachHang());
+        }
+
+        private void btnBanHang_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new MuaHang());
+
         }
     }
 }

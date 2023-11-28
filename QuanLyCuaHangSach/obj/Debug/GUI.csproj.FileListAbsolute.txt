@@ -38,7 +38,6 @@ D:\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\DAL.pdb
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.AssemblyReference.cache
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.dangnhap.resources
-D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.Form1.resources
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormHoaDon.resources
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormNhapHang.resources
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormThemHoaDon.resources
@@ -55,3 +54,5 @@ D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CopyComplete
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.exe
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.pdb
+D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLKhachHang.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLSach.resources

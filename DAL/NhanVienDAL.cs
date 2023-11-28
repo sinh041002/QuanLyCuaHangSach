@@ -64,8 +64,8 @@ namespace DAL
         {
             Boolean ktra=false;
             string query = "INSERT INTO dbo.tbl_nhanvien (MaNhanVien, HoTen, NgaySinh, Gioitinh,SoDienThoai,DiaChi,NgayLamViec,ChucVu" +
-                ",MatKhau,TrangThai)\r\nVALUES ('"+nhanvien.MaNhanVien+"','"+nhanvien.HoTen+"','"+nhanvien.NgaySinh+"', '"+nhanvien.Gioitinh+"'" +
-                ",'"+nhanvien.SoDienThoai+"','"+nhanvien.DiaChi+"','"+nhanvien.NgayLamViec+"','"+nhanvien.ChucVu+"','"+nhanvien.MatKhau+"','"+nhanvien.TrangThai+"');\r\n\r\n";
+                ",MatKhau,TrangThai)\r\nVALUES (N'"+nhanvien.MaNhanVien+"',N'"+nhanvien.HoTen+"',N'"+nhanvien.NgaySinh+"',N '"+nhanvien.Gioitinh+"'" +
+                ",N'"+nhanvien.SoDienThoai+"',N'"+nhanvien.DiaChi+"',N'"+nhanvien.NgayLamViec+"',N'"+nhanvien.ChucVu+"',N'"+nhanvien.MatKhau+"','"+nhanvien.TrangThai+"');\r\n\r\n";
             using (SqlConnection sqlConnection = SqlConnectionData.Connect())
             {
 
@@ -85,9 +85,9 @@ namespace DAL
         {
             Boolean ktra = false;
             string query = "UPDATE dbo.tbl_nhanvien\r\n" +
-                "SET HoTen = '" + nhanvien.HoTen + "',NgaySinh = '" + nhanvien.NgaySinh + "',Gioitinh = '" + nhanvien.Gioitinh + "',SoDienThoai = '" + nhanvien.SoDienThoai + "'," +
-                "DiaChi = '" + nhanvien.DiaChi + "',NgayLamViec = '" + nhanvien.NgayLamViec + "',ChucVu = '" + nhanvien.ChucVu + "',MatKhau = '" + nhanvien.MatKhau + "'," +
-                "TrangThai = '" + nhanvien.TrangThai + "' " +
+                "SET HoTen = N'" + nhanvien.HoTen + "',NgaySinh = N'" + nhanvien.NgaySinh + "',Gioitinh = N'" + nhanvien.Gioitinh + "',SoDienThoai = N'" + nhanvien.SoDienThoai + "'," +
+                "DiaChi = N'" + nhanvien.DiaChi + "',NgayLamViec = N'" + nhanvien.NgayLamViec + "',ChucVu = N'" + nhanvien.ChucVu + "',MatKhau = N'" + nhanvien.MatKhau + "'," +
+                "TrangThai = N'" + nhanvien.TrangThai + "' " +
                 "\r\nWHERE MaNhanVien = '" + nhanvien.MaNhanVien + "';";
         
         
