@@ -18,6 +18,8 @@ namespace QuanLyCuaHangSach.view
     {
         SachBLL sachBLL = new SachBLL();
         TheLoaiBLL theLoaiBLL = new TheLoaiBLL();
+        TacGiaBLL tacGiaBLL = new TacGiaBLL();
+        NhaXuatBanBLL nhaXuatBanBLL = new NhaXuatBanBLL();
         string urlImg, urlCopy;
         string url = Application.StartupPath;
         public FormQLSach()
@@ -25,6 +27,8 @@ namespace QuanLyCuaHangSach.view
             InitializeComponent();
             GetAllBook();
             GetAllTheLoai();
+            LoadListTacGia();
+            LoadListNhaXuatBan();
         }
 
         public void GetAllBook()
@@ -35,6 +39,16 @@ namespace QuanLyCuaHangSach.view
         public void GetAllTheLoai()
         {
             dgvListTheLoai.DataSource = theLoaiBLL.GetAllTheLoai();
+        }
+
+        public void LoadListTacGia()
+        {
+            dtgvListTacGia.DataSource = tacGiaBLL.GetAllTacGia();
+        }
+
+        public void LoadListNhaXuatBan()
+        {
+            dtgvNhaXuatBan.DataSource = nhaXuatBanBLL.GetAllNhaXuatBan();
         }
 
         public bool IsNumber(string pValue)
@@ -222,6 +236,11 @@ namespace QuanLyCuaHangSach.view
         }
 
         private void btnSuaTacGia_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtgvListTacGia_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

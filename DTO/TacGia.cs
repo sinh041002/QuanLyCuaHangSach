@@ -8,7 +8,17 @@ namespace DTO
 {
     public class TacGia
     {
-        public string MaTacGia { get; set; }
-        public  string TenTacGia { get; set; }
+        private string maTacGia { get; set; }
+        private string tenTacGia { get; set; }
+        private string moTaTacGia { get; set; } 
+
+        public TacGia() { }
+
+        public TacGia(string maTacGia, string tenTacGia, string moTaTacGia)
+        {
+            this.maTacGia = maTacGia;
+            this.tenTacGia = tenTacGia;
+            this.moTaTacGia = moTaTacGia;
+        }
     }
 }

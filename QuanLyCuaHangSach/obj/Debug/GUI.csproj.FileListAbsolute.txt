@@ -13,7 +13,6 @@ D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormNhapHang.resources
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormThemHoaDon.resources
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormTimKiemHoaDon.resources
-D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.MuaHang.resources
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.Properties.Resources.resources
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.QLCuaHangSach.resources
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLKhachHang.resources
@@ -59,3 +58,7 @@ C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.cs
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogKhachHang.resources
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogNhanVien.resources
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogKhuyenMai.resources
+D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.MuaHang.resources
+D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogKhachHang.resources
+D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogKhuyenMai.resources
+D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogNhanVien.resources
