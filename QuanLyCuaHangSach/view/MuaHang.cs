@@ -68,7 +68,7 @@ namespace QuanLyCuaHangSach.view
             return true;
         }
 
-        private void btnThemVaoGio_Click(object sender, EventArgs e)
+        private void BtnThemVaoGio_Click(object sender, EventArgs e)
         {
             if (txtTenSanPham.Text == "")
             {
@@ -160,7 +160,7 @@ namespace QuanLyCuaHangSach.view
             }
         }
 
-        private void btnMuaHang_Click(object sender, EventArgs e)
+        private void BtnMuaHang_Click(object sender, EventArgs e)
         {
             if (dgvGio.Rows.Count == 1)
             {
@@ -239,7 +239,7 @@ namespace QuanLyCuaHangSach.view
 
         private void txtTongTien_TextChanged(object sender, EventArgs e)
         {
-            if (txtTongTienKM.Text == "")
+            if (txtKhuyenMai.Text == "")
             {
                 txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim())).ToString();
             }

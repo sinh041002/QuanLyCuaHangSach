@@ -388,7 +388,7 @@ namespace QuanLyCuaHangSach.view
             this.btnMuaHang.Text = "Mua Hàng";
             this.btnMuaHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMuaHang.UseVisualStyleBackColor = true;
-            this.btnMuaHang.Click += new System.EventHandler(this.btnMuaHang_Click);
+            this.btnMuaHang.Click += new System.EventHandler(this.BtnMuaHang_Click);
             // 
             // btnXoaGioHang
             // 
@@ -689,7 +689,7 @@ namespace QuanLyCuaHangSach.view
             this.btnThemVaoGio.Text = "Thêm Sản Phẩm Vào Giỏ Hàng";
             this.btnThemVaoGio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemVaoGio.UseVisualStyleBackColor = true;
-            this.btnThemVaoGio.Click += new System.EventHandler(this.btnThemVaoGio_Click);
+            this.btnThemVaoGio.Click += new System.EventHandler(this.BtnThemVaoGio_Click);
             // 
             // Column1
             // 

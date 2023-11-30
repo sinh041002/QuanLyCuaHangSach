@@ -23,5 +23,17 @@ namespace BLL
         {
             return SachDAL.GetAllBookByName(name);
         }
+        public DataTable AddBook() 
+        { 
+            return SachDAL.AddBook();
+        }
+        public void UpdateBook(Sach sach) 
+        {
+             SachDAL.UpdateBook(sach);
+        }
+        public void DeleteBook(string ma) 
+        {
+            SachDAL.DeleteBook(ma);
+        }
     }
 }
