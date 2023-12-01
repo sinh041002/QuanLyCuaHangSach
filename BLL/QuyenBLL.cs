@@ -23,6 +23,34 @@ namespace BLL
             else return listQuyen;
         }
 
+        public Boolean themQuyen(QuyenDTO quyen)
+        {
+
+            QuyenDAL quyenDAL = new QuyenDAL();
+            Boolean kt = quyenDAL.themQuyen(quyen);
+            return kt;
+        }
+
+        public Boolean suaQuyen(QuyenDTO quyen)
+        {
+
+            QuyenDAL quyenDAL = new QuyenDAL();
+            Boolean kt = quyenDAL.suaQuyen(quyen);
+            return kt;
+        }
+
+        public Boolean xoaQuyen(int maQuyen)
+        {
+
+            QuyenDAL quyenDAL = new QuyenDAL();
+            Boolean kt = quyenDAL.xoaQuyen(maQuyen);
+
+            if (kt)
+            {
+                return kt;
+            }
+            return false;
+        }
         public QuyenDTO GetItemQuyen(int id)
         {
             QuyenDAL quyenDTO = new QuyenDAL();

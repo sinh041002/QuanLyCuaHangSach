@@ -99,7 +99,17 @@ namespace QuanLyCuaHangSach.view
             {
                 maChucVu = 2;
             }
-            NhanVien nv1 = new NhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, dateTimeNgaySinh.Value, comboBoxGioiTinh.SelectedItem.ToString(), txtSoDienThoai.Text, rTBGhiChu.Text, DateTime.Now, maChucVu, txtMatKhau.Text, 0);
+            int trangThaiTaiKhoan = 0;
+
+            if (radioTrangThai.Checked == false)
+            {
+                trangThaiTaiKhoan = 0;
+            }
+            else
+            {
+                trangThaiTaiKhoan = 1;
+            }
+            NhanVien nv1 = new NhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, dateTimeNgaySinh.Value, comboBoxGioiTinh.SelectedItem.ToString(), txtSoDienThoai.Text, rTBGhiChu.Text, DateTime.Now, maChucVu, txtMatKhau.Text, trangThaiTaiKhoan);
 
 
             NhanVienBLL nhanVienBLL = new NhanVienBLL();
@@ -152,7 +162,17 @@ namespace QuanLyCuaHangSach.view
                     maChucVu = 2;
                 }
 
-                NhanVien nv = new NhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, dateTimeNgaySinh.Value, comboBoxGioiTinh.SelectedItem.ToString(), txtSoDienThoai.Text, rTBGhiChu.Text, DateTime.Now, maChucVu, txtMatKhau.Text, 0);
+                int trangThaiTaiKhoan = 0;
+
+                if(radioTrangThai.Checked == false)
+                {
+                    trangThaiTaiKhoan = 0;
+                }
+                else
+                {
+                    trangThaiTaiKhoan = 1;
+                }
+                NhanVien nv = new NhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, dateTimeNgaySinh.Value, comboBoxGioiTinh.SelectedItem.ToString(), txtSoDienThoai.Text, rTBGhiChu.Text, DateTime.Now, maChucVu, txtMatKhau.Text, trangThaiTaiKhoan);
 
 
                 NhanVienBLL nhanVienBLL = new NhanVienBLL();

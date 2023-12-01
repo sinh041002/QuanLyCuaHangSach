@@ -1,4 +1,5 @@
-﻿using DTO;
+﻿using BLL;
+using DTO;
 using QuanLyCuaHangSach.view;
 using System;
 using System.Collections.Generic;
@@ -28,10 +29,51 @@ namespace QuanLyCuaHangSach
         }
         public void phanquyen(NhanVien nhanVien)
         {
-            if (nhanVien.ChucVu!=1)
+            QuyenDTO items = new QuyenDTO();
+            QuyenBLL quyenBLL = new QuyenBLL();
+            items = quyenBLL.GetItemQuyen(nhanVien.ChucVu);
+            
+            if (items.QLKhachHang != 1)
+            {
+                btnQLKhachHAng.Hide();
+            }
+
+            if (items.QLNhanVien != 1)
             {
                 BtnQLNhanVien.Hide();
             }
+
+            if (items.QLQuyen != 1)
+            {
+                btnQuyen.Hide();
+            }
+
+            if (items.QLKhuyenMai != 1)
+            {
+                btnQLMaKhuyenMai.Hide();
+            }
+             
+            if (items.QLSach != 1)
+            {
+                btnQLSach.Hide();
+            }
+            if (items.QLHoaDon != 1)
+            {
+                btnHoaDon.Hide();
+            }
+
+            if (items.BanHang != 1)
+            {
+                btnBanHang.Hide();
+            }
+
+            if (items.QLThongKe != 1)
+            {
+                btnThongKeBanChay.Hide();
+                btnThongKeDoanhThu.Hide();
+            }
+
+           
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {

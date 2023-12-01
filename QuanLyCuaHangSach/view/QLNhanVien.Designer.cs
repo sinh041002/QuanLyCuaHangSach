@@ -225,14 +225,14 @@
             // 
             this.radioTrangThai.AutoSize = true;
             this.radioTrangThai.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioTrangThai.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioTrangThai.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioTrangThai.Location = new System.Drawing.Point(241, 307);
             this.radioTrangThai.Margin = new System.Windows.Forms.Padding(2);
             this.radioTrangThai.Name = "radioTrangThai";
-            this.radioTrangThai.Size = new System.Drawing.Size(109, 25);
+            this.radioTrangThai.Size = new System.Drawing.Size(213, 26);
             this.radioTrangThai.TabIndex = 8;
             this.radioTrangThai.TabStop = true;
-            this.radioTrangThai.Text = "Trạng Thái";
+            this.radioTrangThai.Text = "Trạng Thái Tài Khoản";
             this.radioTrangThai.UseVisualStyleBackColor = true;
             this.radioTrangThai.CheckedChanged += new System.EventHandler(this.radioTrangThai_CheckedChanged);
             // 
