@@ -47,6 +47,7 @@ namespace QuanLyCuaHangSach
                     this.Hide();
                     QLCuaHangSach form1 = new QLCuaHangSach();
                     form1.phanquyen(NhanVien);
+                    form1.setNhanVien(NhanVien);
                     form1.StartPosition = FormStartPosition.CenterScreen;
                     form1.ShowDialog();
 
@@ -89,7 +90,7 @@ namespace QuanLyCuaHangSach
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void dangnhap_Load(object sender, EventArgs e)

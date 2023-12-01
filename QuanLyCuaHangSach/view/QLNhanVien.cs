@@ -52,11 +52,6 @@ namespace QuanLyCuaHangSach.view
         {
             Load1();
         }
-
-      
-
-       
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 

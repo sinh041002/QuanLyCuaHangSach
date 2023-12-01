@@ -83,6 +83,20 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.dgvListBook = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel7 = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.txtMaNhaXuatBan = new System.Windows.Forms.TextBox();
@@ -127,20 +141,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pbSanPham = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -174,7 +174,7 @@
             this.tabPage4.Controls.Add(this.panel2);
             this.tabPage4.Controls.Add(this.panel1);
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1459, 665);
             this.tabPage4.TabIndex = 3;
@@ -185,7 +185,7 @@
             // 
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Location = new System.Drawing.Point(16, 13);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(682, 646);
             this.panel2.TabIndex = 2;
@@ -203,9 +203,9 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(2, 11);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Size = new System.Drawing.Size(677, 620);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -214,7 +214,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(386, 469);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(92, 40);
             this.button4.TabIndex = 16;
@@ -224,7 +224,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(195, 469);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(92, 40);
             this.button3.TabIndex = 15;
@@ -234,7 +234,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(386, 381);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(92, 40);
             this.button2.TabIndex = 14;
@@ -244,7 +244,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(195, 381);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 40);
             this.button1.TabIndex = 13;
@@ -254,7 +254,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(264, 203);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(264, 97);
@@ -263,7 +263,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(264, 131);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(264, 26);
             this.textBox2.TabIndex = 4;
@@ -272,7 +272,7 @@
             // 
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(264, 54);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(264, 26);
             this.textBox1.TabIndex = 3;
@@ -311,7 +311,7 @@
             // 
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(720, 13);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(737, 646);
             this.panel1.TabIndex = 0;
@@ -320,9 +320,9 @@
             // 
             this.groupBox1.Controls.Add(this.dtgvNhaXuatBan);
             this.groupBox1.Location = new System.Drawing.Point(2, 11);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Size = new System.Drawing.Size(733, 623);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -332,7 +332,7 @@
             // 
             this.dtgvNhaXuatBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvNhaXuatBan.Location = new System.Drawing.Point(25, 33);
-            this.dtgvNhaXuatBan.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgvNhaXuatBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtgvNhaXuatBan.Name = "dtgvNhaXuatBan";
             this.dtgvNhaXuatBan.RowHeadersWidth = 51;
             this.dtgvNhaXuatBan.RowTemplate.Height = 24;
@@ -344,7 +344,7 @@
             this.tabPage3.Controls.Add(this.panel3);
             this.tabPage3.Controls.Add(this.panel4);
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1459, 665);
             this.tabPage3.TabIndex = 2;
@@ -355,7 +355,7 @@
             // 
             this.panel3.Controls.Add(this.groupBox3);
             this.panel3.Location = new System.Drawing.Point(2, 13);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(699, 651);
             this.panel3.TabIndex = 4;
@@ -373,9 +373,9 @@
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Location = new System.Drawing.Point(2, 11);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Size = new System.Drawing.Size(694, 629);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
@@ -384,7 +384,7 @@
             // btnXoaTacGia
             // 
             this.btnXoaTacGia.Location = new System.Drawing.Point(383, 474);
-            this.btnXoaTacGia.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoaTacGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnXoaTacGia.Name = "btnXoaTacGia";
             this.btnXoaTacGia.Size = new System.Drawing.Size(92, 40);
             this.btnXoaTacGia.TabIndex = 16;
@@ -395,7 +395,7 @@
             // btnResetTacGia
             // 
             this.btnResetTacGia.Location = new System.Drawing.Point(192, 474);
-            this.btnResetTacGia.Margin = new System.Windows.Forms.Padding(2);
+            this.btnResetTacGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnResetTacGia.Name = "btnResetTacGia";
             this.btnResetTacGia.Size = new System.Drawing.Size(92, 40);
             this.btnResetTacGia.TabIndex = 15;
@@ -405,7 +405,7 @@
             // btnSuaTacGia
             // 
             this.btnSuaTacGia.Location = new System.Drawing.Point(383, 386);
-            this.btnSuaTacGia.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSuaTacGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSuaTacGia.Name = "btnSuaTacGia";
             this.btnSuaTacGia.Size = new System.Drawing.Size(92, 40);
             this.btnSuaTacGia.TabIndex = 14;
@@ -416,7 +416,7 @@
             // btnThemTacGia
             // 
             this.btnThemTacGia.Location = new System.Drawing.Point(192, 386);
-            this.btnThemTacGia.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThemTacGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThemTacGia.Name = "btnThemTacGia";
             this.btnThemTacGia.Size = new System.Drawing.Size(92, 40);
             this.btnThemTacGia.TabIndex = 13;
@@ -427,7 +427,7 @@
             // txtMoTaTacGIa
             // 
             this.txtMoTaTacGIa.Location = new System.Drawing.Point(213, 207);
-            this.txtMoTaTacGIa.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMoTaTacGIa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMoTaTacGIa.Multiline = true;
             this.txtMoTaTacGIa.Name = "txtMoTaTacGIa";
             this.txtMoTaTacGIa.Size = new System.Drawing.Size(388, 97);
@@ -436,7 +436,7 @@
             // txtTenTacGia
             // 
             this.txtTenTacGia.Location = new System.Drawing.Point(213, 135);
-            this.txtTenTacGia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenTacGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTenTacGia.Name = "txtTenTacGia";
             this.txtTenTacGia.Size = new System.Drawing.Size(388, 26);
             this.txtTenTacGia.TabIndex = 4;
@@ -445,7 +445,7 @@
             // 
             this.txtMaTacGia.Enabled = false;
             this.txtMaTacGia.Location = new System.Drawing.Point(213, 58);
-            this.txtMaTacGia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaTacGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMaTacGia.Name = "txtMaTacGia";
             this.txtMaTacGia.Size = new System.Drawing.Size(388, 26);
             this.txtMaTacGia.TabIndex = 3;
@@ -484,7 +484,7 @@
             // 
             this.panel4.Controls.Add(this.groupBox4);
             this.panel4.Location = new System.Drawing.Point(719, 13);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(738, 651);
             this.panel4.TabIndex = 3;
@@ -495,7 +495,7 @@
             this.groupBox4.Location = new System.Drawing.Point(2, 9);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Size = new System.Drawing.Size(734, 640);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
@@ -539,7 +539,7 @@
             this.tabPage2.Controls.Add(this.panel5);
             this.tabPage2.Controls.Add(this.panel6);
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(1459, 665);
@@ -551,7 +551,7 @@
             // 
             this.panel5.Controls.Add(this.groupBox5);
             this.panel5.Location = new System.Drawing.Point(6, 13);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(698, 648);
             this.panel5.TabIndex = 4;
@@ -569,9 +569,9 @@
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.label9);
             this.groupBox5.Location = new System.Drawing.Point(2, 11);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox5.Size = new System.Drawing.Size(682, 619);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
@@ -580,7 +580,7 @@
             // btnDeleteTheLoai
             // 
             this.btnDeleteTheLoai.Location = new System.Drawing.Point(386, 463);
-            this.btnDeleteTheLoai.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeleteTheLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDeleteTheLoai.Name = "btnDeleteTheLoai";
             this.btnDeleteTheLoai.Size = new System.Drawing.Size(92, 40);
             this.btnDeleteTheLoai.TabIndex = 16;
@@ -591,7 +591,7 @@
             // btnResetTheLoai
             // 
             this.btnResetTheLoai.Location = new System.Drawing.Point(194, 463);
-            this.btnResetTheLoai.Margin = new System.Windows.Forms.Padding(2);
+            this.btnResetTheLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnResetTheLoai.Name = "btnResetTheLoai";
             this.btnResetTheLoai.Size = new System.Drawing.Size(92, 40);
             this.btnResetTheLoai.TabIndex = 15;
@@ -602,7 +602,7 @@
             // btnSuaTheLoai
             // 
             this.btnSuaTheLoai.Location = new System.Drawing.Point(386, 375);
-            this.btnSuaTheLoai.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSuaTheLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSuaTheLoai.Name = "btnSuaTheLoai";
             this.btnSuaTheLoai.Size = new System.Drawing.Size(92, 40);
             this.btnSuaTheLoai.TabIndex = 14;
@@ -613,7 +613,7 @@
             // btnThemTheLoai
             // 
             this.btnThemTheLoai.Location = new System.Drawing.Point(194, 375);
-            this.btnThemTheLoai.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThemTheLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThemTheLoai.Name = "btnThemTheLoai";
             this.btnThemTheLoai.Size = new System.Drawing.Size(92, 40);
             this.btnThemTheLoai.TabIndex = 13;
@@ -624,7 +624,7 @@
             // txtMoTa
             // 
             this.txtMoTa.Location = new System.Drawing.Point(212, 200);
-            this.txtMoTa.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMoTa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMoTa.Multiline = true;
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.Size = new System.Drawing.Size(394, 97);
@@ -633,7 +633,7 @@
             // txtTenTheLoai
             // 
             this.txtTenTheLoai.Location = new System.Drawing.Point(212, 128);
-            this.txtTenTheLoai.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenTheLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTenTheLoai.Name = "txtTenTheLoai";
             this.txtTenTheLoai.Size = new System.Drawing.Size(394, 26);
             this.txtTenTheLoai.TabIndex = 4;
@@ -642,7 +642,7 @@
             // 
             this.txtMaTheLoai.Enabled = false;
             this.txtMaTheLoai.Location = new System.Drawing.Point(212, 52);
-            this.txtMaTheLoai.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaTheLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMaTheLoai.Name = "txtMaTheLoai";
             this.txtMaTheLoai.Size = new System.Drawing.Size(394, 26);
             this.txtMaTheLoai.TabIndex = 3;
@@ -681,7 +681,7 @@
             // 
             this.panel6.Controls.Add(this.groupBox6);
             this.panel6.Location = new System.Drawing.Point(708, 13);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(747, 648);
             this.panel6.TabIndex = 3;
@@ -690,9 +690,9 @@
             // 
             this.groupBox6.Controls.Add(this.dgvListTheLoai);
             this.groupBox6.Location = new System.Drawing.Point(2, 11);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox6.Size = new System.Drawing.Size(743, 619);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
@@ -701,7 +701,7 @@
             // dgvListTheLoai
             // 
             this.dgvListTheLoai.Location = new System.Drawing.Point(4, 25);
-            this.dgvListTheLoai.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvListTheLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvListTheLoai.Name = "dgvListTheLoai";
             this.dgvListTheLoai.Size = new System.Drawing.Size(735, 590);
             this.dgvListTheLoai.TabIndex = 0;
@@ -711,7 +711,7 @@
             this.tabPage1.Controls.Add(this.panel8);
             this.tabPage1.Controls.Add(this.panel7);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(1459, 665);
@@ -732,9 +732,9 @@
             // 
             this.groupBox8.Controls.Add(this.dgvListBook);
             this.groupBox8.Location = new System.Drawing.Point(2, 11);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox8.Size = new System.Drawing.Size(1447, 319);
             this.groupBox8.TabIndex = 0;
             this.groupBox8.TabStop = false;
@@ -771,11 +771,114 @@
             this.dgvListBook.TabIndex = 0;
             this.dgvListBook.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListBook_CellClick);
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "masach";
+            this.Column1.HeaderText = "Mã Sách";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "tensach";
+            this.Column2.HeaderText = "Tên Sách";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "soluong";
+            this.Column3.HeaderText = "Số Lượng";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "dongianhap";
+            this.Column4.HeaderText = "Đơn Giá Nhập";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "dongiaxuat";
+            this.Column5.HeaderText = "Đơn Giá Xuất";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "tentacgia";
+            this.Column6.HeaderText = "Tên Tác Giả";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "matacgia";
+            this.Column7.HeaderText = "Mã Tác Giả";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Visible = false;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "tentheloai";
+            this.Column8.HeaderText = "Thể Loại";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "matheloai";
+            this.Column9.HeaderText = "Mã Thể Loại";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Visible = false;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "tennhacungcap";
+            this.Column10.HeaderText = "Nhà Cung Cấp";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.DataPropertyName = "manhacungcap";
+            this.Column11.HeaderText = "Mã Nhà Cung Cấp";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            this.Column11.Visible = false;
+            // 
+            // Column12
+            // 
+            this.Column12.DataPropertyName = "tennhaxuatban";
+            this.Column12.HeaderText = "Nhà Xuất Bản";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
+            // Column13
+            // 
+            this.Column13.DataPropertyName = "manhaxuatban";
+            this.Column13.HeaderText = "Mã Nhà Xuất Bản";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            this.Column13.Visible = false;
+            // 
+            // Column14
+            // 
+            this.Column14.DataPropertyName = "image";
+            this.Column14.HeaderText = "Ảnh";
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
+            this.Column14.Visible = false;
+            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.groupBox7);
             this.panel7.Location = new System.Drawing.Point(6, 14);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1449, 313);
             this.panel7.TabIndex = 0;
@@ -824,7 +927,7 @@
             this.groupBox7.Controls.Add(this.label10);
             this.groupBox7.Controls.Add(this.pbSanPham);
             this.groupBox7.Location = new System.Drawing.Point(2, 2);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox7.Size = new System.Drawing.Size(1445, 308);
@@ -854,7 +957,7 @@
             // btn3ChamNCC
             // 
             this.btn3ChamNCC.Location = new System.Drawing.Point(1383, 38);
-            this.btn3ChamNCC.Margin = new System.Windows.Forms.Padding(2);
+            this.btn3ChamNCC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn3ChamNCC.Name = "btn3ChamNCC";
             this.btn3ChamNCC.Size = new System.Drawing.Size(32, 27);
             this.btn3ChamNCC.TabIndex = 39;
@@ -922,7 +1025,7 @@
             // btn3ChamNxb
             // 
             this.btn3ChamNxb.Location = new System.Drawing.Point(1383, 114);
-            this.btn3ChamNxb.Margin = new System.Windows.Forms.Padding(2);
+            this.btn3ChamNxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn3ChamNxb.Name = "btn3ChamNxb";
             this.btn3ChamNxb.Size = new System.Drawing.Size(32, 31);
             this.btn3ChamNxb.TabIndex = 31;
@@ -933,7 +1036,7 @@
             // btn3ChamTacGia
             // 
             this.btn3ChamTacGia.Location = new System.Drawing.Point(1039, 39);
-            this.btn3ChamTacGia.Margin = new System.Windows.Forms.Padding(2);
+            this.btn3ChamTacGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn3ChamTacGia.Name = "btn3ChamTacGia";
             this.btn3ChamTacGia.Size = new System.Drawing.Size(36, 30);
             this.btn3ChamTacGia.TabIndex = 30;
@@ -944,7 +1047,7 @@
             // btn3ChamTheLoai
             // 
             this.btn3ChamTheLoai.Location = new System.Drawing.Point(1039, 117);
-            this.btn3ChamTheLoai.Margin = new System.Windows.Forms.Padding(2);
+            this.btn3ChamTheLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn3ChamTheLoai.Name = "btn3ChamTheLoai";
             this.btn3ChamTheLoai.Size = new System.Drawing.Size(36, 28);
             this.btn3ChamTheLoai.TabIndex = 29;
@@ -955,7 +1058,7 @@
             // btnChonAnh
             // 
             this.btnChonAnh.Location = new System.Drawing.Point(32, 236);
-            this.btnChonAnh.Margin = new System.Windows.Forms.Padding(2);
+            this.btnChonAnh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnChonAnh.Name = "btnChonAnh";
             this.btnChonAnh.Size = new System.Drawing.Size(92, 40);
             this.btnChonAnh.TabIndex = 28;
@@ -1227,7 +1330,7 @@
             // pbSanPham
             // 
             this.pbSanPham.Location = new System.Drawing.Point(4, 23);
-            this.pbSanPham.Margin = new System.Windows.Forms.Padding(2);
+            this.pbSanPham.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbSanPham.Name = "pbSanPham";
             this.pbSanPham.Size = new System.Drawing.Size(150, 181);
             this.pbSanPham.TabIndex = 0;
@@ -1244,121 +1347,13 @@
             this.tabControl1.HotTrack = true;
             this.tabControl1.ItemSize = new System.Drawing.Size(150, 30);
             this.tabControl1.Location = new System.Drawing.Point(41, 37);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(10, 5);
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1467, 703);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 2;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "masach";
-            this.Column1.HeaderText = "Mã Sách";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "tensach";
-            this.Column2.HeaderText = "Tên Sách";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "soluong";
-            this.Column3.HeaderText = "Số Lượng";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "dongianhap";
-            this.Column4.HeaderText = "Đơn Giá Nhập";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "dongiaxuat";
-            this.Column5.HeaderText = "Đơn Giá Xuất";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "tentacgia";
-            this.Column6.HeaderText = "Tên Tác Giả";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 200;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "matacgia";
-            this.Column7.HeaderText = "Mã Tác Giả";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Visible = false;
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "tentheloai";
-            this.Column8.HeaderText = "Thể Loại";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 200;
-            // 
-            // Column9
-            // 
-            this.Column9.DataPropertyName = "matheloai";
-            this.Column9.HeaderText = "Mã Thể Loại";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Visible = false;
-            // 
-            // Column10
-            // 
-            this.Column10.DataPropertyName = "tennhacungcap";
-            this.Column10.HeaderText = "Nhà Cung Cấp";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Width = 200;
-            // 
-            // Column11
-            // 
-            this.Column11.DataPropertyName = "manhacungcap";
-            this.Column11.HeaderText = "Mã Nhà Cung Cấp";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            this.Column11.Visible = false;
-            // 
-            // Column12
-            // 
-            this.Column12.DataPropertyName = "tennhaxuatban";
-            this.Column12.HeaderText = "Nhà Xuất Bản";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            this.Column12.Width = 200;
-            // 
-            // Column13
-            // 
-            this.Column13.DataPropertyName = "manhaxuatban";
-            this.Column13.HeaderText = "Mã Nhà Xuất Bản";
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
-            this.Column13.Visible = false;
-            // 
-            // Column14
-            // 
-            this.Column14.DataPropertyName = "image";
-            this.Column14.HeaderText = "Ảnh";
-            this.Column14.Name = "Column14";
-            this.Column14.ReadOnly = true;
-            this.Column14.Visible = false;
             // 
             // FormQLSach
             // 

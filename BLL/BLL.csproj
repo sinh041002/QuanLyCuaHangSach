@@ -50,6 +50,7 @@
     <Compile Include="NhaXuatBanBLL.cs" />
     <Compile Include="NxbBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuyenBLL.cs" />
     <Compile Include="SachBLL.cs" />
     <Compile Include="SaleBLL.cs" />
     <Compile Include="TacGiaBLL.cs" />

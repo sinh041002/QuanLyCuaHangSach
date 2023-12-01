@@ -48,7 +48,7 @@
     <Compile Include="NhanVienDTOMaNhanVienHoTen.cs" />
     <Compile Include="PhieuNhapDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quyen.cs" />
+    <Compile Include="QuyenDTO.cs" />
     <Compile Include="SachDTO.cs" />
     <Compile Include="SachDTOSoLuong.cs" />
     <Compile Include="ChiTietHoaDon.cs" />
@@ -62,7 +62,6 @@
     <Compile Include="NhaXuatBan.cs" />
     <Compile Include="PhieuNhap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quyen.cs" />
     <Compile Include="Sach.cs" />
     <Compile Include="Sale.cs" />
     <Compile Include="TacGia.cs" />

@@ -32,7 +32,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnQuyen = new System.Windows.Forms.Button();
             this.btnBanHang = new System.Windows.Forms.Button();
             this.btnQLKhachHAng = new System.Windows.Forms.Button();
             this.btnQLSach = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             this.panel1_left.Controls.Add(this.button10);
             this.panel1_left.Controls.Add(this.button9);
             this.panel1_left.Controls.Add(this.button8);
-            this.panel1_left.Controls.Add(this.button7);
+            this.panel1_left.Controls.Add(this.btnQuyen);
             this.panel1_left.Controls.Add(this.btnBanHang);
             this.panel1_left.Controls.Add(this.btnQLKhachHAng);
             this.panel1_left.Controls.Add(this.btnQLSach);
@@ -103,17 +103,19 @@
             this.button8.TabIndex = 9;
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button7
+            // btnQuyen
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.Location = new System.Drawing.Point(0, 480);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(230, 60);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnQuyen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQuyen.Location = new System.Drawing.Point(0, 480);
+            this.btnQuyen.Margin = new System.Windows.Forms.Padding(2);
+            this.btnQuyen.Name = "btnQuyen";
+            this.btnQuyen.Size = new System.Drawing.Size(230, 60);
+            this.btnQuyen.TabIndex = 8;
+            this.btnQuyen.Text = "Quản Lý Quyền";
+            this.btnQuyen.UseVisualStyleBackColor = true;
+            this.btnQuyen.Click += new System.EventHandler(this.btnQuyen_Click);
             // 
             // btnBanHang
             // 
@@ -282,7 +284,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnQuyen;
         private System.Windows.Forms.Button btnBanHang;
 
         private System.Windows.Forms.Button btnQLKhachHAng;

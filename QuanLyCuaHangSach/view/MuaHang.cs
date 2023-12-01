@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
+using DTO;
 
 namespace QuanLyCuaHangSach.view
 {
@@ -21,10 +22,18 @@ namespace QuanLyCuaHangSach.view
             InitializeComponent();
             GetAllBook();
         }
-
+        
         public void GetAllBook()
         {
             dgvSanPham.DataSource = sachBLL.GetAllBook();
+        }
+        public void GetNhanVien(NhanVien nv)
+        {
+            if (nv != null) {
+                txtMaNhanVien.Text = nv.MaNhanVien;
+                txtNhanVien.Text = nv.HoTen;
+            }
+           
         }
         private void MuaHang_Load(object sender, EventArgs e)
         {
@@ -51,10 +60,15 @@ namespace QuanLyCuaHangSach.view
                 string url = Application.StartupPath;
                 url = Directory.GetParent(url).Parent.Parent.FullName;
                 url += @"\ImgSach\";
-                string urlImg = dgvSanPham.Rows[i].Cells[6].Value.ToString();
-                pbSanPham.SizeMode = PictureBoxSizeMode.StretchImage;
-                Bitmap bm = new Bitmap(url + urlImg);
-                pbSanPham.Image = bm;
+                if (dgvSanPham.Rows[i].Cells[6].Value.ToString() != "")
+                {
+                    string urlImg = dgvSanPham.Rows[i].Cells[6].Value.ToString();
+
+                    pbSanPham.SizeMode = PictureBoxSizeMode.StretchImage;
+                    Bitmap bm = new Bitmap(url + urlImg);
+                    pbSanPham.Image = bm;
+                }
+               
             }
         }
 
@@ -192,8 +206,8 @@ namespace QuanLyCuaHangSach.view
         {
             _DialogNhanVien DialogNhanVien = new _DialogNhanVien();
             DialogNhanVien.ShowDialog();
-            txtMaKhachHang.Text = _DialogNhanVien.id;
-            txtNhanVien.Text = _DialogNhanVien.ho + " " + _DialogNhanVien.id;
+            txtMaNhanVien.Text = _DialogNhanVien.id;
+            txtNhanVien.Text = _DialogNhanVien.ten;
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
@@ -201,7 +215,7 @@ namespace QuanLyCuaHangSach.view
             _DialogKhachHang dialogKhachHang = new _DialogKhachHang();
             dialogKhachHang.ShowDialog();
             txtMaKhachHang.Text = _DialogKhachHang.id;
-            txtKhachHang.Text = _DialogKhachHang.ho + " " + _DialogKhachHang.ten;
+            txtKhachHang.Text = _DialogKhachHang.ten;
         }
 
         private void btnLoc_Click(object sender, EventArgs e)

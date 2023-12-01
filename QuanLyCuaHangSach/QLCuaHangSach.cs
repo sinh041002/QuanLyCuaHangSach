@@ -14,11 +14,18 @@ namespace QuanLyCuaHangSach
 {
     public partial class QLCuaHangSach : Form
     {
+        public static NhanVien nhanvien=null;
         public QLCuaHangSach()
         {
             InitializeComponent();
         }
-
+         public void setNhanVien(NhanVien nv)
+        {   if(nv != null)
+            {
+                nhanvien=nv;
+            }
+           
+        }
         public void phanquyen(NhanVien nhanVien)
         {
             if (nhanVien.ChucVu!=1)
@@ -104,8 +111,20 @@ namespace QuanLyCuaHangSach
 
         private void btnBanHang_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new MuaHang());
+           MuaHang formmuahang = new MuaHang();
+            formmuahang.GetNhanVien(nhanvien);
+            OpenChildForm(formmuahang);
 
+        }
+
+        private void btnQuyen_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QLQUyen());
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QLNhanVien());
         }
     }
 }
