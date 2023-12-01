@@ -56,3 +56,4 @@ D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.exe
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.pdb
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLKhachHang.resources
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLSach.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLQUyen.resources

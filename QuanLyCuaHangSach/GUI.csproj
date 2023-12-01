@@ -133,6 +133,12 @@
     <Compile Include="view\FormThongKeSPBanChay.designer.cs">
       <DependentUpon>FormThongKeSPBanChay.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\QLQUyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\QLQUyen.Designer.cs">
+      <DependentUpon>QLQUyen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\QLNhanVien.resx">
       <DependentUpon>QLNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\QLQUyen.resx">
+      <DependentUpon>QLQUyen.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

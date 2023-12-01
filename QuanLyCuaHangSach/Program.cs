@@ -19,7 +19,7 @@ namespace QuanLyCuaHangSach
 
            
 
-            Application.Run(new QLCuaHangSach());
+            Application.Run(new dangnhap());
 
         }
     }
