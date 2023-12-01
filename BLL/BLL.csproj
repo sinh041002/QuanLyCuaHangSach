@@ -33,6 +33,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,10 +45,16 @@
   <ItemGroup>
     <Compile Include="HoaDonBLL.cs" />
     <Compile Include="DangNhapBLL.cs" />
+    <Compile Include="NhaCungCapBLL.cs" />
     <Compile Include="NhanVienBLL.cs" />
+    <Compile Include="NhaXuatBanBLL.cs" />
+    <Compile Include="NxbBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuyenBLL.cs" />
+    <Compile Include="SachBLL.cs" />
     <Compile Include="SaleBLL.cs" />
+    <Compile Include="TacGiaBLL.cs" />
+    <Compile Include="TheLoaiBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

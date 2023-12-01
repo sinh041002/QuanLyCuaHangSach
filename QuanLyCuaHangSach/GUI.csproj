@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -51,6 +66,12 @@
     </Compile>
     <Compile Include="dangnhap.Designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\3ChamNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\3ChamNCC.Designer.cs">
+      <DependentUpon>3ChamNCC.cs</DependentUpon>
     </Compile>
     <Compile Include="view\FormHoaDon.cs">
       <SubType>Form</SubType>
@@ -139,8 +160,47 @@
     <Compile Include="view\QLQUyen.Designer.cs">
       <DependentUpon>QLQUyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\_3ChamNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_3ChamNXB.Designer.cs">
+      <DependentUpon>_3ChamNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_3ChamTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_3ChamTacGia.Designer.cs">
+      <DependentUpon>_3ChamTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_3ChamTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_3ChamTheLoai.Designer.cs">
+      <DependentUpon>_3ChamTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_DialogKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_DialogKhachHang.Designer.cs">
+      <DependentUpon>_DialogKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_DialogKhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_DialogKhuyenMai.Designer.cs">
+      <DependentUpon>_DialogKhuyenMai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_DialogNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_DialogNhanVien.Designer.cs">
+      <DependentUpon>_DialogNhanVien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\3ChamNCC.resx">
+      <DependentUpon>3ChamNCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormHoaDon.resx">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
@@ -186,6 +246,21 @@
     <EmbeddedResource Include="view\QLQUyen.resx">
       <DependentUpon>QLQUyen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\_3ChamNXB.resx">
+      <DependentUpon>_3ChamNXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_3ChamTacGia.resx">
+      <DependentUpon>_3ChamTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_3ChamTheLoai.resx">
+      <DependentUpon>_3ChamTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_DialogKhachHang.resx">
+      <DependentUpon>_DialogKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_DialogKhuyenMai.resx">
+      <DependentUpon>_DialogKhuyenMai.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Settings.settings">
@@ -202,20 +277,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{2bd3002e-365f-46c1-bcc4-0c435de6755d}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DTO\DTO.csproj">
-      <Project>{255383d1-1d62-4575-b8ac-cefb77439cad}</Project>
-      <Name>DTO</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Plus.png" />
     <None Include="Resources\KSTADV.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Image\plus.png" />
   </ItemGroup>
@@ -227,6 +303,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\editing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{2bd3002e-365f-46c1-bcc4-0c435de6755d}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{255383d1-1d62-4575-b8ac-cefb77439cad}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
