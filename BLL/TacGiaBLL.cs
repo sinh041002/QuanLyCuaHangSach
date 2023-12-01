@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DAL;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -11,7 +13,7 @@ namespace BLL
 {
     public class TacGiaBLL
     {
-        public DataTable GetTacGia()
+        public DataTable GetAllTacGia()
         {
             return TacGiaDAL.GetAllTacGia();
         }

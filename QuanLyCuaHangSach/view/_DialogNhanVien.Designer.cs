@@ -66,7 +66,6 @@ namespace QuanLyCuaHangSach.view
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReset.Location = new System.Drawing.Point(478, 48);
             this.btnReset.Name = "btnReset";
@@ -75,12 +74,10 @@ namespace QuanLyCuaHangSach.view
             this.btnReset.Text = "Reset";
             this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.Location = new System.Drawing.Point(371, 48);
             this.btnSearch.Name = "btnSearch";
@@ -89,7 +86,6 @@ namespace QuanLyCuaHangSach.view
             this.btnSearch.Text = "Tìm Kiếm";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -113,7 +109,6 @@ namespace QuanLyCuaHangSach.view
             // btnHuy
             // 
             this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
             this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHuy.Location = new System.Drawing.Point(392, 273);
             this.btnHuy.Name = "btnHuy";
@@ -122,12 +117,10 @@ namespace QuanLyCuaHangSach.view
             this.btnHuy.Text = "Hủy";
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnChon
             // 
             this.btnChon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChon.Image = ((System.Drawing.Image)(resources.GetObject("btnChon.Image")));
             this.btnChon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChon.Location = new System.Drawing.Point(221, 273);
             this.btnChon.Name = "btnChon";
@@ -136,8 +129,6 @@ namespace QuanLyCuaHangSach.view
             this.btnChon.Text = "Chọn";
             this.btnChon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnChon.UseVisualStyleBackColor = true;
-            this.btnChon.Click += new System.EventHandler(this.btnChon_Click);
-<<<<<<< Updated upstream
             // 
             // txt_ID
             // 
@@ -179,8 +170,6 @@ namespace QuanLyCuaHangSach.view
             this.Email.HeaderText = "Email";
             this.Email.Name = "Email";
             this.Email.ReadOnly = true;
-=======
->>>>>>> Stashed changes
             // 
             // _DialogNhanVien
             // 

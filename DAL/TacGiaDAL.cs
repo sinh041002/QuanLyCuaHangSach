@@ -14,14 +14,15 @@ namespace DAL
         public static DataTable GetAllTacGia()
         {
             DataTable dt = new DataTable();
-            using (SqlConnection connection = SqlConnectionData.Connect())
+            using(SqlConnection connection = SqlConnectionData.Connect())
             {
                 connection.Open();
-                string query = "select * from tbl_tacgia";
+                string query = @"select * from tbl_tacgia";
                 SqlCommand cmd = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 adapter.Fill(dt);
             }
+
             return dt;
         }
         public static void UpdateTacGia(TacGia tacGia)

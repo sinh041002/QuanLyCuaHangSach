@@ -8,21 +8,17 @@ namespace DTO
 {
     public class NhaXuatBan
     {
-        private string maNhaXuatBan;
-        private string tenNhaXuatBan;
-        private string moTaNXB;
+        private string maNhaXuatBan { get; set; }
+        private string tenNhaXuatBan { get;set; }
+        private string moTaNhaXuatBan { get; set; } 
 
+        NhaXuatBan() { }
 
-        public NhaXuatBan(string maNhaXuatBan, string tenNhaXuatBan, string moTaNXB)
+        public NhaXuatBan(string maNhaXuatBan, string tenNhaXuatBan, string moTaNhaXuatBan)
         {
-            this.MaNhaXuatBan = maNhaXuatBan;
-            this.TenNhaXuatBan = tenNhaXuatBan;
-            this.MoTaNXB = moTaNXB;
+            this.maNhaXuatBan = maNhaXuatBan;
+            this.tenNhaXuatBan = tenNhaXuatBan;
+            this.moTaNhaXuatBan = moTaNhaXuatBan;
         }
-        public NhaXuatBan() { }
-
-        public string MaNhaXuatBan { get => maNhaXuatBan; set => maNhaXuatBan = value; }
-        public string TenNhaXuatBan { get => tenNhaXuatBan; set => tenNhaXuatBan = value; }
-        public string MoTaNXB { get => moTaNXB; set => moTaNXB = value; }
     }
 }

@@ -22,7 +22,7 @@ namespace QuanLyCuaHangSach.view
         }
         public void GetAllTacGia()
         {
-            dgv3ChamTacGia.DataSource = tacgiaBll.GetTacGia();
+            dgv3ChamTacGia.DataSource = tacgiaBll.GetAllTacGia();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
