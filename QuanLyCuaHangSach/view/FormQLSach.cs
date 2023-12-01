@@ -18,7 +18,8 @@ namespace QuanLyCuaHangSach.view
     {
         SachBLL sachBLL = new SachBLL();
         TheLoaiBLL theLoaiBLL = new TheLoaiBLL();
-        TacGiaBLL tacgiaBll  = new TacGiaBLL();
+        TacGiaBLL tacGiaBLL = new TacGiaBLL();
+        NhaXuatBanBLL nhaXuatBanBLL = new NhaXuatBanBLL();
         string urlImg, urlCopy;
         string url = Application.StartupPath;
         public FormQLSach()
@@ -26,6 +27,8 @@ namespace QuanLyCuaHangSach.view
             InitializeComponent();
             GetAllBook();
             GetAllTheLoai();
+            LoadListTacGia();
+            LoadListNhaXuatBan();
         }
 
         public void GetAllBook()
@@ -38,9 +41,14 @@ namespace QuanLyCuaHangSach.view
             dgvListTheLoai.DataSource = theLoaiBLL.GetAllTheLoai();
         }
 
-        public void GetAllTacGia()
+        public void LoadListTacGia()
         {
-            dgvListTacGia.DataSource = tacgiaBll.GetTacGia();
+            dgvListTacGia.DataSource = tacGiaBLL.GetAllTacGia();
+        }
+
+        public void LoadListNhaXuatBan()
+        {
+            dtgvNhaXuatBan.DataSource = nhaXuatBanBLL.GetAllNhaXuatBan();
         }
 
         public bool IsNumber(string pValue)
@@ -250,9 +258,9 @@ namespace QuanLyCuaHangSach.view
                 tacGia.MaTacGia = txtMaTacGia.Text;
                 tacGia.TenTacGia = txtMoTaTacGIa.Text;
                 tacGia.MoTaTacGia = txtMoTaTacGIa.Text;
-                tacgiaBll.UpdateTacGia(tacGia);
+                tacGiaBLL.UpdateTacGia(tacGia);
                 MessageBox.Show("Sửa thông tin thành công", "Thành Công", MessageBoxButtons.OK);
-                GetAllTacGia();
+                LoadListTacGia();
             }
         }
 
@@ -300,6 +308,16 @@ namespace QuanLyCuaHangSach.view
             formNxb.ShowDialog();
             txtMaNhaXuatBan.Text = _3ChamNXB.id;
             txtNhaXuatBan.Text= _3ChamNXB.name;
+        }
+
+        private void dtgvListTacGia_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnThemTheLoai_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnEdit_Click(object sender, EventArgs e)

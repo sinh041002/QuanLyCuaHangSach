@@ -12,14 +12,14 @@ namespace DTO
         private string tenTacGia;
         private string moTaTacGia;
 
+        public TacGia() { }
+
         public TacGia(string maTacGia, string tenTacGia, string moTaTacGia)
         {
             this.maTacGia = maTacGia;
             this.tenTacGia = tenTacGia;
             this.moTaTacGia = moTaTacGia;
         }
-
-        public TacGia() { }
 
         public string MaTacGia { get => maTacGia; set => maTacGia = value; }
         public string TenTacGia { get => tenTacGia; set => tenTacGia = value; }

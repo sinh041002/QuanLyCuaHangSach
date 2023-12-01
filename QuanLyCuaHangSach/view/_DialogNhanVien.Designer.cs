@@ -75,7 +75,6 @@ namespace QuanLyCuaHangSach.view
             this.btnReset.Text = "Reset";
             this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSearch
             // 
@@ -89,7 +88,6 @@ namespace QuanLyCuaHangSach.view
             this.btnSearch.Text = "Tìm Kiếm";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -122,7 +120,6 @@ namespace QuanLyCuaHangSach.view
             this.btnHuy.Text = "Hủy";
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnChon
             // 
@@ -136,8 +133,6 @@ namespace QuanLyCuaHangSach.view
             this.btnChon.Text = "Chọn";
             this.btnChon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnChon.UseVisualStyleBackColor = true;
-            this.btnChon.Click += new System.EventHandler(this.btnChon_Click);
-<<<<<<< Updated upstream
             // 
             // txt_ID
             // 
@@ -179,8 +174,6 @@ namespace QuanLyCuaHangSach.view
             this.Email.HeaderText = "Email";
             this.Email.Name = "Email";
             this.Email.ReadOnly = true;
-=======
->>>>>>> Stashed changes
             // 
             // _DialogNhanVien
             // 
