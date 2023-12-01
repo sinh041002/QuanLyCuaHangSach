@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
+using DTO;
 
 namespace QuanLyCuaHangSach.view
 {
@@ -21,10 +22,18 @@ namespace QuanLyCuaHangSach.view
             InitializeComponent();
             GetAllBook();
         }
-
+        
         public void GetAllBook()
         {
             dgvSanPham.DataSource = sachBLL.GetAllBook();
+        }
+        public void GetNhanVien(NhanVien nv)
+        {
+            if (nv != null) {
+                txtMaNhanVien.Text = nv.MaNhanVien;
+                txtNhanVien.Text = nv.HoTen;
+            }
+           
         }
         private void MuaHang_Load(object sender, EventArgs e)
         {
@@ -51,10 +60,15 @@ namespace QuanLyCuaHangSach.view
                 string url = Application.StartupPath;
                 url = Directory.GetParent(url).Parent.Parent.FullName;
                 url += @"\ImgSach\";
-                string urlImg = dgvSanPham.Rows[i].Cells[6].Value.ToString();
-                pbSanPham.SizeMode = PictureBoxSizeMode.StretchImage;
-                Bitmap bm = new Bitmap(url + urlImg);
-                pbSanPham.Image = bm;
+                if (dgvSanPham.Rows[i].Cells[6].Value.ToString() != "")
+                {
+                    string urlImg = dgvSanPham.Rows[i].Cells[6].Value.ToString();
+
+                    pbSanPham.SizeMode = PictureBoxSizeMode.StretchImage;
+                    Bitmap bm = new Bitmap(url + urlImg);
+                    pbSanPham.Image = bm;
+                }
+               
             }
         }
 

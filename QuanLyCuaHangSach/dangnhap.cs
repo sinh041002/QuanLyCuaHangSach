@@ -47,6 +47,7 @@ namespace QuanLyCuaHangSach
                     this.Hide();
                     QLCuaHangSach form1 = new QLCuaHangSach();
                     form1.phanquyen(NhanVien);
+                    form1.setNhanVien(NhanVien);
                     form1.StartPosition = FormStartPosition.CenterScreen;
                     form1.ShowDialog();
 
