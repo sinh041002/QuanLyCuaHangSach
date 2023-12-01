@@ -59,3 +59,7 @@ C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.cs
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogKhachHang.resources
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogNhanVien.resources
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogKhuyenMai.resources
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamNCC.resources
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamNXB.resources
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamTacGia.resources
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamTheLoai.resources

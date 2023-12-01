@@ -4,9 +4,5 @@ D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.As
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\DTO\obj\Debug\DTO.dll
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\DTO\obj\Debug\DTO.pdb
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\DTO\bin\Debug\DTO.dll
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\DTO\bin\Debug\DTO.pdb
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\DTO\obj\Debug\DTO.dll
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\DTO\obj\Debug\DTO.pdb

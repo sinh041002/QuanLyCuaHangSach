@@ -52,5 +52,6 @@ namespace QuanLyCuaHangSach.view
             txtSearch.Text = "";
             GetAllNhanVien();
         }
+
     }
 }

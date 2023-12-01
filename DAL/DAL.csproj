@@ -44,13 +44,17 @@
     <Compile Include="DataProvider.cs" />
     <Compile Include="GenericDAO.cs" />
     <Compile Include="HoaDonDAO.cs" />
+    <Compile Include="NhaCungCapDAL.cs" />
     <Compile Include="NhapHangDAO.cs" />
     <Compile Include="ConnecDataBase.cs" />
     <Compile Include="DangNhapDAL.cs" />
     <Compile Include="NhanVienDAL.cs" />
+    <Compile Include="NhaXuatBanDAL.cs" />
+    <Compile Include="NXBDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SachDAL.cs" />
     <Compile Include="SaleDAL.cs" />
+    <Compile Include="TacGiaDAL.cs" />
     <Compile Include="TheLoaiDAL.cs" />
   </ItemGroup>
   <ItemGroup>

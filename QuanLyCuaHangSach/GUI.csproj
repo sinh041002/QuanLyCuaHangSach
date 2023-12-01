@@ -52,6 +52,12 @@
     <Compile Include="dangnhap.Designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\3ChamNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\3ChamNCC.Designer.cs">
+      <DependentUpon>3ChamNCC.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FormHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,24 @@
     <Compile Include="view\FormThongKeSPBanChay.designer.cs">
       <DependentUpon>FormThongKeSPBanChay.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\_3ChamNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_3ChamNXB.Designer.cs">
+      <DependentUpon>_3ChamNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_3ChamTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_3ChamTacGia.Designer.cs">
+      <DependentUpon>_3ChamTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_3ChamTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_3ChamTheLoai.Designer.cs">
+      <DependentUpon>_3ChamTheLoai.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\_DialogKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +177,9 @@
     </Compile>
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\3ChamNCC.resx">
+      <DependentUpon>3ChamNCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormHoaDon.resx">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
@@ -195,6 +222,15 @@
     <EmbeddedResource Include="view\QLNhanVien.resx">
       <DependentUpon>QLNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\_3ChamNXB.resx">
+      <DependentUpon>_3ChamNXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_3ChamTacGia.resx">
+      <DependentUpon>_3ChamTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_3ChamTheLoai.resx">
+      <DependentUpon>_3ChamTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\_DialogKhachHang.resx">
       <DependentUpon>_DialogKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +239,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\_DialogNhanVien.resx">
       <DependentUpon>_DialogNhanVien.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -220,10 +257,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{2bd3002e-365f-46c1-bcc4-0c435de6755d}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{255383d1-1d62-4575-b8ac-cefb77439cad}</Project>
       <Name>DTO</Name>

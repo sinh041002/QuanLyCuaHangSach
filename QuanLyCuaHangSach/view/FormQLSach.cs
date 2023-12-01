@@ -18,6 +18,7 @@ namespace QuanLyCuaHangSach.view
     {
         SachBLL sachBLL = new SachBLL();
         TheLoaiBLL theLoaiBLL = new TheLoaiBLL();
+        TacGiaBLL tacgiaBll  = new TacGiaBLL();
         string urlImg, urlCopy;
         string url = Application.StartupPath;
         public FormQLSach()
@@ -29,12 +30,17 @@ namespace QuanLyCuaHangSach.view
 
         public void GetAllBook()
         {
-            dgvListBook.DataSource = sachBLL.GetAllBook();
+            dgvListBook.DataSource = sachBLL.GetAllBookQL();
         }
 
         public void GetAllTheLoai()
         {
             dgvListTheLoai.DataSource = theLoaiBLL.GetAllTheLoai();
+        }
+
+        public void GetAllTacGia()
+        {
+            dgvListTacGia.DataSource = tacgiaBll.GetTacGia();
         }
 
         public bool IsNumber(string pValue)
@@ -65,7 +71,7 @@ namespace QuanLyCuaHangSach.view
             }
             else if (item == "Tất Cả")
             {
-                dgvListBook.DataSource = sachBLL.GetAllBook();
+                dgvListBook.DataSource = sachBLL.GetAllBookQL();
             }
         }
 
@@ -74,17 +80,26 @@ namespace QuanLyCuaHangSach.view
             int i = dgvListBook.CurrentRow.Index;
             if (i >= 0 && dgvListBook.Rows[i].Cells[0].Value.ToString() != "")
             {
-                urlImg = dgvListBook.Rows[i].Cells[6].Value.ToString();
+                urlImg = dgvListBook.Rows[i].Cells[7].Value.ToString();
                 Bitmap bm = new Bitmap(url + urlImg);
                 pbSanPham.Image = bm;
 
                 txtMaSach.Text = dgvListBook.Rows[i].Cells[0].Value.ToString();
                 txtTenSach.Text = dgvListBook.Rows[i].Cells[1].Value.ToString();
-                txtTacGia.Text = dgvListBook.Rows[i].Cells[7].Value.ToString();
-                txtTheLoai.Text = dgvListBook.Rows[i].Cells[2].Value.ToString();
-                txtSoLuong.Text = dgvListBook.Rows[i].Cells[3].Value.ToString();
-                txtDonGiaNhap.Text = dgvListBook.Rows[i].Cells[4].Value.ToString();
+                txtTheLoaiForm1.Text = dgvListBook.Rows[i].Cells[2].Value.ToString();
+                txtMaTheLoaiForm1.Text = dgvListBook.Rows[i].Cells[3].Value.ToString();
+                txtSoLuong.Text = dgvListBook.Rows[i].Cells[4].Value.ToString();
                 txtDonGiaXuat.Text = dgvListBook.Rows[i].Cells[5].Value.ToString();
+                txtDonGiaNhap.Text = dgvListBook.Rows[i].Cells[6].Value.ToString();
+                txtTacGiaForm1.Text = dgvListBook.Rows[i].Cells[8].Value.ToString();
+                txtMaTGForm1.Text = dgvListBook.Rows[i].Cells[9].Value.ToString();
+                txtNhaXuatBan.Text = dgvListBook.Rows[i].Cells[10].Value.ToString();
+                txtMaNhaXuatBan.Text = dgvListBook.Rows[i].Cells[11].Value.ToString();
+                txtNhaCungCap.Text = dgvListBook.Rows[i].Cells[12].Value.ToString();
+                txtMaNccForm1.Text = dgvListBook.Rows[i].Cells[13].Value.ToString();
+                
+                
+                
             }
         }
 
@@ -147,8 +162,8 @@ namespace QuanLyCuaHangSach.view
         {
             txtMaSach.Text = "";
             txtTenSach.Text = "";
-            txtTacGia.Text = "";
-            txtTheLoai.Text = "";
+            txtTacGiaForm1.Text = "";
+            txtTheLoaiForm1.Text = "";
             txtSoLuong.Text = "";
             txtDonGiaNhap.Text = "";
             pbSanPham.Image = null;
@@ -223,7 +238,68 @@ namespace QuanLyCuaHangSach.view
 
         private void btnSuaTacGia_Click(object sender, EventArgs e)
         {
+            if (txtTenTacGia.Text == "" || txtMoTaTacGIa.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin ! ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn sửa tác giả này?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                TacGia tacGia = new TacGia();
+                tacGia.MaTacGia = txtMaTacGia.Text;
+                tacGia.TenTacGia = txtMoTaTacGIa.Text;
+                tacGia.MoTaTacGia = txtMoTaTacGIa.Text;
+                tacgiaBll.UpdateTacGia(tacGia);
+                MessageBox.Show("Sửa thông tin thành công", "Thành Công", MessageBoxButtons.OK);
+                GetAllTacGia();
+            }
+        }
 
+        private void btnXoaTacGia_Click(object sender, EventArgs e)
+        {
+            if (txtMaTacGia.Text == "")
+            {
+                MessageBox.Show("Vui lòng chọn tác giả trước khi xóa", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; 
+            }
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn xóa tác giả này?","Thông Báo", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                
+            }
+        }
+
+        private void btn3ChamTacGia_Click(object sender, EventArgs e)
+        {
+            _3ChamTacGia formtacgia = new _3ChamTacGia();
+            formtacgia.ShowDialog();
+            txtTacGiaForm1.Text = _3ChamTacGia.name;
+            txtMaTGForm1.Text = _3ChamTacGia.id;
+        }
+
+        private void btn3ChamTheLoai_Click(object sender, EventArgs e)
+        {
+            _3ChamTheLoai formtheloai = new _3ChamTheLoai();
+            formtheloai.ShowDialog();
+            txtTheLoaiForm1.Text = _3ChamTheLoai.name;
+            txtMaTheLoaiForm1.Text= _3ChamTheLoai.id;
+        }
+
+        private void btn3ChamNCC_Click(object sender, EventArgs e)
+        {
+            _3ChamNCC formNCC = new _3ChamNCC();
+            formNCC.ShowDialog();
+            txtNhaCungCap.Text = _3ChamNCC.name;
+            txtMaNccForm1.Text = _3ChamNCC.id;
+        }
+
+        private void btn3ChamNxb_Click(object sender, EventArgs e)
+        {
+            _3ChamNXB formNxb = new _3ChamNXB();
+            formNxb.ShowDialog();
+            txtMaNhaXuatBan.Text = _3ChamNXB.id;
+            txtNhaXuatBan.Text= _3ChamNXB.name;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)

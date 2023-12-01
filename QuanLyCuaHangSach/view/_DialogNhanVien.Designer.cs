@@ -137,6 +137,7 @@ namespace QuanLyCuaHangSach.view
             this.btnChon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnChon.UseVisualStyleBackColor = true;
             this.btnChon.Click += new System.EventHandler(this.btnChon_Click);
+<<<<<<< Updated upstream
             // 
             // txt_ID
             // 
@@ -178,6 +179,8 @@ namespace QuanLyCuaHangSach.view
             this.Email.HeaderText = "Email";
             this.Email.Name = "Email";
             this.Email.ReadOnly = true;
+=======
+>>>>>>> Stashed changes
             // 
             // _DialogNhanVien
             // 

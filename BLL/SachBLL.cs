@@ -15,6 +15,10 @@ namespace BLL
         {
             return SachDAL.GetAllBook();
         }
+        public DataTable GetAllBookQL()
+        {
+            return SachDAL.GetAllBookQL();
+        }
         public DataTable GetAllBookByName(string name)
         {
             return SachDAL.GetAllBookByName(name);
