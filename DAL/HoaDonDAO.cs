@@ -241,19 +241,20 @@ namespace DAL
             double TongTien = hoaDonDTO.TongTien;
             int result = -1;
 
-            string query = "INSERT INTO tbl_hoadon (MaHoaDon, MaNhanVien, MaKhachHang, NgayXuat, TongTien)" +
-                " VALUES(@MaHoaDon, @MaNhanVien, @MaKhachHang, @NgayXuat, @TongTien)";
-            SqlCommand command = new SqlCommand(query, getConnection());
-            command.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
-            command.Parameters.AddWithValue("@MaNhanVien", MaNhanVien);
-            command.Parameters.AddWithValue("@MaKhachHang", MaKhachHang);
-            command.Parameters.AddWithValue("@NgayXuat", NgayXuat);
-            command.Parameters.AddWithValue("@TongTien", TongTien);
+            using (SqlConnection connection = SqlConnectionData.Connect())
+            {
+                connection.Open();
+                string query = "INSERT INTO tbl_hoadon (MaHoaDon, MaNhanVien, MaKhachHang, NgayXuat, TongTien)" +
+                    " VALUES(@MaHoaDon, @MaNhanVien, @MaKhachHang, @NgayXuat, @TongTien)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
+                command.Parameters.AddWithValue("@MaNhanVien", MaNhanVien);
+                command.Parameters.AddWithValue("@MaKhachHang", MaKhachHang);
+                command.Parameters.AddWithValue("@NgayXuat", NgayXuat);
+                command.Parameters.AddWithValue("@TongTien", TongTien);
 
-            getConnection().Open();
-            result = command.ExecuteNonQuery();
-            getConnection().Close();
-
+                result = command.ExecuteNonQuery();                
+            }
             return result;
         }
 
@@ -266,19 +267,20 @@ namespace DAL
             double ThanhTien = chiTietHoaDonDTO.ThanhTien;
             int result = -1;
 
-            string query = "INSERT INTO tbl_chitiethoadon (MaHoaDon, MaSach, SoLuong, DonGia, ThanhTien)" +
-                " VALUES(@MaHoaDon, @MaSach, @SoLuong, @DonGia, @ThanhTien)";
-            SqlCommand command = new SqlCommand(query, getConnection());
-            command.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
-            command.Parameters.AddWithValue("@MaSach", MaSach);
-            command.Parameters.AddWithValue("@SoLuong", SoLuong);
-            command.Parameters.AddWithValue("@DonGia", DonGia);
-            command.Parameters.AddWithValue("@ThanhTien", ThanhTien);
-            getConnection().Open();
-            result = command.ExecuteNonQuery();
-            getConnection().Close();
+            using (SqlConnection connection = SqlConnectionData.Connect()) 
+            {
+                connection.Open();
+                string query = "INSERT INTO tbl_chitiethoadon (MaHoaDon, MaSach, SoLuong, DonGia, ThanhTien)" +
+                    " VALUES(@MaHoaDon, @MaSach, @SoLuong, @DonGia, @ThanhTien)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
+                command.Parameters.AddWithValue("@MaSach", MaSach);
+                command.Parameters.AddWithValue("@SoLuong", SoLuong);
+                command.Parameters.AddWithValue("@DonGia", DonGia);
+                command.Parameters.AddWithValue("@ThanhTien", ThanhTien);
 
-
+                result = command.ExecuteNonQuery();
+            }
             return result;
 
         }
@@ -410,6 +412,39 @@ namespace DAL
             command.ExecuteNonQuery();
             getConnection().Close();
         }
+
+        public static string GetLastID()
+        {
+            string lastID = null;
+
+            using (SqlConnection connection = getConnection())
+            {
+                try
+                {
+                    connection.Open();
+                    string query = "SELECT TOP 1 MaHoaDon as LastID FROM tbl_hoadon ORDER BY MaHoaDon DESC";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                lastID = reader["LastID"].ToString();
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle the exception (log, throw, or any other necessary action)
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+            }
+
+            return lastID;
+        }
+
 
     }
 

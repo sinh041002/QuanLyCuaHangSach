@@ -117,7 +117,6 @@ C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\DAL.pd
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.MuaHang.resources
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogKhachHang.resources
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogNhanVien.resources
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogKhuyenMai.resources
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamNCC.resources
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamNXB.resources
@@ -140,4 +139,9 @@ D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamNXB.resources
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamTacGia.resources
 D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamTheLoai.resources
+<<<<<<< HEAD
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLKhachHang.resources
+=======
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLQUyen.resources
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogNhanVien.resources
+>>>>>>> 63992458dc9aa212b79417c072eaaf9fc97ba4e6

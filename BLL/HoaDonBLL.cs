@@ -165,6 +165,11 @@ namespace BLL
         {
             HoaDonDAO.Instance.CapNhatSoLuongSach(MaSach, SoLuongMua);
         }
+
+        public string GetLastId()
+        {
+            return HoaDonDAO.GetLastID();
+        }
     }
 
 }

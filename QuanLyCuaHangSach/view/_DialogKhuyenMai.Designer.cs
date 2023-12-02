@@ -103,6 +103,7 @@ namespace QuanLyCuaHangSach.view
             this.btnHuy.Text = "Hủy";
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnChon
             // 
@@ -116,10 +117,10 @@ namespace QuanLyCuaHangSach.view
             this.btnChon.Text = "Chọn";
             this.btnChon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnChon.UseVisualStyleBackColor = true;
+            this.btnChon.Click += new System.EventHandler(this.btnChon_Click);
             // 
             // dgvKhuyenMai
             // 
-            this.dgvKhuyenMai.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvKhuyenMai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKhuyenMai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.txt_Id,
@@ -127,6 +128,7 @@ namespace QuanLyCuaHangSach.view
             this.txt_SaleOff,
             this.txt_TimeStart,
             this.txt_TimeEnd});
+            this.dgvKhuyenMai.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvKhuyenMai.Location = new System.Drawing.Point(67, 108);
             this.dgvKhuyenMai.Name = "dgvKhuyenMai";
             this.dgvKhuyenMai.ReadOnly = true;
@@ -142,7 +144,7 @@ namespace QuanLyCuaHangSach.view
             this.txt_Id.MinimumWidth = 6;
             this.txt_Id.Name = "txt_Id";
             this.txt_Id.ReadOnly = true;
-            this.txt_Id.Width = 125;
+            this.txt_Id.Width = 70;
             // 
             // txt_NameSale
             // 
@@ -169,7 +171,6 @@ namespace QuanLyCuaHangSach.view
             this.txt_TimeStart.MinimumWidth = 6;
             this.txt_TimeStart.Name = "txt_TimeStart";
             this.txt_TimeStart.ReadOnly = true;
-            this.txt_TimeStart.Width = 125;
             // 
             // txt_TimeEnd
             // 
@@ -178,7 +179,6 @@ namespace QuanLyCuaHangSach.view
             this.txt_TimeEnd.MinimumWidth = 6;
             this.txt_TimeEnd.Name = "txt_TimeEnd";
             this.txt_TimeEnd.ReadOnly = true;
-            this.txt_TimeEnd.Width = 125;
             // 
             // _DialogKhuyenMai
             // 

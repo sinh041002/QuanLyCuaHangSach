@@ -405,6 +405,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1534, 761);
             this.Controls.Add(this.panel1);
+            this.Enabled = false;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "QLNhanVien";
             this.Text = "QLNhanVien";

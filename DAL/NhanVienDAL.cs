@@ -17,7 +17,7 @@ namespace DAL
         SqlDataReader dataReader;
         public List<NhanVien> getListNhanViens()
         {
-            string query = "Select *from dbo.tbl_nhanvien";
+            string query = "Select * from dbo.tbl_nhanvien";
 
             List<NhanVien> nhanViens = new List<NhanVien>();
             

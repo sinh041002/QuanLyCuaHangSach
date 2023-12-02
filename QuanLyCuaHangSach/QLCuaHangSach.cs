@@ -193,5 +193,10 @@ namespace QuanLyCuaHangSach
             if (dialog == DialogResult.Yes)
                 Application.Exit();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QLNhanVien());
+        }
     }
 }

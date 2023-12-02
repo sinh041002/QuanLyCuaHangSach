@@ -260,6 +260,9 @@
     <EmbeddedResource Include="view\_DialogKhuyenMai.resx">
       <DependentUpon>_DialogKhuyenMai.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\_DialogNhanVien.resx">
+      <DependentUpon>_DialogNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Settings.settings">
@@ -312,6 +315,84 @@
       <Project>{255383d1-1d62-4575-b8ac-cefb77439cad}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-cart %282%29 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\holding-wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-cart %282%29 %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\holding-wrench1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

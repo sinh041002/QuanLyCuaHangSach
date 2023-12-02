@@ -17,6 +17,7 @@ namespace QuanLyCuaHangSach.view
     {
         DataTable tbGioHang = new DataTable();
         SachBLL sachBLL = new SachBLL();
+        HoaDonBLL hoaDonBLL = new HoaDonBLL();
         public MuaHang()
         {
             InitializeComponent();
@@ -194,7 +195,14 @@ namespace QuanLyCuaHangSach.view
             DialogResult dialogResult = MessageBox.Show("Có chắc chắn là bạn mua hàng chứ ?", "Mua Hàng", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes) 
             {
-
+                HoaDonDTO hoadon = new HoaDonDTO();        
+                hoadon.MaHoaDon = hoaDonBLL.CreateKey();
+                hoadon.MaNhanVien = txtMaNhanVien.Text.Trim();
+                hoadon.MaKhachHang = txtMaKhachHang.Text.Trim(); 
+                hoadon.NgayXuat = (DateTime)dtpNgayTao.Value;
+                hoadon.TongTien = double.Parse(txtTongTienKM.Text.Trim());   
+                hoaDonBLL.SaveHoaDon(hoadon);
+                SaveChiTietHoaDon();
             }
             else
             {
@@ -202,12 +210,34 @@ namespace QuanLyCuaHangSach.view
             }
         }
 
+        public void SaveChiTietHoaDon() 
+        {
+            foreach (DataRow row in tbGioHang.Rows)
+            {
+                ChiTietHoaDonDTO chiTietHoaDonDTO = new ChiTietHoaDonDTO();
+                chiTietHoaDonDTO.MaHoaDon = hoaDonBLL.CreateKey();
+                chiTietHoaDonDTO.MaSach = row["Mã Sản Phẩm"].ToString().Trim();
+                chiTietHoaDonDTO.DonGia = double.Parse(row["Giá Tiền"].ToString().Trim());
+                chiTietHoaDonDTO.SoLuong = int.Parse(row["Số Lượng"].ToString().Trim());
+                chiTietHoaDonDTO.ThanhTien = double.Parse(row["Thành Tiền"].ToString().Trim());
+                hoaDonBLL.SaveChiTietHoaDon(chiTietHoaDonDTO);
+            }
+            MessageBox.Show("Mua Hàng Thành Công !!");
+            tbGioHang.Clear();
+            txtMaNhanVien.Text = "";
+            txtNhanVien.Text = "";
+            txtMaKhachHang.Text = "";
+            txtKhachHang.Text = "";
+            txtKhuyenMai.Text = "";
+            txtTongTien.Text = "0";
+            txtTongTienKM.Text = "0";
+        }
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
             _DialogNhanVien DialogNhanVien = new _DialogNhanVien();
             DialogNhanVien.ShowDialog();
-            txtMaKhachHang.Text = _DialogNhanVien.id;
-            txtNhanVien.Text = _DialogNhanVien.ho + " " + _DialogNhanVien.id;
+            txtMaNhanVien.Text = _DialogNhanVien.id;
+            txtNhanVien.Text = _DialogNhanVien.ten;
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
@@ -215,7 +245,7 @@ namespace QuanLyCuaHangSach.view
             _DialogKhachHang dialogKhachHang = new _DialogKhachHang();
             dialogKhachHang.ShowDialog();
             txtMaKhachHang.Text = _DialogKhachHang.id;
-            txtKhachHang.Text = _DialogKhachHang.ho + " " + _DialogKhachHang.ten;
+            txtKhachHang.Text = _DialogKhachHang.ten;
         }
 
         private void btnLoc_Click(object sender, EventArgs e)
@@ -259,7 +289,7 @@ namespace QuanLyCuaHangSach.view
             }
             else
             {
-                txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - double.Parse(txtTongTien.Text.Trim()) * double.Parse(txtTongTienKM.Text) / 100 ).ToString();
+                txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - double.Parse(txtTongTien.Text.Trim()) * (double.Parse(txtKhuyenMai.Text) / 100)).ToString();
             }
         }
 
@@ -267,7 +297,7 @@ namespace QuanLyCuaHangSach.view
         {
             if (txtTongTien.Text != "")
             {
-                txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - double.Parse(txtTongTien.Text.Trim()) * double.Parse(txtTongTienKM.Text) / 100).ToString();
+                txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - (double.Parse(txtTongTien.Text.Trim()) * double.Parse(txtTongTienKM.Text) / 100)).ToString();
             }
         }
     }
