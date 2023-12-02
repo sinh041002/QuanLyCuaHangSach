@@ -58,6 +58,7 @@
     <Compile Include="SaleDAL.cs" />
     <Compile Include="TacGiaDAL.cs" />
     <Compile Include="TheLoaiDAL.cs" />
+    <Compile Include="ThongKeDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">

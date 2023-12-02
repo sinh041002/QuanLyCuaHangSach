@@ -56,6 +56,7 @@
     <Compile Include="SaleBLL.cs" />
     <Compile Include="TacGiaBLL.cs" />
     <Compile Include="TheLoaiBLL.cs" />
+    <Compile Include="ThongKeBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

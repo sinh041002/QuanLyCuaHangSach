@@ -55,6 +55,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnExport = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +63,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.BtnExport);
             this.panel1.Controls.Add(this.btnTimkiem);
             this.panel1.Controls.Add(this.txtTimKiem);
             this.panel1.Controls.Add(this.btnClear);
@@ -119,7 +121,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(752, 382);
+            this.btnClear.Location = new System.Drawing.Point(638, 382);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(87, 41);
@@ -132,7 +134,7 @@
             // 
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(386, 382);
+            this.btnThem.Location = new System.Drawing.Point(267, 381);
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 41);
@@ -145,7 +147,7 @@
             // 
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(634, 382);
+            this.btnXoa.Location = new System.Drawing.Point(515, 381);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -158,7 +160,7 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(514, 382);
+            this.btnSua.Location = new System.Drawing.Point(389, 382);
             this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 41);
@@ -385,6 +387,17 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Mã Nhân Viên";
             // 
+            // BtnExport
+            // 
+            this.BtnExport.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExport.Location = new System.Drawing.Point(779, 382);
+            this.BtnExport.Name = "BtnExport";
+            this.BtnExport.Size = new System.Drawing.Size(86, 41);
+            this.BtnExport.TabIndex = 14;
+            this.BtnExport.Text = "Xuất Exel";
+            this.BtnExport.UseVisualStyleBackColor = true;
+            this.BtnExport.Click += new System.EventHandler(this.BtnExport_Click);
+            // 
             // QLNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -431,5 +444,6 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnTimkiem;
         private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.Button BtnExport;
     }
 }
