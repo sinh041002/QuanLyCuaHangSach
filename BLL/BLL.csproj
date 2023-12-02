@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChucVuBLL.cs" />
     <Compile Include="HoaDonBLL.cs" />
     <Compile Include="DangNhapBLL.cs" />
+    <Compile Include="KhachHangBLL.cs" />
     <Compile Include="NhaCungCapBLL.cs" />
     <Compile Include="NhanVienBLL.cs" />
     <Compile Include="NhaXuatBanBLL.cs" />
@@ -55,6 +57,7 @@
     <Compile Include="SaleBLL.cs" />
     <Compile Include="TacGiaBLL.cs" />
     <Compile Include="TheLoaiBLL.cs" />
+    <Compile Include="ThongKeBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

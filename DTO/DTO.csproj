@@ -67,6 +67,8 @@
     <Compile Include="TacGia.cs" />
     <Compile Include="TaiKhoan.cs" />
     <Compile Include="TheLoai.cs" />
+    <Compile Include="TKDoanhThuViewModel.cs" />
+    <Compile Include="TKSPBanChayViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

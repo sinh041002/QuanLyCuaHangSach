@@ -90,7 +90,10 @@ namespace QuanLyCuaHangSach
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult dialog;
+            dialog = MessageBox.Show("Bạn có muốn thoát khỏi chương trình hay không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+                Application.Exit();
         }
 
         private void dangnhap_Load(object sender, EventArgs e)

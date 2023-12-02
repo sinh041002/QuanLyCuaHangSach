@@ -1,4 +1,5 @@
-﻿using DTO;
+﻿using BLL;
+using DTO;
 using QuanLyCuaHangSach.view;
 using System;
 using System.Collections.Generic;
@@ -28,10 +29,51 @@ namespace QuanLyCuaHangSach
         }
         public void phanquyen(NhanVien nhanVien)
         {
-            if (nhanVien.ChucVu!=1)
+            QuyenDTO items = new QuyenDTO();
+            QuyenBLL quyenBLL = new QuyenBLL();
+            items = quyenBLL.GetItemQuyen(nhanVien.ChucVu);
+            
+            if (items.QLKhachHang != 1)
+            {
+                btnQLKhachHang.Hide();
+            }
+
+            if (items.QLNhanVien != 1)
             {
                 BtnQLNhanVien.Hide();
             }
+
+            if (items.QLQuyen != 1)
+            {
+                btnQuyen.Hide();
+            }
+
+            if (items.QLKhuyenMai != 1)
+            {
+                btnQLMaKhuyenMai.Hide();
+            }
+             
+            if (items.QLSach != 1)
+            {
+                btnQLSach.Hide();
+            }
+            if (items.QLHoaDon != 1)
+            {
+                btnHoaDon.Hide();
+            }
+
+            if (items.BanHang != 1)
+            {
+                btnBanHang.Hide();
+            }
+
+            if (items.QLThongKe != 1)
+            {
+                btnThongKeBanChay.Hide();
+                btnThongKeDoanhThu.Hide();
+            }
+
+           
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -40,7 +82,8 @@ namespace QuanLyCuaHangSach
 
         private void QLCuaHangSach_Load(object sender, EventArgs e)
         {
-
+            lbMaNhanVien.Text = nhanvien.MaNhanVien;
+            lbTenNhanVien.Text=nhanvien.HoTen.ToUpper();
         }
         private Form currentFormChild;
         private void OpenChildForm(Form ChildForm)
@@ -61,10 +104,7 @@ namespace QuanLyCuaHangSach
 
     
 
-        private void BtnQLNhanVien_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new QLNhanVien());
-        }
+      
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -75,12 +115,45 @@ namespace QuanLyCuaHangSach
         }
 
 
-        private void panel3_body_Paint(object sender, PaintEventArgs e)
+      
+  
+
+        private void btnBanHang_Click(object sender, EventArgs e)
         {
+            MuaHang formmuahang = new MuaHang();
+            formmuahang.GetNhanVien(nhanvien);
+            OpenChildForm(formmuahang);
+
         }
-        private void btnQLMaKhuyenMai_Click(object sender, EventArgs e)
+
+        private void btnQLKhachHang_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormQLKhachHang());
+        }
+
+        private void btnQLSach_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormQLSach());
+        }
+
+        private void btnQLMaKhuyenMai_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new FormQLMaKhuyenMai());
+        }
+
+        private void BtnQLNhanVien_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QLNhanVien());
+        }
+
+        private void btnQuyen_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QLQUyen());
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormHoaDon());
         }
 
         private void btnThongKeDoanhThu_Click(object sender, EventArgs e)
@@ -91,35 +164,32 @@ namespace QuanLyCuaHangSach
         private void btnThongKeBanChay_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormThongKeSPBanChay());
-
         }
 
-        private void btnHoaDon_Click(object sender, EventArgs e)
+        private void ptrTrangChu_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormHoaDon());
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormQLSach());
+            this.Hide();
+            dangnhap formdangnhap=new dangnhap();
+            formdangnhap.StartPosition = FormStartPosition.CenterScreen;
+            formdangnhap.ShowDialog();
+
+            this.Close();
         }
 
-        private void btnQLKhachHAng_Click(object sender, EventArgs e)
+        private void btnThoat_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormQLKhachHang());
-        }
-
-        private void btnBanHang_Click_1(object sender, EventArgs e)
-        {
-           MuaHang formmuahang = new MuaHang();
-            formmuahang.GetNhanVien(nhanvien);
-            OpenChildForm(formmuahang);
-
-        }
-
-        private void btnQuyen_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new QLQUyen());
+            DialogResult dialog;
+            dialog = MessageBox.Show("Bạn có muốn thoát khỏi chương trình hay không", "Quản Lý cửa hàng sách", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+                Application.Exit();
         }
 
         private void button8_Click(object sender, EventArgs e)

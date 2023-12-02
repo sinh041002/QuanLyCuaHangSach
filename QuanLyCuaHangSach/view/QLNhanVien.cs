@@ -15,6 +15,8 @@ namespace QuanLyCuaHangSach.view
     public partial class QLNhanVien : Form
     {
         public static List<NhanVien> listNhanVien = null;
+
+        public static List<ChuVu> listChucVu = null;
         public QLNhanVien()
         {
             InitializeComponent();
@@ -27,7 +29,18 @@ namespace QuanLyCuaHangSach.view
         }
         private  List<string> getChucVu()
         {
-            List<string> chucVu = new List<string>() { "Admin","Nhân Viên"};
+            ChucVuBLL chucVuBLL = new ChucVuBLL();
+            List<string> chucVu = new List<string>();
+            listChucVu = chucVuBLL.getChucVu();
+            if(listChucVu != null)
+            {
+                for(int i=0; i < listChucVu.Count(); i++)
+                {
+                    chucVu.Add(listChucVu[i].TenChucVu);
+                }
+        
+            }
+            
             return chucVu ;
         }
         private List<string> getGioiTinh()
@@ -86,15 +99,29 @@ namespace QuanLyCuaHangSach.view
         private void btnSua_Click(object sender, EventArgs e)
         {
             int maChucVu = 0;
-            if (comboboxChucVu.SelectedIndex == 0)
+            if (listChucVu != null)
             {
-                maChucVu = 1;
+                for (int i = 0; i < listChucVu.Count(); i++)
+                {
+                    if (comboboxChucVu.SelectedIndex == i)
+                    {
+                        maChucVu = listChucVu[i].id;
+                    }
+                }
             }
-            else if (comboboxChucVu.SelectedIndex == 1)
+          
+          
+            int trangThaiTaiKhoan = 0;
+
+            if (radioTrangThai.Checked == false)
             {
-                maChucVu = 2;
+                trangThaiTaiKhoan = 0;
             }
-            NhanVien nv1 = new NhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, dateTimeNgaySinh.Value, comboBoxGioiTinh.SelectedItem.ToString(), txtSoDienThoai.Text, rTBGhiChu.Text, DateTime.Now, maChucVu, txtMatKhau.Text, 0);
+            else
+            {
+                trangThaiTaiKhoan = 1;
+            }
+            NhanVien nv1 = new NhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, dateTimeNgaySinh.Value, comboBoxGioiTinh.SelectedItem.ToString(), txtSoDienThoai.Text, rTBGhiChu.Text, DateTime.Now, maChucVu, txtMatKhau.Text, trangThaiTaiKhoan);
 
 
             NhanVienBLL nhanVienBLL = new NhanVienBLL();
@@ -133,21 +160,33 @@ namespace QuanLyCuaHangSach.view
             else if (MatKhau.Trim() == "") { MessageBox.Show("Vui lòng nhập Mật Khẩu "); }
             else if (SoDienThoai.Trim() == "") { MessageBox.Show("Vui lòng nhập số điênh thoại "); }
        
-            else if (ChucVu != 1 && ChucVu!=0) { MessageBox.Show("Vui lòng chọn lại chức vụ "); }
+            
 
             else
             {
                 int maChucVu = 0;
-                if (comboboxChucVu.SelectedIndex == 0)
+                if (listChucVu != null)
                 {
-                    maChucVu = 1;
-                }
-                else if (comboboxChucVu.SelectedIndex == 1)
-                {
-                    maChucVu = 2;
+                    for (int i = 0; i < listChucVu.Count(); i++)
+                    {
+                        if (comboboxChucVu.SelectedIndex == i)
+                        {
+                            maChucVu = listChucVu[i].id;
+                        }
+                    }
                 }
 
-                NhanVien nv = new NhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, dateTimeNgaySinh.Value, comboBoxGioiTinh.SelectedItem.ToString(), txtSoDienThoai.Text, rTBGhiChu.Text, DateTime.Now, maChucVu, txtMatKhau.Text, 0);
+                int trangThaiTaiKhoan = 0;
+
+                if(radioTrangThai.Checked == false)
+                {
+                    trangThaiTaiKhoan = 0;
+                }
+                else
+                {
+                    trangThaiTaiKhoan = 1;
+                }
+                NhanVien nv = new NhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, dateTimeNgaySinh.Value, comboBoxGioiTinh.SelectedItem.ToString(), txtSoDienThoai.Text, rTBGhiChu.Text, DateTime.Now, maChucVu, txtMatKhau.Text, trangThaiTaiKhoan);
 
 
                 NhanVienBLL nhanVienBLL = new NhanVienBLL();
