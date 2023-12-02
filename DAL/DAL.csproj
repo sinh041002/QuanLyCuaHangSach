@@ -45,6 +45,7 @@
     <Compile Include="DataProvider.cs" />
     <Compile Include="GenericDAO.cs" />
     <Compile Include="HoaDonDAO.cs" />
+    <Compile Include="KhachHangDAL.cs" />
     <Compile Include="NhaCungCapDAL.cs" />
     <Compile Include="NhapHangDAO.cs" />
     <Compile Include="ConnecDataBase.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="SaleDAL.cs" />
     <Compile Include="TacGiaDAL.cs" />
     <Compile Include="TheLoaiDAL.cs" />
+    <Compile Include="ThongKeDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">

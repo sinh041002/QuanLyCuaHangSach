@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,15 @@ namespace QuanLyCuaHangSach.view
 {
     public partial class FormQLKhachHang : Form
     {
+        KhachHangBLL khachHangBLL = new KhachHangBLL();
         public FormQLKhachHang()
         {
             InitializeComponent();
+        }
+
+        public void LoadListKhachHang()
+        {
+            dtgvKhachHang.DataSource = khachHangBLL.GetAllKhachHang();
         }
     }
 }
