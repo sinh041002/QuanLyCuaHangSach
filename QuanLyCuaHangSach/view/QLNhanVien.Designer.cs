@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnExport = new System.Windows.Forms.Button();
             this.btnTimkiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnExport = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -96,6 +96,17 @@
             this.panel1.Size = new System.Drawing.Size(1550, 769);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // BtnExport
+            // 
+            this.BtnExport.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExport.Location = new System.Drawing.Point(779, 382);
+            this.BtnExport.Name = "BtnExport";
+            this.BtnExport.Size = new System.Drawing.Size(86, 41);
+            this.BtnExport.TabIndex = 14;
+            this.BtnExport.Text = "Xuất Exel";
+            this.BtnExport.UseVisualStyleBackColor = true;
+            this.BtnExport.Click += new System.EventHandler(this.BtnExport_Click);
             // 
             // btnTimkiem
             // 
@@ -303,6 +314,7 @@
             // 
             // txtMaNhanVien
             // 
+            this.txtMaNhanVien.Enabled = false;
             this.txtMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNhanVien.Location = new System.Drawing.Point(358, 80);
             this.txtMaNhanVien.Margin = new System.Windows.Forms.Padding(2);
@@ -386,17 +398,6 @@
             this.label1.Size = new System.Drawing.Size(116, 21);
             this.label1.TabIndex = 27;
             this.label1.Text = "Mã Nhân Viên";
-            // 
-            // BtnExport
-            // 
-            this.BtnExport.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExport.Location = new System.Drawing.Point(779, 382);
-            this.BtnExport.Name = "BtnExport";
-            this.BtnExport.Size = new System.Drawing.Size(86, 41);
-            this.BtnExport.TabIndex = 14;
-            this.BtnExport.Text = "Xuất Exel";
-            this.BtnExport.UseVisualStyleBackColor = true;
-            this.BtnExport.Click += new System.EventHandler(this.BtnExport_Click);
             // 
             // QLNhanVien
             // 

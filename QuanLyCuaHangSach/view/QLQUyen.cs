@@ -287,18 +287,24 @@ namespace QuanLyCuaHangSach.view
         {
             QuyenBLL quyenBLL   =new QuyenBLL();
             int maquyen = int.Parse(txtMaQuyen.Text);
-           Boolean kt=  quyenBLL.xoaQuyen(maquyen);
-            if(kt == true)
+            DialogResult dialog;
+            dialog = MessageBox.Show("Bạn có muốn xóa quyền" + maquyen, "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
             {
-                MessageBox.Show("Xóa Thành Công ");
-                Load1();
+                Boolean kt = quyenBLL.xoaQuyen(maquyen);
+                if (kt == true)
+                {
+                    MessageBox.Show("Xóa Thành Công ");
+                    Load1();
 
+                }
+                else
+                {
+                    MessageBox.Show("Xóa Thất Bại ");
+                    return;
+                }
             }
-            else
-            {
-                MessageBox.Show("Xóa Thất Bại ");
-                return;
-            }
+               
         }
 
         private void btnClear_Click(object sender, EventArgs e)

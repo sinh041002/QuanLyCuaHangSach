@@ -158,7 +158,7 @@ namespace QuanLyCuaHangSach.view
         //thêm
         private void btnThem_Click(object sender, EventArgs e)
         {
-             string MaNhanVien = txtMaNhanVien.Text;
+            
              string HoTen = txtTenNhanVien.Text;
             DateTime NgaySinh = dateTimeNgaySinh.Value;
          
@@ -170,8 +170,7 @@ namespace QuanLyCuaHangSach.view
              int ChucVu = comboboxChucVu.SelectedIndex;
 
 
-            if (MaNhanVien.Trim() == "") { MessageBox.Show("Vui lòng nhập Mã Nhân Viên "); }
-            else if (HoTen.Trim() == "") { MessageBox.Show("Vui lòng nhập Họ Và Tên "); }
+            if (HoTen.Trim() == "") { MessageBox.Show("Vui lòng nhập Họ Và Tên "); }
             else if (NgaySinh == null) { MessageBox.Show("Vui lòng chọn ngày sinh "); }
             
             else if (MatKhau.Trim() == "") { MessageBox.Show("Vui lòng nhập Mật Khẩu "); }
@@ -203,7 +202,9 @@ namespace QuanLyCuaHangSach.view
                 {
                     trangThaiTaiKhoan = 1;
                 }
-                NhanVien nv = new NhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, dateTimeNgaySinh.Value, comboBoxGioiTinh.SelectedItem.ToString(), txtSoDienThoai.Text, rTBGhiChu.Text, DateTime.Now, maChucVu, txtMatKhau.Text, trangThaiTaiKhoan);
+                NhanVien getma=new NhanVien();
+                string maNhanvine = getma.getMa();
+                NhanVien nv = new NhanVien(maNhanvine, txtTenNhanVien.Text, dateTimeNgaySinh.Value, comboBoxGioiTinh.SelectedItem.ToString(), txtSoDienThoai.Text, rTBGhiChu.Text, DateTime.Now, maChucVu, txtMatKhau.Text, trangThaiTaiKhoan);
 
 
                 NhanVienBLL nhanVienBLL = new NhanVienBLL();
@@ -241,17 +242,24 @@ namespace QuanLyCuaHangSach.view
         {
             Boolean ktra = false;
             string manhanvien = txtMaNhanVien.Text;
-            NhanVienBLL nhanVienBLL= new NhanVienBLL();
-            ktra=nhanVienBLL.xoaNhanVien(manhanvien);
-            if (ktra)
+            DialogResult dialog;
+            dialog = MessageBox.Show("Bạn có muốn xóa nhân viên"+manhanvien, "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
             {
-                MessageBox.Show("Xóa Thành Công");
-                Load1();
+                NhanVienBLL nhanVienBLL = new NhanVienBLL();
+                ktra = nhanVienBLL.xoaNhanVien(manhanvien);
+                if (ktra)
+                {
+                    MessageBox.Show("Xóa Thành Công");
+                    Load1();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa Không Thành Công");
+                    return;
+                }
             }
-            else
-            {
-                MessageBox.Show("Xóa Không Thành Công");
-            } 
+           
                 
            
         }
@@ -478,7 +486,7 @@ namespace QuanLyCuaHangSach.view
 
                 dataRow[0] = dtgvRow.Cells[0].Value;
                 dataRow[1] = dtgvRow.Cells[1].Value;
-                dataRow[2] = dtgvRow.Cells[2].Value;
+                dataRow[2] = String.Format("{0:MM/dd/yyyy}", dtgvRow.Cells[2].Value); ;
                 dataRow[3] = dtgvRow.Cells[3].Value;
                 dataRow[4] = dtgvRow.Cells[4].Value;
                 dataRow[5] = dtgvRow.Cells[5].Value;

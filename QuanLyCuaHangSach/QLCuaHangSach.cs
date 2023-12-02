@@ -128,7 +128,9 @@ namespace QuanLyCuaHangSach
 
         private void btnQLKhachHang_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new FormQLKhachHang());
+           
+           
+            OpenChildForm(new QLKhachHang());
         }
 
         private void btnQLSach_Click(object sender, EventArgs e)

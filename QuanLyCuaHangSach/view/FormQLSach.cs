@@ -320,6 +320,16 @@ namespace QuanLyCuaHangSach.view
 
         }
 
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvListBook_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void btnEdit_Click(object sender, EventArgs e)
         {
             if (txtTenSach.Text == "")

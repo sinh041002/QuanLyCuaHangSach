@@ -57,6 +57,7 @@
     <Compile Include="QuyenDAL.cs" />
     <Compile Include="SachDAL.cs" />
     <Compile Include="SaleDAL.cs" />
+    <Compile Include="TacGiaBLL.cs" />
     <Compile Include="TacGiaDAL.cs" />
     <Compile Include="TheLoaiDAL.cs" />
     <Compile Include="ThongKeDAL.cs" />
