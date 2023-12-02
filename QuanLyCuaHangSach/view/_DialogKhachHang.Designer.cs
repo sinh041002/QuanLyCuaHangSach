@@ -32,17 +32,18 @@ namespace QuanLyCuaHangSach.view
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_DialogKhachHang));
             this.dgv3ChamUser = new System.Windows.Forms.DataGridView();
-            this.txt_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txt_FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txt_LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txt_SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txt_DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnReset = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnChon = new System.Windows.Forms.Button();
+            this.txt_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txt_FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txt_SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txt_DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoivien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongtienmua = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv3ChamUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,61 +53,17 @@ namespace QuanLyCuaHangSach.view
             this.dgv3ChamUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.txt_ID,
             this.txt_FirstName,
-            this.txt_LastName,
             this.txt_SoDienThoai,
-            this.txt_DiaChi});
+            this.txt_DiaChi,
+            this.hoivien,
+            this.tongtienmua});
             this.dgv3ChamUser.Location = new System.Drawing.Point(70, 93);
             this.dgv3ChamUser.Name = "dgv3ChamUser";
             this.dgv3ChamUser.ReadOnly = true;
             this.dgv3ChamUser.RowHeadersWidth = 51;
             this.dgv3ChamUser.RowTemplate.Height = 25;
-            this.dgv3ChamUser.Size = new System.Drawing.Size(540, 150);
+            this.dgv3ChamUser.Size = new System.Drawing.Size(541, 150);
             this.dgv3ChamUser.TabIndex = 14;
-            // 
-            // txt_ID
-            // 
-            this.txt_ID.DataPropertyName = "Id";
-            this.txt_ID.HeaderText = "ID";
-            this.txt_ID.MinimumWidth = 6;
-            this.txt_ID.Name = "txt_ID";
-            this.txt_ID.ReadOnly = true;
-            this.txt_ID.Width = 125;
-            // 
-            // txt_FirstName
-            // 
-            this.txt_FirstName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.txt_FirstName.DataPropertyName = "FirstName";
-            this.txt_FirstName.HeaderText = "Họ";
-            this.txt_FirstName.MinimumWidth = 6;
-            this.txt_FirstName.Name = "txt_FirstName";
-            this.txt_FirstName.ReadOnly = true;
-            // 
-            // txt_LastName
-            // 
-            this.txt_LastName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.txt_LastName.DataPropertyName = "LastName";
-            this.txt_LastName.HeaderText = "Tên";
-            this.txt_LastName.MinimumWidth = 6;
-            this.txt_LastName.Name = "txt_LastName";
-            this.txt_LastName.ReadOnly = true;
-            // 
-            // txt_SoDienThoai
-            // 
-            this.txt_SoDienThoai.DataPropertyName = "PhoneNumber";
-            this.txt_SoDienThoai.HeaderText = "Số Điện Thoại";
-            this.txt_SoDienThoai.MinimumWidth = 6;
-            this.txt_SoDienThoai.Name = "txt_SoDienThoai";
-            this.txt_SoDienThoai.ReadOnly = true;
-            this.txt_SoDienThoai.Width = 125;
-            // 
-            // txt_DiaChi
-            // 
-            this.txt_DiaChi.DataPropertyName = "Address";
-            this.txt_DiaChi.HeaderText = "Địa Chỉ";
-            this.txt_DiaChi.MinimumWidth = 6;
-            this.txt_DiaChi.Name = "txt_DiaChi";
-            this.txt_DiaChi.ReadOnly = true;
-            this.txt_DiaChi.Width = 125;
             // 
             // btnReset
             // 
@@ -167,6 +124,7 @@ namespace QuanLyCuaHangSach.view
             this.btnHuy.Text = "Hủy";
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnChon
             // 
@@ -181,6 +139,56 @@ namespace QuanLyCuaHangSach.view
             this.btnChon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnChon.UseVisualStyleBackColor = true;
             this.btnChon.Click += new System.EventHandler(this.btnChon_Click);
+            // 
+            // txt_ID
+            // 
+            this.txt_ID.DataPropertyName = "MaKhachHang";
+            this.txt_ID.HeaderText = "Mã Khách Hàng";
+            this.txt_ID.MinimumWidth = 6;
+            this.txt_ID.Name = "txt_ID";
+            this.txt_ID.ReadOnly = true;
+            this.txt_ID.Width = 70;
+            // 
+            // txt_FirstName
+            // 
+            this.txt_FirstName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.txt_FirstName.DataPropertyName = "TenKhachHang";
+            this.txt_FirstName.HeaderText = "Họ và Tên";
+            this.txt_FirstName.MinimumWidth = 6;
+            this.txt_FirstName.Name = "txt_FirstName";
+            this.txt_FirstName.ReadOnly = true;
+            // 
+            // txt_SoDienThoai
+            // 
+            this.txt_SoDienThoai.DataPropertyName = "SoDienThoai";
+            this.txt_SoDienThoai.HeaderText = "Số Điện Thoại";
+            this.txt_SoDienThoai.MinimumWidth = 6;
+            this.txt_SoDienThoai.Name = "txt_SoDienThoai";
+            this.txt_SoDienThoai.ReadOnly = true;
+            // 
+            // txt_DiaChi
+            // 
+            this.txt_DiaChi.DataPropertyName = "Email";
+            this.txt_DiaChi.HeaderText = "Email";
+            this.txt_DiaChi.MinimumWidth = 6;
+            this.txt_DiaChi.Name = "txt_DiaChi";
+            this.txt_DiaChi.ReadOnly = true;
+            // 
+            // hoivien
+            // 
+            this.hoivien.DataPropertyName = "HoiVien";
+            this.hoivien.HeaderText = "hoi vien";
+            this.hoivien.Name = "hoivien";
+            this.hoivien.ReadOnly = true;
+            this.hoivien.Visible = false;
+            // 
+            // tongtienmua
+            // 
+            this.tongtienmua.DataPropertyName = "Tongtienmua";
+            this.tongtienmua.HeaderText = "Tổng tiền mua";
+            this.tongtienmua.Name = "tongtienmua";
+            this.tongtienmua.ReadOnly = true;
+            this.tongtienmua.Visible = false;
             // 
             // _DialogKhachHang
             // 
@@ -214,8 +222,9 @@ namespace QuanLyCuaHangSach.view
         private Button btnChon;
         private DataGridViewTextBoxColumn txt_ID;
         private DataGridViewTextBoxColumn txt_FirstName;
-        private DataGridViewTextBoxColumn txt_LastName;
         private DataGridViewTextBoxColumn txt_SoDienThoai;
         private DataGridViewTextBoxColumn txt_DiaChi;
+        private DataGridViewTextBoxColumn hoivien;
+        private DataGridViewTextBoxColumn tongtienmua;
     }
 }

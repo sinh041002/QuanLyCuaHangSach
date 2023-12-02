@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,12 +16,16 @@ namespace QuanLyCuaHangSach.view
 
         public static string id;
         public static string ten;
-
+        KhachHangBLL khachHangBLL = new KhachHangBLL();
         public _DialogKhachHang()
         {
             InitializeComponent();
+            GetAllKhachHang();
         }
-
+        public void GetAllKhachHang()
+        {
+            dgv3ChamUser.DataSource = khachHangBLL.GetAllKhachHang();
+        }
         private void btnReset_Click(object sender, EventArgs e)
         {
             txtSearch.Text = "";
@@ -49,6 +54,11 @@ namespace QuanLyCuaHangSach.view
                 MessageBox.Show("Vui lòng nhập từ khóa !!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

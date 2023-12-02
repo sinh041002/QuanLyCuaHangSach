@@ -8,6 +8,16 @@ namespace DTO
 {
     public class ChiTietHoaDon
     {
+        public ChiTietHoaDon(string maHoaDon, string maSach, float soLuong, float donGia, float thanhTien)
+        {
+            MaHoaDon = maHoaDon;
+            MaSach = maSach;
+            SoLuong = soLuong;
+            DonGia = donGia;
+            ThanhTien = thanhTien;
+        }
+        public ChiTietHoaDon() { }
+
         public string MaHoaDon { get; set; } 
         public string MaSach { get; set;}
         public float SoLuong { get; set; }
