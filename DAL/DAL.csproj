@@ -45,6 +45,7 @@
     <Compile Include="DataProvider.cs" />
     <Compile Include="GenericDAO.cs" />
     <Compile Include="HoaDonDAO.cs" />
+    <Compile Include="KhachHangDAL.cs" />
     <Compile Include="NhaCungCapDAL.cs" />
     <Compile Include="NhapHangDAO.cs" />
     <Compile Include="ConnecDataBase.cs" />
