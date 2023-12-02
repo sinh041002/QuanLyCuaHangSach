@@ -41,7 +41,7 @@ namespace DAL
             Boolean ktra = false;
             try
             {
-                
+                string query1 = "INSERT INTO  tbl_chucvu(id,TenChucVu)\r\nVALUES ("+quyen.MaQuyen+",N'"+quyen.TenQuyen+"')";
                 string query = "INSERT INTO  tbl_quyen(MaQuyen,TenQuyen,QLKhachHang,QLNhanVien,QLQuyen,QLKhuyenMai,QLSach,QLHoaDon,BanHang,QLThongKe) VALUES('" + quyen.MaQuyen + "', N'" + quyen.TenQuyen + "'" +
                ", " + quyen.QLKhachHang + "," + quyen.QLNhanVien + "," + quyen.QLQuyen + "," + quyen.QLKhuyenMai + ", " + quyen.QLSach + ", " + quyen.QLHoaDon + ", " + quyen.BanHang + ", " + quyen.QLThongKe + ");\r\n\r\n";
                 using (SqlConnection sqlConnection = SqlConnectionData.Connect())
@@ -55,7 +55,19 @@ namespace DAL
                     sqlConnection.Close();
 
                 }
-            }catch (Exception ex)
+                using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+                {
+
+                    sqlConnection.Open();
+                    sqlCommand = new SqlCommand(query1, sqlConnection);
+                    dataReader = sqlCommand.ExecuteReader();
+
+                    ktra = true;
+                    sqlConnection.Close();
+
+                }
+            }
+            catch (Exception ex)
             {
                 return false;
             }

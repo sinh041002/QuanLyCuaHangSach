@@ -54,7 +54,7 @@
             this.lblUsername.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(66, 105);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(152, 24);
+            this.lblUsername.Size = new System.Drawing.Size(124, 19);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Tên đăng nhập";
             this.lblUsername.Click += new System.EventHandler(this.label1_Click);
@@ -65,7 +65,7 @@
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(66, 176);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 24);
+            this.label2.Size = new System.Drawing.Size(81, 19);
             this.label2.TabIndex = 4;
             this.label2.Text = "Mật Khẩu";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -74,7 +74,7 @@
             // 
             this.txtDangNhap.Location = new System.Drawing.Point(232, 105);
             this.txtDangNhap.Name = "txtDangNhap";
-            this.txtDangNhap.Size = new System.Drawing.Size(262, 34);
+            this.txtDangNhap.Size = new System.Drawing.Size(262, 29);
             this.txtDangNhap.TabIndex = 1;
             this.txtDangNhap.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -82,7 +82,7 @@
             // 
             this.txtMatkhau.Location = new System.Drawing.Point(232, 176);
             this.txtMatkhau.Name = "txtMatkhau";
-            this.txtMatkhau.Size = new System.Drawing.Size(262, 34);
+            this.txtMatkhau.Size = new System.Drawing.Size(262, 29);
             this.txtMatkhau.TabIndex = 2;
             this.txtMatkhau.UseSystemPasswordChar = true;
             // 
@@ -99,7 +99,7 @@
             // 
             // dangnhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 353);
             this.Controls.Add(this.txtDangNhap);
@@ -109,6 +109,7 @@
             this.Controls.Add(this.txtMatkhau);
             this.Controls.Add(this.BtnLogin);
             this.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "dangnhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
