@@ -8,34 +8,32 @@ namespace DTO
 {
     public class Sach
     {
-        private string maSach;
-        private string tenSach;
-        private float soLuong;
-        private string image;
-        private string donGiaNhap;
-        private string donGiaXuat;
+        public Sach() { }
+        public string MaSach { get; set; }
+        public string TenSach { get; set; }
+        public  string MaTheLoai { get; set; }
+        public string MaTacGia { get; set; }
+        public float SoLuong { get; set; }
+   
+        public string DonGiaNhap { get; set; }
+        public string DonGiaXuat { get; set; }
 
-        public Sach(string maSach, string tenSach, float soLuong, string image, string donGiaNhap, string donGiaXuat)
+        public string MaNhaXuatBan { get; set; }
+        public string MaNhaCungCap { get; set; }
+        public string Image { get; set; }
+
+        public Sach(string maSach, string tenSach, string maTheLoai, string maTacGia, float soLuong, string donGiaNhap, string donGiaXuat, string maNhaXuatBan, string maNhaCungCap, string image)
         {
-            this.maSach = maSach;
-            this.tenSach = tenSach;
-            this.soLuong = soLuong;
-            this.image = image;
-            this.donGiaNhap = donGiaNhap;
-            this.donGiaXuat = donGiaXuat;
+            MaSach = maSach;
+            TenSach = tenSach;
+            MaTheLoai = maTheLoai;
+            MaTacGia = maTacGia;
+            SoLuong = soLuong;
+            DonGiaNhap = donGiaNhap;
+            DonGiaXuat = donGiaXuat;
+            MaNhaXuatBan = maNhaXuatBan;
+            MaNhaCungCap = maNhaCungCap;
+            Image = image;
         }
-
-        public Sach()
-        {
-
-        }
-
-
-        public string MaSach { get => maSach; set => maSach = value; }
-        public string TenSach { get => tenSach; set => tenSach = value; }
-        public float SoLuong { get => soLuong; set => soLuong = value; }
-        public string Image { get => image; set => image = value; }
-        public string DonGiaNhap { get => donGiaNhap; set => donGiaNhap = value; }
-        public string DonGiaXuat { get => donGiaXuat; set => donGiaXuat = value; }
     }
 }

@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using DTO;
+using System.Data.Common;
 
 namespace DAL
 {
     public class SachDAL
     {
+        SqlCommand sqlCommand;
+        SqlDataReader dataReader;
         public static DataTable GetAllBook()
         {
             DataTable dataTable = new DataTable();
@@ -34,12 +37,7 @@ namespace DAL
             using (SqlConnection connection = SqlConnectionData.Connect())
             {
                 connection.Open();
-                string query = @"	select tbl_sach.MaSach,tbl_sach.TenSach, tbl_theloai.TenTheLoai ,tbl_theloai.MaTheLoai , tbl_sach.SoLuong, tbl_sach.DonGiaXuat, DonGiaNhap, Image, tbl_tacgia.tentacgia, tbl_tacgia.MaTacGia, tbl_nhaxuatban.TenNhaXuatBan, tbl_nhaxuatban.MaNhaXuatBan, tbl_nhacungcap.TenNhaCungCap, tbl_nhacungcap.MaNhaCungCap
-	                                from tbl_sach 
-	                                inner join tbl_theloai on tbl_sach.MaTheLoai = tbl_theloai.MaTheLoai
-	                                inner join tbl_tacgia on tbl_sach.MaTacGia = tbl_tacgia.MaTacGia
-	                                inner join tbl_nhaxuatban on tbl_sach.MaNhaXuatBan = tbl_nhaxuatban.MaNhaXuatBan
-	                                inner join tbl_nhacungcap on tbl_sach.MaNhaCungCap = tbl_nhacungcap.MaNhaCungCap";
+                string query = @"select * from dbo.tbl_sach";
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 adapter.Fill(dataTable);
@@ -134,6 +132,91 @@ namespace DAL
                 command.ExecuteNonQuery();
                 connection.Close();
             }    
+        }
+
+        public Boolean themSach(Sach sach)
+        {
+            Boolean ktra = false;
+            try
+            {
+                string query = "INSERT INTO dbo.tbl_sach (MaSach,TenSach,MaTheLoai,MaTacGia,SoLuong,DonGiaNhap,DonGiaXuat,MaNhaXuatBan,MaNhaCungCap,Image)" +
+                    "\r\nVALUES (N'" + sach.MaSach + "',N'" + sach.TenSach + "',N'" + sach.MaTheLoai + "',N'" + sach.MaTacGia + "'" +
+                         ",N'" + sach.SoLuong + "',N'" + sach.DonGiaNhap + "',N'" + sach.DonGiaXuat + "'," +
+                         "N'" + sach.MaNhaXuatBan + "',N'" + sach.MaNhaCungCap + "',N'" + sach.Image + "');\r\n\r\n";
+                using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+                {
+
+                    sqlConnection.Open();
+                    sqlCommand = new SqlCommand(query, sqlConnection);
+                    dataReader = sqlCommand.ExecuteReader();
+
+                    ktra = true;
+                    sqlConnection.Close();
+
+                }
+            }
+            catch
+            {
+                ktra = false;
+            }
+
+            return ktra;
+        }
+
+        public Boolean suaKhachHang(KhachHangDTO khachhang)
+        {
+            Boolean ktra = false;
+            try
+            {
+                string query = "UPDATE dbo.tbl_khachhang\r\n" +
+               "SET TenKhachHang = N'" + khachhang.TenKhachHang + "',DiaChi = N'" + khachhang.DiaChi + "',SoDienThoai = N'" + khachhang.SoDienThoai + "',Email = N'" + khachhang.Email + "'" +
+               ",TongTienMua = " + khachhang.TongTienMua + " " +
+               "\r\nWHERE MaKhachHang = '" + khachhang.MaKhachHang + "';";
+
+
+                using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+                {
+
+                    sqlConnection.Open();
+                    sqlCommand = new SqlCommand(query, sqlConnection);
+                    dataReader = sqlCommand.ExecuteReader();
+
+                    ktra = true;
+                    sqlConnection.Close();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                ktra = false;
+            }
+
+            return ktra;
+        }
+
+        public Boolean xoaKhachhang(string makhachhang)
+        {
+            Boolean ktra = false;
+            try
+            {
+                string query = "DELETE FROM dbo.tbl_khachhang WHERE MaKhachHang = '" + makhachhang + "' ;";
+                using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+                {
+
+                    sqlConnection.Open();
+                    sqlCommand = new SqlCommand(query, sqlConnection);
+                    dataReader = sqlCommand.ExecuteReader();
+
+                    ktra = true;
+                    sqlConnection.Close();
+
+                }
+            }
+            catch
+            {
+                ktra = false;
+            }
+            return ktra;
         }
     }
 }

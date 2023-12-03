@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyCuaHangSach.view;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,7 +20,7 @@ namespace QuanLyCuaHangSach
 
            
 
-            Application.Run(new dangnhap());
+            Application.Run(new FormQLSach());
 
         }
     }

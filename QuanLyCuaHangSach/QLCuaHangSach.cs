@@ -145,7 +145,9 @@ namespace QuanLyCuaHangSach
 
         private void BtnQLNhanVien_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new QLNhanVien());
+            QLNhanVien qLNhanVien = new QLNhanVien();
+           
+            OpenChildForm(qLNhanVien);
         }
 
         private void btnQuyen_Click(object sender, EventArgs e)

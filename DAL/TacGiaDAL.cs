@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,9 @@ namespace DAL
 {
     public class TacGiaDAL
     {
+
+        SqlCommand sqlCommand;
+        SqlDataReader dataReader;
         public static DataTable GetAllTacGia()
         {
             DataTable dt = new DataTable();
@@ -24,6 +28,33 @@ namespace DAL
             }
 
             return dt;
+        }
+
+        public Boolean themKhachHang(TacGia tacgia)
+        {
+            Boolean ktra = false;
+            try
+            {
+                string query = "INSERT INTO dbo.tbl_tacgia (MaTacGia,TenTacGia,MoTaTacGia)" +
+                    "\r\nVALUES (N'" + tacgia.MaTacGia + "',N'" + tacgia.TenTacGia + "',N'" + tacgia.MoTaTacGia + "');\r\n\r\n";
+                using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+                {
+
+                    sqlConnection.Open();
+                    sqlCommand = new SqlCommand(query, sqlConnection);
+                    dataReader = sqlCommand.ExecuteReader();
+
+                    ktra = true;
+                    sqlConnection.Close();
+
+                }
+            }
+            catch
+            {
+                ktra = false;
+            }
+
+            return ktra;
         }
         public static void UpdateTacGia(TacGia tacGia)
         {

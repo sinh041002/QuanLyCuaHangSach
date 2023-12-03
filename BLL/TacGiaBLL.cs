@@ -23,6 +23,14 @@ namespace BLL
         public void DeleteTacGia(string ma)
         {
             TacGiaDAL.XoaTacGia(ma);
+
+        }
+        public Boolean themTacGia(TacGia tacGia)
+        {
+
+            TacGiaDAL tacGiaDAL = new TacGiaDAL();
+            Boolean kt = tacGiaDAL.themKhachHang(tacGia);
+            return kt;
         }
     }
 }

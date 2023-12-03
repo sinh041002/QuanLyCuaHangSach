@@ -20,6 +20,7 @@ namespace QuanLyCuaHangSach.view
         public QLNhanVien()
         {
             InitializeComponent();
+            Load1();
         }
 
    
@@ -63,7 +64,7 @@ namespace QuanLyCuaHangSach.view
 
         private void QLNhanVien_Load(object sender, EventArgs e)
         {
-            Load1();
+           
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {

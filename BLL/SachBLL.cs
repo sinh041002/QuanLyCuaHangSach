@@ -11,6 +11,41 @@ namespace BLL
 {
     public class SachBLL
     {
+
+
+        public Boolean themSach(Sach sach)
+        {
+
+            SachDAL sachDAL = new SachDAL();
+            Boolean kt = sachDAL.themSach(sach);
+            return kt;
+        }
+        public Boolean suaSach(Sach sach)
+        {
+
+            SachDAL sachDAL = new SachDAL();
+            Boolean kt = sachDAL.themSach(sach);
+
+            if (kt)
+            {
+                return kt;
+            }
+            return false;
+        }
+
+        public Boolean xoaKhachHang(string maSach)
+        {
+
+            SachDAL sachDAL = new SachDAL();
+            Boolean kt = true;
+
+            if (kt)
+            {
+                return kt;
+            }
+            return false;
+        }
+
         public DataTable GetAllBook()
         {
             return SachDAL.GetAllBook();

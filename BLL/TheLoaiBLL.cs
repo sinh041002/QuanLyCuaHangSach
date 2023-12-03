@@ -23,5 +23,13 @@ namespace BLL
         {
             TheLoaiDAL.DeleteTheLoai(ma);
         }
+
+        public Boolean themTheLoai(TheLoai TheLoai)
+        {
+
+            TheLoaiDAL theLoaiDAL = new TheLoaiDAL();
+            Boolean kt = theLoaiDAL.themTheLoai(TheLoai);
+            return kt;
+        }
     }
 }

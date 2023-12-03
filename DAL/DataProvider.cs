@@ -11,14 +11,14 @@ namespace DAL
     public class DataProvider
     {
         //phú
-<<<<<<< HEAD
+
         //private string ConnectionString = "Data Source=DESKTOP-K50G8NB\\CSDL;Initial Catalog=cuahangsach;Integrated Security=True";
-=======
-        private string ConnectionString = "Data Source=DESKTOP-2869SNJ\\MANHPHU;Initial Catalog=cuahangsachh;Integrated Security=True";
->>>>>>> 63992458dc9aa212b79417c072eaaf9fc97ba4e6
+
+       // private string ConnectionString = "Data Source=DESKTOP-2869SNJ\\MANHPHU;Initial Catalog=cuahangsachh;Integrated Security=True";
+
 
         //Sinh
-        private  string ConnectionString = "Data Source=DESKTOP-MT4HM91\\SQLEXPRESS;Initial Catalog=cuahangsach;Integrated Security=True";
+        private  string ConnectionString = "Data Source=DESKTOP-MT4HM91\\SQLEXPRESS;Initial Catalog=cuahangsach1;Integrated Security=True";
         private static DataProvider instance;
 
        
