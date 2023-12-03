@@ -42,10 +42,7 @@ namespace QuanLyCuaHangSach
 
         private void FormHoaDon_FormClosing(object sender, FormClosingEventArgs e)
         {
-<<<<<<< HEAD:QuanLyCuaHangSach/FormHoaDon.cs
-          
-=======
-
+         
         }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
