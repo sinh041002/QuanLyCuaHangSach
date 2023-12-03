@@ -218,5 +218,18 @@ namespace DAL
             }
             return ktra;
         }
+
+        public static void MinusStockBook( String ma, double soluong )
+        {
+            using (SqlConnection connection = SqlConnectionData.Connect())
+            {
+                connection.Open();
+                string query = $"UPDATE tbl_sach set SoLuong = SoLuong - @SoLuong WHERE MaSach = @MaSach";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.Add("@SoLuong", SqlDbType.Int).Value = soluong;
+                cmd.Parameters.Add("@MaSach", SqlDbType.NVarChar).Value = ma;
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }

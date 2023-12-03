@@ -14,17 +14,11 @@ namespace DAL
         public static SqlConnection Connect()
         {
 
-
             //Sinh
-            string strcon = "Data Source=DESKTOP-MT4HM91\\SQLEXPRESS;Initial Catalog=cuahangsach1;Integrated Security=True";
-
-        //    string strcon = "Data Source=LAPTOP-0HLAONAD\\DUCTAM;Initial Catalog=CuaHangSachV4;Integrated Security=True";
-
-            //Sinh
-            //string strcon = "Data Source=DESKTOP-MT4HM91\\SQLEXPRESS;Initial Catalog=cuahangsach;Integrated Security=True";
-
-          //  string strcon = "Data Source=DESKTOP-K50G8NB\\CSDL;Initial Catalog=cuahangsach;Integrated Security=True";
-
+            //string strcon = "Data Source=DESKTOP-MT4HM91\\SQLEXPRESS;Initial Catalog=cuahangsach1;Integrated Security=True";
+            //string strcon = "Data Source=LAPTOP-0HLAONAD\\DUCTAM;Initial Catalog=CuaHangSachV4;Integrated Security=True";
+            // string strcon = "Data Source=DESKTOP-K50G8NB\\CSDL;Initial Catalog=cuahangsach;Integrated Security=True";
+            string strcon = "Data Source=DESKTOP-2869SNJ\\MANHPHU;Initial Catalog=CuaHangSach;Integrated Security=True";
             //DESKTOP-2869SNJ\\MANHPHU
             //DESKTOP-K50G8NB\\CSDL
 

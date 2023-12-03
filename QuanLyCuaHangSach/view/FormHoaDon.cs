@@ -42,6 +42,9 @@ namespace QuanLyCuaHangSach
 
         private void FormHoaDon_FormClosing(object sender, FormClosingEventArgs e)
         {
+<<<<<<< HEAD:QuanLyCuaHangSach/FormHoaDon.cs
+          
+=======
 
         }
 

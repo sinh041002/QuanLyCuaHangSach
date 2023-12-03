@@ -74,5 +74,10 @@ namespace BLL
         {
             SachDAL.DeleteBook(ma);
         }
+
+        public void MinusStockBook(string ma, double soluong)
+        {
+            SachDAL.MinusStockBook(ma, soluong);
+        }
     }
 }
