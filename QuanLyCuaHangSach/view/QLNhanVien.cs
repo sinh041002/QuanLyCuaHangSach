@@ -510,5 +510,11 @@ namespace QuanLyCuaHangSach.view
 
             ExportFile(dataTable, "Danh Sách", "Danh Sách Nhân Viên");
         }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            PrintNhanVien innhanvien= new PrintNhanVien();
+            innhanvien.Show();
+        }
     }
 }

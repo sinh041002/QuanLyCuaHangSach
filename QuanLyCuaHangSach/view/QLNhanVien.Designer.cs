@@ -56,13 +56,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnIn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.btnIn);
             this.panel1.Controls.Add(this.BtnExport);
             this.panel1.Controls.Add(this.btnTimkiem);
             this.panel1.Controls.Add(this.txtTimKiem);
@@ -102,7 +104,7 @@
             // BtnExport
             // 
             this.BtnExport.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExport.Location = new System.Drawing.Point(779, 382);
+            this.BtnExport.Location = new System.Drawing.Point(1114, 320);
             this.BtnExport.Name = "BtnExport";
             this.BtnExport.Size = new System.Drawing.Size(86, 41);
             this.BtnExport.TabIndex = 14;
@@ -137,7 +139,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(638, 382);
+            this.btnClear.Location = new System.Drawing.Point(697, 382);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(87, 41);
@@ -151,7 +153,7 @@
             // 
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(267, 381);
+            this.btnThem.Location = new System.Drawing.Point(326, 381);
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 41);
@@ -165,7 +167,7 @@
             // 
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(515, 381);
+            this.btnXoa.Location = new System.Drawing.Point(574, 381);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -179,7 +181,7 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(389, 382);
+            this.btnSua.Location = new System.Drawing.Point(448, 382);
             this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 41);
@@ -335,6 +337,7 @@
             // 
             // txtMaNhanVien
             // 
+            this.txtMaNhanVien.Enabled = false;
             this.txtMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNhanVien.Location = new System.Drawing.Point(358, 80);
             this.txtMaNhanVien.Margin = new System.Windows.Forms.Padding(2);
@@ -426,6 +429,18 @@
             this.label1.Text = "Mã Nhân Viên";
             this.label1.UseWaitCursor = true;
             // 
+            // btnIn
+            // 
+            this.btnIn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIn.Location = new System.Drawing.Point(969, 320);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(86, 41);
+            this.btnIn.TabIndex = 48;
+            this.btnIn.Text = "Print";
+            this.btnIn.UseVisualStyleBackColor = true;
+            this.btnIn.UseWaitCursor = true;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            // 
             // QLNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,5 +487,6 @@
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button BtnExport;
         public System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnIn;
     }
 }

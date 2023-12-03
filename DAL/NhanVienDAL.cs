@@ -15,6 +15,20 @@ namespace DAL
 
         SqlCommand sqlCommand;
         SqlDataReader dataReader;
+        public static DataTable GetAllNhanVien()
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection connection = SqlConnectionData.Connect())
+            {
+                connection.Open();
+                string query = @"select * from tbl_nhanvien";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+
+            return dt;
+        }
         public List<NhanVien> getListNhanViens()
         {
             string query = "Select * from dbo.tbl_nhanvien";
