@@ -135,5 +135,6 @@ C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLy
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogNhanVien.resources
 >>>>>>> 63992458dc9aa212b79417c072eaaf9fc97ba4e6
 D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogNhanVien.resources
-=======
 >>>>>>> b6756061f9e79476bbf185685fbf5dc119327f53
+D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormHuyHoaDon.resources
+D:\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormHuyNhapHang.resources

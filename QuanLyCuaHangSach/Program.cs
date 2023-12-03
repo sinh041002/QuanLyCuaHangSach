@@ -18,7 +18,7 @@ namespace QuanLyCuaHangSach
 
            
 
-            Application.Run(new FormQLSach());
+            Application.Run(new dangnhap());
 
         }
     }
