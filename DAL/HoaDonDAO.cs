@@ -19,7 +19,7 @@ namespace DAL
         private static HoaDonDAO instance;
         private HoaDonDAO() { }
 
-        private NhapHangDAO NhapHangDAO = new NhapHangDAO();
+
 
         public static HoaDonDAO Instance
         {
@@ -239,24 +239,25 @@ namespace DAL
             string MaKhachHang = hoaDonDTO.MaKhachHang;
             DateTime NgayXuat = hoaDonDTO.NgayXuat;
             double TongTien = hoaDonDTO.TongTien;
+            double GiamGia = hoaDonDTO.GiamGia;
             int result = -1;
 
-            using (SqlConnection connection = SqlConnectionData.Connect())
-            {
-                connection.Open();
-                string query = "INSERT INTO tbl_hoadon (MaHoaDon, MaNhanVien, MaKhachHang, NgayXuat, TongTien)" +
-                    " VALUES(@MaHoaDon, @MaNhanVien, @MaKhachHang, @NgayXuat, @TongTien)";
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
-                command.Parameters.AddWithValue("@MaNhanVien", MaNhanVien);
-                command.Parameters.AddWithValue("@MaKhachHang", MaKhachHang);
-                command.Parameters.AddWithValue("@NgayXuat", NgayXuat);
-                command.Parameters.AddWithValue("@TongTien", TongTien);
+            string query = "INSERT INTO tbl_hoadon (MaHoaDon, MaNhanVien, MaKhachHang, NgayXuat, TongTien, Enabled, GiamGia)" +
+                " VALUES(@MaHoaDon, @MaNhanVien, @MaKhachHang, @NgayXuat, @TongTien, @Enabled, @GiamGia)";
+            SqlCommand command = new SqlCommand(query, getConnection());
+            command.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
+            command.Parameters.AddWithValue("@MaNhanVien", MaNhanVien);
+            command.Parameters.AddWithValue("@MaKhachHang", MaKhachHang);
+            command.Parameters.AddWithValue("@NgayXuat", NgayXuat);
+            command.Parameters.AddWithValue("@TongTien", TongTien);
+            command.Parameters.AddWithValue("@Enabled", 1);
+            command.Parameters.AddWithValue("@GiamGia", GiamGia);
 
-                result = command.ExecuteNonQuery();                
-            }
+            result = command.ExecuteNonQuery();
             return result;
         }
+           
+ 
 
         public int SaveChiTietHoaDon(ChiTietHoaDonDTO chiTietHoaDonDTO)
         {
@@ -412,6 +413,15 @@ namespace DAL
             command.ExecuteNonQuery();
             getConnection().Close();
         }
+        public void HuyHoaDon(string MaHoaDon)
+        {
+            string query = "UPDATE tbl_hoadon SET Enabled = 0 WHERE MaHoaDon = @MaHoaDon";
+            SqlCommand command = new SqlCommand(query, getConnection());
+            command.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
+            getConnection().Open();
+            command.ExecuteNonQuery();
+            getConnection().Close();
+        }
 
         public static string GetLastID()
         {
@@ -445,6 +455,61 @@ namespace DAL
             return lastID;
         }
 
+        public DataTable LayThongTinTongTienVaGiamGiaTheoMaHoaDon(string MaHoaDon)
+        {
+            DataTable data = new DataTable();
+            string query = "SELECT TongTien, GiamGia FROM tbl_hoadon WHERE MaHoaDon = @MaHoaDon";
+            SqlCommand command = new SqlCommand(query, getConnection());
+            getConnection().Open();
+            command.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(data);
+            getConnection().Close();
+            return data;
+        }
+
+        //mặc định là cộng
+        public int CapNhatTongTienMuaChoKhachHang(string MaKhachHang, double TongTien, string thaotao = "cong")
+        {
+            int result = -1;
+
+            string query = "UPDATE tbl_khachhang SET TongTienMua ";
+            if(thaotao.Equals("tru"))
+            {
+                query += "-=";
+            } else if(thaotao.Equals("cong"))
+            {
+                query += "+=";
+            }
+            query += " @TongTien WHERE MaKhachHang = @MaKhachHang";
+            SqlCommand command = new SqlCommand(query
+                , getConnection());
+            command.Parameters.AddWithValue("@MaKhachHang", MaKhachHang);
+            command.Parameters.AddWithValue("@TongTien", TongTien);
+            getConnection().Open();
+            result = command.ExecuteNonQuery();
+            getConnection().Close();
+            return result;
+        }
+
+        public double LayTongTienTheoMaHoaDon(string MaHoaDon)
+        {
+            string query = "SELECT TongTien FROM tbl_hoadon WHERE MaHoaDon = @MaHoaDon";
+            SqlCommand command = new SqlCommand(query, getConnection());
+            command.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
+            getConnection().Open();
+            double tongTien = 0;
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                while(reader.Read())
+                {
+                    tongTien += reader.GetDouble(0);
+                       
+                }
+            }
+            getConnection().Close();
+            return tongTien;
+        }
 
     }
 

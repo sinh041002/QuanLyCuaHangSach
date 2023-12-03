@@ -33,17 +33,20 @@ namespace QuanLyCuaHangSach
             cbxMaHoaDon.ValueMember = "MaHoaDon";
             cbxMaHoaDon.DataSource = hoadon.GetAllMaHoaDon();
 
-            //dtgHoaDon.DataSource = hoadon.getData();
 
-            btnSuaThongTIn.Enabled = false;
-            btnLuuHoaDon.Enabled = false;
-            btnXoaThongTin.Enabled = false;
+
+            //dtgHoaDon.DataSource = hoadon.getData();
+            btnThem.Enabled = false;
 
         }
 
         private void FormHoaDon_FormClosing(object sender, FormClosingEventArgs e)
         {
+<<<<<<< HEAD:QuanLyCuaHangSach/FormHoaDon.cs
+          
+=======
 
+>>>>>>> 480b525b3d6b379aeb5e5d52bff7ac65b39e713a:QuanLyCuaHangSach/view/FormHoaDon.cs
         }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
@@ -77,11 +80,11 @@ namespace QuanLyCuaHangSach
         }
 
         private void cbxMaNhanVien_SelectedIndexChanged(object sender, EventArgs e)
-        {   
+        {
             if (cbxMaNhanVien.SelectedIndex != -1)
             {
                 tbxTenNhanVien.Text = cbxMaNhanVien.SelectedValue.ToString();
-               
+
             }
 
         }
@@ -110,13 +113,11 @@ namespace QuanLyCuaHangSach
                 tbxDonGia.Text = row.Cells["Đơn giá"].Value.ToString();
                 tbxSoLuong.Text = row.Cells["Số lượng"].Value.ToString();
                 tbxThanhTien.Text = row.Cells["Thành tiền"].Value.ToString();
-                //luồng đi: bấm vào cell content -> enabled cái nút sửa thông tin     
-                btnSuaThongTIn.Enabled = true;
-                btnXoaThongTin.Enabled = true;
+                   
             }
         }
 
-        
+
 
         private void tbxMaHoaDon_TextChanged(object sender, EventArgs e)
         {
@@ -126,8 +127,8 @@ namespace QuanLyCuaHangSach
         private void btnThemHoaDon_Click(object sender, EventArgs e)
         {
             tbxMaHoaDon.Text = hoadon.CreateKey();
-            btnThemHoaDon.Enabled = false;
-            btnLuuHoaDon.Enabled = true;
+            btnTaoHoaDon.Enabled = false;
+            btnThem.Enabled = true;
 
             cbxMaNhanVien.DisplayMember = "MaNhanVien";
             cbxMaNhanVien.ValueMember = "hoten";
@@ -150,12 +151,12 @@ namespace QuanLyCuaHangSach
             tbxDienThoai.Text = "";
             tbxTenKhachHang.Text = "";
 
+            cbxMaGiamGia.DataSource = null;
+            cbxMaGiamGia.DisplayMember = "SaleOff";
+            cbxMaGiamGia.ValueMember = "SaleOff";
+            cbxMaGiamGia.DataSource = hoadon.GetAllMaGiamGia();
+
            
-
-            
-
-
-
         }
 
         private void cbxMaHoaDon_SelectedIndexChanged(object sender, EventArgs e)
@@ -177,17 +178,11 @@ namespace QuanLyCuaHangSach
             tbxDiaChi.Text = kh.DiaChi;
             tbxDienThoai.Text = kh.SoDienThoai;
 
-            double totalPrice = 0;
-            foreach (DataGridViewRow row in dtgHoaDon.Rows)
-            {
-                if(row.Cells["Thành tiền"].Value != null)
-                {
-                    totalPrice += double.Parse(row.Cells["Thành tiền"].Value.ToString());
-                }
-                
-                
-            }
-            tbxTongTien.Text = totalPrice.ToString();
+            cbxMaGiamGia.DataSource = hoadon.LayThongTinTongTienVaGiamGiaTheoMaHoaDon(cbxMaHoaDon.SelectedValue.ToString());
+            cbxMaGiamGia.DisplayMember = "GiamGia";
+            cbxMaGiamGia.ValueMember = "TongTien";
+
+            tbxTongTien.Text = cbxMaGiamGia.SelectedValue.ToString();
 
         }
 
@@ -197,8 +192,8 @@ namespace QuanLyCuaHangSach
         }
 
         private void cbxMaSach_SelectedIndexChanged(object sender, EventArgs e)
-        {   
-            if(cbxMaSach.SelectedIndex != -1)
+        {
+            if (cbxMaSach.SelectedIndex != -1)
             {
                 string MaSach = cbxMaSach.SelectedValue.ToString();
                 SachDTO sach = hoadon.GetDatSachByMaSach(MaSach);
@@ -207,24 +202,25 @@ namespace QuanLyCuaHangSach
 
                 tbxDonGia.Text = sach.DonGia;
             }
-            
+
         }
 
         private void tbxSoLuong_TextChanged(object sender, EventArgs e)
         {
-           
+
             if (hoadon.IsBlank(tbxSoLuong.Text) || tbxSoLuong.Text.Contains("-"))
             {
 
                 MessageBox.Show("Trường số lượng không hợp lệ", "Không hợp lệ", MessageBoxButtons.OKCancel);
                 tbxSoLuong.Text = "";
-            }  else
+            }
+            else
             {
                 double price = double.Parse(tbxSoLuong.Text) * double.Parse(tbxDonGia.Text);
                 tbxThanhTien.Text = price.ToString();
             }
 
-        
+
         }
 
         private void btnLuuHoaDon_Click(object sender, EventArgs e)
@@ -236,30 +232,31 @@ namespace QuanLyCuaHangSach
             //get all mã hóa đơn
             //nếu trùng thì không cần khởi tạo
 
-            List<string> MaHoaDonList = hoadon.GetAllMaHoaDonList();           
+            List<string> MaHoaDonList = hoadon.GetAllMaHoaDonList();
             string MaHoaDon = tbxMaHoaDon.Text;
-            if(!MaHoaDonList.Contains(MaHoaDon))
+            if (!MaHoaDonList.Contains(MaHoaDon))
             {
                 //tạo hóa  đơn
                 hoaDonDTO.MaHoaDon = MaHoaDon;
                 hoaDonDTO.MaNhanVien = cbxMaNhanVien.Text;
                 hoaDonDTO.MaKhachHang = cbxMaKhachHang.Text;
                 hoaDonDTO.NgayXuat = dtpNgayXuat.Value;
+                hoaDonDTO.GiamGia = double.Parse(cbxMaGiamGia.SelectedValue.ToString());
                 hoadon.SaveHoaDon(hoaDonDTO);
             }
 
             //lấy số lượng từ tbl_sach, nếu số lượng bé hơn thì throw message box
             SachDTOSoLuong sachDTOSoLuong = hoadon.LaySoLuongSach(cbxMaSach.Text);
-            if(sachDTOSoLuong.SoLuong < double.Parse(tbxSoLuong.Text))
+            if (sachDTOSoLuong.SoLuong < double.Parse(tbxSoLuong.Text))
             {
-                MessageBox.Show("Trường số lượng lớn hơn số lượng sách trong kho là "+ sachDTOSoLuong.SoLuong.ToString()
-                    , "Không hợp lệ", MessageBoxButtons.OKCancel);
+                MessageBox.Show("Trường số lượng lớn hơn số lượng sách trong kho là " + sachDTOSoLuong.SoLuong.ToString()
+                    , "Không hợp lệ", MessageBoxButtons.OK);
 
-            } else
+            }
+            else
             {
                 hoadon.CapNhatSoLuongSach(cbxMaSach.Text, double.Parse(tbxSoLuong.Text));
             }
-
 
             //tạo chi tiết hóa đơn
             chiTietHoaDonDTO.MaHoaDon = MaHoaDon;
@@ -284,11 +281,13 @@ namespace QuanLyCuaHangSach
             tbxTongTien.Text = totalPrice.ToString();
             //lưu lại tổng tiền
             hoadon.SaveTongTien(MaHoaDon, totalPrice);
+            tbxThanhTien.Text = "";
 
             //load lại mã hóa đơn
             cbxMaHoaDon.DisplayMember = "MaHoaDon";
             cbxMaHoaDon.DataSource = hoadon.GetAllMaHoaDon();
-
+            tbxMaHoaDon.Text = MaHoaDon;
+            cbxMaHoaDon.SelectedValue = MaHoaDon;
 
         }
 
@@ -300,15 +299,15 @@ namespace QuanLyCuaHangSach
             tbxDiaChi.Clear();
             cbxMaNhanVien.Text = string.Empty;
             cbxMaKhachHang.Text = string.Empty;
-            cbxMaSach.Text =  string.Empty;
+            cbxMaSach.Text = string.Empty;
             tbxTenNhanVien.Clear();
             tbxDienThoai.Clear();
             tbxTenSach.Clear();
             tbxSoLuong.Clear();
             tbxDonGia.Clear();
             tbxThanhTien.Clear();
-            btnThemHoaDon.Enabled = true;
-            btnLuuHoaDon.Enabled = false;
+            btnTaoHoaDon.Enabled = true;
+            btnThem.Enabled = false;
         }
 
         private void btnHuyDoanDon_Click(object sender, EventArgs e)
@@ -318,43 +317,65 @@ namespace QuanLyCuaHangSach
 
         private void btnSuaThongTIn_Click(object sender, EventArgs e)
         {
-            if(btnThemHoaDon.Enabled && btnSuaThongTIn.Enabled)
-            {
-                string MaHoaDon = tbxMaHoaDon.Text;
-                string MaSach = cbxMaSach.Text;
-                double SoLuong = double.Parse(tbxSoLuong.Text);
-                double ThanhTien = double.Parse(tbxThanhTien.Text);
 
-                ChiTietHoaDonDTO chiTietHoaDonDTO = new ChiTietHoaDonDTO();
-                chiTietHoaDonDTO.MaHoaDon = MaHoaDon;
-                chiTietHoaDonDTO.MaSach = MaSach;
-                chiTietHoaDonDTO.SoLuong = SoLuong;
-                chiTietHoaDonDTO.ThanhTien = ThanhTien;
-                hoadon.SuaThongTinChiTietHoaDon(chiTietHoaDonDTO);
-                //set lại btn sửa thông tin bằng false
-                btnSuaThongTIn.Enabled = false;
-            }
         }
 
         private void btnXoaThongTin_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc chắn muốn xóa?", "Xóa thông tin", MessageBoxButtons.OKCancel) == DialogResult.OK)
-            {
-                string MaHoaDon = tbxMaHoaDon.Text;
-                string MaSach = cbxMaSach.Text;
-                double SoLuong = double.Parse(tbxSoLuong.Text);
-                ChiTietHoaDonDTO chiTietHoaDonDTO = new ChiTietHoaDonDTO();
-                chiTietHoaDonDTO.MaSach = MaSach;
-                chiTietHoaDonDTO.MaHoaDon = MaHoaDon;
-                chiTietHoaDonDTO.SoLuong = SoLuong;
-                hoadon.XoaThongTinChiTietHoaDon(chiTietHoaDonDTO);
-                Reset();
-            }
-            btnXoaThongTin.Enabled = false;
+            var child = new FormHuyHoaDon();
+            child.ShowDialog(this);
+            cbxMaHoaDon.Text = "";
+            Reset();
+            dtgHoaDon.DataSource = null;
+            cbxMaHoaDon.DataSource = hoadon.GetAllMaHoaDon();
         }
 
         private void tbxDonGia_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void lblMaHoaDonTimKiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (!hoadon.IsBlank(tbxTongTien.Text))
+            {
+                
+            }
+        }
+
+        private void cbxMaGiamGia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblThanhTien_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            
+           
+
+            double saleOff = double.Parse(cbxMaGiamGia.Text) / 100;
+            double discountPrice = double.Parse(tbxTongTien.Text) * saleOff;
+            double price = double.Parse(tbxTongTien.Text);
+            double totalPrice = price - discountPrice;
+            //cập nhật lại tổng tiền
+            hoadon.SaveTongTien(tbxMaHoaDon.Text, totalPrice);
+
+            //cập nhật tổng tiền mua cho khách
+            hoadon.CapNhatTongTienMuaChoKhachHang(cbxMaKhachHang.Text, totalPrice);
+
+
+            MessageBox.Show("Lưu thành công", "Lưu thành công", MessageBoxButtons.OK);
 
         }
     }

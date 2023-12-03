@@ -1,33 +1,11 @@
-D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\bin\Debug\BLL.dll
-D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\bin\Debug\BLL.pdb
-D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\bin\Debug\DAL.dll
-D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\bin\Debug\DTO.dll
-D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\bin\Debug\DAL.pdb
-D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\bin\Debug\DTO.pdb
-D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
-D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
-D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
-D:\THIEUANHSANG\GitHub\HK1_Nam4\C#\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\bin\Debug\BLL.dll
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\bin\Debug\BLL.pdb
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\bin\Debug\DAL.dll
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\bin\Debug\DTO.dll
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\bin\Debug\DAL.pdb
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\bin\Debug\DTO.pdb
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
-C:\Users\phanm\source\repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb
-D:\QLCuaHangSach\BLL\bin\Debug\BLL.dll
-D:\QLCuaHangSach\BLL\bin\Debug\BLL.pdb
-D:\QLCuaHangSach\BLL\bin\Debug\DAL.dll
-D:\QLCuaHangSach\BLL\bin\Debug\DTO.dll
-D:\QLCuaHangSach\BLL\bin\Debug\DAL.pdb
-D:\QLCuaHangSach\BLL\bin\Debug\DTO.pdb
-D:\QLCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
-D:\QLCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-D:\QLCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
-D:\QLCuaHangSach\BLL\obj\Debug\BLL.dll
-D:\QLCuaHangSach\BLL\obj\Debug\BLL.pdb
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\BLL.dll
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\BLL.pdb
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\DAL.dll
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\DTO.dll
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\DAL.pdb
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\DTO.pdb
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb

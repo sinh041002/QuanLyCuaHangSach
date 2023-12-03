@@ -13,7 +13,7 @@ namespace BLL
     {
         public HoaDonDAO HoaDonDAO { get; set; }
 
-
+        public SaleDAL SaleDAL { get; set; } = new SaleDAL();
 
 
         public DataTable getData()
@@ -89,7 +89,7 @@ namespace BLL
 
         public DataTable GetAllMaHoaDon()
         {
-            string query = "SELECT MaHoaDon FROM tbl_hoadon";
+            string query = "SELECT MaHoaDon FROM tbl_hoadon WHERE Enabled = 1";
             return HoaDonDAO.Instance.executeQuery(query);
         }
 
@@ -166,9 +166,34 @@ namespace BLL
             HoaDonDAO.Instance.CapNhatSoLuongSach(MaSach, SoLuongMua);
         }
 
+        public void HuyHoaDon(string MaHoaDon)
+        {
+            HoaDonDAO.Instance.HuyHoaDon(MaHoaDon);
+        }
+
+        public List<Sale> GetAllMaGiamGia()
+        {
+            return SaleDAL.GetListSale();
+        }
+
+        public DataTable LayThongTinTongTienVaGiamGiaTheoMaHoaDon(string MaHoaDon)
+        {
+            return HoaDonDAO.Instance.LayThongTinTongTienVaGiamGiaTheoMaHoaDon(MaHoaDon);
+        }
+        public int CapNhatTongTienMuaChoKhachHang(string MaKhachHang, double TongTien, string thaotac = "cong")
+        {
+            return HoaDonDAO.Instance.CapNhatTongTienMuaChoKhachHang(MaKhachHang, TongTien, thaotac);
+        }
+
+
+        public double LayTongTienTheoMaHoaDon(string MaHoaDon)
+        {
+            return HoaDonDAO.Instance.LayTongTienTheoMaHoaDon(MaHoaDon);
+        }
         public string GetLastId()
         {
             return HoaDonDAO.GetLastID();
+
         }
     }
 

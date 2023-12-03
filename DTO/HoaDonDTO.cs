@@ -23,5 +23,7 @@ namespace DTO
         public string  MaKhachHang { get; set; }
         public DateTime NgayXuat { get; set; }
         public double TongTien { get; set; }
+
+        public double GiamGia { get; set; }
     }
 }
