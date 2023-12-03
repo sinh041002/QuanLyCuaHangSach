@@ -184,11 +184,16 @@ namespace BLL
         {
             return HoaDonDAO.Instance.CapNhatTongTienMuaChoKhachHang(MaKhachHang, TongTien, thaotac);
         }
-    
+
 
         public double LayTongTienTheoMaHoaDon(string MaHoaDon)
         {
             return HoaDonDAO.Instance.LayTongTienTheoMaHoaDon(MaHoaDon);
+        }
+        public string GetLastId()
+        {
+            return HoaDonDAO.GetLastID();
+
         }
     }
 

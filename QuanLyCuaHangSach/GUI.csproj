@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +48,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\SysWOW64\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,16 +72,22 @@
     <Compile Include="dangnhap.Designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormHoaDon.cs">
+    <Compile Include="FormTimKiemHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormHoaDon.Designer.cs">
+    <Compile Include="view\3ChamNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\3ChamNCC.Designer.cs">
+      <DependentUpon>3ChamNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormHoaDon.Designer.cs">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHuyHoaDon.cs">
@@ -76,39 +102,44 @@
     <Compile Include="FormHuyNhapHang.Designer.cs">
       <DependentUpon>FormHuyNhapHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNhapHang.cs">
+    <Compile Include="view\FormNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormNhapHang.Designer.cs">
+    <Compile Include="view\FormNhapHang.Designer.cs">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormTimKiemHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormTimKiemHoaDon.Designer.cs">
-      <DependentUpon>FormTimKiemHoaDon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MuaHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MuaHang.Designer.cs">
-      <DependentUpon>MuaHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLCuaHangSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QLCuaHangSach.Designer.cs">
-      <DependentUpon>QLCuaHangSach.cs</DependentUpon>
     </Compile>
     <Compile Include="view\FormQLKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="view\FormQLKhachHang.Designer.cs">
       <DependentUpon>FormQLKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormThemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormThemHoaDon.Designer.cs">
+      <DependentUpon>FormThemHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormTimKiemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormTimKiemHoaDon.Designer.cs">
+      <DependentUpon>FormTimKiemHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\MuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\MuaHang.Designer.cs">
+      <DependentUpon>MuaHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLCuaHangSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLCuaHangSach.Designer.cs">
+      <DependentUpon>QLCuaHangSach.cs</DependentUpon>
     </Compile>
     <Compile Include="view\FormQLSach.cs">
       <SubType>Form</SubType>
@@ -146,13 +177,61 @@
     <Compile Include="view\FormThongKeSPBanChay.designer.cs">
       <DependentUpon>FormThongKeSPBanChay.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\QLQUyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\QLQUyen.Designer.cs">
+      <DependentUpon>QLQUyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_3ChamNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_3ChamNXB.Designer.cs">
+      <DependentUpon>_3ChamNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_3ChamTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_3ChamTacGia.Designer.cs">
+      <DependentUpon>_3ChamTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_3ChamTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_3ChamTheLoai.Designer.cs">
+      <DependentUpon>_3ChamTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_DialogKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_DialogKhachHang.Designer.cs">
+      <DependentUpon>_DialogKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_DialogKhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_DialogKhuyenMai.Designer.cs">
+      <DependentUpon>_DialogKhuyenMai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\_DialogNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\_DialogNhanVien.Designer.cs">
+      <DependentUpon>_DialogNhanVien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormNhapHang.resx">
+      <DependentUpon>FormNhapHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormHoaDon.resx">
+    <EmbeddedResource Include="FormTimKiemHoaDon.resx">
+      <DependentUpon>FormTimKiemHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\3ChamNCC.resx">
+      <DependentUpon>3ChamNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormHoaDon.resx">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHuyHoaDon.resx">
@@ -161,31 +240,28 @@
     <EmbeddedResource Include="FormHuyNhapHang.resx">
       <DependentUpon>FormHuyNhapHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormNhapHang.resx">
+    <EmbeddedResource Include="view\FormNhapHang.resx">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormTimKiemHoaDon.resx">
+    <EmbeddedResource Include="view\FormQLKhachHang.resx">
+      <DependentUpon>FormQLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormThemHoaDon.resx">
+      <DependentUpon>FormThemHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormTimKiemHoaDon.resx">
       <DependentUpon>FormTimKiemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MuaHang.resx">
+    <EmbeddedResource Include="view\MuaHang.resx">
       <DependentUpon>MuaHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="QLCuaHangSach.resx">
       <DependentUpon>QLCuaHangSach.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\FormQLKhachHang.resx">
-      <DependentUpon>FormQLKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormQLMaKhuyenMai.resx">
       <DependentUpon>FormQLMaKhuyenMai.cs</DependentUpon>
@@ -199,8 +275,32 @@
     <EmbeddedResource Include="view\FormThongKeSPBanChay.resx">
       <DependentUpon>FormThongKeSPBanChay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\QLKhachHang.resx">
+      <DependentUpon>QLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\QLNhanVien.resx">
       <DependentUpon>QLNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\QLQUyen.resx">
+      <DependentUpon>QLQUyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_3ChamNXB.resx">
+      <DependentUpon>_3ChamNXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_3ChamTacGia.resx">
+      <DependentUpon>_3ChamTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_3ChamTheLoai.resx">
+      <DependentUpon>_3ChamTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_DialogKhachHang.resx">
+      <DependentUpon>_DialogKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_DialogKhuyenMai.resx">
+      <DependentUpon>_DialogKhuyenMai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\_DialogNhanVien.resx">
+      <DependentUpon>_DialogNhanVien.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -218,6 +318,34 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Plus.png" />
+    <None Include="Resources\KSTADV.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\editing.png" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{2bd3002e-365f-46c1-bcc4-0c435de6755d}</Project>
       <Name>BLL</Name>
@@ -228,8 +356,82 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Plus.png" />
-    <None Include="Resources\KSTADV.jpg" />
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-cart %282%29 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\holding-wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-cart %282%29 %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\holding-wrench1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

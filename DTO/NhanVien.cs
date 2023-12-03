@@ -8,7 +8,15 @@ namespace DTO
 {
     public class NhanVien
     {
+        public string getMa()
+        {
+            Random rd = new Random();
+            int ma = rd.Next(1000, 9999);
+            string a = "NV" + ma + "";
 
+
+            return a;
+        }
         public string MaNhanVien { get; set; }
         public string HoTen { get; set; }
         public DateTime NgaySinh { get; set; }

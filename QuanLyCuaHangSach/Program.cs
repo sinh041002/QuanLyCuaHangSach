@@ -15,9 +15,9 @@ namespace QuanLyCuaHangSach
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new FormHoaDon());
+           
 
-           // Application.Run(new QLCuaHangSach());
+            Application.Run(new dangnhap());
 
         }
     }
