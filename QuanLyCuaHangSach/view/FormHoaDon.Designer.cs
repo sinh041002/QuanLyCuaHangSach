@@ -93,12 +93,15 @@
             this.panel1.Controls.Add(this.cbxMaHoaDon);
             this.panel1.Controls.Add(this.lblMaHoaDonTimKiem);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+
             this.panel1.Location = new System.Drawing.Point(0, 699);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1084, 62);
+
             this.panel1.Location = new System.Drawing.Point(0, 778);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1443, 79);
+
             this.panel1.TabIndex = 0;
             // 
             // cbxMaHoaDon
@@ -139,10 +142,13 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
+
             this.splitContainer1.Size = new System.Drawing.Size(1084, 699);
             this.splitContainer1.SplitterDistance = 306;
+
             this.splitContainer1.Size = new System.Drawing.Size(1443, 778);
             this.splitContainer1.SplitterDistance = 341;
+
             this.splitContainer1.TabIndex = 1;
             // 
             // groupBox1
@@ -408,10 +414,13 @@
             this.dtgHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgHoaDon.Location = new System.Drawing.Point(0, 133);
             this.dtgHoaDon.Name = "dtgHoaDon";
+
             this.dtgHoaDon.ReadOnly = true;
             this.dtgHoaDon.Size = new System.Drawing.Size(1551, 114);
+
             this.dtgHoaDon.RowHeadersWidth = 51;
             this.dtgHoaDon.Size = new System.Drawing.Size(1419, 152);
+
             this.dtgHoaDon.TabIndex = 3;
             this.dtgHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgHoaDon_CellContentClick);
             // 
@@ -425,8 +434,11 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(3, 324);
             this.panel4.Name = "panel4";
+
             this.panel4.Size = new System.Drawing.Size(1545, 85);
+
             this.panel4.Size = new System.Drawing.Size(1425, 52);
+
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -639,8 +651,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.ClientSize = new System.Drawing.Size(1084, 761);
+
             this.ClientSize = new System.Drawing.Size(1443, 857);
+
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel1);
             this.Name = "FormHoaDon";

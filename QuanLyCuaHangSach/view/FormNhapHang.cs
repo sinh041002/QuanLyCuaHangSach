@@ -1,5 +1,6 @@
 ﻿using BLL;
 using DTO;
+using QuanLyCuaHangSach.view;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -350,6 +351,12 @@ namespace QuanLyCuaHangSach
             tbxTenNhanVien.Text = "";
             tbxTenSach.Text = "";
 
+        }
+
+        private void btnThemSach_Click(object sender, EventArgs e)
+        {
+            var child = new FormQLSach();
+            child.ShowDialog();
         }
     }
 }

@@ -37,11 +37,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnHuyPhieuNhap = new System.Windows.Forms.Button();
+            this.btnLuuHang = new System.Windows.Forms.Button();
             this.cbxMaSach = new System.Windows.Forms.ComboBox();
+            this.btnThemSach = new System.Windows.Forms.Button();
             this.tbxTenNhaCungCap = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.tbxThanhTien = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnXoaHang = new System.Windows.Forms.Button();
+            this.btnThemHang = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.tbxTenNhanVien = new System.Windows.Forms.TextBox();
             this.cbxMaNhanVien = new System.Windows.Forms.ComboBox();
@@ -57,11 +62,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dtgNhapHang = new System.Windows.Forms.DataGridView();
-            this.btnHuyPhieuNhap = new System.Windows.Forms.Button();
-            this.btnLuuHang = new System.Windows.Forms.Button();
-            this.btnThemSach = new System.Windows.Forms.Button();
-            this.btnXoaHang = new System.Windows.Forms.Button();
-            this.btnThemHang = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgNhapHang)).BeginInit();
@@ -180,6 +180,38 @@
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btnHuyPhieuNhap
+            // 
+            this.btnHuyPhieuNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnHuyPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuyPhieuNhap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuyPhieuNhap.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnHuyPhieuNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnHuyPhieuNhap.Image")));
+            this.btnHuyPhieuNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuyPhieuNhap.Location = new System.Drawing.Point(1160, 275);
+            this.btnHuyPhieuNhap.Name = "btnHuyPhieuNhap";
+            this.btnHuyPhieuNhap.Size = new System.Drawing.Size(139, 30);
+            this.btnHuyPhieuNhap.TabIndex = 33;
+            this.btnHuyPhieuNhap.Text = "&Hủy phiếu nhập";
+            this.btnHuyPhieuNhap.UseVisualStyleBackColor = false;
+            this.btnHuyPhieuNhap.Click += new System.EventHandler(this.btnHuyPhieuNhap_Click);
+            // 
+            // btnLuuHang
+            // 
+            this.btnLuuHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnLuuHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuuHang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuuHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLuuHang.Image = ((System.Drawing.Image)(resources.GetObject("btnLuuHang.Image")));
+            this.btnLuuHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuuHang.Location = new System.Drawing.Point(478, 275);
+            this.btnLuuHang.Name = "btnLuuHang";
+            this.btnLuuHang.Size = new System.Drawing.Size(110, 30);
+            this.btnLuuHang.TabIndex = 32;
+            this.btnLuuHang.Text = "&Lưu";
+            this.btnLuuHang.UseVisualStyleBackColor = false;
+            this.btnLuuHang.Click += new System.EventHandler(this.button2_Click);
+            // 
             // cbxMaSach
             // 
             this.cbxMaSach.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -189,6 +221,22 @@
             this.cbxMaSach.Size = new System.Drawing.Size(222, 27);
             this.cbxMaSach.TabIndex = 31;
             this.cbxMaSach.SelectedIndexChanged += new System.EventHandler(this.cbxMaSach_SelectedIndexChanged);
+            // 
+            // btnThemSach
+            // 
+            this.btnThemSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnThemSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemSach.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemSach.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnThemSach.Image = ((System.Drawing.Image)(resources.GetObject("btnThemSach.Image")));
+            this.btnThemSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemSach.Location = new System.Drawing.Point(712, 275);
+            this.btnThemSach.Name = "btnThemSach";
+            this.btnThemSach.Size = new System.Drawing.Size(110, 30);
+            this.btnThemSach.TabIndex = 30;
+            this.btnThemSach.Text = "&Thêm sách";
+            this.btnThemSach.UseVisualStyleBackColor = false;
+            this.btnThemSach.Click += new System.EventHandler(this.btnThemSach_Click);
             // 
             // tbxTenNhaCungCap
             // 
@@ -233,6 +281,36 @@
             this.label9.TabIndex = 26;
             this.label9.Text = "Thành tiền";
             this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // btnXoaHang
+            // 
+            this.btnXoaHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoaHang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaHang.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaHang.Image")));
+            this.btnXoaHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoaHang.Location = new System.Drawing.Point(945, 275);
+            this.btnXoaHang.Name = "btnXoaHang";
+            this.btnXoaHang.Size = new System.Drawing.Size(137, 30);
+            this.btnXoaHang.TabIndex = 3;
+            this.btnXoaHang.Text = "&Xóa thông tin";
+            this.btnXoaHang.UseVisualStyleBackColor = true;
+            this.btnXoaHang.Click += new System.EventHandler(this.btnXoaHang_Click);
+            // 
+            // btnThemHang
+            // 
+            this.btnThemHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnThemHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemHang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnThemHang.Image = ((System.Drawing.Image)(resources.GetObject("btnThemHang.Image")));
+            this.btnThemHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemHang.Location = new System.Drawing.Point(126, 275);
+            this.btnThemHang.Name = "btnThemHang";
+            this.btnThemHang.Size = new System.Drawing.Size(110, 30);
+            this.btnThemHang.TabIndex = 0;
+            this.btnThemHang.Text = "&Tạo mới";
+            this.btnThemHang.UseVisualStyleBackColor = false;
+            this.btnThemHang.Click += new System.EventHandler(this.btnThemHang_Click);
             // 
             // label8
             // 
@@ -394,83 +472,6 @@
             this.dtgNhapHang.Size = new System.Drawing.Size(1434, 223);
             this.dtgNhapHang.TabIndex = 5;
             this.dtgNhapHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgNhapHang_CellContentClick);
-            // 
-            // btnHuyPhieuNhap
-            // 
-            this.btnHuyPhieuNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnHuyPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuyPhieuNhap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuyPhieuNhap.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnHuyPhieuNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnHuyPhieuNhap.Image")));
-            this.btnHuyPhieuNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuyPhieuNhap.Location = new System.Drawing.Point(1160, 275);
-            this.btnHuyPhieuNhap.Name = "btnHuyPhieuNhap";
-            this.btnHuyPhieuNhap.Size = new System.Drawing.Size(139, 30);
-            this.btnHuyPhieuNhap.TabIndex = 33;
-            this.btnHuyPhieuNhap.Text = "&Hủy phiếu nhập";
-            this.btnHuyPhieuNhap.UseVisualStyleBackColor = false;
-            this.btnHuyPhieuNhap.Click += new System.EventHandler(this.btnHuyPhieuNhap_Click);
-            // 
-            // btnLuuHang
-            // 
-            this.btnLuuHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnLuuHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuuHang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuuHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLuuHang.Image = ((System.Drawing.Image)(resources.GetObject("btnLuuHang.Image")));
-            this.btnLuuHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuuHang.Location = new System.Drawing.Point(478, 275);
-            this.btnLuuHang.Name = "btnLuuHang";
-            this.btnLuuHang.Size = new System.Drawing.Size(110, 30);
-            this.btnLuuHang.TabIndex = 32;
-            this.btnLuuHang.Text = "&Lưu";
-            this.btnLuuHang.UseVisualStyleBackColor = false;
-            this.btnLuuHang.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnThemSach
-            // 
-            this.btnThemSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnThemSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemSach.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemSach.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnThemSach.Image = ((System.Drawing.Image)(resources.GetObject("btnThemSach.Image")));
-            this.btnThemSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemSach.Location = new System.Drawing.Point(712, 275);
-            this.btnThemSach.Name = "btnThemSach";
-            this.btnThemSach.Size = new System.Drawing.Size(110, 30);
-            this.btnThemSach.TabIndex = 30;
-            this.btnThemSach.Text = "&Thêm sách";
-            this.btnThemSach.UseVisualStyleBackColor = false;
-            // 
-            // btnXoaHang
-            // 
-            this.btnXoaHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoaHang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaHang.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaHang.Image")));
-            this.btnXoaHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaHang.Location = new System.Drawing.Point(945, 275);
-            this.btnXoaHang.Name = "btnXoaHang";
-            this.btnXoaHang.Size = new System.Drawing.Size(137, 30);
-            this.btnXoaHang.TabIndex = 3;
-            this.btnXoaHang.Text = "&Xóa thông tin";
-            this.btnXoaHang.UseVisualStyleBackColor = true;
-            this.btnXoaHang.Click += new System.EventHandler(this.btnXoaHang_Click);
-            // 
-            // btnThemHang
-            // 
-            this.btnThemHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnThemHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemHang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnThemHang.Image = ((System.Drawing.Image)(resources.GetObject("btnThemHang.Image")));
-            this.btnThemHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemHang.Location = new System.Drawing.Point(126, 275);
-            this.btnThemHang.Name = "btnThemHang";
-            this.btnThemHang.Size = new System.Drawing.Size(110, 30);
-            this.btnThemHang.TabIndex = 0;
-            this.btnThemHang.Text = "&Tạo mới";
-            this.btnThemHang.UseVisualStyleBackColor = false;
-            this.btnThemHang.Click += new System.EventHandler(this.btnThemHang_Click);
             // 
             // FormNhapHang
             // 

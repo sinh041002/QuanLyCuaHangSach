@@ -18,7 +18,7 @@ namespace QuanLyCuaHangSach
 
            
 
-            Application.Run(new MuaHang());
+            Application.Run(new dangnhap());
 
         }
     }
