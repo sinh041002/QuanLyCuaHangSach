@@ -72,12 +72,6 @@
     <Compile Include="dangnhap.Designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNhapHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormTimKiemHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="view\3ChamNCC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,12 +101,6 @@
     </Compile>
     <Compile Include="view\FormNhapHang.Designer.cs">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="view\FormQLKhachHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\FormQLKhachHang.Designer.cs">
-      <DependentUpon>FormQLKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="view\FormThemHoaDon.cs">
       <SubType>Form</SubType>
@@ -222,12 +210,6 @@
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormNhapHang.resx">
-      <DependentUpon>FormNhapHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormTimKiemHoaDon.resx">
-      <DependentUpon>FormTimKiemHoaDon.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="view\3ChamNCC.resx">
       <DependentUpon>3ChamNCC.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,9 +224,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormNhapHang.resx">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\FormQLKhachHang.resx">
-      <DependentUpon>FormQLKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormThemHoaDon.resx">
       <DependentUpon>FormThemHoaDon.cs</DependentUpon>

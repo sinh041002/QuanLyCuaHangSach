@@ -242,18 +242,21 @@ namespace DAL
             double GiamGia = hoaDonDTO.GiamGia;
             int result = -1;
 
-            string query = "INSERT INTO tbl_hoadon (MaHoaDon, MaNhanVien, MaKhachHang, NgayXuat, TongTien, Enabled, GiamGia)" +
-                " VALUES(@MaHoaDon, @MaNhanVien, @MaKhachHang, @NgayXuat, @TongTien, @Enabled, @GiamGia)";
-            SqlCommand command = new SqlCommand(query, getConnection());
-            command.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
-            command.Parameters.AddWithValue("@MaNhanVien", MaNhanVien);
-            command.Parameters.AddWithValue("@MaKhachHang", MaKhachHang);
-            command.Parameters.AddWithValue("@NgayXuat", NgayXuat);
-            command.Parameters.AddWithValue("@TongTien", TongTien);
-            command.Parameters.AddWithValue("@Enabled", 1);
-            command.Parameters.AddWithValue("@GiamGia", GiamGia);
-
-            result = command.ExecuteNonQuery();
+            using (SqlConnection connection = SqlConnectionData.Connect())
+            {
+                connection.Open();
+                string query = "INSERT INTO tbl_hoadon (MaHoaDon, MaNhanVien, MaKhachHang, NgayXuat, TongTien, Enabled, GiamGia)" +
+                    " VALUES(@MaHoaDon, @MaNhanVien, @MaKhachHang, @NgayXuat, @TongTien, @Enabled, @GiamGia)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
+                command.Parameters.AddWithValue("@MaNhanVien", MaNhanVien);
+                command.Parameters.AddWithValue("@MaKhachHang", MaKhachHang);
+                command.Parameters.AddWithValue("@NgayXuat", NgayXuat);
+                command.Parameters.AddWithValue("@TongTien", TongTien);
+                command.Parameters.AddWithValue("@Enabled", 1);
+                command.Parameters.AddWithValue("@GiamGia", GiamGia);
+                result = command.ExecuteNonQuery();
+            }            
             return result;
         }
            
