@@ -10,7 +10,7 @@ namespace DAL
     public class GenericDAO
     {
         private static SqlConnection connection;
-        private static string ConnectionString = "Data Source=LAPTOP-0HLAONAD\\DUCTAM;Initial Catalog=CuaHangSach;Integrated Security=True";
+        private static string ConnectionString = "Data Source=LAPTOP-0HLAONAD\\DUCTAM;Initial Catalog=CuaHangSachV4;Integrated Security=True";
         
 
         public static SqlConnection getConnection()

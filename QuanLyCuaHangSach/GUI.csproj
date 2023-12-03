@@ -64,17 +64,23 @@
     <Compile Include="FormHoaDon.Designer.cs">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHuyHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHuyHoaDon.Designer.cs">
+      <DependentUpon>FormHuyHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHuyNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHuyNhapHang.Designer.cs">
+      <DependentUpon>FormHuyNhapHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormNhapHang.Designer.cs">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormThemHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormThemHoaDon.Designer.cs">
-      <DependentUpon>FormThemHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTimKiemHoaDon.cs">
       <SubType>Form</SubType>
@@ -97,6 +103,18 @@
     </Compile>
     <Compile Include="QLCuaHangSach.Designer.cs">
       <DependentUpon>QLCuaHangSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormQLKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormQLKhachHang.Designer.cs">
+      <DependentUpon>FormQLKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormQLSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormQLSach.Designer.cs">
+      <DependentUpon>FormQLSach.cs</DependentUpon>
     </Compile>
     <Compile Include="view\QLKhachHang.cs">
       <SubType>Form</SubType>
@@ -137,11 +155,14 @@
     <EmbeddedResource Include="FormHoaDon.resx">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHuyHoaDon.resx">
+      <DependentUpon>FormHuyHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHuyNhapHang.resx">
+      <DependentUpon>FormHuyNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormNhapHang.resx">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormThemHoaDon.resx">
-      <DependentUpon>FormThemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTimKiemHoaDon.resx">
       <DependentUpon>FormTimKiemHoaDon.cs</DependentUpon>
@@ -163,8 +184,14 @@
       <DependentUpon>QLCuaHangSach.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\FormQLKhachHang.resx">
+      <DependentUpon>FormQLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\FormQLMaKhuyenMai.resx">
       <DependentUpon>FormQLMaKhuyenMai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormQLSach.resx">
+      <DependentUpon>FormQLSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormThongKeDoanhThu.resx">
       <DependentUpon>FormThongKeDoanhThu.cs</DependentUpon>

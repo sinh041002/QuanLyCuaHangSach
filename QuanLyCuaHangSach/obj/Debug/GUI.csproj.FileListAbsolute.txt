@@ -12,7 +12,6 @@ D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.Form1.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormHoaDon.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormNhapHang.resources
-D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormThemHoaDon.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormTimKiemHoaDon.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.MuaHang.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.Properties.Resources.resources
@@ -26,3 +25,7 @@ D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CopyComplete
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.exe
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.pdb
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLKhachHang.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLSach.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormHuyNhapHang.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormHuyHoaDon.resources

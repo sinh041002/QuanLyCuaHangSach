@@ -8,9 +8,7 @@ namespace QuanLyCuaHangSach
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+
         [STAThread]
         static void Main()
         {
@@ -19,7 +17,7 @@ namespace QuanLyCuaHangSach
 
             Application.Run(new FormHoaDon());
 
-            Application.Run(new QLCuaHangSach());
+           // Application.Run(new QLCuaHangSach());
 
         }
     }
