@@ -20,3 +20,14 @@ C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompi
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb
+D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.dll
+D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.pdb
+D:\Đồ án c#\QLCuaHangSach\BLL\bin\Debug\BLL.dll
+D:\Đồ án c#\QLCuaHangSach\BLL\bin\Debug\BLL.pdb
+D:\Đồ án c#\QLCuaHangSach\BLL\bin\Debug\DAL.dll
+D:\Đồ án c#\QLCuaHangSach\BLL\bin\Debug\DTO.dll
+D:\Đồ án c#\QLCuaHangSach\BLL\bin\Debug\DAL.pdb
+D:\Đồ án c#\QLCuaHangSach\BLL\bin\Debug\DTO.pdb
+D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete

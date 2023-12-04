@@ -70,6 +70,13 @@ namespace QuanLyCuaHangSach.view
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Img = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.txtNameSearch = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -79,13 +86,6 @@ namespace QuanLyCuaHangSach.view
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label17 = new System.Windows.Forms.Label();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Img = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSanPham)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -289,6 +289,7 @@ namespace QuanLyCuaHangSach.view
             this.txtTongTienKM.ReadOnly = true;
             this.txtTongTienKM.Size = new System.Drawing.Size(310, 26);
             this.txtTongTienKM.TabIndex = 34;
+            this.txtTongTienKM.TextChanged += new System.EventHandler(this.txtTongTienKM_TextChanged);
             // 
             // label16
             // 
@@ -559,6 +560,68 @@ namespace QuanLyCuaHangSach.view
             this.dgvSanPham.TabIndex = 0;
             this.dgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
             // 
+            // id
+            // 
+            this.id.DataPropertyName = "MaSach";
+            this.id.HeaderText = "Mã sách";
+            this.id.MinimumWidth = 6;
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 108;
+            // 
+            // productname
+            // 
+            this.productname.DataPropertyName = "TenSach";
+            this.productname.HeaderText = "Tên Sản Phẩm";
+            this.productname.MinimumWidth = 6;
+            this.productname.Name = "productname";
+            this.productname.ReadOnly = true;
+            this.productname.Width = 108;
+            // 
+            // category
+            // 
+            this.category.DataPropertyName = "TenTheLoai";
+            this.category.HeaderText = "Loại";
+            this.category.MinimumWidth = 6;
+            this.category.Name = "category";
+            this.category.ReadOnly = true;
+            this.category.Width = 125;
+            // 
+            // Price
+            // 
+            this.Price.DataPropertyName = "DonGiaXuat";
+            this.Price.HeaderText = "Giá";
+            this.Price.MinimumWidth = 6;
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
+            this.Price.Width = 107;
+            // 
+            // stock
+            // 
+            this.stock.DataPropertyName = "SoLuong";
+            this.stock.HeaderText = "Số lượng còn lại";
+            this.stock.MinimumWidth = 6;
+            this.stock.Name = "stock";
+            this.stock.ReadOnly = true;
+            this.stock.Width = 108;
+            // 
+            // CategoryName
+            // 
+            this.CategoryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CategoryName.DataPropertyName = "Id1";
+            this.CategoryName.HeaderText = "Tên Hãng";
+            this.CategoryName.MinimumWidth = 6;
+            this.CategoryName.Name = "CategoryName";
+            this.CategoryName.ReadOnly = true;
+            // 
+            // Img
+            // 
+            this.Img.DataPropertyName = "Image";
+            this.Img.HeaderText = "Image";
+            this.Img.Name = "Img";
+            this.Img.ReadOnly = true;
+            this.Img.Visible = false;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -655,68 +718,6 @@ namespace QuanLyCuaHangSach.view
             this.label17.Size = new System.Drawing.Size(195, 40);
             this.label17.TabIndex = 38;
             this.label17.Text = "Cửa Hàng";
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "MaSach";
-            this.id.HeaderText = "Mã sách";
-            this.id.MinimumWidth = 6;
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 108;
-            // 
-            // productname
-            // 
-            this.productname.DataPropertyName = "TenSach";
-            this.productname.HeaderText = "Tên Sản Phẩm";
-            this.productname.MinimumWidth = 6;
-            this.productname.Name = "productname";
-            this.productname.ReadOnly = true;
-            this.productname.Width = 108;
-            // 
-            // category
-            // 
-            this.category.DataPropertyName = "TenTheLoai";
-            this.category.HeaderText = "Loại";
-            this.category.MinimumWidth = 6;
-            this.category.Name = "category";
-            this.category.ReadOnly = true;
-            this.category.Width = 125;
-            // 
-            // Price
-            // 
-            this.Price.DataPropertyName = "DonGiaXuat";
-            this.Price.HeaderText = "Giá";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            this.Price.ReadOnly = true;
-            this.Price.Width = 107;
-            // 
-            // stock
-            // 
-            this.stock.DataPropertyName = "SoLuong";
-            this.stock.HeaderText = "Số lượng còn lại";
-            this.stock.MinimumWidth = 6;
-            this.stock.Name = "stock";
-            this.stock.ReadOnly = true;
-            this.stock.Width = 108;
-            // 
-            // CategoryName
-            // 
-            this.CategoryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CategoryName.DataPropertyName = "Id1";
-            this.CategoryName.HeaderText = "Tên Hãng";
-            this.CategoryName.MinimumWidth = 6;
-            this.CategoryName.Name = "CategoryName";
-            this.CategoryName.ReadOnly = true;
-            // 
-            // Img
-            // 
-            this.Img.DataPropertyName = "Image";
-            this.Img.HeaderText = "Image";
-            this.Img.Name = "Img";
-            this.Img.ReadOnly = true;
-            this.Img.Visible = false;
             // 
             // MuaHang
             // 

@@ -297,7 +297,7 @@ namespace QuanLyCuaHangSach.view
             }
             else
             {
-                txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - double.Parse(txtTongTien.Text.Trim()) * (double.Parse(txtKhuyenMai.Text) / 100)).ToString();
+                txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - (double.Parse(txtTongTien.Text.Trim()) * ((double.Parse(txtKhuyenMai.Text) / 100)))).ToString();
             }
         }
 
@@ -307,6 +307,11 @@ namespace QuanLyCuaHangSach.view
             {
                 txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - (double.Parse(txtTongTien.Text.Trim()) * double.Parse(txtTongTienKM.Text) / 100)).ToString();
             }
+        }
+
+        private void txtTongTienKM_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

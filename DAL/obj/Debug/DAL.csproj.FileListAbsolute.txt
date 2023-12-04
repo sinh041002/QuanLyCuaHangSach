@@ -16,3 +16,12 @@ C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CoreCompi
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.dll
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.pdb
+D:\Đồ án c#\QLCuaHangSach\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Đồ án c#\QLCuaHangSach\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Đồ án c#\QLCuaHangSach\DAL\obj\Debug\DAL.dll
+D:\Đồ án c#\QLCuaHangSach\DAL\obj\Debug\DAL.pdb
+D:\Đồ án c#\QLCuaHangSach\DAL\bin\Debug\DAL.dll
+D:\Đồ án c#\QLCuaHangSach\DAL\bin\Debug\DAL.pdb
+D:\Đồ án c#\QLCuaHangSach\DAL\bin\Debug\DTO.dll
+D:\Đồ án c#\QLCuaHangSach\DAL\bin\Debug\DTO.pdb
+D:\Đồ án c#\QLCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
