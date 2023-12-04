@@ -7,6 +7,7 @@ D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DAL\bin\Debug\DTO.pdb
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DAL\obj\Debug\DAL.dll
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DAL\obj\Debug\DAL.pdb
+<<<<<<< HEAD
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\bin\Debug\DAL.dll
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\bin\Debug\DAL.pdb
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\DAL\bin\Debug\DTO.dll
@@ -25,3 +26,14 @@ D:\Đồ án c#\QLCuaHangSach\DAL\bin\Debug\DAL.pdb
 D:\Đồ án c#\QLCuaHangSach\DAL\bin\Debug\DTO.dll
 D:\Đồ án c#\QLCuaHangSach\DAL\bin\Debug\DTO.pdb
 D:\Đồ án c#\QLCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
+=======
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\bin\Debug\DAL.dll
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\bin\Debug\DAL.pdb
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\bin\Debug\DTO.dll
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\bin\Debug\DTO.pdb
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.dll
+C:\Users\phanm\source\repos\QuanLyCuaHangSach\DAL\obj\Debug\DAL.pdb
+>>>>>>> 837c485f0b36c3c38dc903b3147b6ffc520784dc

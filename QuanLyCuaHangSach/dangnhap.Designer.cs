@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dangnhap));
             this.BtnLogin = new System.Windows.Forms.Button();
             this.lblUsername = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,10 +40,10 @@
             // BtnLogin
             // 
             this.BtnLogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLogin.Location = new System.Drawing.Point(96, 267);
+            this.BtnLogin.Location = new System.Drawing.Point(258, 234);
             this.BtnLogin.Margin = new System.Windows.Forms.Padding(5);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(150, 50);
+            this.BtnLogin.Size = new System.Drawing.Size(119, 35);
             this.BtnLogin.TabIndex = 3;
             this.BtnLogin.Text = "Đăng Nhập";
             this.BtnLogin.UseVisualStyleBackColor = true;
@@ -52,7 +53,7 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(66, 105);
+            this.lblUsername.Location = new System.Drawing.Point(224, 114);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(124, 19);
             this.lblUsername.TabIndex = 1;
@@ -63,7 +64,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(66, 176);
+            this.label2.Location = new System.Drawing.Point(224, 160);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 19);
             this.label2.TabIndex = 4;
@@ -72,26 +73,26 @@
             // 
             // txtDangNhap
             // 
-            this.txtDangNhap.Location = new System.Drawing.Point(232, 105);
+            this.txtDangNhap.Location = new System.Drawing.Point(390, 110);
             this.txtDangNhap.Name = "txtDangNhap";
-            this.txtDangNhap.Size = new System.Drawing.Size(262, 29);
+            this.txtDangNhap.Size = new System.Drawing.Size(242, 29);
             this.txtDangNhap.TabIndex = 1;
             this.txtDangNhap.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtMatkhau
             // 
-            this.txtMatkhau.Location = new System.Drawing.Point(232, 176);
+            this.txtMatkhau.Location = new System.Drawing.Point(390, 156);
             this.txtMatkhau.Name = "txtMatkhau";
-            this.txtMatkhau.Size = new System.Drawing.Size(262, 29);
+            this.txtMatkhau.Size = new System.Drawing.Size(242, 29);
             this.txtMatkhau.TabIndex = 2;
             this.txtMatkhau.UseSystemPasswordChar = true;
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(313, 266);
+            this.btnThoat.Location = new System.Drawing.Point(452, 234);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(5);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(150, 50);
+            this.btnThoat.Size = new System.Drawing.Size(119, 35);
             this.btnThoat.TabIndex = 4;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -101,7 +102,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 353);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(850, 450);
             this.Controls.Add(this.txtDangNhap);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.btnThoat);
