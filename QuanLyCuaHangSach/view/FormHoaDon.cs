@@ -42,12 +42,6 @@ namespace QuanLyCuaHangSach
 
         private void FormHoaDon_FormClosing(object sender, FormClosingEventArgs e)
         {
-<<<<<<< HEAD
-
-
-=======
-         
->>>>>>> 837c485f0b36c3c38dc903b3147b6ffc520784dc
         }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
@@ -182,6 +176,12 @@ namespace QuanLyCuaHangSach
             cbxMaGiamGia.DataSource = hoadon.LayThongTinTongTienVaGiamGiaTheoMaHoaDon(cbxMaHoaDon.SelectedValue.ToString());
             cbxMaGiamGia.DisplayMember = "GiamGia";
             cbxMaGiamGia.ValueMember = "TongTien";
+
+            HoaDonBLL hoaDonBLL = new HoaDonBLL();
+            if (hoaDonBLL.getTrangThai(cbxMaHoaDon.SelectedValue.ToString() ) == 1)
+            {
+                btnLuu.Enabled = false;
+            }
 
             tbxTongTien.Text = cbxMaGiamGia.SelectedValue.ToString();
 
@@ -377,7 +377,7 @@ namespace QuanLyCuaHangSach
 
 
             MessageBox.Show("Lưu thành công", "Lưu thành công", MessageBoxButtons.OK);
-
+            btnLuu.Enabled = false;
         }
     }
 }

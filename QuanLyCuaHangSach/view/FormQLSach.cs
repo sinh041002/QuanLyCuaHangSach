@@ -301,7 +301,7 @@ namespace QuanLyCuaHangSach.view
             {
                 TacGia tacGia = new TacGia();
                 tacGia.MaTacGia = txtMaTacGia.Text;
-                tacGia.TenTacGia = txtMoTaTacGIa.Text;
+                tacGia.TenTacGia = txtTenTacGia.Text;
                 tacGia.MoTaTacGia = txtMoTaTacGIa.Text;
                 tacGiaBLL.UpdateTacGia(tacGia);
                 MessageBox.Show("Sửa thông tin thành công", "Thành Công", MessageBoxButtons.OK);

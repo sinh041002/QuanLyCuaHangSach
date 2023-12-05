@@ -26,5 +26,6 @@ namespace DTO
         public double TongTien { get; set; }
 
         public double GiamGia { get; set; }
+        public int trangThai { get; set; }
     }
 }

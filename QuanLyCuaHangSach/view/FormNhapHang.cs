@@ -37,10 +37,7 @@ namespace QuanLyCuaHangSach
 
         private void FormNhapHang_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn có thực sự muốn thoát chương trình?", "Thoát chương trình", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
-            {
-                e.Cancel = true;
-            }
+           
         }
 
         private void btnLuuHoaDon_Click(object sender, EventArgs e)

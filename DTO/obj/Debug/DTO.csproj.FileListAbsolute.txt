@@ -10,3 +10,9 @@ C:\Users\phanm\source\repos\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.AssemblyR
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\DTO\obj\Debug\DTO.dll
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\DTO\obj\Debug\DTO.pdb
+D:\Đồ án c#\QLCuaHangSach\DTO\bin\Debug\DTO.dll
+D:\Đồ án c#\QLCuaHangSach\DTO\bin\Debug\DTO.pdb
+D:\Đồ án c#\QLCuaHangSach\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Đồ án c#\QLCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Đồ án c#\QLCuaHangSach\DTO\obj\Debug\DTO.dll
+D:\Đồ án c#\QLCuaHangSach\DTO\obj\Debug\DTO.pdb

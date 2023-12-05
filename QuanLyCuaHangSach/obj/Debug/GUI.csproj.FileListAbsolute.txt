@@ -196,7 +196,6 @@ C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLy
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormHuyNhapHang.resources
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLKhachHang.resources
 >>>>>>> eba1a775dadadf12f5ade293f7c7339141dd34c6
-<<<<<<< HEAD
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.AssemblyReference.cache
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.dangnhap.resources
@@ -290,7 +289,6 @@ D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\ru\Microsoft.ReportVie
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CopyComplete
-=======
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.PrintNhanVien.resources
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll

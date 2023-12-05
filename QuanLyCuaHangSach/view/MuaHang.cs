@@ -201,7 +201,15 @@ namespace QuanLyCuaHangSach.view
                 hoadon.MaKhachHang = txtMaKhachHang.Text.Trim(); 
                 hoadon.NgayXuat = (DateTime)dtpNgayTao.Value;
                 hoadon.TongTien = double.Parse(txtTongTienKM.Text.Trim());
-                hoadon.GiamGia = double.Parse(txtKhuyenMai.Text.Trim());
+                if (txtKhuyenMai.Text.Trim()=="")
+                {
+                    hoadon.GiamGia = 0;
+                }
+                else
+                {
+                    hoadon.GiamGia = double.Parse(txtKhuyenMai.Text.Trim());
+                }
+             
                 hoaDonBLL.SaveHoaDon(hoadon);
                 SaveChiTietHoaDon();
             }
@@ -279,14 +287,26 @@ namespace QuanLyCuaHangSach.view
 
         private void btnKhuyenMai_Click(object sender, EventArgs e)
         {
-            if (dgvGio.RowCount <= 0)
+            if (dgvGio.RowCount <= 1)
             {
                 MessageBox.Show("Vui lòng thêm sản phẩm vào giỏ hàng trước khi chọn khuyến mãi !!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            _DialogKhuyenMai DialogKhuyenMai = new _DialogKhuyenMai();
-            DialogKhuyenMai.ShowDialog();
-            txtKhuyenMai.Text = _DialogKhuyenMai.SaleOff;
+            else
+            {
+                _DialogKhuyenMai DialogKhuyenMai = new _DialogKhuyenMai();
+                DialogKhuyenMai.ShowDialog();
+                txtKhuyenMai.Text = _DialogKhuyenMai.SaleOff;
+                if (txtKhuyenMai.Text == "")
+                {
+                    txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim())).ToString();
+                }
+                else
+                {
+                    txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - (double.Parse(txtTongTien.Text.Trim()) * ((double.Parse(txtKhuyenMai.Text) / 100)))).ToString();
+                }
+            }
+           
         }
 
         private void txtTongTien_TextChanged(object sender, EventArgs e)
@@ -305,7 +325,7 @@ namespace QuanLyCuaHangSach.view
         {
             if (txtTongTien.Text != "")
             {
-                txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - (double.Parse(txtTongTien.Text.Trim()) * double.Parse(txtTongTienKM.Text) / 100)).ToString();
+                txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - ((double.Parse(txtTongTien.Text.Trim()) *( double.Parse(txtTongTienKM.Text) / 100)))).ToString();
             }
         }
 
