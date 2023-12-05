@@ -53,6 +53,24 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>C:\Windows\SysWOW64\Microsoft.Office.Interop.Excel.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -72,6 +90,21 @@
     <Compile Include="dangnhap.Designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="daNhanVien.cs">
+      <DependentUpon>daNhanVien.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="daNhanVien.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>daNhanVien.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrintNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintNhanVien.Designer.cs">
+      <DependentUpon>PrintNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="view\3ChamNCC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,12 +134,6 @@
     </Compile>
     <Compile Include="view\FormNhapHang.Designer.cs">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="view\FormQLKhachHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\FormQLKhachHang.Designer.cs">
-      <DependentUpon>FormQLKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="view\FormThemHoaDon.cs">
       <SubType>Form</SubType>
@@ -216,6 +243,10 @@
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PrintNhanVien.resx">
+      <DependentUpon>PrintNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportNhanVien.rdlc" />
     <EmbeddedResource Include="view\3ChamNCC.resx">
       <DependentUpon>3ChamNCC.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,9 +261,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormNhapHang.resx">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\FormQLKhachHang.resx">
-      <DependentUpon>FormQLKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormThemHoaDon.resx">
       <DependentUpon>FormThemHoaDon.cs</DependentUpon>
@@ -292,6 +320,18 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="daNhanVien.xsc">
+      <DependentUpon>daNhanVien.xsd</DependentUpon>
+    </None>
+    <None Include="daNhanVien.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>daNhanVien.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="daNhanVien.xss">
+      <DependentUpon>daNhanVien.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -420,6 +460,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shopping-cart %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -289,6 +289,7 @@ namespace QuanLyCuaHangSach.view
             this.txtTongTienKM.ReadOnly = true;
             this.txtTongTienKM.Size = new System.Drawing.Size(310, 26);
             this.txtTongTienKM.TabIndex = 34;
+            this.txtTongTienKM.TextChanged += new System.EventHandler(this.txtTongTienKM_TextChanged);
             // 
             // label16
             // 
@@ -619,6 +620,7 @@ namespace QuanLyCuaHangSach.view
             this.Img.HeaderText = "Image";
             this.Img.Name = "Img";
             this.Img.ReadOnly = true;
+            this.Img.Visible = false;
             // 
             // label11
             // 

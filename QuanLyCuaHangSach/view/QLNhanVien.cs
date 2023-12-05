@@ -20,6 +20,7 @@ namespace QuanLyCuaHangSach.view
         public QLNhanVien()
         {
             InitializeComponent();
+            Load1();
         }
 
    
@@ -63,7 +64,7 @@ namespace QuanLyCuaHangSach.view
 
         private void QLNhanVien_Load(object sender, EventArgs e)
         {
-            Load1();
+           
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -508,6 +509,12 @@ namespace QuanLyCuaHangSach.view
             }
 
             ExportFile(dataTable, "Danh Sách", "Danh Sách Nhân Viên");
+        }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            PrintNhanVien innhanvien= new PrintNhanVien();
+            innhanvien.Show();
         }
     }
 }

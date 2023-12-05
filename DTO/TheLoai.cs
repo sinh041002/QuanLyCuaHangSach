@@ -12,6 +12,15 @@ namespace DTO
         private string tenTheLoai;
         private string moTaTheLoai;
 
+        public string getMa()
+        {
+            Random rd = new Random();
+            int ma = rd.Next(1000, 9999);
+            string a = "TL" + ma + "";
+
+
+            return a;
+        }
         public TheLoai(string maTheLoai, string tenTheLoai, string moTaTheLoai)
         {
             this.maTheLoai = maTheLoai;

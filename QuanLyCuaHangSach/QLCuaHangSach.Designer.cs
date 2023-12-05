@@ -49,6 +49,7 @@
             this.lbMaNhanVien = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.btnQLNhapHang = new System.Windows.Forms.Button();
             this.panel1_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrTrangChu)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +57,7 @@
             // panel1_left
             // 
             this.panel1_left.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1_left.Controls.Add(this.btnQLNhapHang);
             this.panel1_left.Controls.Add(this.btnThongKeBanChay);
             this.panel1_left.Controls.Add(this.btnThongKeDoanhThu);
             this.panel1_left.Controls.Add(this.btnHoaDon);
@@ -76,10 +78,10 @@
             // btnThongKeBanChay
             // 
             this.btnThongKeBanChay.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThongKeBanChay.Location = new System.Drawing.Point(0, 560);
+            this.btnThongKeBanChay.Location = new System.Drawing.Point(0, 520);
             this.btnThongKeBanChay.Margin = new System.Windows.Forms.Padding(2);
             this.btnThongKeBanChay.Name = "btnThongKeBanChay";
-            this.btnThongKeBanChay.Size = new System.Drawing.Size(230, 70);
+            this.btnThongKeBanChay.Size = new System.Drawing.Size(230, 65);
             this.btnThongKeBanChay.TabIndex = 17;
             this.btnThongKeBanChay.Text = "Thống Kê Bán Chạy";
             this.btnThongKeBanChay.UseVisualStyleBackColor = true;
@@ -88,10 +90,10 @@
             // btnThongKeDoanhThu
             // 
             this.btnThongKeDoanhThu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThongKeDoanhThu.Location = new System.Drawing.Point(0, 490);
+            this.btnThongKeDoanhThu.Location = new System.Drawing.Point(0, 455);
             this.btnThongKeDoanhThu.Margin = new System.Windows.Forms.Padding(2);
             this.btnThongKeDoanhThu.Name = "btnThongKeDoanhThu";
-            this.btnThongKeDoanhThu.Size = new System.Drawing.Size(230, 70);
+            this.btnThongKeDoanhThu.Size = new System.Drawing.Size(230, 65);
             this.btnThongKeDoanhThu.TabIndex = 16;
             this.btnThongKeDoanhThu.Text = "Thống Kê Doanh Thu";
             this.btnThongKeDoanhThu.UseVisualStyleBackColor = true;
@@ -100,10 +102,10 @@
             // btnHoaDon
             // 
             this.btnHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHoaDon.Location = new System.Drawing.Point(0, 420);
+            this.btnHoaDon.Location = new System.Drawing.Point(0, 390);
             this.btnHoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.btnHoaDon.Name = "btnHoaDon";
-            this.btnHoaDon.Size = new System.Drawing.Size(230, 70);
+            this.btnHoaDon.Size = new System.Drawing.Size(230, 65);
             this.btnHoaDon.TabIndex = 15;
             this.btnHoaDon.Text = "Quản Lý Hóa Đơn";
             this.btnHoaDon.UseVisualStyleBackColor = true;
@@ -112,10 +114,10 @@
             // btnQuyen
             // 
             this.btnQuyen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnQuyen.Location = new System.Drawing.Point(0, 350);
+            this.btnQuyen.Location = new System.Drawing.Point(0, 325);
             this.btnQuyen.Margin = new System.Windows.Forms.Padding(2);
             this.btnQuyen.Name = "btnQuyen";
-            this.btnQuyen.Size = new System.Drawing.Size(230, 70);
+            this.btnQuyen.Size = new System.Drawing.Size(230, 65);
             this.btnQuyen.TabIndex = 14;
             this.btnQuyen.Text = "Quản Lý Quyền";
             this.btnQuyen.UseVisualStyleBackColor = true;
@@ -124,10 +126,10 @@
             // BtnQLNhanVien
             // 
             this.BtnQLNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnQLNhanVien.Location = new System.Drawing.Point(0, 280);
+            this.BtnQLNhanVien.Location = new System.Drawing.Point(0, 260);
             this.BtnQLNhanVien.Margin = new System.Windows.Forms.Padding(2);
             this.BtnQLNhanVien.Name = "BtnQLNhanVien";
-            this.BtnQLNhanVien.Size = new System.Drawing.Size(230, 70);
+            this.BtnQLNhanVien.Size = new System.Drawing.Size(230, 65);
             this.BtnQLNhanVien.TabIndex = 13;
             this.BtnQLNhanVien.Text = "Quản Lý Nhân Viên";
             this.BtnQLNhanVien.UseVisualStyleBackColor = true;
@@ -136,10 +138,10 @@
             // btnQLMaKhuyenMai
             // 
             this.btnQLMaKhuyenMai.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnQLMaKhuyenMai.Location = new System.Drawing.Point(0, 210);
+            this.btnQLMaKhuyenMai.Location = new System.Drawing.Point(0, 195);
             this.btnQLMaKhuyenMai.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLMaKhuyenMai.Name = "btnQLMaKhuyenMai";
-            this.btnQLMaKhuyenMai.Size = new System.Drawing.Size(230, 70);
+            this.btnQLMaKhuyenMai.Size = new System.Drawing.Size(230, 65);
             this.btnQLMaKhuyenMai.TabIndex = 12;
             this.btnQLMaKhuyenMai.Text = "Quản Lý Khuyến Mãi";
             this.btnQLMaKhuyenMai.UseVisualStyleBackColor = true;
@@ -148,10 +150,10 @@
             // btnQLSach
             // 
             this.btnQLSach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnQLSach.Location = new System.Drawing.Point(0, 140);
+            this.btnQLSach.Location = new System.Drawing.Point(0, 130);
             this.btnQLSach.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLSach.Name = "btnQLSach";
-            this.btnQLSach.Size = new System.Drawing.Size(230, 70);
+            this.btnQLSach.Size = new System.Drawing.Size(230, 65);
             this.btnQLSach.TabIndex = 11;
             this.btnQLSach.Text = "Quản Lý Sách";
             this.btnQLSach.UseVisualStyleBackColor = true;
@@ -160,10 +162,10 @@
             // btnQLKhachHang
             // 
             this.btnQLKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnQLKhachHang.Location = new System.Drawing.Point(0, 70);
+            this.btnQLKhachHang.Location = new System.Drawing.Point(0, 65);
             this.btnQLKhachHang.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLKhachHang.Name = "btnQLKhachHang";
-            this.btnQLKhachHang.Size = new System.Drawing.Size(230, 70);
+            this.btnQLKhachHang.Size = new System.Drawing.Size(230, 65);
             this.btnQLKhachHang.TabIndex = 10;
             this.btnQLKhachHang.Text = "Quản Lý Khách Hàng";
             this.btnQLKhachHang.UseVisualStyleBackColor = true;
@@ -175,7 +177,7 @@
             this.btnBanHang.Location = new System.Drawing.Point(0, 0);
             this.btnBanHang.Margin = new System.Windows.Forms.Padding(2);
             this.btnBanHang.Name = "btnBanHang";
-            this.btnBanHang.Size = new System.Drawing.Size(230, 70);
+            this.btnBanHang.Size = new System.Drawing.Size(230, 65);
             this.btnBanHang.TabIndex = 9;
             this.btnBanHang.Text = "Bán Hàng";
             this.btnBanHang.UseVisualStyleBackColor = true;
@@ -281,6 +283,18 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // btnQLNhapHang
+            // 
+            this.btnQLNhapHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQLNhapHang.Location = new System.Drawing.Point(0, 585);
+            this.btnQLNhapHang.Margin = new System.Windows.Forms.Padding(2);
+            this.btnQLNhapHang.Name = "btnQLNhapHang";
+            this.btnQLNhapHang.Size = new System.Drawing.Size(230, 65);
+            this.btnQLNhapHang.TabIndex = 18;
+            this.btnQLNhapHang.Text = "Quản Lý Nhập Hàng";
+            this.btnQLNhapHang.UseVisualStyleBackColor = true;
+            this.btnQLNhapHang.Click += new System.EventHandler(this.btnQLNhapHang_Click);
+            // 
             // QLCuaHangSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -334,5 +348,6 @@
         private System.Windows.Forms.Label lbMaNhanVien;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnQLNhapHang;
     }
 }

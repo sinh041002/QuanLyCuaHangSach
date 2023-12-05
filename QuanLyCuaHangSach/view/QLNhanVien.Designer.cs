@@ -56,13 +56,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnIn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.btnIn);
             this.panel1.Controls.Add(this.BtnExport);
             this.panel1.Controls.Add(this.btnTimkiem);
             this.panel1.Controls.Add(this.txtTimKiem);
@@ -90,6 +92,8 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
@@ -100,12 +104,13 @@
             // BtnExport
             // 
             this.BtnExport.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExport.Location = new System.Drawing.Point(779, 382);
+            this.BtnExport.Location = new System.Drawing.Point(1114, 320);
             this.BtnExport.Name = "BtnExport";
             this.BtnExport.Size = new System.Drawing.Size(86, 41);
             this.BtnExport.TabIndex = 14;
             this.BtnExport.Text = "Xuất Exel";
             this.BtnExport.UseVisualStyleBackColor = true;
+            this.BtnExport.UseWaitCursor = true;
             this.BtnExport.Click += new System.EventHandler(this.BtnExport_Click);
             // 
             // btnTimkiem
@@ -118,6 +123,7 @@
             this.btnTimkiem.TabIndex = 47;
             this.btnTimkiem.Text = "Tìm";
             this.btnTimkiem.UseVisualStyleBackColor = true;
+            this.btnTimkiem.UseWaitCursor = true;
             this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // txtTimKiem
@@ -128,37 +134,40 @@
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(206, 29);
             this.txtTimKiem.TabIndex = 14;
+            this.txtTimKiem.UseWaitCursor = true;
             // 
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(638, 382);
+            this.btnClear.Location = new System.Drawing.Point(697, 382);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(87, 41);
             this.btnClear.TabIndex = 13;
             this.btnClear.Text = "Làm Mới";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseWaitCursor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(267, 381);
+            this.btnThem.Location = new System.Drawing.Point(326, 381);
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 41);
             this.btnThem.TabIndex = 10;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.UseWaitCursor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(515, 381);
+            this.btnXoa.Location = new System.Drawing.Point(574, 381);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -166,18 +175,20 @@
             this.btnXoa.TabIndex = 12;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseWaitCursor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(389, 382);
+            this.btnSua.Location = new System.Drawing.Point(448, 382);
             this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 41);
             this.btnSua.TabIndex = 11;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseWaitCursor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // label10
@@ -190,6 +201,7 @@
             this.label10.Size = new System.Drawing.Size(171, 22);
             this.label10.TabIndex = 46;
             this.label10.Text = "Quản Lý Nhân Viên\r\n";
+            this.label10.UseWaitCursor = true;
             // 
             // label9
             // 
@@ -201,6 +213,7 @@
             this.label9.Size = new System.Drawing.Size(186, 22);
             this.label9.TabIndex = 45;
             this.label9.Text = "Thông Tin Nhân Viên";
+            this.label9.UseWaitCursor = true;
             // 
             // dataGridView1
             // 
@@ -212,6 +225,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1090, 267);
             this.dataGridView1.TabIndex = 44;
+            this.dataGridView1.UseWaitCursor = true;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txtMatKhau
@@ -222,6 +236,7 @@
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(206, 29);
             this.txtMatKhau.TabIndex = 9;
+            this.txtMatKhau.UseWaitCursor = true;
             // 
             // label6
             // 
@@ -233,6 +248,7 @@
             this.label6.Size = new System.Drawing.Size(83, 21);
             this.label6.TabIndex = 43;
             this.label6.Text = "Mật Khẩu";
+            this.label6.UseWaitCursor = true;
             // 
             // radioTrangThai
             // 
@@ -247,6 +263,7 @@
             this.radioTrangThai.TabStop = true;
             this.radioTrangThai.Text = "Trạng Thái Tài Khoản";
             this.radioTrangThai.UseVisualStyleBackColor = true;
+            this.radioTrangThai.UseWaitCursor = true;
             this.radioTrangThai.CheckedChanged += new System.EventHandler(this.radioTrangThai_CheckedChanged);
             // 
             // rTBGhiChu
@@ -257,6 +274,7 @@
             this.rTBGhiChu.Size = new System.Drawing.Size(470, 65);
             this.rTBGhiChu.TabIndex = 5;
             this.rTBGhiChu.Text = "";
+            this.rTBGhiChu.UseWaitCursor = true;
             // 
             // dateTimeNgaySinh
             // 
@@ -267,6 +285,7 @@
             this.dateTimeNgaySinh.Name = "dateTimeNgaySinh";
             this.dateTimeNgaySinh.Size = new System.Drawing.Size(206, 24);
             this.dateTimeNgaySinh.TabIndex = 3;
+            this.dateTimeNgaySinh.UseWaitCursor = true;
             // 
             // comboBoxGioiTinh
             // 
@@ -277,6 +296,7 @@
             this.comboBoxGioiTinh.Name = "comboBoxGioiTinh";
             this.comboBoxGioiTinh.Size = new System.Drawing.Size(118, 28);
             this.comboBoxGioiTinh.TabIndex = 6;
+            this.comboBoxGioiTinh.UseWaitCursor = true;
             // 
             // comboboxChucVu
             // 
@@ -292,6 +312,7 @@
             this.comboboxChucVu.Name = "comboboxChucVu";
             this.comboboxChucVu.Size = new System.Drawing.Size(118, 28);
             this.comboboxChucVu.TabIndex = 7;
+            this.comboboxChucVu.UseWaitCursor = true;
             this.comboboxChucVu.SelectedIndexChanged += new System.EventHandler(this.comboboxChucVu_SelectedIndexChanged);
             // 
             // txtSoDienThoai
@@ -302,6 +323,7 @@
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(206, 29);
             this.txtSoDienThoai.TabIndex = 4;
+            this.txtSoDienThoai.UseWaitCursor = true;
             // 
             // txtTenNhanVien
             // 
@@ -311,6 +333,7 @@
             this.txtTenNhanVien.Name = "txtTenNhanVien";
             this.txtTenNhanVien.Size = new System.Drawing.Size(206, 29);
             this.txtTenNhanVien.TabIndex = 2;
+            this.txtTenNhanVien.UseWaitCursor = true;
             // 
             // txtMaNhanVien
             // 
@@ -332,6 +355,7 @@
             this.label8.Size = new System.Drawing.Size(78, 21);
             this.label8.TabIndex = 40;
             this.label8.Text = "Chức Vụ";
+            this.label8.UseWaitCursor = true;
             // 
             // label7
             // 
@@ -343,6 +367,7 @@
             this.label7.Size = new System.Drawing.Size(83, 21);
             this.label7.TabIndex = 37;
             this.label7.Text = "Giới Tính";
+            this.label7.UseWaitCursor = true;
             // 
             // label5
             // 
@@ -354,6 +379,7 @@
             this.label5.Size = new System.Drawing.Size(69, 21);
             this.label5.TabIndex = 34;
             this.label5.Text = "Địa Chỉ";
+            this.label5.UseWaitCursor = true;
             // 
             // label4
             // 
@@ -365,6 +391,7 @@
             this.label4.Size = new System.Drawing.Size(119, 21);
             this.label4.TabIndex = 32;
             this.label4.Text = "Số Điện Thoại";
+            this.label4.UseWaitCursor = true;
             // 
             // label3
             // 
@@ -376,6 +403,7 @@
             this.label3.Size = new System.Drawing.Size(121, 21);
             this.label3.TabIndex = 30;
             this.label3.Text = "Tên Nhân Viên";
+            this.label3.UseWaitCursor = true;
             // 
             // label2
             // 
@@ -387,6 +415,7 @@
             this.label2.Size = new System.Drawing.Size(87, 21);
             this.label2.TabIndex = 29;
             this.label2.Text = "Ngày Sinh";
+            this.label2.UseWaitCursor = true;
             // 
             // label1
             // 
@@ -398,6 +427,19 @@
             this.label1.Size = new System.Drawing.Size(116, 21);
             this.label1.TabIndex = 27;
             this.label1.Text = "Mã Nhân Viên";
+            this.label1.UseWaitCursor = true;
+            // 
+            // btnIn
+            // 
+            this.btnIn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIn.Location = new System.Drawing.Point(969, 320);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(86, 41);
+            this.btnIn.TabIndex = 48;
+            this.btnIn.Text = "Print";
+            this.btnIn.UseVisualStyleBackColor = true;
+            this.btnIn.UseWaitCursor = true;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
             // QLNhanVien
             // 
@@ -405,7 +447,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1534, 761);
             this.Controls.Add(this.panel1);
-            this.Enabled = false;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "QLNhanVien";
             this.Text = "QLNhanVien";
@@ -418,8 +459,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -447,5 +486,7 @@
         private System.Windows.Forms.Button btnTimkiem;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button BtnExport;
+        public System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnIn;
     }
 }

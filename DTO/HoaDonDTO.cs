@@ -8,13 +8,14 @@ namespace DTO
 {
     public class HoaDonDTO
     {
-        public HoaDonDTO(string maHoaDon, string maNhanVien, string maKhachHang, DateTime ngayXuat, double tongTien)
+        public HoaDonDTO(string maHoaDon, string maNhanVien, string maKhachHang, DateTime ngayXuat, double tongTien, double giamGia)
         {
             MaHoaDon = maHoaDon;
             MaNhanVien = maNhanVien;
             MaKhachHang = maKhachHang;
             NgayXuat = ngayXuat;
             TongTien = tongTien;
+            GiamGia = giamGia;
         }
          public HoaDonDTO() { } 
 

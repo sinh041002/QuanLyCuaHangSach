@@ -5,13 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using System.Data;
 
 namespace BLL
 {
     public class NhanVienBLL
     {
         public static List< NhanVien> listNhanVien = null;
-       
+
+        public DataTable GetAllNhanVien()
+        {
+            return NhanVienDAL.GetAllNhanVien();
+        }
         public List<NhanVien> getListNhanVien()
         {
             NhanVienDAL nhanVienDAL = new NhanVienDAL();

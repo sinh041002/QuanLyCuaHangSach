@@ -8,11 +8,22 @@ namespace DTO
 {
     public class NhaXuatBan
     {
-        private string maNhaXuatBan { get; set; }
-        private string tenNhaXuatBan { get;set; }
-        private string moTaNhaXuatBan { get; set; } 
+        public string getMa()
+        {
+            Random rd = new Random();
+            int ma = rd.Next(1000, 9999);
+            string a = "NXB" + ma + "";
 
-        NhaXuatBan() { }
+
+            return a;
+        }
+        public NhaXuatBan() { }
+        public string maNhaXuatBan { get; set; }
+        public string tenNhaXuatBan { get;set; }
+        public string moTaNhaXuatBan { get; set; } 
+
+       
+
 
         public NhaXuatBan(string maNhaXuatBan, string tenNhaXuatBan, string moTaNhaXuatBan)
         {

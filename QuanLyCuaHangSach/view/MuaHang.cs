@@ -200,7 +200,8 @@ namespace QuanLyCuaHangSach.view
                 hoadon.MaNhanVien = txtMaNhanVien.Text.Trim();
                 hoadon.MaKhachHang = txtMaKhachHang.Text.Trim(); 
                 hoadon.NgayXuat = (DateTime)dtpNgayTao.Value;
-                hoadon.TongTien = double.Parse(txtTongTienKM.Text.Trim());   
+                hoadon.TongTien = double.Parse(txtTongTienKM.Text.Trim());
+                hoadon.GiamGia = double.Parse(txtKhuyenMai.Text.Trim());
                 hoaDonBLL.SaveHoaDon(hoadon);
                 SaveChiTietHoaDon();
             }
@@ -212,15 +213,22 @@ namespace QuanLyCuaHangSach.view
 
         public void SaveChiTietHoaDon() 
         {
+                
             foreach (DataRow row in tbGioHang.Rows)
             {
                 ChiTietHoaDonDTO chiTietHoaDonDTO = new ChiTietHoaDonDTO();
+                string ma = row["Mã Sản Phẩm"].ToString().Trim();
+                double soluong = double.Parse(row["Số Lượng"].ToString().Trim());
                 chiTietHoaDonDTO.MaHoaDon = hoaDonBLL.CreateKey();
                 chiTietHoaDonDTO.MaSach = row["Mã Sản Phẩm"].ToString().Trim();
                 chiTietHoaDonDTO.DonGia = double.Parse(row["Giá Tiền"].ToString().Trim());
                 chiTietHoaDonDTO.SoLuong = int.Parse(row["Số Lượng"].ToString().Trim());
                 chiTietHoaDonDTO.ThanhTien = double.Parse(row["Thành Tiền"].ToString().Trim());
+
+
                 hoaDonBLL.SaveChiTietHoaDon(chiTietHoaDonDTO);
+
+                sachBLL.MinusStockBook(ma, soluong);
             }
             MessageBox.Show("Mua Hàng Thành Công !!");
             tbGioHang.Clear();
@@ -289,7 +297,7 @@ namespace QuanLyCuaHangSach.view
             }
             else
             {
-                txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - double.Parse(txtTongTien.Text.Trim()) * (double.Parse(txtKhuyenMai.Text) / 100)).ToString();
+                txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - (double.Parse(txtTongTien.Text.Trim()) * ((double.Parse(txtKhuyenMai.Text) / 100)))).ToString();
             }
         }
 
@@ -299,6 +307,11 @@ namespace QuanLyCuaHangSach.view
             {
                 txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - (double.Parse(txtTongTien.Text.Trim()) * double.Parse(txtTongTienKM.Text) / 100)).ToString();
             }
+        }
+
+        private void txtTongTienKM_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

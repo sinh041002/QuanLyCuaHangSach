@@ -356,7 +356,11 @@ namespace QuanLyCuaHangSach
         private void btnThemSach_Click(object sender, EventArgs e)
         {
             var child = new FormQLSach();
+
             child.ShowDialog(this);
+
+            child.ShowDialog();
+
         }
     }
 }

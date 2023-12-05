@@ -56,6 +56,7 @@ namespace QuanLyCuaHangSach
             if (items.QLSach != 1)
             {
                 btnQLSach.Hide();
+                btnQLNhapHang.Hide();
             }
             if (items.QLHoaDon != 1)
             {
@@ -145,7 +146,9 @@ namespace QuanLyCuaHangSach
 
         private void BtnQLNhanVien_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new QLNhanVien());
+            QLNhanVien qLNhanVien = new QLNhanVien();
+           
+            OpenChildForm(qLNhanVien);
         }
 
         private void btnQuyen_Click(object sender, EventArgs e)
@@ -197,6 +200,11 @@ namespace QuanLyCuaHangSach
         private void button8_Click(object sender, EventArgs e)
         {
             OpenChildForm(new QLNhanVien());
+        }
+
+        private void btnQLNhapHang_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormNhapHang());
         }
     }
 }
