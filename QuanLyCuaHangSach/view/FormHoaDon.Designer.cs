@@ -58,11 +58,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dtgHoaDon = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuyHoaDon = new System.Windows.Forms.Button();
-            this.btnHuyDoanDon = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnTaoHoaDon = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tbxThanhTien = new System.Windows.Forms.TextBox();
             this.tbxDonGia = new System.Windows.Forms.TextBox();
@@ -158,6 +154,7 @@
             // 
             // cbxMaKhachHang
             // 
+            this.cbxMaKhachHang.Enabled = false;
             this.cbxMaKhachHang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxMaKhachHang.FormattingEnabled = true;
             this.cbxMaKhachHang.Location = new System.Drawing.Point(723, 37);
@@ -204,6 +201,7 @@
             // 
             // cbxMaNhanVien
             // 
+            this.cbxMaNhanVien.Enabled = false;
             this.cbxMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxMaNhanVien.FormattingEnabled = true;
             this.cbxMaNhanVien.Location = new System.Drawing.Point(150, 137);
@@ -214,6 +212,7 @@
             // 
             // dtpNgayXuat
             // 
+            this.dtpNgayXuat.Enabled = false;
             this.dtpNgayXuat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayXuat.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgayXuat.Location = new System.Drawing.Point(150, 98);
@@ -401,11 +400,7 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.btnLuu);
             this.panel4.Controls.Add(this.btnHuyHoaDon);
-            this.panel4.Controls.Add(this.btnHuyDoanDon);
-            this.panel4.Controls.Add(this.btnThem);
-            this.panel4.Controls.Add(this.btnTaoHoaDon);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(3, 308);
             this.panel4.Name = "panel4";
@@ -413,81 +408,19 @@
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // btnLuu
-            // 
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
-            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(388, 16);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(118, 30);
-            this.btnLuu.TabIndex = 5;
-            this.btnLuu.Text = "&Lưu";
-            this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
             // btnHuyHoaDon
             // 
             this.btnHuyHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuyHoaDon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuyHoaDon.Image = ((System.Drawing.Image)(resources.GetObject("btnHuyHoaDon.Image")));
             this.btnHuyHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuyHoaDon.Location = new System.Drawing.Point(766, 16);
+            this.btnHuyHoaDon.Location = new System.Drawing.Point(936, 22);
             this.btnHuyHoaDon.Name = "btnHuyHoaDon";
             this.btnHuyHoaDon.Size = new System.Drawing.Size(118, 30);
             this.btnHuyHoaDon.TabIndex = 4;
             this.btnHuyHoaDon.Text = "&Hủy";
             this.btnHuyHoaDon.UseVisualStyleBackColor = true;
             this.btnHuyHoaDon.Click += new System.EventHandler(this.btnXoaThongTin_Click);
-            // 
-            // btnHuyDoanDon
-            // 
-            this.btnHuyDoanDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuyDoanDon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuyDoanDon.Image = ((System.Drawing.Image)(resources.GetObject("btnHuyDoanDon.Image")));
-            this.btnHuyDoanDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuyDoanDon.Location = new System.Drawing.Point(583, 16);
-            this.btnHuyDoanDon.Name = "btnHuyDoanDon";
-            this.btnHuyDoanDon.Size = new System.Drawing.Size(118, 30);
-            this.btnHuyDoanDon.TabIndex = 3;
-            this.btnHuyDoanDon.Text = "&Reset";
-            this.btnHuyDoanDon.UseVisualStyleBackColor = true;
-            this.btnHuyDoanDon.Click += new System.EventHandler(this.btnHuyDoanDon_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(199, 16);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(118, 30);
-            this.btnThem.TabIndex = 1;
-            this.btnThem.Text = "&Thêm";
-            this.btnThem.UseVisualStyleBackColor = false;
-            this.btnThem.Click += new System.EventHandler(this.btnLuuHoaDon_Click);
-            // 
-            // btnTaoHoaDon
-            // 
-            this.btnTaoHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnTaoHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaoHoaDon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaoHoaDon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTaoHoaDon.Image = ((System.Drawing.Image)(resources.GetObject("btnTaoHoaDon.Image")));
-            this.btnTaoHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaoHoaDon.Location = new System.Drawing.Point(10, 16);
-            this.btnTaoHoaDon.Name = "btnTaoHoaDon";
-            this.btnTaoHoaDon.Size = new System.Drawing.Size(118, 30);
-            this.btnTaoHoaDon.TabIndex = 0;
-            this.btnTaoHoaDon.Text = "&Tạo";
-            this.btnTaoHoaDon.UseVisualStyleBackColor = false;
-            this.btnTaoHoaDon.Click += new System.EventHandler(this.btnThemHoaDon_Click);
             // 
             // panel3
             // 
@@ -502,6 +435,7 @@
             this.panel3.Controls.Add(this.lblSoLuong);
             this.panel3.Controls.Add(this.lblMaSach);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Enabled = false;
             this.panel3.Location = new System.Drawing.Point(3, 23);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1425, 100);
@@ -541,6 +475,7 @@
             // 
             // tbxSoLuong
             // 
+            this.tbxSoLuong.Enabled = false;
             this.tbxSoLuong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxSoLuong.Location = new System.Drawing.Point(156, 58);
             this.tbxSoLuong.Name = "tbxSoLuong";
@@ -684,13 +619,9 @@
         private System.Windows.Forms.DataGridView dtgHoaDon;
         private System.Windows.Forms.TextBox tbxTongTien;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHuyDoanDon;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnTaoHoaDon;
         private System.Windows.Forms.ComboBox cbxMaKhachHang;
         private System.Windows.Forms.Button btnHuyHoaDon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbxMaGiamGia;
-        private System.Windows.Forms.Button btnLuu;
     }
 }

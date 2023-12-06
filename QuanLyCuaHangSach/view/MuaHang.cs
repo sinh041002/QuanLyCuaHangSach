@@ -201,6 +201,7 @@ namespace QuanLyCuaHangSach.view
                 hoadon.MaKhachHang = txtMaKhachHang.Text.Trim(); 
                 hoadon.NgayXuat = (DateTime)dtpNgayTao.Value;
                 hoadon.TongTien = double.Parse(txtTongTienKM.Text.Trim());
+                hoadon.trangThai = 1;
                 if (txtKhuyenMai.Text.Trim()=="")
                 {
                     hoadon.GiamGia = 0;
@@ -211,6 +212,7 @@ namespace QuanLyCuaHangSach.view
                 }
              
                 hoaDonBLL.SaveHoaDon(hoadon);
+                hoaDonBLL.CapNhatTongTienMuaChoKhachHang(hoadon.MaKhachHang, hoadon.TongTien);
                 SaveChiTietHoaDon();
             }
             else

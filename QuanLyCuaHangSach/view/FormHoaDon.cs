@@ -36,8 +36,7 @@ namespace QuanLyCuaHangSach
 
 
             //dtgHoaDon.DataSource = hoadon.getData();
-            btnThem.Enabled = false;
-
+        
         }
 
         private void FormHoaDon_FormClosing(object sender, FormClosingEventArgs e)
@@ -122,8 +121,7 @@ namespace QuanLyCuaHangSach
         private void btnThemHoaDon_Click(object sender, EventArgs e)
         {
             tbxMaHoaDon.Text = hoadon.CreateKey();
-            btnTaoHoaDon.Enabled = false;
-            btnThem.Enabled = true;
+          
 
             cbxMaNhanVien.DisplayMember = "MaNhanVien";
             cbxMaNhanVien.ValueMember = "hoten";
@@ -177,11 +175,11 @@ namespace QuanLyCuaHangSach
             cbxMaGiamGia.DisplayMember = "GiamGia";
             cbxMaGiamGia.ValueMember = "TongTien";
 
-            HoaDonBLL hoaDonBLL = new HoaDonBLL();
-            if (hoaDonBLL.getTrangThai(cbxMaHoaDon.SelectedValue.ToString() ) == 1)
-            {
-                btnLuu.Enabled = false;
-            }
+            //HoaDonBLL hoaDonBLL = new HoaDonBLL();
+            //if (hoaDonBLL.getTrangThai(cbxMaHoaDon.SelectedValue.ToString() ) == 1)
+            //{
+            //    btnLuu.Enabled = false;
+            //}
 
             tbxTongTien.Text = cbxMaGiamGia.SelectedValue.ToString();
 
@@ -307,8 +305,7 @@ namespace QuanLyCuaHangSach
             tbxSoLuong.Clear();
             tbxDonGia.Clear();
             tbxThanhTien.Clear();
-            btnTaoHoaDon.Enabled = true;
-            btnThem.Enabled = false;
+          
         }
 
         private void btnHuyDoanDon_Click(object sender, EventArgs e)
@@ -377,7 +374,7 @@ namespace QuanLyCuaHangSach
 
 
             MessageBox.Show("Lưu thành công", "Lưu thành công", MessageBoxButtons.OK);
-            btnLuu.Enabled = false;
+           
         }
     }
 }

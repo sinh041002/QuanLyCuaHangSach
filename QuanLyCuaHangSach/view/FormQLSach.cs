@@ -135,7 +135,16 @@ namespace QuanLyCuaHangSach.view
                 sach.MaNhaCungCap= txtMaNhaCungcapform1.Text;
                 sach.MaNhaXuatBan = txtMaNhaXuatBanform1.Text;
                 sach.Image = txtTenAnh.Text;
-                sach.SoLuong =float.Parse (txtSoLuong.Text);
+                if(txtSoLuong.Text!="" && txtSoLuong.Text != null)
+                {
+                    sach.SoLuong = float.Parse(txtSoLuong.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Moi nhap so luong");
+                    return;
+                }
+               
                 sach.MaTheLoai= txtMaTheLoaiForm1.Text;
                 SachBLL sachbll = new SachBLL();
                 Boolean a = sachbll.themSach(sach);
