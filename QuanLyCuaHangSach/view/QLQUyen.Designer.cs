@@ -33,6 +33,16 @@
             this.TenQuyen = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataQuyen = new System.Windows.Forms.DataGridView();
+            this.MaQuyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenQuyen1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QLKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QLNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QLQuyen1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BanHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QLThongKe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cBQLNhanVien = new System.Windows.Forms.CheckBox();
             this.cBQLQuyen = new System.Windows.Forms.CheckBox();
             this.cBQLKhuyenMai = new System.Windows.Forms.CheckBox();
@@ -47,16 +57,6 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtMaQuyen = new System.Windows.Forms.TextBox();
-            this.MaQuyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenQuyen1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QLKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QLNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QLQuyen1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BanHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QLThongKe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataQuyen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,27 +73,27 @@
             // cBQLKhachHang
             // 
             this.cBQLKhachHang.AutoSize = true;
-            this.cBQLKhachHang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLKhachHang.Location = new System.Drawing.Point(583, 166);
+            this.cBQLKhachHang.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cBQLKhachHang.Location = new System.Drawing.Point(342, 227);
             this.cBQLKhachHang.Name = "cBQLKhachHang";
-            this.cBQLKhachHang.Size = new System.Drawing.Size(161, 23);
+            this.cBQLKhachHang.Size = new System.Drawing.Size(207, 27);
             this.cBQLKhachHang.TabIndex = 1;
             this.cBQLKhachHang.Text = "Quản Lý Khách Hàng";
             this.cBQLKhachHang.UseVisualStyleBackColor = true;
             // 
             // TenQuyen
             // 
-            this.TenQuyen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TenQuyen.Location = new System.Drawing.Point(940, 91);
+            this.TenQuyen.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TenQuyen.Location = new System.Drawing.Point(699, 152);
             this.TenQuyen.Name = "TenQuyen";
-            this.TenQuyen.Size = new System.Drawing.Size(200, 26);
+            this.TenQuyen.Size = new System.Drawing.Size(200, 29);
             this.TenQuyen.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(829, 94);
+            this.label2.Location = new System.Drawing.Point(588, 155);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 19);
             this.label2.TabIndex = 11;
@@ -114,168 +114,11 @@
             this.Column3,
             this.BanHang,
             this.QLThongKe});
-            this.dataQuyen.Location = new System.Drawing.Point(226, 510);
+            this.dataQuyen.Location = new System.Drawing.Point(1009, 152);
             this.dataQuyen.Name = "dataQuyen";
-            this.dataQuyen.Size = new System.Drawing.Size(1099, 224);
+            this.dataQuyen.Size = new System.Drawing.Size(318, 533);
             this.dataQuyen.TabIndex = 12;
             this.dataQuyen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataQuyen_CellContentClick);
-            // 
-            // cBQLNhanVien
-            // 
-            this.cBQLNhanVien.AutoSize = true;
-            this.cBQLNhanVien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLNhanVien.Location = new System.Drawing.Point(835, 166);
-            this.cBQLNhanVien.Name = "cBQLNhanVien";
-            this.cBQLNhanVien.Size = new System.Drawing.Size(149, 23);
-            this.cBQLNhanVien.TabIndex = 13;
-            this.cBQLNhanVien.Text = "Quản Lý Nhân Viên";
-            this.cBQLNhanVien.UseVisualStyleBackColor = true;
-            // 
-            // cBQLQuyen
-            // 
-            this.cBQLQuyen.AutoSize = true;
-            this.cBQLQuyen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLQuyen.Location = new System.Drawing.Point(583, 231);
-            this.cBQLQuyen.Name = "cBQLQuyen";
-            this.cBQLQuyen.Size = new System.Drawing.Size(125, 23);
-            this.cBQLQuyen.TabIndex = 14;
-            this.cBQLQuyen.Text = "Quản Lý Quyền";
-            this.cBQLQuyen.UseVisualStyleBackColor = true;
-            // 
-            // cBQLKhuyenMai
-            // 
-            this.cBQLKhuyenMai.AutoSize = true;
-            this.cBQLKhuyenMai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLKhuyenMai.Location = new System.Drawing.Point(835, 231);
-            this.cBQLKhuyenMai.Name = "cBQLKhuyenMai";
-            this.cBQLKhuyenMai.Size = new System.Drawing.Size(160, 23);
-            this.cBQLKhuyenMai.TabIndex = 15;
-            this.cBQLKhuyenMai.Text = "Quản Lý Khuyến Mãi";
-            this.cBQLKhuyenMai.UseVisualStyleBackColor = true;
-            // 
-            // cBQLSach
-            // 
-            this.cBQLSach.AutoSize = true;
-            this.cBQLSach.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLSach.Location = new System.Drawing.Point(583, 288);
-            this.cBQLSach.Name = "cBQLSach";
-            this.cBQLSach.Size = new System.Drawing.Size(115, 23);
-            this.cBQLSach.TabIndex = 16;
-            this.cBQLSach.Text = "Quản Lý Sách";
-            this.cBQLSach.UseVisualStyleBackColor = true;
-            // 
-            // cBQLHoaDon
-            // 
-            this.cBQLHoaDon.AutoSize = true;
-            this.cBQLHoaDon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLHoaDon.Location = new System.Drawing.Point(835, 288);
-            this.cBQLHoaDon.Name = "cBQLHoaDon";
-            this.cBQLHoaDon.Size = new System.Drawing.Size(141, 23);
-            this.cBQLHoaDon.TabIndex = 17;
-            this.cBQLHoaDon.Text = "Quản Lý Hóa Đơn";
-            this.cBQLHoaDon.UseVisualStyleBackColor = true;
-            // 
-            // cBBanHang
-            // 
-            this.cBBanHang.AutoSize = true;
-            this.cBBanHang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBBanHang.Location = new System.Drawing.Point(583, 352);
-            this.cBBanHang.Name = "cBBanHang";
-            this.cBBanHang.Size = new System.Drawing.Size(145, 23);
-            this.cBBanHang.TabIndex = 18;
-            this.cBBanHang.Text = "Quản Lý Bán Hàng";
-            this.cBBanHang.UseVisualStyleBackColor = true;
-            // 
-            // cBQLThongKe
-            // 
-            this.cBQLThongKe.AutoSize = true;
-            this.cBQLThongKe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLThongKe.Location = new System.Drawing.Point(835, 352);
-            this.cBQLThongKe.Name = "cBQLThongKe";
-            this.cBQLThongKe.Size = new System.Drawing.Size(146, 23);
-            this.cBQLThongKe.TabIndex = 19;
-            this.cBQLThongKe.Text = "Quản Lý Thống Kê";
-            this.cBQLThongKe.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(222, 468);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 19);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Danh Sách Quyền";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // btnClear
-            // 
-            this.btnClear.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(920, 405);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(87, 41);
-            this.btnClear.TabIndex = 24;
-            this.btnClear.Text = "Làm Mới";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(554, 405);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 41);
-            this.btnThem.TabIndex = 21;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(802, 405);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnXoa.Size = new System.Drawing.Size(75, 41);
-            this.btnXoa.TabIndex = 23;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(682, 405);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 41);
-            this.btnSua.TabIndex = 22;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(442, 98);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 19);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "Mã Quyền";
-            // 
-            // txtMaQuyen
-            // 
-            this.txtMaQuyen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaQuyen.Location = new System.Drawing.Point(548, 91);
-            this.txtMaQuyen.Name = "txtMaQuyen";
-            this.txtMaQuyen.Size = new System.Drawing.Size(200, 26);
-            this.txtMaQuyen.TabIndex = 25;
             // 
             // MaQuyen
             // 
@@ -344,6 +187,163 @@
             this.QLThongKe.HeaderText = "QLThongKe";
             this.QLThongKe.Name = "QLThongKe";
             this.QLThongKe.Visible = false;
+            // 
+            // cBQLNhanVien
+            // 
+            this.cBQLNhanVien.AutoSize = true;
+            this.cBQLNhanVien.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cBQLNhanVien.Location = new System.Drawing.Point(594, 227);
+            this.cBQLNhanVien.Name = "cBQLNhanVien";
+            this.cBQLNhanVien.Size = new System.Drawing.Size(193, 27);
+            this.cBQLNhanVien.TabIndex = 13;
+            this.cBQLNhanVien.Text = "Quản Lý Nhân Viên";
+            this.cBQLNhanVien.UseVisualStyleBackColor = true;
+            // 
+            // cBQLQuyen
+            // 
+            this.cBQLQuyen.AutoSize = true;
+            this.cBQLQuyen.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cBQLQuyen.Location = new System.Drawing.Point(342, 292);
+            this.cBQLQuyen.Name = "cBQLQuyen";
+            this.cBQLQuyen.Size = new System.Drawing.Size(159, 27);
+            this.cBQLQuyen.TabIndex = 14;
+            this.cBQLQuyen.Text = "Quản Lý Quyền";
+            this.cBQLQuyen.UseVisualStyleBackColor = true;
+            // 
+            // cBQLKhuyenMai
+            // 
+            this.cBQLKhuyenMai.AutoSize = true;
+            this.cBQLKhuyenMai.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cBQLKhuyenMai.Location = new System.Drawing.Point(594, 292);
+            this.cBQLKhuyenMai.Name = "cBQLKhuyenMai";
+            this.cBQLKhuyenMai.Size = new System.Drawing.Size(207, 27);
+            this.cBQLKhuyenMai.TabIndex = 15;
+            this.cBQLKhuyenMai.Text = "Quản Lý Khuyến Mãi";
+            this.cBQLKhuyenMai.UseVisualStyleBackColor = true;
+            // 
+            // cBQLSach
+            // 
+            this.cBQLSach.AutoSize = true;
+            this.cBQLSach.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cBQLSach.Location = new System.Drawing.Point(342, 349);
+            this.cBQLSach.Name = "cBQLSach";
+            this.cBQLSach.Size = new System.Drawing.Size(144, 27);
+            this.cBQLSach.TabIndex = 16;
+            this.cBQLSach.Text = "Quản Lý Sách";
+            this.cBQLSach.UseVisualStyleBackColor = true;
+            // 
+            // cBQLHoaDon
+            // 
+            this.cBQLHoaDon.AutoSize = true;
+            this.cBQLHoaDon.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cBQLHoaDon.Location = new System.Drawing.Point(594, 349);
+            this.cBQLHoaDon.Name = "cBQLHoaDon";
+            this.cBQLHoaDon.Size = new System.Drawing.Size(181, 27);
+            this.cBQLHoaDon.TabIndex = 17;
+            this.cBQLHoaDon.Text = "Quản Lý Hóa Đơn";
+            this.cBQLHoaDon.UseVisualStyleBackColor = true;
+            // 
+            // cBBanHang
+            // 
+            this.cBBanHang.AutoSize = true;
+            this.cBBanHang.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cBBanHang.Location = new System.Drawing.Point(342, 413);
+            this.cBBanHang.Name = "cBBanHang";
+            this.cBBanHang.Size = new System.Drawing.Size(187, 27);
+            this.cBBanHang.TabIndex = 18;
+            this.cBBanHang.Text = "Quản Lý Bán Hàng";
+            this.cBBanHang.UseVisualStyleBackColor = true;
+            // 
+            // cBQLThongKe
+            // 
+            this.cBQLThongKe.AutoSize = true;
+            this.cBQLThongKe.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cBQLThongKe.Location = new System.Drawing.Point(594, 413);
+            this.cBQLThongKe.Name = "cBQLThongKe";
+            this.cBQLThongKe.Size = new System.Drawing.Size(187, 27);
+            this.cBQLThongKe.TabIndex = 19;
+            this.cBQLThongKe.Text = "Quản Lý Thống Kê";
+            this.cBQLThongKe.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1005, 110);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(157, 23);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Danh Sách Quyền";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(712, 512);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(87, 41);
+            this.btnClear.TabIndex = 24;
+            this.btnClear.Text = "Làm Mới";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(346, 512);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 41);
+            this.btnThem.TabIndex = 21;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(594, 512);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnXoa.Size = new System.Drawing.Size(75, 41);
+            this.btnXoa.TabIndex = 23;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Location = new System.Drawing.Point(474, 512);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 41);
+            this.btnSua.TabIndex = 22;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(201, 159);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 19);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Mã Quyền";
+            // 
+            // txtMaQuyen
+            // 
+            this.txtMaQuyen.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaQuyen.Location = new System.Drawing.Point(307, 152);
+            this.txtMaQuyen.Name = "txtMaQuyen";
+            this.txtMaQuyen.Size = new System.Drawing.Size(200, 29);
+            this.txtMaQuyen.TabIndex = 25;
             // 
             // QLQUyen
             // 
