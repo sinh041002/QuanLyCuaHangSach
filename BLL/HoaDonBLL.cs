@@ -195,6 +195,11 @@ namespace BLL
             return HoaDonDAO.GetLastID();
 
         }
+        //public int getTrangThai(string MaHoaDon)
+        //{
+        //    HoaDonDAO dao = new HoaDonDAO();
+        //    return dao.getTrangThai(MaHoaDon);
+        //}
     }
 
 }

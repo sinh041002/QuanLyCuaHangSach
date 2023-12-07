@@ -16,7 +16,7 @@ namespace DTO
         {
             Random rd = new Random();
             int ma = rd.Next(1000, 9999);
-            string a = "TL" + ma + "";
+            string a = "ML" + ma + "";
 
 
             return a;

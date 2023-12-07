@@ -38,16 +38,23 @@ namespace QuanLyCuaHangSach
 
 
             //dtgHoaDon.DataSource = hoadon.getData();
+<<<<<<< HEAD
 
 
+=======
+        
+>>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
         }
 
         private void FormHoaDon_FormClosing(object sender, FormClosingEventArgs e)
         {
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
         }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
@@ -128,7 +135,11 @@ namespace QuanLyCuaHangSach
         private void btnThemHoaDon_Click(object sender, EventArgs e)
         {
             tbxMaHoaDon.Text = hoadon.CreateKey();
+<<<<<<< HEAD
 
+=======
+          
+>>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
 
             cbxMaNhanVien.DisplayMember = "MaNhanVien";
             cbxMaNhanVien.ValueMember = "hoten";
@@ -181,6 +192,12 @@ namespace QuanLyCuaHangSach
             cbxMaGiamGia.DataSource = hoadon.LayThongTinTongTienVaGiamGiaTheoMaHoaDon(cbxMaHoaDon.SelectedValue.ToString());
             cbxMaGiamGia.DisplayMember = "GiamGia";
             cbxMaGiamGia.ValueMember = "TongTien";
+
+            //HoaDonBLL hoaDonBLL = new HoaDonBLL();
+            //if (hoaDonBLL.getTrangThai(cbxMaHoaDon.SelectedValue.ToString() ) == 1)
+            //{
+            //    btnLuu.Enabled = false;
+            //}
 
             tbxTongTien.Text = cbxMaGiamGia.SelectedValue.ToString();
 
@@ -305,7 +322,11 @@ namespace QuanLyCuaHangSach
             tbxSoLuong.Clear();
             tbxDonGia.Clear();
             tbxThanhTien.Clear();
+<<<<<<< HEAD
 
+=======
+          
+>>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
         }
 
         private void btnHuyDoanDon_Click(object sender, EventArgs e)
@@ -374,7 +395,7 @@ namespace QuanLyCuaHangSach
 
 
             MessageBox.Show("Lưu thành công", "Lưu thành công", MessageBoxButtons.OK);
-
+           
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -422,7 +443,7 @@ namespace QuanLyCuaHangSach
                         DataTable table = (DataTable) dtgHoaDon.DataSource;
                         DataRow row = table.NewRow();
                         DataRow dr = table.NewRow();
-                        dr["Mã sách"] = "Giảm giá(%)";
+                        dr["Mã sách"] = "Giảm giá (%)";
                         dr["Số lượng"] = cbxMaGiamGia.Text;
                         table.Rows.Add(dr);
 
