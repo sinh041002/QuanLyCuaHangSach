@@ -4,3 +4,9 @@ D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csp
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DTO\obj\Debug\DTO.dll
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\DTO\obj\Debug\DTO.pdb
+D:\Đồ án c#\QLCuaHangSach\DTO\bin\Debug\DTO.dll
+D:\Đồ án c#\QLCuaHangSach\DTO\bin\Debug\DTO.pdb
+D:\Đồ án c#\QLCuaHangSach\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Đồ án c#\QLCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Đồ án c#\QLCuaHangSach\DTO\obj\Debug\DTO.dll
+D:\Đồ án c#\QLCuaHangSach\DTO\obj\Debug\DTO.pdb

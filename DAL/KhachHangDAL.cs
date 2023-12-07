@@ -29,6 +29,20 @@ namespace DAL
             }
             return dataTable;
         }
+
+        public static DataTable GetKhachHangByMa(string matimkiem)
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = SqlConnectionData.Connect())
+            {
+                connection.Open();
+                string query = @"select * from dbo.tbl_khachhang where maKhachHang like '%" + matimkiem.Trim()+"%'";
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(dataTable);
+            }
+            return dataTable;
+        }
         public  List<KhachHangDTO> GetKhachHang()
         {
             string query = "Select *from dbo.tbl_khachhang";

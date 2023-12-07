@@ -47,6 +47,16 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtMaQuyen = new System.Windows.Forms.TextBox();
+            this.MaQuyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenQuyen1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QLKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QLNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QLQuyen1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BanHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QLThongKe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataQuyen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,6 +103,17 @@
             // dataQuyen
             // 
             this.dataQuyen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataQuyen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaQuyen,
+            this.TenQuyen1,
+            this.QLKhachHang,
+            this.QLNhanVien,
+            this.QLQuyen1,
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.BanHang,
+            this.QLThongKe});
             this.dataQuyen.Location = new System.Drawing.Point(226, 510);
             this.dataQuyen.Name = "dataQuyen";
             this.dataQuyen.Size = new System.Drawing.Size(1099, 224);
@@ -256,6 +277,74 @@
             this.txtMaQuyen.Size = new System.Drawing.Size(200, 26);
             this.txtMaQuyen.TabIndex = 25;
             // 
+            // MaQuyen
+            // 
+            this.MaQuyen.DataPropertyName = "MaQuyen";
+            this.MaQuyen.HeaderText = "Mã Quyền";
+            this.MaQuyen.Name = "MaQuyen";
+            // 
+            // TenQuyen1
+            // 
+            this.TenQuyen1.DataPropertyName = "TenQuyen";
+            this.TenQuyen1.HeaderText = "Tên Quyền";
+            this.TenQuyen1.Name = "TenQuyen1";
+            // 
+            // QLKhachHang
+            // 
+            this.QLKhachHang.DataPropertyName = "QLKhachHang";
+            this.QLKhachHang.HeaderText = "QLKhachHang";
+            this.QLKhachHang.Name = "QLKhachHang";
+            this.QLKhachHang.Visible = false;
+            // 
+            // QLNhanVien
+            // 
+            this.QLNhanVien.DataPropertyName = "QLNhanVien";
+            this.QLNhanVien.HeaderText = "QLNhanVien";
+            this.QLNhanVien.Name = "QLNhanVien";
+            this.QLNhanVien.Visible = false;
+            // 
+            // QLQuyen1
+            // 
+            this.QLQuyen1.DataPropertyName = "QLQuyen";
+            this.QLQuyen1.HeaderText = "QLQuyen";
+            this.QLQuyen1.Name = "QLQuyen1";
+            this.QLQuyen1.Visible = false;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "QLKhuyenMai";
+            this.Column1.HeaderText = "QLKhuyenMai";
+            this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "QLSach";
+            this.Column2.HeaderText = "QLSach";
+            this.Column2.Name = "Column2";
+            this.Column2.Visible = false;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "QLHoaDon";
+            this.Column3.HeaderText = "QLHoaDon";
+            this.Column3.Name = "Column3";
+            this.Column3.Visible = false;
+            // 
+            // BanHang
+            // 
+            this.BanHang.DataPropertyName = "BanHang";
+            this.BanHang.HeaderText = "BanHang";
+            this.BanHang.Name = "BanHang";
+            this.BanHang.Visible = false;
+            // 
+            // QLThongKe
+            // 
+            this.QLThongKe.DataPropertyName = "QLThongKe";
+            this.QLThongKe.HeaderText = "QLThongKe";
+            this.QLThongKe.Name = "QLThongKe";
+            this.QLThongKe.Visible = false;
+            // 
             // QLQUyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,5 +400,15 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtMaQuyen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaQuyen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenQuyen1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QLKhachHang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QLNhanVien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QLQuyen1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BanHang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QLThongKe;
     }
 }

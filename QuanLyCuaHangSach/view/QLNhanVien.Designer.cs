@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLNhanVien));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.ptrHienMatKhau = new System.Windows.Forms.PictureBox();
+            this.btnIn = new System.Windows.Forms.Button();
             this.BtnExport = new System.Windows.Forms.Button();
             this.btnTimkiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
@@ -56,14 +60,27 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnIn = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrHienMatKhau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.ptrHienMatKhau);
             this.panel1.Controls.Add(this.btnIn);
             this.panel1.Controls.Add(this.BtnExport);
             this.panel1.Controls.Add(this.btnTimkiem);
@@ -101,14 +118,50 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1255, 320);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 41);
+            this.button1.TabIndex = 50;
+            this.button1.Text = "Import Excel ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseWaitCursor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ptrHienMatKhau
+            // 
+            this.ptrHienMatKhau.BackColor = System.Drawing.Color.White;
+            this.ptrHienMatKhau.Image = ((System.Drawing.Image)(resources.GetObject("ptrHienMatKhau.Image")));
+            this.ptrHienMatKhau.Location = new System.Drawing.Point(1236, 252);
+            this.ptrHienMatKhau.Name = "ptrHienMatKhau";
+            this.ptrHienMatKhau.Size = new System.Drawing.Size(24, 24);
+            this.ptrHienMatKhau.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptrHienMatKhau.TabIndex = 49;
+            this.ptrHienMatKhau.TabStop = false;
+            this.ptrHienMatKhau.Click += new System.EventHandler(this.ptrHienMatKhau_Click);
+            // 
+            // btnIn
+            // 
+            this.btnIn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIn.Location = new System.Drawing.Point(969, 320);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(86, 41);
+            this.btnIn.TabIndex = 48;
+            this.btnIn.Text = "Print";
+            this.btnIn.UseVisualStyleBackColor = true;
+            this.btnIn.UseWaitCursor = true;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            // 
             // BtnExport
             // 
             this.BtnExport.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnExport.Location = new System.Drawing.Point(1114, 320);
             this.BtnExport.Name = "BtnExport";
-            this.BtnExport.Size = new System.Drawing.Size(86, 41);
+            this.BtnExport.Size = new System.Drawing.Size(99, 41);
             this.BtnExport.TabIndex = 14;
-            this.BtnExport.Text = "Xuất Exel";
+            this.BtnExport.Text = "Xuất Excel ";
             this.BtnExport.UseVisualStyleBackColor = true;
             this.BtnExport.UseWaitCursor = true;
             this.BtnExport.Click += new System.EventHandler(this.BtnExport_Click);
@@ -218,12 +271,23 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(232, 480);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10});
+            this.dataGridView1.Location = new System.Drawing.Point(147, 483);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1090, 267);
+            this.dataGridView1.Size = new System.Drawing.Size(1303, 267);
             this.dataGridView1.TabIndex = 44;
             this.dataGridView1.UseWaitCursor = true;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -234,6 +298,7 @@
             this.txtMatKhau.Location = new System.Drawing.Point(1066, 250);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2);
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(206, 29);
             this.txtMatKhau.TabIndex = 9;
             this.txtMatKhau.UseWaitCursor = true;
@@ -429,17 +494,77 @@
             this.label1.Text = "Mã Nhân Viên";
             this.label1.UseWaitCursor = true;
             // 
-            // btnIn
+            // openFileDialog1
             // 
-            this.btnIn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIn.Location = new System.Drawing.Point(969, 320);
-            this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(86, 41);
-            this.btnIn.TabIndex = 48;
-            this.btnIn.Text = "Print";
-            this.btnIn.UseVisualStyleBackColor = true;
-            this.btnIn.UseWaitCursor = true;
-            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "excel Document|*.xlsx";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaNhanVien";
+            this.Column1.HeaderText = "Mã Nhân Viên";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "HoTen";
+            this.Column2.HeaderText = "Họ Và Tên";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "NgaySinh";
+            this.Column3.HeaderText = "Ngày Sinh";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Gioitinh";
+            this.Column4.HeaderText = "Giới Tính";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 150;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "SoDienThoai";
+            this.Column5.HeaderText = "Số Điện Thoại";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 150;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "DiaChi";
+            this.Column6.HeaderText = "Địa Chỉ";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 200;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "NgayLamViec";
+            this.Column7.HeaderText = "Ngày Làm Việc";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 150;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "ChucVu";
+            this.Column8.HeaderText = "Chức vụ";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "MatKhau";
+            this.Column9.HeaderText = "Mật Khẩu";
+            this.Column9.Name = "Column9";
+            this.Column9.Visible = false;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "TrangThai";
+            this.Column10.HeaderText = "Trạng Thái";
+            this.Column10.Name = "Column10";
             // 
             // QLNhanVien
             // 
@@ -453,6 +578,7 @@
             this.Load += new System.EventHandler(this.QLNhanVien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrHienMatKhau)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -488,5 +614,18 @@
         private System.Windows.Forms.Button BtnExport;
         public System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnIn;
+        private System.Windows.Forms.PictureBox ptrHienMatKhau;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
     }
 }

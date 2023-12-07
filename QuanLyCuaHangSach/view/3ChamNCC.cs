@@ -31,7 +31,7 @@ namespace QuanLyCuaHangSach.view
         private void btnChon_Click(object sender, EventArgs e)
         {
             int i = dgv3ChamNCC.CurrentRow.Index;
-            if (i >=0&&i!=null)
+            if (i >=0)
             {
                 id = dgv3ChamNCC.Rows[i].Cells[0].Value.ToString();
                 name = dgv3ChamNCC.Rows[i].Cells[1].Value.ToString();

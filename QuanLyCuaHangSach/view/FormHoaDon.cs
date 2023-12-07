@@ -38,23 +38,14 @@ namespace QuanLyCuaHangSach
 
 
             //dtgHoaDon.DataSource = hoadon.getData();
-<<<<<<< HEAD
 
-
-=======
         
->>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
+
         }
 
         private void FormHoaDon_FormClosing(object sender, FormClosingEventArgs e)
         {
-<<<<<<< HEAD
 
-
-
-
-=======
->>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
         }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
@@ -135,11 +126,7 @@ namespace QuanLyCuaHangSach
         private void btnThemHoaDon_Click(object sender, EventArgs e)
         {
             tbxMaHoaDon.Text = hoadon.CreateKey();
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
 
             cbxMaNhanVien.DisplayMember = "MaNhanVien";
             cbxMaNhanVien.ValueMember = "hoten";
@@ -322,11 +309,7 @@ namespace QuanLyCuaHangSach
             tbxSoLuong.Clear();
             tbxDonGia.Clear();
             tbxThanhTien.Clear();
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
         }
 
         private void btnHuyDoanDon_Click(object sender, EventArgs e)

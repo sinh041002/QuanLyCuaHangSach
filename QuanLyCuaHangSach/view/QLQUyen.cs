@@ -42,6 +42,7 @@ namespace QuanLyCuaHangSach.view
             {
                 dataQuyen.DataSource = listQuyen;
             }
+           
 
         }
         private void QLQUyen_Load(object sender, EventArgs e)

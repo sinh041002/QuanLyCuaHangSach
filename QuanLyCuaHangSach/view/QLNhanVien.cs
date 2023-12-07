@@ -9,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
+using System.Data.OleDb;
+using static System.Net.Mime.MediaTypeNames;
+using System.IO;
 
 namespace QuanLyCuaHangSach.view
 {
@@ -23,26 +26,26 @@ namespace QuanLyCuaHangSach.view
             Load1();
         }
 
-   
+
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-        private  List<string> getChucVu()
+        private List<string> getChucVu()
         {
             ChucVuBLL chucVuBLL = new ChucVuBLL();
             List<string> chucVu = new List<string>();
             listChucVu = chucVuBLL.getChucVu();
-            if(listChucVu != null)
+            if (listChucVu != null)
             {
-                for(int i=0; i < listChucVu.Count(); i++)
+                for (int i = 0; i < listChucVu.Count(); i++)
                 {
                     chucVu.Add(listChucVu[i].TenChucVu);
                 }
-        
+
             }
-            
-            return chucVu ;
+
+            return chucVu;
         }
         private List<string> getGioiTinh()
         {
@@ -54,14 +57,21 @@ namespace QuanLyCuaHangSach.view
             comboBoxGioiTinh.DataSource = getGioiTinh();
             comboboxChucVu.DataSource = getChucVu();
             NhanVienBLL nhanVienBLL = new NhanVienBLL();
-           listNhanVien=  nhanVienBLL.getListNhanVien();
+            listNhanVien = nhanVienBLL.getListNhanVien();
 
-            if(listNhanVien.Count > 0 )
+            if (listNhanVien.Count > 0)
             {
-                dataGridView1.DataSource= listNhanVien;
+                dataGridView1.DataSource = listNhanVien;
             }
         }
 
+        public void AnHienXemMatKhau(int maquyen)
+        {
+            if (maquyen != 1)
+            {
+                ptrHienMatKhau.Visible = false;
+            }
+        }
         private void QLNhanVien_Load(object sender, EventArgs e)
         {
            
@@ -82,27 +92,47 @@ namespace QuanLyCuaHangSach.view
             txtSoDienThoai.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
            
             txtMatKhau.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-
-            int indexChucVu = (int)dataGridView1.CurrentRow.Cells[9].Value;
-
-            if (listChucVu != null)
+            try
             {
-                for (int i = 0; i < listChucVu.Count(); i++)
+                int indexChucVu = (int)dataGridView1.CurrentRow.Cells[9].Value;
+
+                if (listChucVu != null)
                 {
-                    if (listChucVu[i].id == indexChucVu)
+                    for (int i = 0; i < listChucVu.Count(); i++)
                     {
-                        comboboxChucVu.SelectedIndex = i;
+                        if (listChucVu[i].id == indexChucVu)
+                        {
+                            comboboxChucVu.SelectedIndex = i;
+                        }
                     }
                 }
+            }catch {
+                txtMatKhau.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+                comboboxChucVu.SelectedIndex=-1;
             }
-           
-            
-           
-            a = (int)dataGridView1.CurrentRow.Cells[8].Value;
-            if (a == 1)
+
+
+
+
+
+            try
             {
-                radioTrangThai.Checked = true;
-            }else radioTrangThai.Checked=false;
+                
+
+                a = (int)dataGridView1.CurrentRow.Cells[8].Value;
+                
+                if (a == 1)
+                {
+                    radioTrangThai.Checked = true;
+                }
+                else radioTrangThai.Checked = false;
+            }
+            catch
+            {
+                radioTrangThai.Checked = false;
+            }
+
+
             
        
 
@@ -381,11 +411,29 @@ namespace QuanLyCuaHangSach.view
 
             Microsoft.Office.Interop.Excel.Range cl7 = oSheet.get_Range("G3", "G3");
 
-            cl7.Value2 = "Chức vụ";
+            cl7.Value2 = "Ngày Làm Việc";
 
-            cl7.ColumnWidth = 13.5;
+            cl7.ColumnWidth = 18.5;
 
-            Microsoft.Office.Interop.Excel.Range rowHead = oSheet.get_Range("A3", "G3");
+            Microsoft.Office.Interop.Excel.Range cl8 = oSheet.get_Range("H3", "H3");
+
+            cl8.Value2 = "Chức vụ";
+
+            cl8.ColumnWidth = 13.5;
+
+
+            Microsoft.Office.Interop.Excel.Range cl9 = oSheet.get_Range("I3", "I3");
+
+            cl9.Value2 = "Mật Khẩu";
+
+            cl9.ColumnWidth = 13.5;
+            Microsoft.Office.Interop.Excel.Range c20 = oSheet.get_Range("J3", "J3");
+
+            c20.Value2 = "Trạng Thái";
+
+            c20.ColumnWidth = 13.5;
+
+            Microsoft.Office.Interop.Excel.Range rowHead = oSheet.get_Range("A3", "J3");
 
             rowHead.Font.Bold = true;
 
@@ -464,7 +512,10 @@ namespace QuanLyCuaHangSach.view
             DataColumn col4 = new DataColumn("Giới Tính ");
             DataColumn col5 = new DataColumn("Số Điện Thoại");
             DataColumn col6 = new DataColumn("Địa Chỉ");
-            DataColumn col7 = new DataColumn("Chức Vụ");
+            DataColumn col7 = new DataColumn("Ngày Làm Việc");
+            DataColumn col8 = new DataColumn("Chức Vụ");
+            DataColumn col9 = new DataColumn("Mật Khẩu");
+            DataColumn col10 = new DataColumn("Trạng Thái");
 
 
             dataTable.Columns.Add(col1);
@@ -474,6 +525,10 @@ namespace QuanLyCuaHangSach.view
             dataTable.Columns.Add(col5);
             dataTable.Columns.Add(col6);
             dataTable.Columns.Add(col7);
+            dataTable.Columns.Add(col8);
+            dataTable.Columns.Add(col9);
+            dataTable.Columns.Add(col10);
+
 
 
             foreach (DataGridViewRow dtgvRow in dataGridView1.Rows)
@@ -486,8 +541,10 @@ namespace QuanLyCuaHangSach.view
                 dataRow[3] = dtgvRow.Cells[3].Value;
                 dataRow[4] = dtgvRow.Cells[4].Value;
                 dataRow[5] = dtgvRow.Cells[5].Value;
-              
-                if(dtgvRow.Cells[9].Value != null)
+                dataRow[6] = String.Format("{0:MM/dd/yyyy}", dtgvRow.Cells[6].Value);
+                dataRow[9] = dtgvRow.Cells[8].Value;
+                dataRow[8] = dtgvRow.Cells[7].Value;
+                if (dtgvRow.Cells[9].Value != null)
                 {
                     ChucVuBLL chucVuBLL = new ChucVuBLL();
                     string chucVu = "";
@@ -501,7 +558,7 @@ namespace QuanLyCuaHangSach.view
                                 chucVu = listChucVu[i].TenChucVu;
                             }
                         }
-                        dataRow[6] = chucVu;
+                        dataRow[7] = chucVu;
                     }
                 }
                
@@ -515,6 +572,66 @@ namespace QuanLyCuaHangSach.view
         {
             PrintNhanVien innhanvien= new PrintNhanVien();
             innhanvien.Show();
+        }
+
+        private void ptrHienMatKhau_Click(object sender, EventArgs e)
+        {
+            if (txtMatKhau.PasswordChar == '*')
+            {
+                txtMatKhau.PasswordChar = '\0';
+            }
+            else
+            {
+                txtMatKhau.PasswordChar = '*';
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        //  string  connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source = { 0 }; Extended Properties = 'Excel 8.0;HDR={1}'";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    using (OleDbConnection myConnect = new OleDbConnection(string.Format(@"provider=Microsoft.ACE.OLEDB.16.0;Data Source={0};Extended Properties=Excel 8.0;", openFileDialog1.FileName)))
+                    {
+                        DataTable dt = new DataTable();
+                                          
+                        OleDbDataAdapter cmd = new OleDbDataAdapter("select * from [Danh Sách$]", myConnect);
+                        cmd.Fill(dt);
+                        dataGridView1.DataSource = dt;
+                    }
+                }
+                catch (Exception ex) { MessageBox.Show(ex.Message); }
+
+                //string connectionString = "provider=Microsoft.ACE.OLEDB.16.0;Data Source={0};Extended Properties=Excel 8.0;";
+
+                //connectionString = String.Format(@connectionString, openFileDialog1.FileName);
+                //OleDbConnection conn = new OleDbConnection(connectionString);
+                //OleDbCommand cmd = new OleDbCommand();
+                //OleDbDataAdapter dataAdapter = new OleDbDataAdapter();
+                //DataTable dt = new DataTable();
+                //cmd.Connection = conn;
+                ////Fetch 1st Sheet Name
+                //conn.Open();
+                //DataTable dtSchema;
+                //dtSchema = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+                //string ExcelSheetName = dtSchema.Rows[0]["TABLE_NAME"].ToString();
+                //conn.Close();
+                ////Read all data of fetched Sheet to a Data Table
+                //conn.Open();
+                //cmd.CommandText = "SELECT * From [" + ExcelSheetName + "]";
+                //dataAdapter.SelectCommand = cmd;
+                //dataAdapter.Fill(dt);
+                //conn.Close();
+                ////Bind Sheet Data to GridView
+
+                //dataGridView1.DataSource = dt;
+
+
+
+
+            }
         }
     }
 }

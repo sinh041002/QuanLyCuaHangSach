@@ -58,10 +58,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dtgHoaDon = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
+
             this.btnInHoaDon = new System.Windows.Forms.Button();
-=======
->>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
+
             this.btnHuyHoaDon = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tbxThanhTien = new System.Windows.Forms.TextBox();
@@ -404,10 +403,9 @@
             // 
             // panel4
             // 
-<<<<<<< HEAD
+
             this.panel4.Controls.Add(this.btnInHoaDon);
-=======
->>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
+
             this.panel4.Controls.Add(this.btnHuyHoaDon);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(3, 308);
@@ -416,7 +414,7 @@
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-<<<<<<< HEAD
+
             // btnInHoaDon
             // 
             this.btnInHoaDon.BackColor = System.Drawing.Color.DarkCyan;
@@ -434,8 +432,7 @@
             this.btnInHoaDon.UseVisualStyleBackColor = false;
             this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
             // 
-=======
->>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
+
             // btnHuyHoaDon
             // 
             this.btnHuyHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -444,11 +441,11 @@
             this.btnHuyHoaDon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnHuyHoaDon.Image = ((System.Drawing.Image)(resources.GetObject("btnHuyHoaDon.Image")));
             this.btnHuyHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< HEAD
+
             this.btnHuyHoaDon.Location = new System.Drawing.Point(964, 16);
-=======
+
             this.btnHuyHoaDon.Location = new System.Drawing.Point(936, 22);
->>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
+
             this.btnHuyHoaDon.Name = "btnHuyHoaDon";
             this.btnHuyHoaDon.Size = new System.Drawing.Size(115, 30);
             this.btnHuyHoaDon.TabIndex = 4;
@@ -634,9 +631,8 @@
         private System.Windows.Forms.Button btnHuyHoaDon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbxMaGiamGia;
-<<<<<<< HEAD
+
         private System.Windows.Forms.Button btnInHoaDon;
-=======
->>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
+
     }
 }

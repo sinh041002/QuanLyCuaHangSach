@@ -1493,9 +1493,9 @@
         private System.Windows.Forms.TextBox txtNameSearch;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnChonAnh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaTheLoai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tentl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mota;
+     
+     
+       
         private System.Windows.Forms.DataGridViewTextBoxColumn matacgia;
         private System.Windows.Forms.DataGridViewTextBoxColumn tentacgia;
         private System.Windows.Forms.DataGridViewTextBoxColumn motatacgia;

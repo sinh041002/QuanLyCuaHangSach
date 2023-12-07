@@ -353,13 +353,13 @@ namespace QuanLyCuaHangSach
         private void btnThemSach_Click(object sender, EventArgs e)
         {
             var child = new FormQLSach();
-<<<<<<< HEAD
+
 
             child.ShowDialog(this);
 
-=======
+
             child.FormBorderStyle = FormBorderStyle.Sizable;
->>>>>>> a055a2137ae414ac7dd39040e14828bf77f07b00
+
             child.ShowDialog();
 
         }

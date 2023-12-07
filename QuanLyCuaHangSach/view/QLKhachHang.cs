@@ -30,6 +30,8 @@ namespace QuanLyCuaHangSach.view
             DataTable dataTable = new DataTable();
             KhachHangBLL khachHangBLL = new KhachHangBLL();
             dataTable = khachHangBLL.GetAllKhachHang();
+
+            //khachHangs = khachHangBLL.getKhachHang();
             dataKhachHang.DataSource = dataTable;
 
             //KhachHangBLL khachHangBLL = new KhachHangBLL();
@@ -135,6 +137,16 @@ namespace QuanLyCuaHangSach.view
                 MessageBox.Show("Xóa Thất bại");
 
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+         
+            string tentimkiem=txtTimKiem.Text;
+            KhachHangBLL khachHangBLL=new KhachHangBLL();
+            dataKhachHang.DataSource= khachHangBLL.GetKhachHangByMa(tentimkiem);
+
+
         }
     }
 }

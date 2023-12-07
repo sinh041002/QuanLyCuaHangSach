@@ -40,8 +40,6 @@
             this.btnQLSach = new System.Windows.Forms.Button();
             this.btnQLKhachHang = new System.Windows.Forms.Button();
             this.btnBanHang = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3_body = new System.Windows.Forms.Panel();
             this.ptrTrangChu = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,6 +54,7 @@
             // 
             // panel1_left
             // 
+            this.panel1_left.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1_left.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1_left.Controls.Add(this.btnQLNhapHang);
             this.panel1_left.Controls.Add(this.btnThongKeBanChay);
@@ -67,8 +66,6 @@
             this.panel1_left.Controls.Add(this.btnQLSach);
             this.panel1_left.Controls.Add(this.btnQLKhachHang);
             this.panel1_left.Controls.Add(this.btnBanHang);
-            this.panel1_left.Controls.Add(this.panel2);
-            this.panel1_left.Controls.Add(this.panel1);
             this.panel1_left.Location = new System.Drawing.Point(0, 181);
             this.panel1_left.Margin = new System.Windows.Forms.Padding(2);
             this.panel1_left.Name = "panel1_left";
@@ -225,26 +222,10 @@
             this.btnBanHang.UseVisualStyleBackColor = false;
             this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(154, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(150, 81);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(154, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 81);
-            this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
             // panel3_body
             // 
             this.panel3_body.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3_body.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel3_body.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel3_body.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3_body.BackgroundImage")));
             this.panel3_body.Location = new System.Drawing.Point(228, 87);
@@ -349,7 +330,7 @@
             this.Controls.Add(this.ptrTrangChu);
             this.Controls.Add(this.panel3_body);
             this.Controls.Add(this.panel1_left);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "QLCuaHangSach";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -367,8 +348,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1_left;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
     
         private System.Windows.Forms.Panel panel3_body;
         private System.Windows.Forms.Button btnQLSach;

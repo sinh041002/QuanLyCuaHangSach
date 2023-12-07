@@ -102,7 +102,6 @@
       <DependentUpon>daNhanVien.xsd</DependentUpon>
     </Compile>
     <Compile Include="DGVPrinter.cs" />
-    <Compile Include="PrintNhanVien.cs" />
     <Compile Include="view\PrintNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
