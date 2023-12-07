@@ -418,3 +418,6 @@ D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\bin
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.exe.config
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.exe
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.pdb
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\BouncyCastle.Crypto.dll
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\itextsharp.dll
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\itextsharp.xml
