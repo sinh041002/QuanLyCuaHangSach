@@ -42,12 +42,7 @@ namespace QuanLyCuaHangSach
 
         private void FormHoaDon_FormClosing(object sender, FormClosingEventArgs e)
         {
-<<<<<<< HEAD
 
-
-=======
-         
->>>>>>> 837c485f0b36c3c38dc903b3147b6ffc520784dc
         }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)

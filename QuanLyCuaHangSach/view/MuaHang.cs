@@ -153,8 +153,8 @@ namespace QuanLyCuaHangSach.view
 
         private void btnXoaGioHang_Click(object sender, EventArgs e)
         {
-            int k = dgvGio.CurrentRow.Index;
-            if (k < 0) 
+            int k = dgvSanPham.CurrentRow.Index;
+            if (dgvGio.Rows.Count == 1) 
             {
                 MessageBox.Show("Bạn chưa chọn sản phẩm!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -305,7 +305,7 @@ namespace QuanLyCuaHangSach.view
         {
             if (txtTongTien.Text != "")
             {
-                txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - (double.Parse(txtTongTien.Text.Trim()) * double.Parse(txtTongTienKM.Text) / 100)).ToString();
+                txtTongTienKM.Text = (double.Parse(txtTongTien.Text.Trim()) - (double.Parse(txtTongTien.Text.Trim()) * ((double.Parse(txtKhuyenMai.Text) / 100)))).ToString();
             }
         }
 

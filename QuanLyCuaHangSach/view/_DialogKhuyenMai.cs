@@ -49,7 +49,20 @@ namespace QuanLyCuaHangSach.view
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
+            SaleOff = "0";
             this.Close();
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtSearch.Text = "";
+            dgvKhuyenMai.DataSource = sale.GetSales();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -58,6 +58,7 @@ namespace QuanLyCuaHangSach.view
             this.btnReset.Text = "Reset";
             this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // button1
             // 
@@ -71,6 +72,7 @@ namespace QuanLyCuaHangSach.view
             this.button1.Text = "Tìm Kiếm";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtSearch
             // 
