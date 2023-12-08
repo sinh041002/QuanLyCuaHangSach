@@ -147,6 +147,7 @@ namespace QuanLyCuaHangSach
         private void BtnQLNhanVien_Click(object sender, EventArgs e)
         {
             QLNhanVien qLNhanVien = new QLNhanVien();
+            qLNhanVien.AnHienXemMatKhau(nhanvien.ChucVu);
            
             OpenChildForm(qLNhanVien);
         }
@@ -181,12 +182,18 @@ namespace QuanLyCuaHangSach
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            dangnhap formdangnhap=new dangnhap();
-            formdangnhap.StartPosition = FormStartPosition.CenterScreen;
-            formdangnhap.ShowDialog();
+            DialogResult dialog;
+            dialog = MessageBox.Show("Bạn có muốn đăng xuất hay không", "Quản Lý cửa hàng sách", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                this.Hide();
+                dangnhap formdangnhap = new dangnhap();
+                formdangnhap.StartPosition = FormStartPosition.CenterScreen;
+                formdangnhap.ShowDialog();
 
-            this.Close();
+                this.Close();
+            }
+          
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

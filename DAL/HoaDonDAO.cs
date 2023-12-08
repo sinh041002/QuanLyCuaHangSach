@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace DAL
     {
 
         private static HoaDonDAO instance;
-        private HoaDonDAO() { }
+        public HoaDonDAO() { }
 
 
 
@@ -458,6 +459,34 @@ namespace DAL
             return lastID;
         }
 
+        //public Boolean getTrangThai(string MaHoaDon)
+        //{
+        //    string query = "Select *from dbo.tbl_hoadon WHERE MaHoaDon = '" + MaHoaDon + "'; ";
+        //    Boolean kiemtra = false;
+          
+        //    try
+        //    {
+        //        using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+        //        {
+
+        //            sqlConnection.Open();
+        //            SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+        //            SqlDataReader dataReader = sqlCommand.ExecuteReader();
+        //            while (dataReader.Read())
+        //            {
+
+        //                kiemtra = dataReader.GetInt32(4);
+                       
+        //            }
+        //            sqlConnection.Close();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return kiemtra;
+        //    }
+        //    return kiemtra;
+        //}
         public DataTable LayThongTinTongTienVaGiamGiaTheoMaHoaDon(string MaHoaDon)
         {
             DataTable data = new DataTable();
@@ -475,7 +504,6 @@ namespace DAL
         public int CapNhatTongTienMuaChoKhachHang(string MaKhachHang, double TongTien, string thaotao = "cong")
         {
             int result = -1;
-
             string query = "UPDATE tbl_khachhang SET TongTienMua ";
             if(thaotao.Equals("tru"))
             {
@@ -486,7 +514,7 @@ namespace DAL
             }
             query += " @TongTien WHERE MaKhachHang = @MaKhachHang";
             SqlCommand command = new SqlCommand(query
-                , getConnection());
+            , getConnection());
             command.Parameters.AddWithValue("@MaKhachHang", MaKhachHang);
             command.Parameters.AddWithValue("@TongTien", TongTien);
             getConnection().Open();
@@ -494,7 +522,6 @@ namespace DAL
             getConnection().Close();
             return result;
         }
-
         public double LayTongTienTheoMaHoaDon(string MaHoaDon)
         {
             string query = "SELECT TongTien FROM tbl_hoadon WHERE MaHoaDon = @MaHoaDon";
@@ -507,13 +534,11 @@ namespace DAL
                 while(reader.Read())
                 {
                     tongTien += reader.GetDouble(0);
-                       
                 }
             }
             getConnection().Close();
             return tongTien;
         }
-
     }
 
 

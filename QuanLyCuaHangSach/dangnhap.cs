@@ -100,5 +100,23 @@ namespace QuanLyCuaHangSach
         {
 
         }
+
+        private void ptrHienMatKhau_Click(object sender, EventArgs e)
+        {
+         
+            
+        }
+
+        private void ptrHienMatKhau_Click_1(object sender, EventArgs e)
+        {
+            if (txtMatkhau.PasswordChar == '*')
+            {
+                txtMatkhau.PasswordChar = '\0';
+            }
+            else
+            {
+                txtMatkhau.PasswordChar = '*';
+            }
+        }
     }
 }

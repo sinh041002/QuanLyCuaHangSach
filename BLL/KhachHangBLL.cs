@@ -17,6 +17,10 @@ namespace BLL
         {
             return KhachHangDAL.GetAllKhachHang();
         }
+        public DataTable GetKhachHangByMa(string matimkiem)
+        {
+            return KhachHangDAL.GetKhachHangByMa(matimkiem);
+        }
 
         public List<KhachHangDTO> getKhachHang()
         {

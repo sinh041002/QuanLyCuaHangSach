@@ -50,7 +50,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataKhachHang = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -262,7 +262,7 @@
             // 
             this.groupBox1.Controls.Add(this.dataKhachHang);
             this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txtTimKiem);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(10, 11);
@@ -295,15 +295,16 @@
             this.button4.TabIndex = 13;
             this.button4.Text = "Tìm";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // textBox7
+            // txtTimKiem
             // 
-            this.textBox7.Location = new System.Drawing.Point(227, 42);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(164, 38);
-            this.textBox7.TabIndex = 7;
+            this.txtTimKiem.Location = new System.Drawing.Point(227, 42);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTimKiem.Multiline = true;
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(164, 38);
+            this.txtTimKiem.TabIndex = 7;
             // 
             // label7
             // 
@@ -358,7 +359,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataKhachHang;
     }

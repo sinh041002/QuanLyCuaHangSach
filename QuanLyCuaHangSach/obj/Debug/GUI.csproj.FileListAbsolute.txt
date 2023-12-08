@@ -1,18 +1,29 @@
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.AssemblyReference.cache
-<<<<<<< HEAD
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.dangnhap.resources
-D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.Form1.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.PrintNhanVien.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamNCC.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormHoaDon.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormHuyHoaDon.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormHuyNhapHang.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormNhapHang.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormThemHoaDon.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.FormTimKiemHoaDon.resources
-D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.MuaHang.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.MuaHang.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.Properties.Resources.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.QLCuaHangSach.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLMaKhuyenMai.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormQLSach.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormThongKeDoanhThu.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.FormThongKeSPBanChay.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLKhachHang.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLNhanVien.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.QLQUyen.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamNXB.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamTacGia.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._3ChamTheLoai.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogKhachHang.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogKhuyenMai.resources
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogNhanVien.resources
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.GenerateResource.cache
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CopyComplete
@@ -225,8 +236,6 @@ D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view._DialogNhanVien.resources
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.GenerateResource.cache
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.exe
-D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.pdb
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -235,6 +244,7 @@ D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.exe.
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.exe
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.pdb
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\BLL.dll
+D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\BouncyCastle.Crypto.dll
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\DTO.dll
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\Microsoft.ReportViewer.Common.dll
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll

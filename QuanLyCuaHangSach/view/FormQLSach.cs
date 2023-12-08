@@ -135,7 +135,16 @@ namespace QuanLyCuaHangSach.view
                 sach.MaNhaCungCap= txtMaNhaCungcapform1.Text;
                 sach.MaNhaXuatBan = txtMaNhaXuatBanform1.Text;
                 sach.Image = txtTenAnh.Text;
-                sach.SoLuong =float.Parse (txtSoLuong.Text);
+                if(txtSoLuong.Text!="" && txtSoLuong.Text != null)
+                {
+                    sach.SoLuong = float.Parse(txtSoLuong.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Moi nhap so luong");
+                    return;
+                }
+               
                 sach.MaTheLoai= txtMaTheLoaiForm1.Text;
                 SachBLL sachbll = new SachBLL();
                 Boolean a = sachbll.themSach(sach);
@@ -301,7 +310,7 @@ namespace QuanLyCuaHangSach.view
             {
                 TacGia tacGia = new TacGia();
                 tacGia.MaTacGia = txtMaTacGia.Text;
-                tacGia.TenTacGia = txtMoTaTacGIa.Text;
+                tacGia.TenTacGia = txtTenTacGia.Text;
                 tacGia.MoTaTacGia = txtMoTaTacGIa.Text;
                 tacGiaBLL.UpdateTacGia(tacGia);
                 MessageBox.Show("Sửa thông tin thành công", "Thành Công", MessageBoxButtons.OK);

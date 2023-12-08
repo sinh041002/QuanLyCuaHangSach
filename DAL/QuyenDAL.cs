@@ -36,6 +36,30 @@ namespace DAL
 
             return Quyens;
         }
+
+        public List<QuyenDTO> getListQuyenABC()
+        {
+            string query = "Select *from dbo.tbl_quyen";
+
+            List<QuyenDTO> Quyens = new List<QuyenDTO>();
+
+            using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+            {
+
+                sqlConnection.Open();
+                sqlCommand = new SqlCommand(query, sqlConnection);
+                dataReader = sqlCommand.ExecuteReader();
+                while (dataReader.Read())
+                {
+                    Quyens.Add(new QuyenDTO(dataReader.GetInt32(0), dataReader.GetString(1), dataReader.GetInt32(2), dataReader.GetInt32(3), dataReader.GetInt32(4), dataReader.GetInt32(5), dataReader.GetInt32(6), dataReader.GetInt32(7), dataReader.GetInt32(8), dataReader.GetInt32(9)));
+
+                }
+
+                sqlConnection.Close();
+            }
+
+            return Quyens;
+        }
         public Boolean themQuyen(QuyenDTO quyen)
         {
             Boolean ktra = false;

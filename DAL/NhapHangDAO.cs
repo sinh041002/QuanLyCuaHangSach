@@ -3,11 +3,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DAL
@@ -133,9 +135,56 @@ namespace DAL
             getConnection().Open();
             result = command.ExecuteNonQuery();
             getConnection().Close();
+            if (updateSoLuong(maSach, soLuong)!=true)
+            {
+                result = 0;
+            }
+
 
             return result;
+
         }
+        public Boolean updateSoLuong(string masach,double soluong)
+        {
+            Boolean kt=false;
+            double tong = soluong;
+            string query = "Select *from dbo.tbl_sach WHERE MaSach = '" + masach + "'; ";
+            using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+            {
+
+                sqlConnection.Open();
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                SqlDataReader dataReader = sqlCommand.ExecuteReader();
+                while (dataReader.Read())
+                {
+                    Double a = dataReader.GetDouble(4) ;
+                    tong = tong + a;
+                    kt = true;
+                }
+
+                sqlConnection.Close();
+            }
+
+            string query1 = "UPDATE dbo.tbl_sach\r\n" +
+            "SET SoLuong = " + tong + "" +
+                "\r\nWHERE MaSach = '" + masach + "';";
+
+
+            using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+            {
+
+                sqlConnection.Open();
+                SqlCommand sqlCommand = new SqlCommand(query1, sqlConnection);
+                SqlDataReader dataReader = sqlCommand.ExecuteReader();
+
+                sqlConnection.Close();
+
+            }
+
+
+            return kt;
+        }
+        
 
         public DataTable LayThongTinChiTietPhieuNhap(string MaPhieuNhap)
         {

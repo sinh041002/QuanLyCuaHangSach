@@ -1,36 +1,22 @@
-D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
-D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\BLL.dll
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\BLL.pdb
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\DAL.dll
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\DTO.dll
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\DAL.pdb
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\bin\Debug\DTO.pdb
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
 D:\Workspace\c shap\đồ án cuối kì\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb
-<<<<<<< HEAD
-C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\bin\Debug\BLL.dll
-C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\bin\Debug\BLL.pdb
-C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\bin\Debug\DAL.dll
-C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\bin\Debug\DTO.dll
-C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\bin\Debug\DAL.pdb
-C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\bin\Debug\DTO.pdb
-C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
-C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
-C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.dll
-C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\BLL\obj\Debug\BLL.pdb
-D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
-D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.dll
-D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.pdb
 D:\Đồ án c#\QLCuaHangSach\BLL\bin\Debug\BLL.dll
 D:\Đồ án c#\QLCuaHangSach\BLL\bin\Debug\BLL.pdb
 D:\Đồ án c#\QLCuaHangSach\BLL\bin\Debug\DAL.dll
 D:\Đồ án c#\QLCuaHangSach\BLL\bin\Debug\DTO.dll
 D:\Đồ án c#\QLCuaHangSach\BLL\bin\Debug\DAL.pdb
 D:\Đồ án c#\QLCuaHangSach\BLL\bin\Debug\DTO.pdb
+D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.csproj.CopyComplete
-=======
->>>>>>> 837c485f0b36c3c38dc903b3147b6ffc520784dc
+D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.dll
+D:\Đồ án c#\QLCuaHangSach\BLL\obj\Debug\BLL.pdb

@@ -46,15 +46,23 @@ namespace DAL
         }
         public static void DeleteTheLoai(string ma)
         {
-            using (SqlConnection connection = SqlConnectionData.Connect())
+            try
             {
-                connection.Open();
-                string query = @"delete from tbl_theloai where matheloai = @matheloai";
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.Add("@matheloai", SqlDbType.NVarChar).Value = ma;
-                command.ExecuteNonQuery();
-                connection.Close();
+                using (SqlConnection connection = SqlConnectionData.Connect())
+                {
+                    connection.Open();
+                    string query = @"delete from tbl_theloai where matheloai = @matheloai";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.Add("@matheloai", SqlDbType.NVarChar).Value = ma;
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                }
             }
+            catch
+            {
+                return;
+            }
+           
         }
         public Boolean themTheLoai(TheLoai theloai)
         {

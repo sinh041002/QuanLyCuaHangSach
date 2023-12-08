@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using DTO;
+using DGVPrinterHelper;
 
 namespace QuanLyCuaHangSach
 {
@@ -36,7 +38,8 @@ namespace QuanLyCuaHangSach
 
 
             //dtgHoaDon.DataSource = hoadon.getData();
-            btnThem.Enabled = false;
+
+        
 
         }
 
@@ -109,7 +112,7 @@ namespace QuanLyCuaHangSach
                 tbxDonGia.Text = row.Cells["Đơn giá"].Value.ToString();
                 tbxSoLuong.Text = row.Cells["Số lượng"].Value.ToString();
                 tbxThanhTien.Text = row.Cells["Thành tiền"].Value.ToString();
-                   
+
             }
         }
 
@@ -123,8 +126,7 @@ namespace QuanLyCuaHangSach
         private void btnThemHoaDon_Click(object sender, EventArgs e)
         {
             tbxMaHoaDon.Text = hoadon.CreateKey();
-            btnTaoHoaDon.Enabled = false;
-            btnThem.Enabled = true;
+
 
             cbxMaNhanVien.DisplayMember = "MaNhanVien";
             cbxMaNhanVien.ValueMember = "hoten";
@@ -152,7 +154,7 @@ namespace QuanLyCuaHangSach
             cbxMaGiamGia.ValueMember = "SaleOff";
             cbxMaGiamGia.DataSource = hoadon.GetAllMaGiamGia();
 
-           
+
         }
 
         private void cbxMaHoaDon_SelectedIndexChanged(object sender, EventArgs e)
@@ -178,6 +180,12 @@ namespace QuanLyCuaHangSach
             cbxMaGiamGia.DisplayMember = "GiamGia";
             cbxMaGiamGia.ValueMember = "TongTien";
 
+            //HoaDonBLL hoaDonBLL = new HoaDonBLL();
+            //if (hoaDonBLL.getTrangThai(cbxMaHoaDon.SelectedValue.ToString() ) == 1)
+            //{
+            //    btnLuu.Enabled = false;
+            //}
+
             tbxTongTien.Text = cbxMaGiamGia.SelectedValue.ToString();
 
         }
@@ -193,7 +201,6 @@ namespace QuanLyCuaHangSach
             {
                 string MaSach = cbxMaSach.SelectedValue.ToString();
                 SachDTO sach = hoadon.GetDatSachByMaSach(MaSach);
-                tbxTenSach.Text = sach.TenSach;
                 int soluong = int.Parse(sach.SoLuong.ToString());
 
                 tbxDonGia.Text = sach.DonGia;
@@ -298,12 +305,11 @@ namespace QuanLyCuaHangSach
             cbxMaSach.Text = string.Empty;
             tbxTenNhanVien.Clear();
             tbxDienThoai.Clear();
-            tbxTenSach.Clear();
+
             tbxSoLuong.Clear();
             tbxDonGia.Clear();
             tbxThanhTien.Clear();
-            btnTaoHoaDon.Enabled = true;
-            btnThem.Enabled = false;
+
         }
 
         private void btnHuyDoanDon_Click(object sender, EventArgs e)
@@ -341,7 +347,7 @@ namespace QuanLyCuaHangSach
 
             if (!hoadon.IsBlank(tbxTongTien.Text))
             {
-                
+
             }
         }
 
@@ -357,8 +363,8 @@ namespace QuanLyCuaHangSach
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            
-           
+
+
 
             double saleOff = double.Parse(cbxMaGiamGia.Text) / 100;
             double discountPrice = double.Parse(tbxTongTien.Text) * saleOff;
@@ -372,7 +378,79 @@ namespace QuanLyCuaHangSach
 
 
             MessageBox.Show("Lưu thành công", "Lưu thành công", MessageBoxButtons.OK);
+           
+        }
 
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void printPdf()
+        {
+            if (dtgHoaDon.Rows.Count > 0)
+            {
+                SaveFileDialog save = new SaveFileDialog();
+                save.Filter = "PDF (*.pdf)|*.pdf";
+                save.FileName = cbxMaHoaDon.Text;
+                bool exist = false;
+                if (save.ShowDialog() == DialogResult.OK)
+                {
+                    if (File.Exists(save.FileName))
+                    {
+                        exist = true;
+                        try
+                        {
+                            File.Delete(save.FileName);
+                        }
+                        catch
+                        {
+
+                            MessageBox.Show("In không thành công, vui lòng kiểm tra lại");
+
+                        }
+                    }
+                    if (exist == false)
+                    {   
+                       DGVPrinter printer = new DGVPrinter();
+                        printer.Title = "MÃ HÓA ĐƠN: " + cbxMaHoaDon.Text;
+                        printer.SubTitle = "Ngày xuất: " + DateTime.Now + "\n" + "Nhân viên: "
+                            + tbxTenNhanVien.Text + "\n" + "Khách hàng: " + tbxTenKhachHang.Text;
+                        printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+                        printer.PageNumbers = true;
+                        printer.PageNumberInHeader = false;
+                        printer.PorportionalColumns = true;
+                        printer.HeaderCellAlignment = StringAlignment.Near;
+                        printer.Footer = "CỬA HÀNG SÁCH UY TÍN SỐ 1 VIỆT NAM";
+                        printer.PartText = "hehe";
+                        DataTable table = (DataTable) dtgHoaDon.DataSource;
+                        DataRow row = table.NewRow();
+                        DataRow dr = table.NewRow();
+                        dr["Mã sách"] = "Giảm giá (%)";
+                        dr["Số lượng"] = cbxMaGiamGia.Text;
+                        table.Rows.Add(dr);
+
+                        row["Mã sách"] = "Tổng tiền";
+                        row["Số lượng"] = tbxTongTien.Text;
+                        table.Rows.Add(row);
+                        table.AcceptChanges();  
+                        printer.PrintDataGridView(dtgHoaDon);
+ 
+
+
+
+                        
+                 
+                      
+                        MessageBox.Show("In hóa đơn thành công");
+                    }
+                }
+            }
+        }
+
+        private void btnInHoaDon_Click(object sender, EventArgs e)
+        {
+            printPdf();
         }
     }
 }
