@@ -14,5 +14,10 @@ D:\Đồ án c#\QLCuaHangSach\DAL\bin\Debug\DTO.pdb
 D:\Đồ án c#\QLCuaHangSach\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
 D:\Đồ án c#\QLCuaHangSach\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\Đồ án c#\QLCuaHangSach\DAL\obj\Debug\DAL.csproj.CopyComplete
+<<<<<<< HEAD
+=======
+>>>>>>> 837c485f0b36c3c38dc903b3147b6ffc520784dc
+=======
 D:\Đồ án c#\QLCuaHangSach\DAL\obj\Debug\DAL.dll
 D:\Đồ án c#\QLCuaHangSach\DAL\obj\Debug\DAL.pdb
+>>>>>>> 9825cf8a90b8a5c2918bbce21b865dd5abb65583
