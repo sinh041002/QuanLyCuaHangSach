@@ -148,7 +148,7 @@ namespace QuanLyCuaHangSach
         {
             QLNhanVien qLNhanVien = new QLNhanVien();
             qLNhanVien.AnHienXemMatKhau(nhanvien.ChucVu);
-           
+            qLNhanVien.GetNhanVien(nhanvien);
             OpenChildForm(qLNhanVien);
         }
 

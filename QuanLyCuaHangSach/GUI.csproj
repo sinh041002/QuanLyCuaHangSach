@@ -76,6 +76,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -102,6 +103,12 @@
       <DependentUpon>daNhanVien.xsd</DependentUpon>
     </Compile>
     <Compile Include="DGVPrinter.cs" />
+    <Compile Include="view\LichSuChinhSuaNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\LichSuChinhSuaNhanVien.Designer.cs">
+      <DependentUpon>LichSuChinhSuaNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\PrintNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +253,9 @@
     </Compile>
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\LichSuChinhSuaNhanVien.resx">
+      <DependentUpon>LichSuChinhSuaNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\PrintNhanVien.resx">
       <DependentUpon>PrintNhanVien.cs</DependentUpon>

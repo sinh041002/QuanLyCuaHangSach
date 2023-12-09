@@ -274,7 +274,7 @@
             this.lbTenNhanVien.AutoSize = true;
             this.lbTenNhanVien.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTenNhanVien.ForeColor = System.Drawing.Color.Tomato;
-            this.lbTenNhanVien.Location = new System.Drawing.Point(1000, 10);
+            this.lbTenNhanVien.Location = new System.Drawing.Point(996, 13);
             this.lbTenNhanVien.Name = "lbTenNhanVien";
             this.lbTenNhanVien.Size = new System.Drawing.Size(56, 31);
             this.lbTenNhanVien.TabIndex = 5;
@@ -285,7 +285,7 @@
             this.lbMaNhanVien.AutoSize = true;
             this.lbMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMaNhanVien.ForeColor = System.Drawing.Color.Red;
-            this.lbMaNhanVien.Location = new System.Drawing.Point(488, 15);
+            this.lbMaNhanVien.Location = new System.Drawing.Point(489, 19);
             this.lbMaNhanVien.Name = "lbMaNhanVien";
             this.lbMaNhanVien.Size = new System.Drawing.Size(50, 31);
             this.lbMaNhanVien.TabIndex = 7;

@@ -1,4 +1,6 @@
 ﻿using BLL;
+using DTO;
+using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace QuanLyCuaHangSach.view
 {
@@ -25,6 +28,28 @@ namespace QuanLyCuaHangSach.view
         {
             _src.DataSource = _bus.LaySPBanChay(dtTuNgay.Value, dtDenNgay.Value);
             _src.ResetBindings(true);
+            LoadCharPie();
+        }
+
+        private void LoadCharPie()
+        {
+
+            Dictionary<string, Double> tags = new Dictionary<string, Double>();
+            List<TKSPBanChayViewModel> listThongkeSanPham=new List<TKSPBanChayViewModel>();
+            CharPie.Series[0].Points.Clear();
+            CharPie.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            listThongkeSanPham = _bus.LaySPBanChay(dtTuNgay.Value, dtDenNgay.Value);
+            for (int i = 0; listThongkeSanPham.Count > i; i++)
+            {
+                var n1 = listThongkeSanPham[i].MaSach;
+                var n2 = listThongkeSanPham[i].SLBan;
+
+                CharPie.Series[0].Points.AddXY(n1, n2);
+
+              
+
+            }
+
         }
 
         private void FormThongKeSPBanChay_Load(object sender, EventArgs e)

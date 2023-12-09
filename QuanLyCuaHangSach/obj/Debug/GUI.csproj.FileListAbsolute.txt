@@ -120,3 +120,4 @@ D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\zh-CHT\Microsoft.Repor
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CopyComplete
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.exe
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.pdb
+D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.LichSuChinhSuaNhanVien.resources

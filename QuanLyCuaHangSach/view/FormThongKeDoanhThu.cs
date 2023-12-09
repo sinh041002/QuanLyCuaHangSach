@@ -1,4 +1,6 @@
 ﻿using BLL;
+using DTO;
+using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +11,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace QuanLyCuaHangSach.view
 {
@@ -20,12 +23,18 @@ namespace QuanLyCuaHangSach.view
         }
 
         ThongKeBUS _bus = new ThongKeBUS();
+        List<TKDoanhThuViewModel> listdoanhThu = new List<TKDoanhThuViewModel>();
         BindingSource _src = new BindingSource();
 
         private void btnBatDau_Click(object sender, EventArgs e)
         {
-            _src.DataSource = _bus.LayDoanhThu(dtTuNgay.Value, dtDenNgay.Value);
-            _src.ResetBindings(true);
+
+
+            listdoanhThu = _bus.LayDoanhThu(dtTuNgay.Value, dtDenNgay.Value);
+
+            dataGridView1.DataSource = listdoanhThu;
+
+
         }
 
         private void FormThongKeDoanhThu_Load(object sender, EventArgs e)
@@ -36,10 +45,30 @@ namespace QuanLyCuaHangSach.view
             rdoThangNay.Checked = false;
             rdo15NgayTruoc.Checked = false;
             rdoTrongNgay.Checked = false;
-            gridData.DataSource = _src;
-            
+           
+
+
         }
 
+        public void loadbieuDo(int nam)
+           
+        {
+            
+                chartDoanhThu.Series.Clear();
+                chartDoanhThu.Series.Add("CharCot");
+
+            for(int i = 1; i < 13; i++)
+            {
+
+                long tongDoanhthu = _bus.LayTongTienThang(i,nam);
+                chartDoanhThu.Series["CharCot"].Points.Add(tongDoanhthu);
+                string mysitrn=tongDoanhthu.ToString();
+                chartDoanhThu.Series["CharCot"].Points[i-1].Label= mysitrn;
+                chartDoanhThu.Series["CharCot"].Points[i-1].Color = Color.Blue;
+                chartDoanhThu.Series["CharCot"].Points[i-1].AxisLabel = "Tháng " + i;
+            }
+            
+        }
         private void rdoThangTruoc_CheckedChanged(object sender, EventArgs e)
         {
             if (rdoThangTruoc.Checked)
@@ -84,6 +113,22 @@ namespace QuanLyCuaHangSach.view
                 dtTuNgay.Value = firstDayOfPrev;
                 dtDenNgay.Value = lastDayOfPrev;
             }  
+        }
+
+        private void gridData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ComBoBoxThongKE_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string a= ComBoBoxThongKE.SelectedItem.ToString();
+            loadbieuDo(Int32.Parse(a));
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

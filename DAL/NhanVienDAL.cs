@@ -202,5 +202,49 @@ namespace DAL
 
             return user;
         }
-     }
+
+
+        public  DataTable getLichSuaChinhSua()
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection connection = SqlConnectionData.Connect())
+            {
+                connection.Open();
+                string query = @"select * from tbl_lichsuchinhsua";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+
+            return dt;
+        }
+
+        public Boolean ThemLichSuChinhSua(LichSuChinhSuaDTO lichSuChinhSuaDTO)
+        {
+            Boolean ktra = false;
+            try
+            {
+                string query = "INSERT INTO tbl_lichsuchinhsua (MaNhanVienThaoTac,ThaoTac,MaNhanVienBiThaoTac,Time)" +
+                    "\r\nVALUES ('" + lichSuChinhSuaDTO.MaNhanVienThaoTac + "',N'" + lichSuChinhSuaDTO.ThaoTac + "','" + lichSuChinhSuaDTO.MaNhanVienBiThaoTac + "','" + lichSuChinhSuaDTO.Time + "');\r\n\r\n";
+                using (SqlConnection sqlConnection = SqlConnectionData.Connect())
+                {
+
+                    sqlConnection.Open();
+                    sqlCommand = new SqlCommand(query, sqlConnection);
+                    dataReader = sqlCommand.ExecuteReader();
+
+                    ktra = true;
+                    sqlConnection.Close();
+
+                }
+            }
+            catch
+            {
+                ktra = false;
+            }
+
+            return ktra;
+        }
+
+    }
 }

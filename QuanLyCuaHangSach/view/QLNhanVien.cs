@@ -20,13 +20,22 @@ namespace QuanLyCuaHangSach.view
         public static List<NhanVien> listNhanVien = null;
 
         public static List<ChuVu> listChucVu = null;
+
+        NhanVien nhanvien=null;
         public QLNhanVien()
         {
             InitializeComponent();
             Load1();
         }
 
+        public void GetNhanVien(NhanVien nv)
+        {
+            if (nv != null)
+            {
+                nhanvien = nv;
+            }
 
+        }
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -70,6 +79,7 @@ namespace QuanLyCuaHangSach.view
             if (maquyen != 1)
             {
                 ptrHienMatKhau.Visible = false;
+                btnLichSu.Visible = false;
             }
         }
         private void QLNhanVien_Load(object sender, EventArgs e)
@@ -171,6 +181,13 @@ namespace QuanLyCuaHangSach.view
             Boolean ktra = nhanVienBLL.suaNhanVien(nv1);
             if (ktra)
             {
+                LichSuChinhSuaDTO lichSuChinhSuaDTO = new LichSuChinhSuaDTO();
+                lichSuChinhSuaDTO.MaNhanVienThaoTac = nhanvien.MaNhanVien;
+                lichSuChinhSuaDTO.ThaoTac = "Sửa Nhân Viên";
+                lichSuChinhSuaDTO.MaNhanVienBiThaoTac = txtMaNhanVien.Text;
+                lichSuChinhSuaDTO.Time = DateTime.Now;
+
+                nhanVienBLL.themLichSuChinhSuaNhanVien(lichSuChinhSuaDTO);
                 MessageBox.Show("Sửa Thành công");
                 Load1();
             }
@@ -178,7 +195,8 @@ namespace QuanLyCuaHangSach.view
             {
                 MessageBox.Show("Sửa không thành công");
             }
-            Load1();
+         
+          
         }
             
         //thêm
@@ -238,12 +256,22 @@ namespace QuanLyCuaHangSach.view
                 if (ktra)
                 {
                     MessageBox.Show("Thêm Thành công");
+                    LichSuChinhSuaDTO lichSuChinhSuaDTO = new LichSuChinhSuaDTO();
+                    lichSuChinhSuaDTO.MaNhanVienThaoTac = nhanvien.MaNhanVien;
+                    lichSuChinhSuaDTO.ThaoTac = "Thêm Nhân Viên";
+                    lichSuChinhSuaDTO.MaNhanVienBiThaoTac = maNhanvine;
+                    lichSuChinhSuaDTO.Time = DateTime.Now;
+
+                    nhanVienBLL.themLichSuChinhSuaNhanVien(lichSuChinhSuaDTO);
                     Load1();
                 }
                 else
                 {
                     MessageBox.Show("Thêm không thành công");
                 }
+             
+
+                
             }
 
 
@@ -274,8 +302,16 @@ namespace QuanLyCuaHangSach.view
             {
                 NhanVienBLL nhanVienBLL = new NhanVienBLL();
                 ktra = nhanVienBLL.xoaNhanVien(manhanvien);
+               
                 if (ktra)
                 {
+                    LichSuChinhSuaDTO lichSuChinhSuaDTO = new LichSuChinhSuaDTO();
+                    lichSuChinhSuaDTO.MaNhanVienThaoTac = nhanvien.MaNhanVien;
+                    lichSuChinhSuaDTO.ThaoTac = "Xóa Nhân Viên";
+                    lichSuChinhSuaDTO.MaNhanVienBiThaoTac = txtMaNhanVien.Text;
+                    lichSuChinhSuaDTO.Time = DateTime.Now;
+
+                    nhanVienBLL.themLichSuChinhSuaNhanVien(lichSuChinhSuaDTO);
                     MessageBox.Show("Xóa Thành Công");
                     Load1();
                 }
@@ -285,9 +321,9 @@ namespace QuanLyCuaHangSach.view
                     return;
                 }
             }
-           
-                
-           
+          
+
+
         }
 
        
@@ -414,7 +450,7 @@ namespace QuanLyCuaHangSach.view
             cl7.Value2 = "Ngày Làm Việc";
 
             cl7.ColumnWidth = 18.5;
-
+                
             Microsoft.Office.Interop.Excel.Range cl8 = oSheet.get_Range("H3", "H3");
 
             cl8.Value2 = "Chức vụ";
@@ -422,18 +458,8 @@ namespace QuanLyCuaHangSach.view
             cl8.ColumnWidth = 13.5;
 
 
-            Microsoft.Office.Interop.Excel.Range cl9 = oSheet.get_Range("I3", "I3");
 
-            cl9.Value2 = "Mật Khẩu";
-
-            cl9.ColumnWidth = 13.5;
-            Microsoft.Office.Interop.Excel.Range c20 = oSheet.get_Range("J3", "J3");
-
-            c20.Value2 = "Trạng Thái";
-
-            c20.ColumnWidth = 13.5;
-
-            Microsoft.Office.Interop.Excel.Range rowHead = oSheet.get_Range("A3", "J3");
+            Microsoft.Office.Interop.Excel.Range rowHead = oSheet.get_Range("A3", "H3");
 
             rowHead.Font.Bold = true;
 
@@ -504,68 +530,74 @@ namespace QuanLyCuaHangSach.view
         }
         private void BtnExport_Click(object sender, EventArgs e)
         {
-            DataTable dataTable = new DataTable();
-
-            DataColumn col1= new DataColumn("Mã Nhân Viên");
-            DataColumn col2 = new DataColumn("Tên nhân Viên");
-            DataColumn col3 = new DataColumn("Ngày Sinh");
-            DataColumn col4 = new DataColumn("Giới Tính ");
-            DataColumn col5 = new DataColumn("Số Điện Thoại");
-            DataColumn col6 = new DataColumn("Địa Chỉ");
-            DataColumn col7 = new DataColumn("Ngày Làm Việc");
-            DataColumn col8 = new DataColumn("Chức Vụ");
-            DataColumn col9 = new DataColumn("Mật Khẩu");
-            DataColumn col10 = new DataColumn("Trạng Thái");
-
-
-            dataTable.Columns.Add(col1);
-            dataTable.Columns.Add(col2);
-            dataTable.Columns.Add(col3);    
-            dataTable.Columns.Add(col4);
-            dataTable.Columns.Add(col5);
-            dataTable.Columns.Add(col6);
-            dataTable.Columns.Add(col7);
-            dataTable.Columns.Add(col8);
-            dataTable.Columns.Add(col9);
-            dataTable.Columns.Add(col10);
-
-
-
-            foreach (DataGridViewRow dtgvRow in dataGridView1.Rows)
+            try
             {
-                DataRow dataRow = dataTable.NewRow();
+                DataTable dataTable = new DataTable();
 
-                dataRow[0] = dtgvRow.Cells[0].Value;
-                dataRow[1] = dtgvRow.Cells[1].Value;
-                dataRow[2] = String.Format("{0:MM/dd/yyyy}", dtgvRow.Cells[2].Value); ;
-                dataRow[3] = dtgvRow.Cells[3].Value;
-                dataRow[4] = dtgvRow.Cells[4].Value;
-                dataRow[5] = dtgvRow.Cells[5].Value;
-                dataRow[6] = String.Format("{0:MM/dd/yyyy}", dtgvRow.Cells[6].Value);
-                dataRow[9] = dtgvRow.Cells[8].Value;
-                dataRow[8] = dtgvRow.Cells[7].Value;
-                if (dtgvRow.Cells[9].Value != null)
+                DataColumn col1 = new DataColumn("Mã Nhân Viên");
+                DataColumn col2 = new DataColumn("Tên nhân Viên");
+                DataColumn col3 = new DataColumn("Ngày Sinh");
+                DataColumn col4 = new DataColumn("Giới Tính ");
+                DataColumn col5 = new DataColumn("Số Điện Thoại");
+                DataColumn col6 = new DataColumn("Địa Chỉ");
+                DataColumn col7 = new DataColumn("Ngày Làm Việc");
+                DataColumn col8 = new DataColumn("Chức Vụ");
+
+
+
+                dataTable.Columns.Add(col1);
+                dataTable.Columns.Add(col2);
+                dataTable.Columns.Add(col3);
+                dataTable.Columns.Add(col4);
+                dataTable.Columns.Add(col5);
+                dataTable.Columns.Add(col6);
+                dataTable.Columns.Add(col7);
+                dataTable.Columns.Add(col8);
+
+
+
+
+                foreach (DataGridViewRow dtgvRow in dataGridView1.Rows)
                 {
-                    ChucVuBLL chucVuBLL = new ChucVuBLL();
-                    string chucVu = "";
-                    listChucVu = chucVuBLL.getChucVu();
-                    if (listChucVu != null)
-                    {          
-                        for (int i = 0; i < listChucVu.Count(); i++)
+                    DataRow dataRow = dataTable.NewRow();
+
+                    dataRow[0] = dtgvRow.Cells[0].Value;
+                    dataRow[1] = dtgvRow.Cells[1].Value;
+                    dataRow[2] = String.Format("{0:MM/dd/yyyy}", dtgvRow.Cells[2].Value); ;
+                    dataRow[3] = dtgvRow.Cells[3].Value;
+                    dataRow[4] = dtgvRow.Cells[4].Value;
+                    dataRow[5] = dtgvRow.Cells[5].Value;
+                    dataRow[6] = String.Format("{0:MM/dd/yyyy}", dtgvRow.Cells[6].Value);
+
+                    if (dtgvRow.Cells[9].Value != null)
+                    {
+                        ChucVuBLL chucVuBLL = new ChucVuBLL();
+                        string chucVu = "";
+                        listChucVu = chucVuBLL.getChucVu();
+                        if (listChucVu != null)
                         {
-                            if ((int)dtgvRow.Cells[9].Value == listChucVu[i].id)
+                            for (int i = 0; i < listChucVu.Count(); i++)
                             {
-                                chucVu = listChucVu[i].TenChucVu;
+                                if ((int)dtgvRow.Cells[9].Value == listChucVu[i].id)
+                                {
+                                    chucVu = listChucVu[i].TenChucVu;
+                                }
                             }
+                            dataRow[7] = chucVu;
                         }
-                        dataRow[7] = chucVu;
                     }
+
+                    dataTable.Rows.Add(dataRow);
                 }
-               
-                dataTable.Rows.Add(dataRow);
+
+                ExportFile(dataTable, "Danh Sách", "Danh Sách Nhân Viên");
+            }
+            catch {
+                DialogResult dialog;
+                dialog = MessageBox.Show("Export Thất bại", "Lỗi ", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                   
             }
 
-            ExportFile(dataTable, "Danh Sách", "Danh Sách Nhân Viên");
         }
 
         private void btnIn_Click(object sender, EventArgs e)
@@ -599,39 +631,45 @@ namespace QuanLyCuaHangSach.view
                                           
                         OleDbDataAdapter cmd = new OleDbDataAdapter("select * from [Danh Sách$]", myConnect);
                         cmd.Fill(dt);
+                     
+                      
                         dataGridView1.DataSource = dt;
+
+                        for(int a=0; a< dataGridView1.Rows.Count; a++)
+                        {
+                            if (dataGridView1.Rows[a].Cells[0].Value != null)
+                            {
+                                string c = dataGridView1.Rows[a].Cells[0].Value.ToString();
+                                for (int b = a + 1; b < dataGridView1.Rows.Count - 1; b++)
+                                {
+                                    string cb = dataGridView1.Rows[b].Cells[0].Value.ToString();
+                                    if (cb == c)
+                                    {
+                                        dataGridView1.Rows.RemoveAt(b);
+                                        //dt.Rows.RemoveAt(b);
+                                        //dataGridView1.DataSource = dt;
+                                    };
+                                }
+                            }
+                         
+                           
+                        }
+                       
                     }
                 }
                 catch (Exception ex) { MessageBox.Show(ex.Message); }
 
-                //string connectionString = "provider=Microsoft.ACE.OLEDB.16.0;Data Source={0};Extended Properties=Excel 8.0;";
-
-                //connectionString = String.Format(@connectionString, openFileDialog1.FileName);
-                //OleDbConnection conn = new OleDbConnection(connectionString);
-                //OleDbCommand cmd = new OleDbCommand();
-                //OleDbDataAdapter dataAdapter = new OleDbDataAdapter();
-                //DataTable dt = new DataTable();
-                //cmd.Connection = conn;
-                ////Fetch 1st Sheet Name
-                //conn.Open();
-                //DataTable dtSchema;
-                //dtSchema = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
-                //string ExcelSheetName = dtSchema.Rows[0]["TABLE_NAME"].ToString();
-                //conn.Close();
-                ////Read all data of fetched Sheet to a Data Table
-                //conn.Open();
-                //cmd.CommandText = "SELECT * From [" + ExcelSheetName + "]";
-                //dataAdapter.SelectCommand = cmd;
-                //dataAdapter.Fill(dt);
-                //conn.Close();
-                ////Bind Sheet Data to GridView
-
-                //dataGridView1.DataSource = dt;
 
 
 
 
             }
+        }
+
+        private void btnLichSu_Click(object sender, EventArgs e)
+        {
+            LichSuChinhSuaNhanVien lichSuChinhSuaNhanVien= new LichSuChinhSuaNhanVien();
+            lichSuChinhSuaNhanVien.Show();
         }
     }
 }

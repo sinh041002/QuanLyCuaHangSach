@@ -64,7 +64,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(658, 24);
+            this.label1.Location = new System.Drawing.Point(737, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 31);
             this.label1.TabIndex = 0;
@@ -74,7 +74,7 @@
             // 
             this.cBQLKhachHang.AutoSize = true;
             this.cBQLKhachHang.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLKhachHang.Location = new System.Drawing.Point(342, 227);
+            this.cBQLKhachHang.Location = new System.Drawing.Point(610, 156);
             this.cBQLKhachHang.Name = "cBQLKhachHang";
             this.cBQLKhachHang.Size = new System.Drawing.Size(207, 27);
             this.cBQLKhachHang.TabIndex = 1;
@@ -84,7 +84,7 @@
             // TenQuyen
             // 
             this.TenQuyen.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TenQuyen.Location = new System.Drawing.Point(699, 152);
+            this.TenQuyen.Location = new System.Drawing.Point(967, 81);
             this.TenQuyen.Name = "TenQuyen";
             this.TenQuyen.Size = new System.Drawing.Size(200, 29);
             this.TenQuyen.TabIndex = 10;
@@ -93,7 +93,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(588, 155);
+            this.label2.Location = new System.Drawing.Point(856, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 19);
             this.label2.TabIndex = 11;
@@ -114,9 +114,9 @@
             this.Column3,
             this.BanHang,
             this.QLThongKe});
-            this.dataQuyen.Location = new System.Drawing.Point(1009, 152);
+            this.dataQuyen.Location = new System.Drawing.Point(373, 515);
             this.dataQuyen.Name = "dataQuyen";
-            this.dataQuyen.Size = new System.Drawing.Size(318, 533);
+            this.dataQuyen.Size = new System.Drawing.Size(988, 240);
             this.dataQuyen.TabIndex = 12;
             this.dataQuyen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataQuyen_CellContentClick);
             // 
@@ -192,7 +192,7 @@
             // 
             this.cBQLNhanVien.AutoSize = true;
             this.cBQLNhanVien.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLNhanVien.Location = new System.Drawing.Point(594, 227);
+            this.cBQLNhanVien.Location = new System.Drawing.Point(862, 156);
             this.cBQLNhanVien.Name = "cBQLNhanVien";
             this.cBQLNhanVien.Size = new System.Drawing.Size(193, 27);
             this.cBQLNhanVien.TabIndex = 13;
@@ -203,7 +203,7 @@
             // 
             this.cBQLQuyen.AutoSize = true;
             this.cBQLQuyen.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLQuyen.Location = new System.Drawing.Point(342, 292);
+            this.cBQLQuyen.Location = new System.Drawing.Point(610, 221);
             this.cBQLQuyen.Name = "cBQLQuyen";
             this.cBQLQuyen.Size = new System.Drawing.Size(159, 27);
             this.cBQLQuyen.TabIndex = 14;
@@ -214,7 +214,7 @@
             // 
             this.cBQLKhuyenMai.AutoSize = true;
             this.cBQLKhuyenMai.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLKhuyenMai.Location = new System.Drawing.Point(594, 292);
+            this.cBQLKhuyenMai.Location = new System.Drawing.Point(862, 221);
             this.cBQLKhuyenMai.Name = "cBQLKhuyenMai";
             this.cBQLKhuyenMai.Size = new System.Drawing.Size(207, 27);
             this.cBQLKhuyenMai.TabIndex = 15;
@@ -225,7 +225,7 @@
             // 
             this.cBQLSach.AutoSize = true;
             this.cBQLSach.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLSach.Location = new System.Drawing.Point(342, 349);
+            this.cBQLSach.Location = new System.Drawing.Point(610, 278);
             this.cBQLSach.Name = "cBQLSach";
             this.cBQLSach.Size = new System.Drawing.Size(144, 27);
             this.cBQLSach.TabIndex = 16;
@@ -236,7 +236,7 @@
             // 
             this.cBQLHoaDon.AutoSize = true;
             this.cBQLHoaDon.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLHoaDon.Location = new System.Drawing.Point(594, 349);
+            this.cBQLHoaDon.Location = new System.Drawing.Point(862, 278);
             this.cBQLHoaDon.Name = "cBQLHoaDon";
             this.cBQLHoaDon.Size = new System.Drawing.Size(181, 27);
             this.cBQLHoaDon.TabIndex = 17;
@@ -247,7 +247,7 @@
             // 
             this.cBBanHang.AutoSize = true;
             this.cBBanHang.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBBanHang.Location = new System.Drawing.Point(342, 413);
+            this.cBBanHang.Location = new System.Drawing.Point(610, 342);
             this.cBBanHang.Name = "cBBanHang";
             this.cBBanHang.Size = new System.Drawing.Size(187, 27);
             this.cBBanHang.TabIndex = 18;
@@ -258,7 +258,7 @@
             // 
             this.cBQLThongKe.AutoSize = true;
             this.cBQLThongKe.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBQLThongKe.Location = new System.Drawing.Point(594, 413);
+            this.cBQLThongKe.Location = new System.Drawing.Point(862, 342);
             this.cBQLThongKe.Name = "cBQLThongKe";
             this.cBQLThongKe.Size = new System.Drawing.Size(187, 27);
             this.cBQLThongKe.TabIndex = 19;
@@ -269,7 +269,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1005, 110);
+            this.label3.Location = new System.Drawing.Point(369, 489);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(157, 23);
             this.label3.TabIndex = 20;
@@ -279,7 +279,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(712, 512);
+            this.btnClear.Location = new System.Drawing.Point(980, 441);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(87, 41);
@@ -292,7 +292,7 @@
             // 
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(346, 512);
+            this.btnThem.Location = new System.Drawing.Point(614, 441);
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 41);
@@ -305,7 +305,7 @@
             // 
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(594, 512);
+            this.btnXoa.Location = new System.Drawing.Point(862, 441);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -318,7 +318,7 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(474, 512);
+            this.btnSua.Location = new System.Drawing.Point(742, 441);
             this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 41);
@@ -331,7 +331,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(201, 159);
+            this.label4.Location = new System.Drawing.Point(469, 88);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 19);
             this.label4.TabIndex = 26;
@@ -340,7 +340,7 @@
             // txtMaQuyen
             // 
             this.txtMaQuyen.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaQuyen.Location = new System.Drawing.Point(307, 152);
+            this.txtMaQuyen.Location = new System.Drawing.Point(575, 81);
             this.txtMaQuyen.Name = "txtMaQuyen";
             this.txtMaQuyen.Size = new System.Drawing.Size(200, 29);
             this.txtMaQuyen.TabIndex = 25;
@@ -350,7 +350,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1534, 746);
+            this.ClientSize = new System.Drawing.Size(1534, 778);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtMaQuyen);
             this.Controls.Add(this.btnClear);

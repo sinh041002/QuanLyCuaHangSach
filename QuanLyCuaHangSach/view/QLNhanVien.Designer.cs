@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLNhanVien));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLichSu = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.ptrHienMatKhau = new System.Windows.Forms.PictureBox();
             this.btnIn = new System.Windows.Forms.Button();
@@ -43,6 +44,16 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.radioTrangThai = new System.Windows.Forms.RadioButton();
@@ -61,16 +72,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrHienMatKhau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -79,6 +80,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.btnLichSu);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.ptrHienMatKhau);
             this.panel1.Controls.Add(this.btnIn);
@@ -118,12 +120,23 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btnLichSu
+            // 
+            this.btnLichSu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichSu.Location = new System.Drawing.Point(1365, 328);
+            this.btnLichSu.Name = "btnLichSu";
+            this.btnLichSu.Size = new System.Drawing.Size(132, 45);
+            this.btnLichSu.TabIndex = 51;
+            this.btnLichSu.Text = "Lịch Sử Thao tác";
+            this.btnLichSu.UseVisualStyleBackColor = true;
+            this.btnLichSu.Click += new System.EventHandler(this.btnLichSu_Click);
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1255, 320);
+            this.button1.Location = new System.Drawing.Point(1213, 328);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 41);
+            this.button1.Size = new System.Drawing.Size(103, 45);
             this.button1.TabIndex = 50;
             this.button1.Text = "Import Excel ";
             this.button1.UseVisualStyleBackColor = true;
@@ -145,9 +158,9 @@
             // btnIn
             // 
             this.btnIn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIn.Location = new System.Drawing.Point(969, 320);
+            this.btnIn.Location = new System.Drawing.Point(927, 328);
             this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(86, 41);
+            this.btnIn.Size = new System.Drawing.Size(86, 45);
             this.btnIn.TabIndex = 48;
             this.btnIn.Text = "Print";
             this.btnIn.UseVisualStyleBackColor = true;
@@ -157,9 +170,9 @@
             // BtnExport
             // 
             this.BtnExport.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExport.Location = new System.Drawing.Point(1114, 320);
+            this.BtnExport.Location = new System.Drawing.Point(1072, 328);
             this.BtnExport.Name = "BtnExport";
-            this.BtnExport.Size = new System.Drawing.Size(99, 41);
+            this.BtnExport.Size = new System.Drawing.Size(99, 45);
             this.BtnExport.TabIndex = 14;
             this.BtnExport.Text = "Xuất Excel ";
             this.BtnExport.UseVisualStyleBackColor = true;
@@ -169,7 +182,7 @@
             // btnTimkiem
             // 
             this.btnTimkiem.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimkiem.Location = new System.Drawing.Point(1138, 382);
+            this.btnTimkiem.Location = new System.Drawing.Point(1197, 404);
             this.btnTimkiem.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimkiem.Name = "btnTimkiem";
             this.btnTimkiem.Size = new System.Drawing.Size(75, 41);
@@ -182,7 +195,7 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.Location = new System.Drawing.Point(915, 388);
+            this.txtTimKiem.Location = new System.Drawing.Point(974, 410);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(206, 29);
@@ -291,6 +304,73 @@
             this.dataGridView1.TabIndex = 44;
             this.dataGridView1.UseWaitCursor = true;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaNhanVien";
+            this.Column1.HeaderText = "Mã Nhân Viên";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "HoTen";
+            this.Column2.HeaderText = "Họ Và Tên";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "NgaySinh";
+            this.Column3.HeaderText = "Ngày Sinh";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Gioitinh";
+            this.Column4.HeaderText = "Giới Tính";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 150;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "SoDienThoai";
+            this.Column5.HeaderText = "Số Điện Thoại";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 150;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "DiaChi";
+            this.Column6.HeaderText = "Địa Chỉ";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 200;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "NgayLamViec";
+            this.Column7.HeaderText = "Ngày Làm Việc";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 150;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "ChucVu";
+            this.Column8.HeaderText = "Chức vụ";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "MatKhau";
+            this.Column9.HeaderText = "Mật Khẩu";
+            this.Column9.Name = "Column9";
+            this.Column9.Visible = false;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "TrangThai";
+            this.Column10.HeaderText = "Trạng Thái";
+            this.Column10.Name = "Column10";
             // 
             // txtMatKhau
             // 
@@ -499,73 +579,6 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "excel Document|*.xlsx";
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "MaNhanVien";
-            this.Column1.HeaderText = "Mã Nhân Viên";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "HoTen";
-            this.Column2.HeaderText = "Họ Và Tên";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "NgaySinh";
-            this.Column3.HeaderText = "Ngày Sinh";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Gioitinh";
-            this.Column4.HeaderText = "Giới Tính";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "SoDienThoai";
-            this.Column5.HeaderText = "Số Điện Thoại";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 150;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "DiaChi";
-            this.Column6.HeaderText = "Địa Chỉ";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 200;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "NgayLamViec";
-            this.Column7.HeaderText = "Ngày Làm Việc";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 150;
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "ChucVu";
-            this.Column8.HeaderText = "Chức vụ";
-            this.Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            this.Column9.DataPropertyName = "MatKhau";
-            this.Column9.HeaderText = "Mật Khẩu";
-            this.Column9.Name = "Column9";
-            this.Column9.Visible = false;
-            // 
-            // Column10
-            // 
-            this.Column10.DataPropertyName = "TrangThai";
-            this.Column10.HeaderText = "Trạng Thái";
-            this.Column10.Name = "Column10";
-            // 
             // QLNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -627,5 +640,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.Button btnLichSu;
     }
 }
