@@ -27,11 +27,7 @@ namespace DAL
 
       
   
-        // Phú
-
-    //    private static string ConnectionString = "Data Source=DESKTOP-2869SNJ\\MANHPHU;Initial Catalog=cuahangsach1;Integrated Security=True";
-
-
+      
         public static SqlConnection getConnection()
         {
 

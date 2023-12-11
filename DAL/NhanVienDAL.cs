@@ -72,7 +72,7 @@ namespace DAL
 
                     sqlConnection.Close();
                 }
-            }catch (Exception ex)
+            }catch 
             {
                 nhanVienTimKiems = null;
             }
@@ -131,7 +131,7 @@ namespace DAL
                     sqlConnection.Close();
 
                 }
-            }catch(Exception ex)
+            }catch
             {
                 ktra= false;
             }
@@ -210,7 +210,22 @@ namespace DAL
             using (SqlConnection connection = SqlConnectionData.Connect())
             {
                 connection.Open();
-                string query = @"select * from tbl_lichsuchinhsua";
+                string query = @"select * from tbl_lichsuchinhsua  ";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+
+            return dt;
+        }
+
+        public DataTable getLichSuaChinhSuaTimKiem(string matimkiem)
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection connection = SqlConnectionData.Connect())
+            {
+                connection.Open();
+                string query = @"select * from tbl_lichsuchinhsua where MaNhanVienThaoTac like '%"+ matimkiem+ "%' OR MaNhanVienBiThaoTac like '%"+ matimkiem+ "%' ";
                 SqlCommand cmd = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 adapter.Fill(dt);

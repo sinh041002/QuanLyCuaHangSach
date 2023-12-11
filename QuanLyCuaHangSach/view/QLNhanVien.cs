@@ -358,6 +358,7 @@ namespace QuanLyCuaHangSach.view
         {
             string stringtimkiem=txtTimKiem.Text;
             NhanVienBLL nhanVienBLL = new NhanVienBLL();
+            
             dataGridView1.DataSource = nhanVienBLL.getListTimKiem(stringtimkiem);
         }
 

@@ -65,7 +65,7 @@ namespace QuanLyCuaHangSach.view
                 string mysitrn=tongDoanhthu.ToString();
                 chartDoanhThu.Series["CharCot"].Points[i-1].Label= mysitrn;
                 chartDoanhThu.Series["CharCot"].Points[i-1].Color = Color.Blue;
-                chartDoanhThu.Series["CharCot"].Points[i-1].AxisLabel = "Tháng " + i;
+                chartDoanhThu.Series["CharCot"].Points[i-1].AxisLabel =  "Tháng "+i;
             }
             
         }
@@ -127,6 +127,11 @@ namespace QuanLyCuaHangSach.view
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chartDoanhThu_Click(object sender, EventArgs e)
         {
 
         }

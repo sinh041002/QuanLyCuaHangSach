@@ -246,10 +246,6 @@ D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\QuanLyCuaHangSach.pdb
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\BLL.dll
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\BouncyCastle.Crypto.dll
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\DTO.dll
-D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\Microsoft.ReportViewer.Common.dll
-D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
-D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\Microsoft.ReportViewer.Design.dll
-D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\Microsoft.SqlServer.Types.dll
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\bin\Debug\DAL.dll
@@ -303,7 +299,6 @@ D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\GUI.csproj.CopyComplet
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.exe
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.pdb
 D:\Đồ án c#\QLCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.view.LichSuChinhSuaNhanVien.resources
-=======
 C:\Users\phanm\Source\Repos\QuanLyCuaHangSach\QuanLyCuaHangSach\obj\Debug\QuanLyCuaHangSach.PrintNhanVien.resources
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\phanm\source\repos\QuanLyCuaHangSach\QuanLyCuaHangSach\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll

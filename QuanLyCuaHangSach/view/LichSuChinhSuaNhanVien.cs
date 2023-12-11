@@ -33,44 +33,14 @@ namespace QuanLyCuaHangSach.view
         private void btnTimKiemLs_Click(object sender, EventArgs e)
         {
             string timkiem = txtTimKiem.Text;
-            Load1();
-            //NhanVienBLL nhanVienBLL = new NhanVienBLL();
-            //dataChinhSua.DataSource = nhanVienBLL.getListTimLiemChinhSua(timkiem);
-            String searchValue = timkiem;
-            int rowIndex = -1;
            
-            foreach (DataGridViewRow row in dataChinhSua.Rows)
-            {
-                if (row.Cells["MaNhanVienThaoTac"].Value != null) // Need to check for null if new row is exposed
-                {
-                    if (row.Cells["MaNhanVienThaoTac"].Value.ToString().Contains(searchValue)==false && row.Cells["abc"].Value.ToString().Contains(searchValue) == false)
-                    {
-                        rowIndex = row.Index;
-                  
-                        dataChinhSua.Rows.RemoveAt(row.Index);
-                       
-                    }
-                }
-             
-            }
+            NhanVienBLL nhanvienbll = new NhanVienBLL();
+            dataChinhSua.DataSource = nhanvienbll.getListTimLiemChinhSua(timkiem);
 
-            //foreach (DataGridViewRow row in dataChinhSua.Rows)
-            //{
-            //    if (row.Cells["abc"].Value != null) // Need to check for null if new row is exposed
-            //    {
-            //        if (row.Cells["abc"].Value.ToString().Contains(searchValue) == false)
-            //        {
-            //            rowIndex = row.Index;
 
-            //            dataChinhSua.Rows.RemoveAt(rowIndex);
 
-            //        }
-            //    }
-
-            //}
-         
         }
 
-       
+
     }
 }

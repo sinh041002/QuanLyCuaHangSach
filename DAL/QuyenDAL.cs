@@ -91,7 +91,7 @@ namespace DAL
 
                 }
             }
-            catch (Exception ex)
+            catch 
             {
                 return false;
             }
@@ -133,7 +133,7 @@ namespace DAL
 
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 return false;
             }

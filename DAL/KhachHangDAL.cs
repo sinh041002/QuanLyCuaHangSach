@@ -117,7 +117,7 @@ namespace DAL
 
                 }
             }
-            catch (Exception ex)
+            catch 
             {
                 ktra = false;
             }
